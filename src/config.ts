@@ -3,5 +3,5 @@ export const config = {
 }
 
 export const constants = {
-  email: 'latallarets@gmail.com',
+  email: 'latallerets@gmail.com',
 }
