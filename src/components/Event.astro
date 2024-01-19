@@ -1,0 +1,18 @@
+---
+const { title, spots, date, location, price, link, className } = Astro.props
+---
+
+<div class={`border p-3 ${className}`}>
+  <div class="flex justify-between">
+    <small>{date}</small>
+    <p>{price}</p>
+  </div>
+  <p class="uppercase pb-3">{title}</p>
+  <b class="text-sm pb-3">
+    {spots}
+  </b>
+  <div class="flex justify-between">
+    <small>📍 {location}</small>
+    <a class="underline text-red" href={link}>+ info</a>
+  </div>
+</div>

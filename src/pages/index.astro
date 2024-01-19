@@ -1,131 +1,140 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import { config, constants } from '../config'
+import Taller from '../components/Taller.astro'
+import NavLinks from '../components/NavLinks.astro'
+import MobileMenu from '../components/MobileMenu.astro'
+import Footer from '../components/Footer.astro'
+
+const tallers = [
+  {
+    title: 'Pinta una bossa de tela',
+    desc: 'Dues hores per connectar mentre expresses la teva creativitat pintant una bossa de tela amb pintura acrílica, ja sigui una nova, o donant-li una nova vida a aquella promocional que utilitzes per la compra.',
+    imgSrc: '/img/t-bossa.png',
+    imgAlt:
+      'Fotografia de dues participants del taller pintant bosses de tela amb pintura acrílica',
+  },
+  {
+    title: 'Pinta un mirallet',
+    desc: 'Podràs pintar un mirallet de 30x30 per penjar-lo i mirar-te cada matí i amb un toc de màgia!',
+    imgSrc: '/img/t-bossa-2.png',
+    imgAlt: "Fotografia d'una participant del taller pintant un mirallet",
+  },
+  {
+    title: 'Pinta un potet de vidre',
+    desc: 'Sembla que mai tenim prou pots de vidre acumulat a la vidra. Pinta’l per posar-hi espelmes, flors o llàpisos... Però sobretot, regala’t dues hores de tranquilitat i creativitat.',
+    imgSrc: '/img/t-potet.png',
+    imgAlt: 'Cartell de taller de pintar pots de vidre',
+  },
+]
 ---
 
 <Layout title="tallerets">
-  {
-    config.maintenance ? (
-      <div class="maintenance p-4">
-        <h1 class="text-7xl">🚧</h1>
-        <h2 class="text-4xl mt-8">Estem fent obres a la web!</h2>
-        <h3 class="text-xl mt-8 max-w-[40ch]">
-          Si tens qualsevol dubte o vols informació sobre els tallers, pots
-          seguir-me a{' '}
-          <a
-            class="underline"
-            href="https://www.instagram.com/tallerets/"
-            target="_blank"
-          >
-            @tallerets
-          </a>
-          o escriure'm a{' '}
-          <a class="underline" href={`mailto:${constants.email}`}>
-            {constants.email}
-          </a>
-        </h3>
+  <header
+    class="px-4 flex py-6 border-b absolute top-0 bg-dark text-soft w-full"
+  >
+    <a href="/" class="me-auto text-2xl italic">
+      <span>tallerets</span>
+    </a>
+    <nav class="flex justify-center">
+      <NavLinks className="hidden md:flex items-center gap-4 text-xl" />
+    </nav>
+    <MobileMenu className="md:hidden" />
+  </header>
+
+  <main>
+    <section class="w-page h-[100vh] bg-black flex flex-col text-soft bg-dark">
+      <h1 class="text-5xl mt-auto">
+        Pausa per <br /> crear
+      </h1>
+      <div class="flex">
+        <a href="#ultims-tallerets" class="c-button mt-7">
+          Veure els tallerets
+        </a>
       </div>
-    ) : (
-      <main>
-        <header>
-          <a href="/">
-            <span>tallerets</span>
-          </a>
-          <nav>
-            <a href="/reserva">reserva</a>
-            <a href="/sobre-mi">sobre mi</a>
-            <a href="/tallerets">tallerets</a>
-            <a href="/contacte">contacte</a>
-          </nav>
-        </header>
-        <section>
-          <h1>Pausa per crear</h1>
-          <a href="#ultims-tallerets">Veure tallerets</a>
-        </section>
-        <section>
-          <h2>Soc la Noor i organitzo tallers creatius 🍒</h2>
-          <p>
-            Com més conecto amb mi i amb els demés ha estat sempre a través de
-            l’art.
-          </p>
-          <p>
-            Amb tallerets vull transmetre i ensenyar que quan fem coses amb les
-            nostres mans ens sentim més presents i vius. I que per crear no cal
-            experiència, ni cap habilitat especial: només ganes de passar una
-            estona amb tu mateixa.
-          </p>
-        </section>
-        <hr />
-        <section>
-          <h3>Alguns dels últims tallerets</h3>
-          <div>
-            <p>Pintar una bossa de tela</p>
-            <img
-              src="/img/tallerets/bossa.webp"
-              alt="gent maca pintant les seves bosses de tela al taller"
-            />
-          </div>
-          <div>
-            <p>Pintar potets de vidre</p>
-            <img
-              src="/img/tallerets/potets.webp"
-              alt="gent maca pintant els seus potets de vidre al taller"
-            />
-          </div>
-          <div>
-            <p>Pintar un mirallet</p>
-            <img
-              src="/img/tallerets/mirallet.webp"
-              alt="gent maca pintant els seus mirallets al taller"
-            />
-          </div>
-          <a href="/tallerets"> Apunta't al proper taller</a>
-        </section>
-        <hr />
-        <section>
-          <h3>tallerets a mida</h3>
-          <p>
-            Si vols que organitzi un talleret per a tu i els teus amics, per a
-            la teva empresa o per a un esdeveniment especial, escriviu-me!
-          </p>
+      <div class="flex justify-center">
+        <a href="#bio" class="my-8">
+          <svg fill="none" width="56" height="36">
+            <path
+              class="stroke-soft"
+              d="M55.5 1C44.866 13.5 13 14.4 1 1l28 33.5L55.5 1Z"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
 
-          <a href="/contacte">contacta'mac</a>
-        </section>
-        <hr />
-        <section>
-          <h3>Segueix-me a Instagram o enviam un email per saber-ne més</h3>
-          <a href="https://www.instagram.com/tallerets/" target="_blank">
-            @tallerets
-          </a>
-          <a href={`mailto:${constants.email}`}>{constants.email}</a>
-        </section>
-        <hr />
-        <footer>
-          <nav>
-            <a href="/reserva">reserva</a>
-            <a href="/sobre-mi">sobre mi</a>
-            <a href="/tallerets">tallerets</a>
-            <a href="/contacte">contacte</a>
-            <a href={`mailto:${constants.email}`}>email</a>
-            <a href="/politica-de-privacitat">política de privacitat</a>
-          </nav>
-        </footer>
-        <div>
-          disseny i desenvolupament web -{' '}
-          <a href="https://github.com/aymyo">@aymyo</a> - Barcelona, 2023
-        </div>
-      </main>
-    )
-  }
+    <section class="w-page md:max-w-[50ch] mx-auto">
+      <h2 id="bio" class="pt-6 text-3xl md:text-4xl md:text-center">
+        Soc la Noor i organitzo tallers creatius 🍒
+      </h2>
 
-  <style>
-    .maintenance {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 90vh;
-      text-align: center;
-    }
-  </style>
+      <img
+        class="my-8"
+        src="/img/bio-noor.png"
+        alt="Fotos de la Noor"
+        class="w-full"
+      />
+      <p class="mb-3">
+        Com més conecto amb mi i amb els demés ha estat sempre a través de
+        l’art.
+      </p>
+      <p class="mb-6">
+        Amb tallerets vull transmetre i ensenyar que quan fem coses amb les
+        nostres mans ens sentim més presents i vius. I que per crear no cal
+        experiència, ni cap habilitat especial: només ganes de passar una estona
+        amb tu mateixa.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="w-page">
+      <h3 class="py-8 my-2 text-2xl md:text-3xl md:text-center">
+        Últims tallerets
+      </h3>
+
+      <div class="flex flex-col gap-4 md:flex-row md:justify-center">
+        {
+          tallers.map((taller) => {
+            return (
+              <Taller
+                title={taller.title}
+                desc={taller.desc}
+                imgSrc={taller.imgSrc}
+                imgAlt={taller.imgAlt}
+              />
+            )
+          })
+        }
+      </div>
+
+      <div class="flex justify-center mt-6 mb-8">
+        <a class="c-button my-3" href="/tallerets"> Apunta't al següent!</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="w-page md:max-w-[50ch] mx-auto">
+      <h3 class="text-2xl md:text-3xl pt-8 pb-4">tallerets a mida</h3>
+      <p class="mb-5">
+        Si vols que organitzi un talleret per a tu i els teus amics, per a la
+        teva empresa o per a un esdeveniment especial, escriu-me!
+      </p>
+
+      <div class="flex">
+        <a class="c-button mb-6" href="/contacte"> Contacta'm</a>
+      </div>
+
+      <img
+        class="bg-dark text-soft h-48 w-full object-cover mb-5 rounded-sm"
+        src="/img/tallerets-mida.png"
+        alt="[Il·lustració cuqui]"
+      />
+    </section>
+  </main>
+
+  <hr />
+
+  <Footer />
 </Layout>

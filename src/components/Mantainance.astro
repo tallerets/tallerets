@@ -1,0 +1,34 @@
+---
+import { constants } from '../config'
+---
+
+<div class="mantainance p-4">
+  <h1 class="text-7xl">🚧</h1>
+  <h2 class="text-4xl mt-8">Estem fent obres a la web!</h2>
+  <h3 class="text-xl mt-8 max-w-[40ch]">
+    Si tens qualsevol dubte o vols informació sobre els tallers, pots seguir-me
+    a{' '}
+    <a
+      class="underline"
+      href="https://www.instagram.com/tallerets/"
+      target="_blank"
+    >
+      @tallerets
+    </a>
+    o escriure'm a{' '}
+    <a class="underline" href={`mailto:${constants.email}`}>
+      {constants.email}
+    </a>
+  </h3>
+</div>
+
+<style>
+  .mantainance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+  }
+</style>

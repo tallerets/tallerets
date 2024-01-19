@@ -1,7 +1,9 @@
 export const config = {
-  maintenance: true,
+  maintenance: false,
 }
 
 export const constants = {
   email: 'latallerets@gmail.com',
+  instagramId: 'tallerets',
+  authorLink: 'https://github.com/aymyo',
 }

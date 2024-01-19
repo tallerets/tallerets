@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { config, constants } from '../config'
+import Taller from '../components/Taller.astro'
+import NavLinks from '../components/NavLinks.astro'
+import MobileMenu from '../components/MobileMenu.astro'
+import Event from '../components/Event.astro'
+import Footer from '../components/Footer.astro'
+
+const calendari = [
+  {
+    title: 'Pinta una bossa de tela',
+    date: 'Dimecres 20 d’octubre de 18h a 20h',
+    price: '25€',
+    spots: '10 places',
+    location: 'Carrer de la Indústria 68, Barcelona',
+    link: '/tallers#bossa',
+  },
+  {
+    title: 'Pinta un potet de vidre',
+    date: 'Dimecres 23 de febrer de 18h a 20h',
+    price: '20€',
+    spots: '3 places',
+    location: 'Carrer de la Indústria 68, Barcelona',
+    link: '/tallers#potet',
+  },
+  {
+    title: 'Pinta el teu calendari de fruita de temporada',
+    date: 'Dijous 3 de març de 18h a 20h',
+    price: '35€',
+    spots: 'Places Exhaurides',
+    location: 'Carrer de la Indústria 68, Barcelona',
+    link: '/tallers#fruita',
+  },
+]
+---
+
+<Layout title="tallerets: calendari">
+  <header
+    class="px-4 flex py-6 border-b absolute top-0 bg-soft text-dark w-full"
+  >
+    <a href="/" class="me-auto text-2xl italic">
+      <span>tallerets</span>
+    </a>
+    <nav class="flex justify-center">
+      <NavLinks className="hidden md:flex items-center gap-4 text-xl" />
+    </nav>
+    <MobileMenu className="md:hidden" />
+  </header>
+
+  <main>
+    <section class="w-page md:max-w-[50ch] mx-auto pt-20">
+      <h2 id="calendari" class="py-12 text-3xl md:text-4xl md:text-center">
+        Calendari
+      </h2>
+
+      <div class="flex flex-col gap-4 pb-12">
+        {
+          calendari.map((taller) => {
+            return (
+              <Event
+                title={taller.title}
+                date={taller.date}
+                price={taller.price}
+                spots={taller.spots}
+                location={taller.location}
+                link={taller.link}
+              />
+            )
+          })
+        }
+        <Event
+          className="border-red text-red"
+          title="Talleret a mida"
+          date="Quan vulguis!"
+          spots="5-15 persones"
+          location="Carrer de la Indústria 68, Barcelona"
+          link="/tallers#a-mida"
+        />
+      </div>
+
+      <h3 class="pb-8 my-2 text-2xl md:text-3xl md:text-center">
+        Com reservar?
+      </h3>
+
+      <p>
+        Per reservar la teva plaça, envia'm un email a
+        <a class="underline" href={`mailto:${constants.email}`}>
+          {constants.email}
+        </a>
+        amb el talleret que vols fer i la data. Et respondré amb la informació per
+        fer el pagament i confirmar la teva plaça.
+      </p>
+
+      <h4 class="py-8 my-2 text-2xl md:text-3xl md:text-center">
+        Cancelacions
+      </h4>
+
+      <p class="pb-12">
+        Si has de cancel·lar la teva plaça, avisa'm amb un mínim de 48h
+        d’antelació i et retornaré el 100% del pagament. Si avises amb menys de
+        48h d’antelació, no es retorna el pagament.
+      </p>
+    </section>
+  </main>
+
+  <hr />
+
+  <Footer />
+</Layout>

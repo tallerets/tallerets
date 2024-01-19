@@ -1,0 +1,42 @@
+---
+import { constants } from '../config'
+---
+
+<section class="w-page md:max-w-[50ch] mx-auto">
+  <h3 class="text-2xl md:text-3xl pt-8">
+    Segueix-me a Instagram per saber-ne més o envia'm un email
+  </h3>
+  <div class="text-5xl py-7">💌</div>
+  <a
+    class="block underline"
+    href={`https://www.instagram.com/${constants.instagramId}/`}
+    target="_blank"
+  >
+    @{constants.instagramId}
+  </a>
+  <a class="block mb-8 underline" href={`mailto:${constants.email}`}>
+    {constants.email}
+  </a>
+</section>
+
+<hr />
+
+<footer class="w-page md:max-w-[50ch] mx-auto">
+  <nav class="py-8 flex flex-col underline text-sm">
+    <a href="/reserva">reserva</a>
+    <a href="/sobre-mi">sobre mi</a>
+    <a href="/tallerets">tallerets</a>
+    <a href="/contacte">contacte</a>
+    <a href={`mailto:${constants.email}`}>email</a>
+    <a href="/politica-de-privacitat">política de privacitat</a>
+  </nav>
+</footer>
+<div
+  class="w-page bg-dark text-soft text-xs py-3 flex gap-4 justify-between md:justify-center"
+>
+  <p>
+    disseny i desenvolupament web per
+    <a class="underline" href={constants.authorLink}> @aymyo</a>
+  </p>
+  <p>Barcelona, 2023</p>
+</div>
