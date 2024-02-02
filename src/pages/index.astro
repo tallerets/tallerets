@@ -1,84 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { config, constants } from '../config'
 import Taller from '../components/Taller.astro'
-import NavLinks from '../components/NavLinks.astro'
-import MobileMenu from '../components/MobileMenu.astro'
 import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import { tallers } from '../content'
 
-const tallers = [
-  {
-    title: 'Pinta una bossa de tela',
-    desc: 'Dues hores per connectar mentre expresses la teva creativitat pintant una bossa de tela amb pintura acrílica, ja sigui una nova, o donant-li una nova vida a aquella promocional que utilitzes per la compra.',
-    imgSrc: '/img/t-bossa.png',
-    imgAlt:
-      'Fotografia de dues participants del taller pintant bosses de tela amb pintura acrílica',
-  },
-  {
-    title: 'Pinta un mirallet',
-    desc: 'Podràs pintar un mirallet de 30x30 per penjar-lo i mirar-te cada matí i amb un toc de màgia!',
-    imgSrc: '/img/t-bossa-2.png',
-    imgAlt: "Fotografia d'una participant del taller pintant un mirallet",
-  },
-  {
-    title: 'Pinta un potet de vidre',
-    desc: 'Sembla que mai tenim prou pots de vidre acumulat a la vidra. Pinta’l per posar-hi espelmes, flors o llàpisos... Però sobretot, regala’t dues hores de tranquilitat i creativitat.',
-    imgSrc: '/img/t-potet.png',
-    imgAlt: 'Cartell de taller de pintar pots de vidre',
-  },
-]
+const ultimsTallerets = tallers.slice(0, 3)
 ---
 
 <Layout title="tallerets">
-  <header
-    class="px-4 flex py-6 border-b absolute top-0 bg-dark text-soft w-full"
-  >
-    <a href="/" class="me-auto text-2xl italic">
-      <span>tallerets</span>
-    </a>
-    <nav class="flex justify-center">
-      <NavLinks className="hidden md:flex items-center gap-4 text-xl" />
-    </nav>
-    <MobileMenu className="md:hidden" />
-  </header>
-
   <main>
-    <section class="w-page h-[100vh] bg-black flex flex-col text-soft bg-dark">
-      <h1 class="text-5xl mt-auto">
-        Pausa per <br /> crear
-      </h1>
-      <div class="flex">
-        <a href="#ultims-tallerets" class="c-button mt-7">
-          Veure els tallerets
-        </a>
-      </div>
-      <div class="flex justify-center">
-        <a href="#bio" class="my-8">
-          <svg fill="none" width="56" height="36">
-            <path
-              class="stroke-soft"
-              d="M55.5 1C44.866 13.5 13 14.4 1 1l28 33.5L55.5 1Z"></path>
-          </svg>
-        </a>
+    <section class="relative h-screen overflow-hidden">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute z-1 w-auto min-w-full min-h-full max-w-none bg-soft"
+      >
+        <source src="vids/promo.mp4" type="video/mp4" />
+        <span class="text-soft">
+          Aqui hi ha un video d'alguns tallarets! Però sembla que el teu
+          navegador no el pot reproduir 😢
+        </span>
+      </video>
+      <Header className="text-dark absolute" />
+      <div
+        class="relative page-padding h-[100vh] bg-black flex flex-col items-start text-dark"
+      >
+        <h1 class="text-6xl sm:text-7xl lg:text-8xl mt-auto">
+          Una pausa<br />per crear
+        </h1>
+        <div class="flex justify-center">
+          <a href="#tallerets" class="c-button my-12 bg-soft">
+            Veure els tallerets</a
+          >
+        </div>
+        <div class="mb-16 flex justify-center min-w-full">
+          <a href="#bio">
+            <svg class="fill-soft" width="56" height="36">
+              <path
+                class="stroke-dark"
+                d="M55.5 1C44.866 13.5 13 14.4 1 1l28 33.5L55.5 1Z"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="w-page md:max-w-[50ch] mx-auto">
-      <h2 id="bio" class="pt-6 text-3xl md:text-4xl md:text-center">
+    <section id="bio" class="page-padding md:max-w-[70ch] mx-auto py-24">
+      <h2 class="text-4xl md:text-5xl md:text-center">
         Soc la Noor i organitzo tallers creatius 🍒
       </h2>
 
       <img
-        class="my-8"
+        class="my-20 mx-auto"
         src="/img/bio-noor.png"
         alt="Fotos de la Noor"
         class="w-full"
       />
-      <p class="mb-3">
+      <p class="text-lg mb-3">
         Com més conecto amb mi i amb els demés ha estat sempre a través de
         l’art.
       </p>
-      <p class="mb-6">
+      <p class="text-lg">
         Amb tallerets vull transmetre i ensenyar que quan fem coses amb les
         nostres mans ens sentim més presents i vius. I que per crear no cal
         experiència, ni cap habilitat especial: només ganes de passar una estona
@@ -88,14 +73,12 @@ const tallers = [
 
     <hr />
 
-    <section class="w-page">
-      <h3 class="py-8 my-2 text-2xl md:text-3xl md:text-center">
-        Últims tallerets
-      </h3>
+    <section id="tallerets" class="page-padding py-24">
+      <h3 class="text-4xl md:text-5xl md:text-center">Últims tallerets</h3>
 
-      <div class="flex flex-col gap-4 md:flex-row md:justify-center">
+      <div class="flex flex-col gap-4 md:flex-row md:justify-center my-16">
         {
-          tallers.map((taller) => {
+          ultimsTallerets.map((taller) => {
             return (
               <Taller
                 title={taller.title}
@@ -108,29 +91,32 @@ const tallers = [
         }
       </div>
 
-      <div class="flex justify-center mt-6 mb-8">
-        <a class="c-button my-3" href="/tallerets"> Apunta't al següent!</a>
+      <div class="flex justify-center">
+        <a class="c-button" href="/tallers">Apunta't al següent!</a>
       </div>
     </section>
 
     <hr />
 
-    <section class="w-page md:max-w-[50ch] mx-auto">
-      <h3 class="text-2xl md:text-3xl pt-8 pb-4">tallerets a mida</h3>
-      <p class="mb-5">
-        Si vols que organitzi un talleret per a tu i els teus amics, per a la
-        teva empresa o per a un esdeveniment especial, escriu-me!
-      </p>
+    <section class="page-padding md:max-w-[100ch] mx-auto my-20">
+      <div class="my-12 flex gap-8 flex-wrap justify-between items-center">
+        <div class="lg:max-w-[50%]">
+          <h3 class="text-4xl md:text-5xl">tallerets a mida</h3>
+          <p class="text-lg my-6">
+            Si vols que organitzi un talleret per a tu i els teus amics, per a
+            la teva empresa o per a un esdeveniment especial, escriu-me!
+          </p>
+          <div class="flex">
+            <a class="c-button" href="/contacte">Contacta'm</a>
+          </div>
+        </div>
 
-      <div class="flex">
-        <a class="c-button mb-6" href="/contacte"> Contacta'm</a>
+        <img
+          class="bg-dark text-soft h-48 w-96 object-cover rounded-sm"
+          src="/img/tallerets-mida.png"
+          alt="[Il·lustració cuqui]"
+        />
       </div>
-
-      <img
-        class="bg-dark text-soft h-48 w-full object-cover mb-5 rounded-sm"
-        src="/img/tallerets-mida.png"
-        alt="[Il·lustració cuqui]"
-      />
     </section>
   </main>
 

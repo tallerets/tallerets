@@ -2,16 +2,18 @@
 const { title, desc, imgSrc, imgAlt } = Astro.props
 ---
 
-<div class="border p-3 md:max-w-80">
+<div
+  class="border p-4 md:w-80 odd:rotate-2 even:-rotate-2 hover:rotate-0 hover:border-red rounded"
+>
   <p class="uppercase pb-3">{title}</p>
-  <div class="w-100 bg-dark h-56 text-soft text-sm">
+  <div class="w-100 bg-dark h-56 text-soft text-sm rounded">
     <img
-      class="w-full h-full object-cover border border-dark"
+      class="w-full h-full object-cover border border-dark rounded"
       src={imgSrc}
       alt={imgAlt}
     />
   </div>
-  <div class="text-sm pt-3">
+  <div class="text pt-3">
     {desc}
   </div>
 </div>

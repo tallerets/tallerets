@@ -6,6 +6,7 @@ import NavLinks from '../components/NavLinks.astro'
 import MobileMenu from '../components/MobileMenu.astro'
 import Event from '../components/Event.astro'
 import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 
 const calendari = [
   {
@@ -36,20 +37,10 @@ const calendari = [
 ---
 
 <Layout title="tallerets: calendari">
-  <header
-    class="px-4 flex py-6 border-b absolute top-0 bg-soft text-dark w-full"
-  >
-    <a href="/" class="me-auto text-2xl italic">
-      <span>tallerets</span>
-    </a>
-    <nav class="flex justify-center">
-      <NavLinks className="hidden md:flex items-center gap-4 text-xl" />
-    </nav>
-    <MobileMenu className="md:hidden" />
-  </header>
+  <Header className="border-b bg-soft text-dark relative" />
 
   <main>
-    <section class="w-page md:max-w-[50ch] mx-auto pt-20">
+    <section class="page-padding md:max-w-[50ch] mx-auto pt-20">
       <h2 id="calendari" class="py-12 text-3xl md:text-4xl md:text-center">
         Calendari
       </h2>

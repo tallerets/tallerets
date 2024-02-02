@@ -7,12 +7,18 @@ const { className } = Astro.props
     <a href="/reserva">reserva</a>
   </li>
   <li>
-    <a href="/sobre-mi">sobre mi</a>
+    <a href="/#bio">sobre mi</a>
   </li>
   <li>
-    <a href="/tallerets">tallerets</a>
+    <a href="/tallers">tallerets</a>
   </li>
   <li>
-    <a href="/contacte">contacte</a>
+    <a href="/#contact">contacte</a>
   </li>
 </ul>
+
+<style>
+  a {
+    @apply hover:underline;
+  }
+</style>
