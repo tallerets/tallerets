@@ -2,135 +2,21 @@
 import Layout from '../layouts/Layout.astro'
 import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
-import { events, tallers } from '../content'
-import TallerPostcard from '../components/TallerPostcard.astro'
 import Contact from '../components/sections/Contact.astro'
-import { constants } from '../config'
-
-const ultimsTallerets = tallers.slice(0, 2)
+import AMida from '../components/sections/AMida.astro'
+import SeguentsTallers from '../components/sections/SeguentsTallers.astro'
+import Bio from '../components/sections/Bio.astro'
+import Hero from '../components/sections/Hero.astro'
 ---
 
 <Layout title="tallerets">
   <main>
-    <section class="relative h-screen overflow-hidden">
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="absolute z-1 w-auto min-w-full min-h-full max-w-none bg-soft"
-      >
-        <source src="vids/promo.mp4" type="video/mp4" />
-        <span class="text-soft">
-          Aqui hi ha un video d'alguns tallarets! Però sembla que el teu
-          navegador no el pot reproduir 😢
-        </span>
-      </video>
-      <Header className="text-dark absolute" />
-      <div
-        class="relative page-padding h-[100vh] bg-black flex flex-col items-start text-dark"
-      >
-        <h1 class="text-6xl sm:text-7xl lg:text-8xl mt-auto">
-          Una pausa<br />per crear
-        </h1>
-        <div class="flex justify-center">
-          <a href="#tallerets" class="c-button my-12 bg-soft">
-            Veure els tallerets</a
-          >
-        </div>
-        <div class="mb-16 flex justify-center min-w-full">
-          <a href="#bio">
-            <svg class="fill-soft" width="56" height="36">
-              <path
-                class="stroke-dark"
-                d="M55.5 1C44.866 13.5 13 14.4 1 1l28 33.5L55.5 1Z"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="bio" class="page-padding md:max-w-[70ch] mx-auto py-24">
-      <h2 class="text-4xl md:text-5xl md:text-center">
-        soc la Noor i organitzo tallers creatius 🍒
-      </h2>
-
-      <img
-        class="my-20 mx-auto"
-        src="/img/bio-noor.png"
-        alt="Fotos de la Noor"
-        class="w-full"
-      />
-      <p class="text-lg mb-3">
-        Com més connecto amb mi i amb els demés ha estat sempre a través de
-        l’art.
-      </p>
-      <p class="text-lg">
-        Amb tallerets vull transmetre i ensenyar que quan fem coses amb les
-        nostres mans ens sentim més presents i vius. Que per crear no cal
-        experiència ni cap habilitat especial, només ganes de passar una estona
-        amb tu mateixa.
-      </p>
-    </section>
-
+    <Hero />
+    <Bio />
     <hr />
-
-    <section id="tallerets" class="page-padding py-24">
-      <h3 class="text-4xl md:text-5xl md:text-center">següents tallerets</h3>
-
-      <div
-        class="flex flex-col gap-8 md:flex-row md:justify-center my-24 flex-wrap"
-      >
-        {
-          ultimsTallerets.map((taller) => {
-            const properaData =
-              events.find((e) => e.tallerId === taller.id)?.date ??
-              '[sense propera data]'
-            return (
-              <TallerPostcard
-                title={taller.title}
-                desc={taller.desc}
-                imgSrc={taller.imgSrc}
-                imgAlt={taller.imgAlt}
-                data={properaData}
-              />
-            )
-          })
-        }
-      </div>
-
-      <div class="flex justify-center gap-6 flex-wrap">
-        <a class="c-button" href="/tallers">tots els tallers!</a>
-        <a class="c-button" href="/reserva">calendari i reserves</a>
-      </div>
-    </section>
-
+    <SeguentsTallers />
     <hr />
-
-    <section class="page-padding md:max-w-[100ch] mx-auto my-20">
-      <div class="my-12 flex gap-8 flex-wrap justify-between items-center">
-        <div class="lg:max-w-[50%]">
-          <h3 class="text-4xl md:text-5xl">tallerets a mida</h3>
-          <p class="text-lg my-6">
-            Si vols que organitzi un talleret per a tu i els teus amics, per a
-            la teva empresa o per a un esdeveniment especial, escriu-me!
-          </p>
-          <div class="flex items-center gap-6">
-            <a class="c-button" href=`mailto:${constants.email}`>
-              <span class="text-xl">
-                {constants.email}
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <img
-          class="bg-dark text-soft h-48 w-96 object-cover rounded-sm"
-          src="/img/tallerets-mida.png"
-          alt="[Il·lustració cuqui]"
-        />
-      </div>
-    </section>
+    <AMida />
   </main>
 
   <hr />

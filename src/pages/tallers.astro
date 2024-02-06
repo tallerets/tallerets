@@ -32,7 +32,7 @@ import Reserves from '../components/sections/Reserves.astro'
             }
           </ul>
           <div class="flex mb-8">
-            <a class="c-button" href="/reserva">calendari</a>
+            <a class="c-button" href="/reserva">veure calendari</a>
           </div>
           <Reserves />
         </div>
@@ -40,9 +40,7 @@ import Reserves from '../components/sections/Reserves.astro'
       <ul class="page-padding flex flex-col gap-8 py-6 overflow-hidden">
         {
           tallers.map((taller) => {
-            const properaData =
-              events.find((e) => e.tallerId === taller.id)?.date ??
-              '[sense propera data]'
+            const event = events.find((e) => e.tallerId === taller.id)
             return (
               <>
                 <TallerPostcard
@@ -51,7 +49,8 @@ import Reserves from '../components/sections/Reserves.astro'
                   desc={taller.desc}
                   imgSrc={taller.imgSrc}
                   imgAlt={taller.imgAlt}
-                  data={properaData}
+                  data={event?.date ?? '[sense propera data]'}
+                  href={`/reserva#${event?.tallerId}${event?.date}`}
                 />
               </>
             )

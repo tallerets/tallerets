@@ -18,7 +18,7 @@ const { className } = Astro.props
 </ul>
 
 <style>
-  a:hover {
-    text-decoration: underline;
+  a {
+    @apply block border rounded-full px-5 py-1 bg-soft hover:-skew-y-3;
   }
 </style>

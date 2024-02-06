@@ -7,11 +7,12 @@ interface Props {
 }
 
 const { title } = Astro.props
-const htmlClass = import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
+const scrollClass =
+  import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
 ---
 
 <!doctype html>
-<html lang="en" class={htmlClass}>
+<html lang="en" class={`${scrollClass} bg-dark`}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -33,7 +34,7 @@ const htmlClass = import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
     @apply px-4 sm:px-6 md:px-8;
   }
   .c-button {
-    @apply border rounded-full text-center text-xl md:text-2xl px-4 py-2 hover:-skew-y-2;
+    @apply border rounded-full text-center text-xl md:text-2xl px-4 py-2 hover:-skew-y-3;
   }
   .text-border {
     --soft: #f9f9f9;

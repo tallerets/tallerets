@@ -18,23 +18,26 @@ import Reserves from '../components/sections/Reserves.astro'
       <aside class="page-padding">
         <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
           <h2 class="text-xl md:text-2xl mb-4">calendari</h2>
-          <p class="mb-4">
+          <p>
             Aquí tens els pròxims tallerets que estic organitzant. Si no hi ha
             cap data que t’interessi, pots reservar un talleret a mida per a tu
             i els teus.
           </p>
-          <div class="flex mb-8">
+          <div class="flex my-8">
             <a class="c-button" href="/tallers">llista de tallers</a>
           </div>
           <Reserves />
         </div>
       </aside>
-      <div class="max-w-[120ch]">
-        <ul class="page-padding flex flex-wrap gap-4 py-6 overflow-hidden">
+      <div class="max-w-[60rem]">
+        <ul
+          class="page-padding flex flex-wrap gap-4 py-6 overflow-hidden justify-center"
+        >
           {
             events.map((event) => {
               return (
                 <EventCard
+                  id={event.tallerId + event.date}
                   title={event.title}
                   date={event.date}
                   time={event.time}

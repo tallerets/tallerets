@@ -1,9 +1,10 @@
 ---
-const { id, title, desc, imgSrc, imgAlt, data } = Astro.props
+const { id, title, desc, imgSrc, imgAlt, data, href } = Astro.props
 ---
 
-<div
+<a
   id={id}
+  href={href}
   class="hover:cursor-pointer border bg-dark text-soft max-w-[40rem] min-h-[26rem] odd:rotate-1 even:-rotate-1 hover:rotate-0 rounded-md flex flex-col sm:flex-row"
 >
   <div class="p-8 flex flex-col">
@@ -11,7 +12,7 @@ const { id, title, desc, imgSrc, imgAlt, data } = Astro.props
     <div class="text py-5 mb-auto">
       {desc}
     </div>
-    <p>
+    <p class="text-xl">
       Propera data: {data}
     </p>
   </div>
@@ -24,7 +25,7 @@ const { id, title, desc, imgSrc, imgAlt, data } = Astro.props
       alt={imgAlt}
     />
   </div>
-</div>
+</a>
 
 <style>
   .postcard {

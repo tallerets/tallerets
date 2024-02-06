@@ -1,0 +1,41 @@
+---
+import Header from './Header.astro'
+---
+
+<section class="relative h-screen overflow-hidden">
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute z-1 w-auto min-w-full min-h-full max-w-none bg-soft"
+  >
+    <source src="vids/promo.mp4" type="video/mp4" />
+    <span class="text-soft">
+      Aqui hi ha un video d'alguns tallarets! Però sembla que el teu navegador
+      no el pot reproduir 😢
+    </span>
+  </video>
+  <Header className="text-dark absolute" />
+  <div
+    class="relative page-padding h-[100vh] bg-black flex flex-col items-start text-dark"
+  >
+    <h1 class="text-6xl sm:text-8xl lg:text-9xl mt-auto">
+      Una pausa<br />per crear
+    </h1>
+    <div class="flex justify-center">
+      <a href="#tallerets" class="c-button my-12 bg-soft">
+        Veure els tallerets</a
+      >
+    </div>
+    <div class="mb-8 sm:mb-16 flex justify-center min-w-full">
+      <a href="#bio">
+        <svg class="fill-soft" width="56" height="36">
+          <path
+            class="stroke-dark"
+            d="M55.5 1C44.866 13.5 13 14.4 1 1l28 33.5L55.5 1Z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
