@@ -1,9 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Footer from '../components/Footer.astro'
-import Header from '../components/Header.astro'
+import Footer from '../components/sections/Footer.astro'
+import Header from '../components/sections/Header.astro'
 import { events, tallers } from '../content'
-import TallerCard from '../components/TallerCard.astro'
 import TallerPostcard from '../components/TallerPostcard.astro'
 
 const ultimsTallerets = tallers.slice(0, 2)
@@ -51,7 +50,7 @@ const ultimsTallerets = tallers.slice(0, 2)
 
     <section id="bio" class="page-padding md:max-w-[70ch] mx-auto py-24">
       <h2 class="text-4xl md:text-5xl md:text-center">
-        Soc la Noor i organitzo tallers creatius 🍒
+        soc la Noor i organitzo tallers creatius 🍒
       </h2>
 
       <img
@@ -75,7 +74,7 @@ const ultimsTallerets = tallers.slice(0, 2)
     <hr />
 
     <section id="tallerets" class="page-padding py-24">
-      <h3 class="text-4xl md:text-5xl md:text-center">Seguents tallerets</h3>
+      <h3 class="text-4xl md:text-5xl md:text-center">següents tallerets</h3>
 
       <div
         class="flex flex-col gap-8 md:flex-row md:justify-center my-24 flex-wrap"
@@ -99,8 +98,8 @@ const ultimsTallerets = tallers.slice(0, 2)
       </div>
 
       <div class="flex justify-center gap-6 flex-wrap">
-        <a class="c-button" href="/tallers">Tots els tallers!</a>
-        <a class="c-button" href="/reserva">Calendari</a>
+        <a class="c-button" href="/tallers">tots els tallers!</a>
+        <a class="c-button" href="/reserva">calendari</a>
       </div>
     </section>
 
@@ -115,7 +114,7 @@ const ultimsTallerets = tallers.slice(0, 2)
             la teva empresa o per a un esdeveniment especial, escriu-me!
           </p>
           <div class="flex">
-            <a class="c-button" href="/contacte">Contacta'm</a>
+            <a class="c-button" href="/contacte">contacta'm</a>
           </div>
         </div>
 
