@@ -4,6 +4,8 @@ import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
 import { events, tallers } from '../content'
 import TallerPostcard from '../components/TallerPostcard.astro'
+import Contact from '../components/sections/Contact.astro'
+import { constants } from '../config'
 
 const ultimsTallerets = tallers.slice(0, 2)
 ---
@@ -99,7 +101,7 @@ const ultimsTallerets = tallers.slice(0, 2)
 
       <div class="flex justify-center gap-6 flex-wrap">
         <a class="c-button" href="/tallers">tots els tallers!</a>
-        <a class="c-button" href="/reserva">calendari</a>
+        <a class="c-button" href="/reserva">calendari i reserves</a>
       </div>
     </section>
 
@@ -113,8 +115,12 @@ const ultimsTallerets = tallers.slice(0, 2)
             Si vols que organitzi un talleret per a tu i els teus amics, per a
             la teva empresa o per a un esdeveniment especial, escriu-me!
           </p>
-          <div class="flex">
-            <a class="c-button" href="/contacte">contacta'm</a>
+          <div class="flex items-center gap-6">
+            <a class="c-button" href=`mailto:${constants.email}`>
+              <span class="text-xl">
+                {constants.email}
+              </span>
+            </a>
           </div>
         </div>
 
@@ -128,6 +134,6 @@ const ultimsTallerets = tallers.slice(0, 2)
   </main>
 
   <hr />
-
+  <Contact />
   <Footer />
 </Layout>

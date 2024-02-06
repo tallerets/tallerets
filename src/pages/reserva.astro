@@ -5,6 +5,8 @@ import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
 import { events, tallers } from '../content'
 import EventCard from '../components/EventCard.astro'
+import Contact from '../components/sections/Contact.astro'
+import Reserves from '../components/sections/Reserves.astro'
 ---
 
 <Layout title="tallerets: calendari">
@@ -16,27 +18,15 @@ import EventCard from '../components/EventCard.astro'
       <aside class="page-padding">
         <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
           <h2 class="text-xl md:text-2xl mb-4">calendari</h2>
-          <p class="mb-8">
+          <p class="mb-4">
             Aquí tens els pròxims tallerets que estic organitzant. Si no hi ha
             cap data que t’interessi, pots reservar un talleret a mida per a tu
             i els teus.
           </p>
-          <h3 class="text-xl md:text-2xl mb-4">reserves</h3>
-          <p class="mb-8">
-            Envia'm un email a
-            <a class="underline" href={`mailto:${constants.email}`}>
-              {constants.email}
-            </a>
-            amb el talleret que vols fer i la data. Et respondré amb la informació
-            per fer el pagament i confirmar la teva plaça.
-          </p>
-
-          <h4 class="text-xl md:text-2xl mb-4">cancel·lacions</h4>
-          <p>
-            Si has de cancel·lar la teva plaça, avisa'm amb un mínim de 48h
-            d’antelació i et retornaré el 100% del pagament. Si avises amb menys
-            de 48h d’antelació, no es retorna el pagament.
-          </p>
+          <div class="flex mb-8">
+            <a class="c-button" href="/tallers">llista de tallers</a>
+          </div>
+          <Reserves />
         </div>
       </aside>
       <div class="max-w-[120ch]">
@@ -58,9 +48,9 @@ import EventCard from '../components/EventCard.astro'
         </ul>
       </div>
     </section>
-
-    <hr />
-
-    <Footer />
   </main>
+
+  <hr />
+  <Contact />
+  <Footer />
 </Layout>

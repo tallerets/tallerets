@@ -4,7 +4,7 @@ const { id, title, desc, imgSrc, imgAlt, data } = Astro.props
 
 <div
   id={id}
-  class="border max-w-[40rem] min-h-[26rem] odd:rotate-1 even:-rotate-1 hover:rotate-0 hover:border-red rounded-md flex flex-col sm:flex-row"
+  class="hover:cursor-pointer border bg-dark text-soft max-w-[40rem] min-h-[26rem] odd:rotate-1 even:-rotate-1 hover:rotate-0 rounded-md flex flex-col sm:flex-row"
 >
   <div class="p-8 flex flex-col">
     <p class="uppercase text-xl">{title}</p>
@@ -19,7 +19,7 @@ const { id, title, desc, imgSrc, imgAlt, data } = Astro.props
     class="min-w-[40%] h-[14rem] sm:h-[26rem] bg-dark text-soft rounded-b sm:rounded-e sm:rounded-bl-none"
   >
     <img
-      class="w-full h-full border-dark object-cover rounded-b border-t sm:rounded-e sm:rounded-bl-none sm:border-s sm:border-t-0"
+      class="w-full h-full border-soft object-cover rounded-b border-t sm:rounded-e sm:rounded-bl-none sm:border-s sm:border-t-0"
       src={imgSrc}
       alt={imgAlt}
     />
