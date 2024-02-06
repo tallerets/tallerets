@@ -2,59 +2,72 @@
 import Layout from '../layouts/Layout.astro'
 import { constants } from '../config'
 import Footer from '../components/Footer.astro'
-import Taller from '../components/Taller.astro'
 import Header from '../components/Header.astro'
-import { tallers } from '../content'
+import { tallers, events } from '../content'
+import TallerPostcard from '../components/TallerPostcard.astro'
 ---
 
-<Layout title="tallerets: calendari">
+<Layout title="tallerets: llista">
   <Header className="border-b bg-soft text-dark relative" />
-
   <main>
-    <section class="page-padding mx-auto pt-16">
-      <h2 id="calendari" class="text-4xl md:text-5xl mb-16">
-        Tots els tallerets!
-      </h2>
+    <section
+      class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-6"
+    >
+      <aside class="page-padding">
+        <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
+          <h2 class="text-xl md:text-2xl mb-4">tots els tallerets</h2>
+          <ul class="mb-8">
+            {
+              tallers.map((taller) => {
+                return (
+                  <li class="mb-1 list-decimal ms-4">
+                    <a href={`#${taller.id}`} class="hover:underline">
+                      {taller.title}
+                    </a>
+                  </li>
+                )
+              })
+            }
+          </ul>
+          <h3 class="text-xl md:text-2xl mb-4">reserves</h3>
+          <p class="mb-8">
+            Envia'm un email a
+            <a class="underline" href={`mailto:${constants.email}`}>
+              {constants.email}
+            </a>
+            amb el talleret que vols fer i la data. Et respondré amb la informació
+            per fer el pagament i confirmar la teva plaça.
+          </p>
 
-      <div class="flex flex-col gap-4 md:flex-row">
+          <h4 class="text-xl md:text-2xl mb-4">cancel·lacions</h4>
+          <p>
+            Si has de cancel·lar la teva plaça, avisa'm amb un mínim de 48h
+            d’antelació i et retornaré el 100% del pagament. Si avises amb menys
+            de 48h d’antelació, no es retorna el pagament.
+          </p>
+        </div>
+      </aside>
+      <ul class="page-padding flex flex-col gap-8 py-6 overflow-hidden">
         {
           tallers.map((taller) => {
+            const properaData =
+              events.find((e) => e.tallerId === taller.id)?.date ??
+              '[sense propera data]'
             return (
-              <Taller
-                title={taller.title}
-                desc={taller.desc}
-                imgSrc={taller.imgSrc}
-                imgAlt={taller.imgAlt}
-              />
+              <>
+                <TallerPostcard
+                  id={taller.id}
+                  title={taller.title}
+                  desc={taller.desc}
+                  imgSrc={taller.imgSrc}
+                  imgAlt={taller.imgAlt}
+                  data={properaData}
+                />
+              </>
             )
           })
         }
-      </div>
-    </section>
-
-    <section class="page-padding md:max-w-[50ch] mx-auto pt-20">
-      <h3 class="pb-8 my-2 text-2xl md:text-3xl md:text-center">
-        Com reservar?
-      </h3>
-
-      <p>
-        Envia'm un email a
-        <a class="underline" href={`mailto:${constants.email}`}>
-          {constants.email}
-        </a>
-        amb el talleret que vols fer i la data. Et respondré amb la informació per
-        fer el pagament i confirmar la teva plaça.
-      </p>
-
-      <h4 class="py-8 my-2 text-2xl md:text-3xl md:text-center">
-        Cancelacions
-      </h4>
-
-      <p class="pb-12">
-        Si has de cancel·lar la teva plaça, avisa'm amb un mínim de 48h
-        d’antelació i et retornaré el 100% del pagament. Si avises amb menys de
-        48h d’antelació, no es retorna el pagament.
-      </p>
+      </ul>
     </section>
 
     <hr />

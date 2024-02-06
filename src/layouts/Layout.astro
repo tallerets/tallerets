@@ -7,13 +7,12 @@ interface Props {
 }
 
 const { title } = Astro.props
+// const htmlClass = import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
+const htmlClass = 'scroll-smooth'
 ---
 
 <!doctype html>
-<html
-  lang="en"
-  class={import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''}
->
+<html lang="en" class={htmlClass}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />

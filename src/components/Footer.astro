@@ -34,7 +34,7 @@ import { constants } from '../config'
 <hr />
 
 <footer class="page-padding mx-auto bg-dark text-soft">
-  <nav class="py-8 flex flex-col text-sm">
+  <nav class="py-8">
     <ul>
       <li>
         <a href="/reserva">reserva</a>
@@ -57,23 +57,18 @@ import { constants } from '../config'
     </ul>
   </nav>
 </footer>
-<div
-  class="page-padding bg-dark border-t border-soft text-soft text-xs py-4 flex gap-4 justify-between"
->
-  <p>
-    disseny i desenvolupament web per
-    <a class="underline" href={constants.authorLink}> @aymyo</a>
-  </p>
-  <p>Barcelona, 2023</p>
-</div>
+<hr class="text-soft" />
+<p class="page-padding bg-dark text-soft text-xs py-4">
+  disseny i desenvolupament web per
+  <a class="underline" href={constants.authorLink}> @aymyo</a>
+  -- Barcelona, 2024
+</p>
 
 <style>
   li {
     margin: 0.5rem 0;
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+  }
+  a:hover {
+    text-decoration: underline;
   }
 </style>

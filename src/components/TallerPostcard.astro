@@ -1,0 +1,35 @@
+---
+const { id, title, desc, imgSrc, imgAlt, data } = Astro.props
+---
+
+<div
+  id={id}
+  class="border max-w-[40rem] min-h-[26rem] odd:rotate-1 even:-rotate-1 hover:rotate-0 hover:border-red rounded-md flex flex-col sm:flex-row"
+>
+  <div class="p-8 flex flex-col">
+    <p class="uppercase text-xl">{title}</p>
+    <div class="text py-5 mb-auto">
+      {desc}
+    </div>
+    <p>
+      Propera data: {data}
+    </p>
+  </div>
+  <div
+    class="min-w-[40%] h-[14rem] sm:h-[26rem] bg-dark text-soft rounded-b sm:rounded-e"
+  >
+    <img
+      class="w-full h-full border-dark object-cover rounded-b border-t sm:rounded-e sm:rounded-b-none sm:border-s sm:border-t-0"
+      src={imgSrc}
+      alt={imgAlt}
+    />
+  </div>
+</div>
+
+<style>
+  .postcard {
+    transition:
+      transform 0.3s,
+      border-color 0.3s;
+  }
+</style>

@@ -1,0 +1,15 @@
+---
+const { title, slots, date, location, price, link, time } = Astro.props
+---
+
+<div class="border rounded w-80">
+  <header class="bg-dark text-soft flex justify-center p-2 border-b font-bold">
+    <p>{date} — {time}</p>
+  </header>
+  <div class="p-6">
+    <h6 class="uppercase pb-3">{title}</h6>
+    <strong class="text-sm pb-3 block">{slots} places disponibles</strong>
+    <small>📍 {location}</small>
+    <p class="text-xl mt-2">{price}€</p>
+  </div>
+</div>

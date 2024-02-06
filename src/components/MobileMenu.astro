@@ -7,24 +7,32 @@ const { className } = Astro.props
   <input class="hidden" type="checkbox" id="nav-menu" />
   <label
     for="nav-menu"
-    id="menu-button"
-    class="text-3xl cursor-pointer z-20 top-6 right-4">➕</label
+    id="open-button"
+    class="text-3xl cursor-pointer z-20 top-6 right-4"
   >
+    <img src="/icons/menu.svg" width="32" />
+  </label>
+  <label
+    for="nav-menu"
+    id="close-button"
+    class="hidden text-3xl cursor-pointer z-20 top-6 right-4"
+  >
+    <img src="/icons/close.svg" width="32" />
+  </label>
   <nav id="overlay" class="c-menu">
-    <NavLinks className="text-5xl flex flex-col gap-8" />
+    <NavLinks className="text-5xl flex flex-col gap-8 text-soft" />
   </nav>
 
   <style>
     input[type='checkbox']:checked ~ #overlay {
       display: flex;
     }
-    input[type='checkbox']:checked ~ #menu-button {
-      rotate: 45deg;
+    input[type='checkbox']:checked ~ #close-button {
       position: fixed;
+      display: block;
     }
-    #menu-button {
-      transition: rotate 0.2s ease-in-out;
-      position: absolute;
+    input[type='checkbox']:checked ~ #open-button {
+      display: none;
     }
     .c-menu {
       display: none;
@@ -38,7 +46,7 @@ const { className } = Astro.props
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: rgba(0, 0, 0, 1);
     }
   </style>
 </div>
