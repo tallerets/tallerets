@@ -1,20 +1,26 @@
 ---
-const { id, title, slots, date, location, price, link, time } = Astro.props
+const { id, title, slots, date, location, price, time } = Astro.props
 ---
 
-<div id={id} class="border rounded w-72 flex flex-col">
+<a
+  id={id}
+  href={`#${id}`}
+  class="border rounded w-60 flex flex-col odd:-rotate-1 even:rotate-1 hover:rotate-0 target:outline target:outline-red target:outline-2"
+>
   <header class="bg-dark text-soft flex justify-center p-2 border-b font-bold">
-    <p>{date} — {time}</p>
+    <p class="font-mono">{date} — {time}</p>
   </header>
   <div class="px-4 py-3 flex flex-col">
     <h6 class="uppercase pb-3 text-wrap">{title}</h6>
+    <small>{location}</small>
+  </div>
 
-    <small>({location})</small>
-  </div>
   <div class="px-4 pb-3 mt-auto flex items-center">
-    <p class="text-xl">{price}€</p>
-    <small class="text-sm block ms-auto italic"
-      >{slots} places disponibles</small
-    >
+    <p class="font-mono">{price}€/pax</p>
+    <small class="text-sm block ms-auto italic">
+      {slots === 'some' && 'Places lliures'}
+      {slots === 'none' && 'Complet'}
+      {slots === 'last' && 'Ultimes places!'}
+    </small>
   </div>
-</div>
+</a>

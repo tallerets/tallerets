@@ -1,9 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { constants } from '../config'
 import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
-import { tallers, events } from '../content'
+import { tallersArray, formattedEventArray } from '../content'
 import TallerPostcard from '../components/TallerPostcard.astro'
 import Contact from '../components/sections/Contact.astro'
 import Reserves from '../components/sections/Reserves.astro'
@@ -20,7 +19,7 @@ import Reserves from '../components/sections/Reserves.astro'
           <h2 class="text-xl md:text-2xl mb-4">tots els tallerets</h2>
           <ul class="mb-8">
             {
-              tallers.map((taller) => {
+              tallersArray.map((taller) => {
                 return (
                   <li class="mb-1 list-decimal ms-4">
                     <a href={`#${taller.id}`} class="hover:underline">
@@ -39,8 +38,16 @@ import Reserves from '../components/sections/Reserves.astro'
       </aside>
       <ul class="page-padding flex flex-col gap-8 py-6 overflow-hidden">
         {
-          tallers.map((taller) => {
-            const event = events.find((e) => e.tallerId === taller.id)
+          tallersArray.map((taller) => {
+            const relatedEvent = formattedEventArray.find(
+              (e) => e.tallerId === taller.id,
+            )
+            const dateString =
+              relatedEvent?.date.toLocaleString('ca-ES', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              }) ?? 'Properament'
             return (
               <>
                 <TallerPostcard
@@ -49,8 +56,8 @@ import Reserves from '../components/sections/Reserves.astro'
                   desc={taller.desc}
                   imgSrc={taller.imgSrc}
                   imgAlt={taller.imgAlt}
-                  data={event?.date ?? '[sense propera data]'}
-                  href={`/reserva#${event?.tallerId}${event?.date}`}
+                  data={dateString}
+                  href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
                 />
               </>
             )

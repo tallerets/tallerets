@@ -1,106 +1,157 @@
-export const tallers = [
-  {
-    id: 'bossa',
+type TallerId = string
+interface Taller {
+  title: string
+  desc: string
+  imgAlt: string
+  imgSrc: string
+}
+
+export const tallers: Record<TallerId, Taller> = {
+  bossa: {
     title: 'Pinta una bossa de tela',
     desc: 'Dues hores per connectar mentre expresses la teva creativitat pintant una bossa de tela amb pintura acrílica, ja sigui una nova, o donant-li una nova vida a aquella promocional que utilitzes per la compra.',
-    imgSrc: '/img/t-bossa.png',
     imgAlt:
       'Fotografia de dues participants del taller pintant bosses de tela amb pintura acrílica',
+    imgSrc: '/img/t-bossa.png',
   },
-  {
-    id: 'mirallet',
+  mirallet: {
     title: 'Pinta un mirallet',
     desc: 'Podràs pintar un mirallet de 30x30 per penjar-lo i mirar-te cada matí i amb un toc de màgia!',
-    imgSrc: '/img/t-bossa-2.png',
     imgAlt: "Fotografia d'una participant del taller pintant un mirallet",
+    imgSrc: '/img/t-bossa-2.png',
   },
-  {
-    id: 'potet',
+  potet: {
     title: 'Pinta un potet de vidre',
     desc: 'Sembla que mai tenim prou pots de vidre acumulat a la vidra. Pinta’l per posar-hi espelmes, flors o llàpisos... Però sobretot, regala’t dues hores de tranquilitat i creativitat.',
-    imgSrc: '/img/t-potet.png',
     imgAlt: 'Cartell de taller de pintar pots de vidre',
+    imgSrc: '/img/t-potet.png',
   },
-  {
-    id: 'calendari',
+  calendari: {
     title: 'Pinta un calendari de cuina',
     desc: 'Pinta un calendari de cuina amb pintura acrílica. El calendari és de paper i el pots penjar a la nevera. Pots triar entre diferents dissenys o fer el teu propi disseny.',
-    imgSrc: '/img/t-cuina.png',
     imgAlt: 'Imatge del taller de pintar calendari de cuina',
+    imgSrc: '/img/t-cuina.png',
   },
-]
+}
 
-export const events = [
+export const tallersArray = Object.entries(tallers).map(([id, taller]) => ({
+  id,
+  ...taller,
+}))
+
+interface Event {
+  tallerId: string
+  price: number
+  date: {
+    day: number
+    month: number
+    year: number
+  }
+  time: string
+  location: string
+  availability: 'none' | 'some' | 'last'
+}
+
+export const events: Event[] = [
   {
     tallerId: 'calendari',
-    title: 'Pinta el calendari de fruita de temporada',
     price: 14,
-    date: '18-02-2024',
+    date: {
+      day: 4,
+      month: 2,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'last',
   },
   {
     tallerId: 'bossa',
-    title: 'Pinta una bossa de tela',
     price: 14,
-    date: '25-02-2024',
+    date: {
+      day: 25,
+      month: 2,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'some',
   },
   {
     tallerId: 'mirallet',
-    title: 'Pinta un mirallet',
     price: 14,
-    date: '04-03-2024',
+    date: {
+      day: 4,
+      month: 3,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'some',
   },
   {
     tallerId: 'potet',
-    title: 'Pinta un potet de vidre',
     price: 14,
-    date: '11-03-2024',
+    date: {
+      day: 11,
+      month: 3,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'none',
   },
   {
-    id: 'calendari',
-    title: 'Pinta un calendari de cuina',
+    tallerId: 'calendari',
     price: 14,
-    date: '18-03-2024',
+    date: {
+      day: 18,
+      month: 3,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'last',
   },
   {
-    id: 'bossa',
-    title: 'Pinta una bossa de tela',
+    tallerId: 'bossa',
     price: 14,
-    date: '25-03-2024',
+    date: {
+      day: 25,
+      month: 3,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'some',
   },
   {
-    id: 'mirallet',
-    title: 'Pinta un mirallet',
+    tallerId: 'mirallet',
     price: 14,
-    date: '01-04-2024',
+    date: {
+      day: 1,
+      month: 4,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'some',
   },
   {
-    id: 'potet',
-    title: 'Pinta un potet de vidre',
+    tallerId: 'potet',
     price: 14,
-    date: '08-04-2024',
+    date: {
+      day: 8,
+      month: 4,
+      year: 2024,
+    },
     time: '19:00',
     location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    slots: '10',
+    availability: 'some',
   },
 ]
+
+export const formattedEventArray = events.map((event) => ({
+  ...event,
+  date: new Date(event.date.year, event.date.month - 1, event.date.day),
+}))
