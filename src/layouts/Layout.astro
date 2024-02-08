@@ -1,7 +1,7 @@
 ---
 import Mantainance from '../components/sections/Mantainance.astro'
-import { config, constants } from '../config'
-
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { config } from '../config'
 interface Props {
   title: string
 }
@@ -25,6 +25,7 @@ const scrollClass =
     <title>{title}</title>
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">
+    <SpeedInsights />
     {config.maintenance ? <Mantainance /> : <slot />}
   </body>
 </html>
