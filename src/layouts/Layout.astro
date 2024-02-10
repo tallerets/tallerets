@@ -1,21 +1,28 @@
 ---
 import Mantainance from '../components/sections/Mantainance.astro'
 import { config } from '../config'
+
 interface Props {
   title: string
+  description?: string // Maximum length 150 characters
 }
 
-const { title } = Astro.props
+const { title, description } = Astro.props
 const scrollClass =
   import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
+const defaultDescription =
+  'Web de tallerets. Tallers creatius per desconectar a Barcelona'
 ---
 
 <!doctype html>
-<html lang="en" class={`${scrollClass} bg-dark`}>
+<html lang="ca" dir="ltr" class={`${scrollClass} bg-dark`}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description ?? defaultDescription} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>"
