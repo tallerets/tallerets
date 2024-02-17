@@ -6,6 +6,9 @@ import { tallersArray, formattedEventArray } from '../content'
 import TallerPostcard from '../components/TallerPostcard.astro'
 import Contact from '../components/sections/Contact.astro'
 import Reserves from '../components/sections/Reserves.astro'
+import { constants } from '../config'
+
+const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5BTITOL%5D&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20%5BNOM%20I%20COGNOMS%5D%20per%20%5BNUMERO%20DE%20PLACES%5D%20places%20al%20talleret%20%5BTITOL%5D%20del%20dia%20%5BDIA%5D%20a%20les%20%5BHORA%5D%20a%20%5BESPAI%5D.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
 ---
 
 <Layout title="tallerets: llista">
@@ -38,7 +41,6 @@ import Reserves from '../components/sections/Reserves.astro'
           <div class="flex mb-8">
             <a class="c-button" href="/reserva">veure calendari</a>
           </div>
-          <Reserves />
         </div>
       </aside>
       <ul class="page-padding flex flex-col gap-8 py-6 overflow-hidden">
