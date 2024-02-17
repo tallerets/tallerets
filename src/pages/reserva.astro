@@ -6,6 +6,7 @@ import { events, tallers, formattedEventArray } from '../content'
 import EventCard from '../components/EventCard.astro'
 import Contact from '../components/sections/Contact.astro'
 import Reserves from '../components/sections/Reserves.astro'
+import { constants } from '../config'
 
 const eventMonths = events.map((event) => {
   const { day, month, year } = event.date
@@ -24,6 +25,14 @@ const weekdays = [
   'Divendres',
   'Dissabte',
 ]
+
+const availabilityMap = {
+  some: 'Places lliures',
+  none: 'Complet',
+  last: 'Ultimes places!',
+}
+
+const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5BTITOL%5D&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20%5BNOM%20I%20COGNOMS%5D%20per%20%5BNUMERO%20DE%20PLACES%5D%20places%20al%20talleret%20%5BTITOL%5D%20del%20dia%20%5BDIA%5D%20a%20les%20%5BHORA%5D%20a%20%5BESPAI%5D.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
 ---
 
 <Layout title="tallerets: calendari">
@@ -43,7 +52,10 @@ const weekdays = [
           <div class="flex my-8">
             <a class="c-button" href="/tallers">llista de tallers</a>
           </div>
-          <Reserves />
+          <h2 class="text-xl md:text-3xl mb-4">com reservar?</h2>
+          <div class="border rounded p-3">
+            <Reserves mailto={mailTo} />
+          </div>
         </div>
       </aside>
       <div class="max-w-[60rem]">
@@ -74,14 +86,19 @@ const weekdays = [
                           day: 'numeric',
                         })
 
+                      const title =
+                        event.customTitle ?? tallers[event.tallerId]?.title
+                      const availability = availabilityMap[event.availability]
+
                       return (
                         <EventCard
                           id={id}
-                          title={tallers[event.tallerId].title}
+                          tallerId={event.tallerId}
+                          title={title}
                           date={dateString}
                           time={event.time}
-                          price={event.price}
-                          slots={event.availability}
+                          price={event.price + '€/pax'}
+                          slots={availability}
                           location={event.location}
                         />
                       )
@@ -91,6 +108,22 @@ const weekdays = [
             )
           })
         }
+
+        <h2 class="text-2xl md:text-4xl mb-4 text-center mt-8">
+          trobem la data adequada!
+        </h2>
+        <ul
+          class="page-padding flex flex-wrap gap-4 py-6 overflow-hidden justify-center text-red"
+        >
+          <EventCard
+            id="taller-a-mida"
+            title="Taller a mida"
+            date="Dia i hora"
+            time="🌸"
+            price="Preu variable"
+            location="Preu i localització a convenir. Entre 4 i 16 persones. Contacta'm!"
+          />
+        </ul>
       </div>
     </section>
   </main>
@@ -99,3 +132,11 @@ const weekdays = [
   <Contact />
   <Footer />
 </Layout>
+
+<script>
+  // on hash change
+
+  const hash = decodeURI(window.location.hash).substring(1)
+  const dialog = document.getElementById(hash) as HTMLDialogElement
+  dialog?.showModal()
+</script>

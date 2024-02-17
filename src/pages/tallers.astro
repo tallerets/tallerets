@@ -29,6 +29,11 @@ import Reserves from '../components/sections/Reserves.astro'
                 )
               })
             }
+            <li class="mb-1 list-decimal ms-4">
+              <a href="#taller-a-mida" class="hover:underline">
+                Tens alguna idea? Tallers a mida!
+              </a>
+            </li>
           </ul>
           <div class="flex mb-8">
             <a class="c-button" href="/reserva">veure calendari</a>
@@ -61,6 +66,15 @@ import Reserves from '../components/sections/Reserves.astro'
             )
           })
         }
+        <TallerPostcard
+          id="taller-a-mida"
+          title="Tens alguna idea?"
+          desc="Envia’m un email a latallerets@gmail.com. Per fer-ho més fàcil, pots clicar la tarjeta del taller que vols i es copiarà al teu porta-retalls tota la informació del taller. Pots enganxar-ho al email o indicar-me en un missatge quin taller vols!"
+          imgSrc="/icons/potets-gran.svg"
+          imgAlt="Ilustració de dos potets amb pinzells"
+          data="A convenir!"
+          href="/reserva#taller-a-mida"
+        />
       </ul>
     </section>
   </main>

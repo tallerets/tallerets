@@ -31,17 +31,15 @@ const nextAvailableTallers = formattedEventArray
             day: 'numeric',
           }) ?? 'Properament'
         return (
-          <>
-            <TallerPostcard
-              id={taller.id}
-              title={taller.title}
-              desc={taller.desc}
-              imgSrc={taller.imgSrc}
-              imgAlt={taller.imgAlt}
-              data={dateString}
-              href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
-            />
-          </>
+          <TallerPostcard
+            id={taller.id}
+            title={taller.title}
+            desc={taller.desc}
+            imgSrc={taller.imgSrc}
+            imgAlt={taller.imgAlt}
+            data={dateString}
+            href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
+          />
         )
       })
     }

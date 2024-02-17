@@ -1,26 +1,39 @@
 ---
+interface Props {
+  mailto: string
+}
+
+const { mailto } = Astro.props
 import { constants } from '../../config'
 ---
 
-<div class="border border-dark rounded p-2">
-  <h2 class="text-xl md:text-2xl mb-4">reserves</h2>
-  <p>
-    Envia'm un email a
-    <a class="underline" href={`mailto:${constants.email}`}>
-      {constants.email}
-    </a>
-    amb el talleret que vols fer i la data. Et respondré amb la informació per fer
-    el pagament i confirmar la teva plaça.
-  </p>
-  <small class="block mb-8 mt-2">
-    En enviar un email per reservar, acceptes la
-    <a class="underline" href="/privacy-policy"> política de privacitat</a>
-  </small>
+<ol class="list-decimal ps-5">
+  <li class="font-bold mb-3">
+    Envia'm un email amb els detalls del talleret, el numero de persones i el
+    teu nom i cognom.
+  </li>
 
-  <h2 class="text-xl md:text-2xl mb-4">cancel·lacions</h2>
-  <p>
-    Si has de cancel·lar la teva plaça, avisa'm amb un mínim de 48h d’antelació
-    i et retornaré el 100% del pagament. Si avises amb menys de 48h d’antelació,
-    no es retorna el pagament.
-  </p>
-</div>
+  <a
+    href={`mailto:${mailto}`}
+    class="inline-block border rounded-full px-2 py-1 hover:-rotate-3 my-2 hover:text-red hover:border-red"
+  >
+    {constants.email}
+  </a>
+
+  <li class="font-bold mt-3">
+    Rebràs un email de confirmació amb les instruccions per fer el pagament.
+  </li>
+
+  <li class="font-bold mt-3">
+    Un cop fet el pagament, les places quedaràn reservades 🎉
+  </li>
+</ol>
+
+<small class="block mt-4">
+  Consulta les condicions de <a
+    class="underline hover:text-red"
+    href="/termes-i-condicions">reserva i cancel·lació</a
+  >., i la <a class="underline hover:text-red" href="/privacy-policy">
+    política de privacitat
+  </a>.
+</small>

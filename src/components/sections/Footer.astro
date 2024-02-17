@@ -3,7 +3,7 @@ import { constants } from '../../config'
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">
-  <nav class="py-8">
+  <nav class="py-8 flex justify-between items-center">
     <ul>
       <li>
         <a href="/reserva">reserva</a>
@@ -17,18 +17,20 @@ import { constants } from '../../config'
       <li>
         <a href="/#contact">contacte</a>
       </li>
+    </ul>
+    <ul class="text-end">
       <li>
-        <a href={`mailto:${constants.email}`}>email</a>
+        <a href="/termes-i-condicions">termes i condicions dels tallers</a>
       </li>
       <li>
-        <a href="/privacy-policy">política de privacitat</a>
+        <a href="/privacy-policy">política de privacitat i cookies</a>
       </li>
     </ul>
   </nav>
 </footer>
 <hr class="text-soft" />
 <p class="page-padding bg-dark text-soft text-xs py-4">
-  Disseny i desenvolupament web per
+  disseny i desenvolupament web per
   <a class="underline" href={constants.authorLink}> @aymyo</a>
   ~ Barcelona, 2024
 </p>

@@ -2,17 +2,22 @@
 import { constants } from '../../config'
 ---
 
-<section class="page-padding flex items-center flex-wrap gap-6 py-8">
-  <h3 class="text-2xl md:text-3xl me-auto">
-    segueix-me a Instagram per saber-ne més o envia'm un email
+<section class="page-padding flex items-center flex-wrap gap-6 py-6">
+  <h3 class="text-3xl me-auto">
+    per més informació, segueix-me a instagram o envia'm un correu!
   </h3>
 
-  <div class="text-xl flex gap-8 items-center">
-    <div class="text-8xl">💌</div>
-    <div>
+  <div class="text-xl flex gap-6 items-center justify-around flex-wrap-reverse">
+    <img
+      width="112"
+      height="75"
+      class="w-28 text-sm text-center"
+      src="icons/carta.svg"
+      alt="il·lustració de una carteta amb un cor al mitg"
+    />
+    <div class="italic text-base md:text-xl">
       <p class="py-2">
-        <span>instagram:</span>
-        <a
+        instagram — <a
           class="underline p-2"
           href={`https://www.instagram.com/${constants.instagramId}`}
           target="_blank"
@@ -22,8 +27,7 @@ import { constants } from '../../config'
         </a>
       </p>
       <p class="py-2">
-        <span> email:</span>
-        <a class="underline p-2" href={`mailto:${constants.email}`}>
+        email — <a class="underline p-2" href={`mailto:${constants.email}`}>
           {constants.email}
         </a>
       </p>

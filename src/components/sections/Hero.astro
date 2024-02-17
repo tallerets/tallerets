@@ -3,30 +3,27 @@ import Header from './Header.astro'
 ---
 
 <section class="relative h-screen overflow-hidden">
-  <video
-    autoplay
-    loop
-    muted
-    playsinline
-    class="absolute z-1 w-auto min-w-full min-h-full max-w-none bg-soft"
-  >
-    <source src="vids/hero.mp4" type="video/mp4" />
-    <span class="text-soft">
-      Aqui hi ha un video d'alguns tallarets! Però sembla que el teu navegador
-      no el pot reproduir 😢
-    </span>
-  </video>
+  <div class="container">
+    <video autoplay loop muted playsinline class="video absolute z-1">
+      <source src="vids/hero.mp4" type="video/mp4" />
+      <span class="text-soft">
+        Aqui hi ha un video d'alguns tallarets! Però sembla que el teu navegador
+        no el pot reproduir 😢
+      </span>
+    </video>
+  </div>
   <Header className="text-dark absolute" />
   <div
     class="relative page-padding h-[100vh] bg-black flex flex-col items-start text-dark"
   >
-    <h1 class="text-6xl sm:text-8xl lg:text-9xl mt-auto">
+    <h1 class="text-7xl sm:text-8xl lg:text-[9rem] mt-auto mb-4">
       una pausa<br />per crear
     </h1>
-    <div class="flex justify-center">
-      <a href="#tallerets" class="c-button my-12 bg-soft">pròxims tallerets</a>
-    </div>
-    <div class="mb-8 sm:mb-16 flex justify-center min-w-full">
+
+    <div class="flex justify-end items-center w-full gap-4">
+      <a href="#tallerets" class="c-button my-10 bg-soft me-auto text-nowrap"
+        >pròxims tallerets</a
+      >
       <a href="#bio">
         <img
           width="48"
@@ -39,3 +36,19 @@ import Header from './Header.astro'
     </div>
   </div>
 </section>
+
+<style>
+  .container {
+    height: auto;
+    width: 100vw;
+    position: relative;
+  }
+
+  .video {
+    filter: contrast(1.4) opacity(0.7) blur(0.8px);
+    min-width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+  }
+</style>

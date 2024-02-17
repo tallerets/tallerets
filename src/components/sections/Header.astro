@@ -8,9 +8,19 @@ import NavLinks from '../_partials/NavLinks.astro'
 <header
   class={`${className} page-padding z-10 flex items-center py-5 top-0 w-full `}
 >
-  <a href="/" class="me-auto text-4xl md:text-5xl italic">tallerets</a>
+  <a href="/" class="me-auto text-4xl md:text-5xl italic">
+    <img
+      src="/icons/logo.svg"
+      alt="tallerets"
+      class="w-32 md:w-48 xl:w-64"
+      width="256"
+      height="69"
+    />
+  </a>
   <nav class="flex justify-center">
-    <NavLinks className="hidden md:flex items-center gap-4 text-base" />
+    <NavLinks
+      className="hidden md:flex items-center gap-4 text-base text-nowrap"
+    />
   </nav>
   <MobileMenu className="md:hidden" />
 </header>
