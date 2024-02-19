@@ -1,0 +1,51 @@
+---
+import NavLinks from './_partials/NavLinks.astro'
+const { className } = Astro.props
+---
+
+<div class={className}>
+  <input class="hidden" type="checkbox" id="nav-menu" />
+  <label
+    for="nav-menu"
+    id="open-button"
+    class="text-3xl cursor-pointer z-20 top-6 right-4"
+  >
+    <img src="/icons/menu.svg" width="32" height="32" alt="Open menu icon" />
+  </label>
+  <label
+    for="nav-menu"
+    id="close-button"
+    class="hidden text-3xl cursor-pointer z-20 top-6 right-4"
+  >
+    <img src="/icons/close.svg" width="32" height="32" alt="Close menu icon" />
+  </label>
+  <nav id="overlay" class="c-menu bg-dark">
+    <NavLinks className="text-5xl flex flex-col gap-8" />
+  </nav>
+
+  <style>
+    input[type='checkbox']:checked ~ #overlay {
+      display: flex;
+    }
+    input[type='checkbox']:checked ~ #close-button {
+      position: fixed;
+      display: block;
+    }
+    input[type='checkbox']:checked ~ #open-button {
+      display: none;
+    }
+    .c-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      gap: 3rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</div>

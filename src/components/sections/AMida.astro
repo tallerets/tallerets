@@ -1,0 +1,30 @@
+---
+import { constants } from '../../config'
+---
+
+<section id="contact" class="page-padding md:max-w-[100ch] mx-auto my-20">
+  <div class="my-12 flex gap-8 flex-wrap justify-between items-center">
+    <div class="lg:max-w-[50%]">
+      <h3 class="text-4xl md:text-5xl">tallerets a mida</h3>
+      <p class="text-lg my-6">
+        Si vols que organitzi un talleret per a tu i els teus amics, per a la
+        teva empresa o per a un esdeveniment especial, escriu-me!
+      </p>
+      <div class="flex items-center gap-6">
+        <a class="c-button" href=`mailto:${constants.email}`>
+          <span class="text-xl">
+            {constants.email}
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <img
+      width="256"
+      height="216"
+      class="text-dark w-64 object-cover rounded-sm"
+      src="/icons/mida.svg"
+      alt="Il·lustració de un pastís amb pinzells com a veles representant el fet de que un talleret a mida pot ser un perfecte regal"
+    />
+  </div>
+</section>

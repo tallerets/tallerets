@@ -1,131 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { config, constants } from '../config'
+import Footer from '../components/sections/Footer.astro'
+import Contact from '../components/sections/Contact.astro'
+import AMida from '../components/sections/AMida.astro'
+import Bio from '../components/sections/Bio.astro'
+import Hero from '../components/sections/Hero.astro'
+import ProximsTallerets from '../components/sections/ProximsTallerets.astro'
 ---
 
 <Layout title="tallerets">
-  {
-    config.maintenance ? (
-      <div class="maintenance p-4">
-        <h1 class="text-7xl">🚧</h1>
-        <h2 class="text-4xl mt-8">Estem fent obres a la web!</h2>
-        <h3 class="text-xl mt-8 max-w-[40ch]">
-          Si tens qualsevol dubte o vols informació sobre els tallers, pots
-          seguir-me a{' '}
-          <a
-            class="underline"
-            href="https://www.instagram.com/tallerets/"
-            target="_blank"
-          >
-            @tallerets
-          </a>
-          o escriure'm a{' '}
-          <a class="underline" href={`mailto:${constants.email}`}>
-            {constants.email}
-          </a>
-        </h3>
-      </div>
-    ) : (
-      <main>
-        <header>
-          <a href="/">
-            <span>tallerets</span>
-          </a>
-          <nav>
-            <a href="/reserva">reserva</a>
-            <a href="/sobre-mi">sobre mi</a>
-            <a href="/tallerets">tallerets</a>
-            <a href="/contacte">contacte</a>
-          </nav>
-        </header>
-        <section>
-          <h1>Pausa per crear</h1>
-          <a href="#ultims-tallerets">Veure tallerets</a>
-        </section>
-        <section>
-          <h2>Soc la Noor i organitzo tallers creatius 🍒</h2>
-          <p>
-            Com més conecto amb mi i amb els demés ha estat sempre a través de
-            l’art.
-          </p>
-          <p>
-            Amb tallerets vull transmetre i ensenyar que quan fem coses amb les
-            nostres mans ens sentim més presents i vius. I que per crear no cal
-            experiència, ni cap habilitat especial: només ganes de passar una
-            estona amb tu mateixa.
-          </p>
-        </section>
-        <hr />
-        <section>
-          <h3>Alguns dels últims tallerets</h3>
-          <div>
-            <p>Pintar una bossa de tela</p>
-            <img
-              src="/img/tallerets/bossa.webp"
-              alt="gent maca pintant les seves bosses de tela al taller"
-            />
-          </div>
-          <div>
-            <p>Pintar potets de vidre</p>
-            <img
-              src="/img/tallerets/potets.webp"
-              alt="gent maca pintant els seus potets de vidre al taller"
-            />
-          </div>
-          <div>
-            <p>Pintar un mirallet</p>
-            <img
-              src="/img/tallerets/mirallet.webp"
-              alt="gent maca pintant els seus mirallets al taller"
-            />
-          </div>
-          <a href="/tallerets"> Apunta't al proper taller</a>
-        </section>
-        <hr />
-        <section>
-          <h3>tallerets a mida</h3>
-          <p>
-            Si vols que organitzi un talleret per a tu i els teus amics, per a
-            la teva empresa o per a un esdeveniment especial, escriviu-me!
-          </p>
+  <main>
+    <Hero />
+    <Bio />
+    <hr />
+    <ProximsTallerets />
+    <hr />
+    <AMida />
+  </main>
 
-          <a href="/contacte">contacta'mac</a>
-        </section>
-        <hr />
-        <section>
-          <h3>Segueix-me a Instagram o enviam un email per saber-ne més</h3>
-          <a href="https://www.instagram.com/tallerets/" target="_blank">
-            @tallerets
-          </a>
-          <a href={`mailto:${constants.email}`}>{constants.email}</a>
-        </section>
-        <hr />
-        <footer>
-          <nav>
-            <a href="/reserva">reserva</a>
-            <a href="/sobre-mi">sobre mi</a>
-            <a href="/tallerets">tallerets</a>
-            <a href="/contacte">contacte</a>
-            <a href={`mailto:${constants.email}`}>email</a>
-            <a href="/politica-de-privacitat">política de privacitat</a>
-          </nav>
-        </footer>
-        <div>
-          disseny i desenvolupament web -{' '}
-          <a href="https://github.com/aymyo">@aymyo</a> - Barcelona, 2023
-        </div>
-      </main>
-    )
-  }
-
-  <style>
-    .maintenance {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 90vh;
-      text-align: center;
-    }
-  </style>
+  <hr />
+  <Contact />
+  <Footer />
 </Layout>

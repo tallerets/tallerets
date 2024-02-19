@@ -4,4 +4,6 @@ export const config = {
 
 export const constants = {
   email: 'latallerets@gmail.com',
+  instagramId: 'tallerets',
+  authorLink: 'https://github.com/aymyo',
 }

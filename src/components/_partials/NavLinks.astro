@@ -1,0 +1,24 @@
+---
+const { className } = Astro.props
+---
+
+<ul class={className}>
+  <li>
+    <a href="/reserva">reserva</a>
+  </li>
+  <li>
+    <a href="/#bio">sobre mi</a>
+  </li>
+  <li>
+    <a href="/tallers">tallerets</a>
+  </li>
+  <li>
+    <a href="/#contact">contacte</a>
+  </li>
+</ul>
+
+<style>
+  a {
+    @apply block border rounded-full px-5 py-1 bg-soft hover:-skew-y-3;
+  }
+</style>

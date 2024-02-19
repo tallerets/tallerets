@@ -1,0 +1,111 @@
+---
+const { id, tallerId, title, slots, date, month, location, price, time } =
+  Astro.props
+
+import { constants } from '../config'
+import { tallers } from '../content'
+import Reserves from './sections/Reserves.astro'
+
+const linkedTaller = tallers[tallerId]
+const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%22${title}%22&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20---%20per%20---%20places%20al%20talleret%20%22${title}%22%20del%20dia%20${date}%20a%20les%20${time}%20a%20${location}.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
+---
+
+<li
+  class="cursor-pointer border rounded w-60 target:outline odd:rotate-1 even:-rotate-1 hover:rotate-0 target:outline-red target:outline-2"
+>
+  <button
+    class="h-full flex flex-col"
+    onclick=`document.getElementById('${id}').showModal();window.location.hash = '#${id}'`
+  >
+    <header
+      class="bg-dark text-soft flex justify-center p-2 border-b font-bold w-full"
+    >
+      <p class="font-mono">{date} — {time}</p>
+    </header>
+    <div class="px-4 py-3 flex flex-col w-full">
+      <h3 class="uppercase pb-3 text-wrap">{title}</h3>
+      <small>{location}</small>
+    </div>
+
+    <div class="px-4 pb-3 mt-auto flex items-center w-full">
+      <p class="font-mono">{price}</p>
+      <small class="text-sm block ms-auto italic">
+        {slots}
+      </small>
+    </div>
+  </button>
+</li>
+
+<dialog
+  id={id}
+  class="bg-soft min-w-62 backdrop:bg-dark backdrop:bg-opacity-50 rounded border border-dark p-4"
+>
+  <div class="flex justify-between items-center mb-4 gap-2">
+    <h2 class="font-bold text-xl sm:text-2xl">
+      Reserva per el talleret '{title}'
+    </h2>
+    <form method="dialog">
+      <button
+        autofocus
+        class="p-2 rounded-full filter invert hover:invert-0 hover:bg-dark"
+      >
+        <img
+          src="/icons/close.svg"
+          class="min-w-6 w-6"
+          width="48"
+          height="48"
+        />
+      </button>
+    </form>
+  </div>
+
+  <div class="max-w-[40rem] flex gap-4">
+    <p>
+      {linkedTaller?.desc}
+    </p>
+  </div>
+
+  <button
+    id={`copy-${id}`}
+    class="flex gap-4 p-2 border rounded my-4 w-full text-start items-center hover:text-red transition-all duration-150 flex-wrap"
+  >
+    <div>
+      <p class="font-bold">Detalls</p>
+      <p class="italic">
+        {date} — {time}
+        <br />
+        {location}
+        <br />
+        {price}
+      </p>
+    </div>
+    <p class="ms-auto px-4 text-center text-sm underline text-red w-32">
+      clica per copiar <br /> els detalls
+    </p>
+  </button>
+
+  <div class="max-w-[40rem]">
+    <Reserves mailto={mailTo} />
+  </div>
+
+  <script define:vars={{ id, title, date, time, location }}>
+    const mailBody = `Talleret '${title}' del dia ${date} a les ${time} a ${location}.`
+
+    const copyButton = document.getElementById(`copy-${id}`)
+    copyButton.addEventListener('click', () => {
+      const text = copyButton.textContent
+      navigator.clipboard.writeText(mailBody)
+      copyButton.lastElementChild.textContent = 'copiat!'
+      setTimeout(() => {
+        copyButton.lastElementChild.textContent = 'clica per copiar els detalls'
+      }, 2000)
+    })
+  </script>
+
+  <style>
+    dialog {
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+  </style>
+</dialog>
