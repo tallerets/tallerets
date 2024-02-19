@@ -1,5 +1,5 @@
 export const config = {
-  maintenance: false,
+  maintenance: true,
 }
 
 export const constants = {
