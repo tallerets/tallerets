@@ -2,23 +2,33 @@
 import { constants } from '../../config'
 ---
 
-<div class="flex flex-col items-center justify-center text-center h-[90vh] p-4">
-  <span class="text-7xl">🚧</span>
-  <h1 class="text-4xl mt-8">Estem fent obres a la web!</h1>
-  <h2 class="text-xl mt-8 max-w-[40ch]">
-    Si tens qualsevol dubte o vols informació sobre els tallers, pots seguir-me
-    a{' '}
-    <a
-      class="underline"
-      href={`https://www.instagram.com/${constants.instagramId}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      @{constants.instagramId}
-    </a>
-    o escriure'm a{' '}
-    <a class="underline" href={`mailto:${constants.email}`}>
-      {constants.email}
-    </a>
-  </h2>
-</div>
+<main
+  class="flex flex-col md:flex-row items-center justify-center gap-16 min-h-[96vh] p-8"
+>
+  <img
+    width="288"
+    class="w-56 md:w-72"
+    src="/icons/potets.svg"
+    alt="il·lustració de uns pots de vidre i uns pinzells"
+  />
+  <div class="max-w-[50rem]">
+    <h1 class="text-4xl md:text-6xl mb-6">Estem fent obres a la web!</h1>
+
+    <p class="text-lg md:text-2xl mt-8">
+      Si tens qualsevol dubte o vols informació sobre els tallers, pots
+      seguir-me a Instagram a{' '}
+      <a
+        class="underline"
+        href={`https://www.instagram.com/${constants.instagramId}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @{constants.instagramId}
+      </a>
+      o escriure un email a{' '}
+      <a class="underline" href={`mailto:${constants.email}`}>
+        {constants.email}
+      </a>
+    </p>
+  </div>
+</main>

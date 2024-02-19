@@ -10,32 +10,44 @@ const currentHref = Astro.url.href
 <Layout title="tallerets">
   <Header />
   <main
-    class="flex flex-col items-center justify-center text-center pb-16 min-h-[calc(100vh-8rem)]"
+    class="flex flex-col md:flex-row items-center justify-center gap-16 pb-16 page-padding min-h-[calc(100vh-8rem)]"
   >
-    <span class="text-7xl">🛑</span>
-    <h2 class="text-4xl mt-8">Ui! Aquesta pàgina no s'ha trobat!</h2>
-    <small class="font-mono mt-4">{currentHref} - Codi de error 404</small>
-    <h3 class="text-lg mt-8 max-w-[40ch]">
-      Potser se m'ha traspapelat o potser no ha existit mai. Si estàs segur que
-      aquesta pàgina hauria d'existir, contacta'm a Instragam
-      <a
-        class="underline"
-        href={`https://www.instagram.com/${constants.instagramId}`}
-        target="_blank"
-        rel="noopener noreferrer"
+    <img
+      width="288"
+      class="w-56 md:w-72"
+      src="/icons/potets.svg"
+      alt="il·lustració de uns pots de vidre i uns pinzells"
+    />
+    <div class="max-w-[48rem]">
+      <h1 class="text-4xl md:text-6xl mb-4">
+        Ui! Sembla que la pàgina que busques no s'ha trobat
+      </h1>
+      <small
+        class="font-mono mt-4 bg-dark text-soft py-1 px-2 rounded-md inline-block"
+        >Codi de error 404 — {currentHref}</small
       >
-        @{constants.instagramId}
-      </a>
-      o escriu un email a{' '}
-      <a class="underline" href={`mailto:${constants.email}`}>
-        {constants.email}
-      </a>.
-    </h3>
+      <p class="text-lg mt-8">
+        Potser se mogut o traspapelat! Si no trobes el que busques, pots
+        contactar-me a Instragam
+        <a
+          class="underline"
+          href={`https://www.instagram.com/${constants.instagramId}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @{constants.instagramId}
+        </a>
+        o escriu un email a{' '}
+        <a class="underline" href={`mailto:${constants.email}`}>
+          {constants.email}
+        </a>
+      </p>
 
-    <div class="flex justify-center gap-6 flex-wrap mt-8">
-      <a class="c-button" href="/tallers">tots els tallers</a>
-      <a class="c-button" href="/reserva">calendari i reserves</a>
-      <a class="c-button" href="/">torna a l'inici</a>
+      <div class="flex gap-6 flex-wrap mt-8">
+        <a class="c-button" href="/tallers">tots els tallers</a>
+        <a class="c-button" href="/reserva">calendari i reserves</a>
+        <a class="c-button" href="/">torna a l'inici</a>
+      </div>
     </div>
   </main>
 
