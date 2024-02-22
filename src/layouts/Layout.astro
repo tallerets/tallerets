@@ -26,6 +26,12 @@ const defaultDescription =
     />
     <Favicon />
     <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>{title}</title>
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">
@@ -35,15 +41,7 @@ const defaultDescription =
         @apply px-4 sm:px-6 md:px-8;
       }
       .c-button {
-        @apply border rounded-full text-center text-xl md:text-2xl px-4 py-2 hover:-rotate-3 hover:border-red hover:text-red transition-all;
-      }
-      .text-border {
-        --soft: #f9f9f9;
-        text-shadow:
-          1px 0px 0px var(--soft),
-          0px 1px 0px var(--soft),
-          -1px 0px 0px var(--soft),
-          0px -1px 0px var(--soft);
+        @apply border rounded-full text-center text-xl md:text-2xl px-4 pb-2 pt-[0.35rem] hover:-rotate-3 hover:border-red hover:text-red transition-all;
       }
     </style>
   </body>

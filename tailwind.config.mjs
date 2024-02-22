@@ -7,6 +7,10 @@ export default {
       dark: '#1a1a1a',
       red: '#D60000',
     },
+    fontFamily: {
+      serif:
+        'Noto Serif, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+    },
   },
   plugins: [],
 }
