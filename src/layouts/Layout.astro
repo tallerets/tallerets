@@ -1,6 +1,7 @@
 ---
 import Mantainance from '../components/sections/Mantainance.astro'
 import Favicon from './_partials/Favicon.astro'
+import '@fontsource-variable/noto-serif'
 import { config } from '../config'
 
 interface Props {
@@ -26,12 +27,6 @@ const defaultDescription =
     />
     <Favicon />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <title>{title}</title>
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">

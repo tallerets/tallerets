@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -8,8 +11,7 @@ export default {
       red: '#D60000',
     },
     fontFamily: {
-      serif:
-        'Noto Serif, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+      serif: ['Noto Serif Variable', ...defaultTheme.fontFamily.serif],
     },
   },
   plugins: [],
