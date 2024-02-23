@@ -20,28 +20,37 @@ const nextAvailableTallers = formattedEventArray
     class="flex flex-col gap-8 md:flex-row md:justify-center my-24 flex-wrap"
   >
     {
-      nextAvailableTallers.map((taller) => {
-        const relatedEvent = formattedEventArray.find(
-          (e) => e.tallerId === taller.id,
-        )
-        const dateString =
-          relatedEvent?.date.toLocaleString('ca-ES', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          }) ?? 'Properament'
-        return (
-          <TallerPostcard
-            id={taller.id}
-            title={taller.title}
-            desc={taller.desc}
-            imgSrc={taller.imgSrc}
-            imgAlt={taller.imgAlt}
-            data={dateString}
-            href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
-          />
-        )
-      })
+      nextAvailableTallers.length !== 0 &&
+        nextAvailableTallers.map((taller) => {
+          const relatedEvent = formattedEventArray.find(
+            (e) => e.tallerId === taller.id,
+          )
+          const dateString =
+            relatedEvent?.date.toLocaleString('ca-ES', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            }) ?? 'Properament'
+          return (
+            <TallerPostcard
+              id={taller.id}
+              title={taller.title}
+              desc={taller.desc}
+              imgSrc={taller.imgSrc}
+              imgAlt={taller.imgAlt}
+              data={dateString}
+              href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
+            />
+          )
+        })
+    }
+    {
+      nextAvailableTallers.length === 0 && (
+        <p class="text-center italic">
+          Més tallers properament! Consulta la llista completa i contacta'm si
+          voldries organitzar-ne un.
+        </p>
+      )
     }
   </div>
 
