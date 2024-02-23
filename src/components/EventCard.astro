@@ -59,11 +59,13 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%22
     </form>
   </div>
 
-  <div class="max-w-[40rem] flex gap-4">
+  <div class="max-w-[40rem] flex gap-4 border-b pb-4">
     <p>
       {linkedTaller?.desc}
     </p>
   </div>
+
+  <h3 class="text-xl font-bold mt-3">Com reservar?</h3>
 
   <button
     id={`copy-${id}`}
@@ -79,8 +81,8 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%22
         {price}
       </p>
     </div>
-    <p class="ms-auto px-4 text-center text-sm underline text-red w-32">
-      clica per copiar <br /> els detalls
+    <p class="ms-auto px-4 text-center text-sm text-red w-32">
+      ☐ clica per copiar
     </p>
   </button>
 
@@ -95,9 +97,9 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%22
     copyButton.addEventListener('click', () => {
       const text = copyButton.textContent
       navigator.clipboard.writeText(mailBody)
-      copyButton.lastElementChild.textContent = 'copiat!'
+      copyButton.lastElementChild.textContent = '☑ copiat!'
       setTimeout(() => {
-        copyButton.lastElementChild.textContent = 'clica per copiar els detalls'
+        copyButton.lastElementChild.textContent = '☐ clica per copiar'
       }, 2000)
     })
   </script>

@@ -1,6 +1,7 @@
 ---
 import Mantainance from '../components/sections/Mantainance.astro'
 import Favicon from './_partials/Favicon.astro'
+import '@fontsource-variable/noto-serif'
 import { config } from '../config'
 
 interface Props {
@@ -30,20 +31,13 @@ const defaultDescription =
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">
     {config.maintenance ? <Mantainance /> : <slot />}
-  </body><style is:global>
-    .page-padding {
-      @apply px-4 sm:px-6 md:px-8;
-    }
-    .c-button {
-      @apply border rounded-full text-center text-xl md:text-2xl px-4 py-2 hover:-skew-y-3;
-    }
-    .text-border {
-      --soft: #f9f9f9;
-      text-shadow:
-        1px 0px 0px var(--soft),
-        0px 1px 0px var(--soft),
-        -1px 0px 0px var(--soft),
-        0px -1px 0px var(--soft);
-    }
-  </style>
+    <style is:global>
+      .page-padding {
+        @apply px-4 sm:px-6 md:px-8;
+      }
+      .c-button {
+        @apply border rounded-full text-center text-xl md:text-2xl px-4 pb-2 pt-[0.35rem] hover:-rotate-3 hover:border-red hover:text-red transition-all;
+      }
+    </style>
+  </body>
 </html>

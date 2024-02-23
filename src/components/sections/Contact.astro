@@ -2,33 +2,39 @@
 import { constants } from '../../config'
 ---
 
-<section class="page-padding flex items-center flex-wrap gap-6 py-6">
+<section class="page-padding flex items-center flex-wrap gap-8 py-6">
   <h3 class="text-3xl me-auto">
     per més informació, segueix-me a instagram o envia'm un correu!
   </h3>
 
-  <div class="text-xl flex gap-6 items-center justify-around flex-wrap-reverse">
+  <div class="text-xl flex gap-6 flex-wrap">
     <img
-      width="112"
-      height="75"
-      class="w-28 text-sm text-center"
+      width="96"
+      height="64"
+      class="w-24 text-sm text-center"
       src="icons/carta.svg"
       alt="il·lustració de una carteta amb un cor al mitg"
     />
-    <div class="italic text-base md:text-xl">
+    <div class="text-base md:text-lg">
       <p class="py-2">
-        instagram — <a
-          class="underline p-2"
+        <a
+          class="p-2"
           href={`https://www.instagram.com/${constants.instagramId}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          @{constants.instagramId}
+          <b class="me-1 text-lg">♡</b>
+          <span class="underline">
+            @{constants.instagramId}
+          </span>
         </a>
       </p>
       <p class="py-2">
-        email — <a class="underline p-2" href={`mailto:${constants.email}`}>
-          {constants.email}
+        <a class="p-2" href={`mailto:${constants.email}`}>
+          <b class="me-1 text-xl">✎</b>
+          <span class="underline">
+            {constants.email}
+          </span>
         </a>
       </p>
     </div>

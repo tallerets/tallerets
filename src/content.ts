@@ -22,22 +22,28 @@ interface Event {
 export const tallers: Record<TallerId, Taller> = {
   bossa: {
     title: 'Pinta una bossa de tela',
-    desc: 'Dues hores per connectar mentre expresses la teva creativitat pintant una bossa de tela amb pintura acrílica, ja sigui una nova, o donant-li una nova vida a aquella promocional que utilitzes per la compra.',
+    desc: 'Segur que tens moltes bosses de tela per anar a la compra, però cap amb el teu propi disseny per anar txulejant pel mercat. En aquest taller pintaràs una bossa de cotó de 40x37 a on després podràs portar totes les teves fruites i verdures.',
     imgAlt:
       'Fotografia de dues participants del taller pintant bosses de tela amb pintura acrílica',
     imgSrc: '/img/t-bosses.png',
   },
   mirallet: {
     title: 'Pinta un mirallet',
-    desc: 'Podràs pintar un mirallet de 30x30 per penjar-lo i mirar-te cada matí i amb un toc de màgia!',
+    desc: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 a on després podràs mirar-te cada dia!',
     imgAlt: "Fotografia d'una participant del taller pintant un mirallet",
     imgSrc: '/img/t-mirallets.png',
   },
   potet: {
     title: 'Pinta un potet de vidre',
-    desc: 'Sembla que mai tenim prou pots de vidre acumulat a la vidra. Pinta’l per posar-hi espelmes, flors o llàpisos... Però sobretot, regala’t dues hores de tranquilitat i creativitat.',
+    desc: 'Saps aquests potets de cigrons, melmelada i olives que vas acumulant a la cuina perquè “segur que ho faré servir en algun moment”? doncs en aquest talleret podràs donar-li una segona vida a un d’aquests potets i després utilitzar-los per posar una espelma, llapis, una planteta… dues hores de desconnexió i de pas, reutilització!',
     imgAlt: 'Cartell de taller de pintar pots de vidre',
     imgSrc: '/img/t-potets2.png',
+  },
+  posagots: {
+    title: 'Fes un posagots de ceràmica',
+    desc: 'En aquest talleret farem dos posagots de ceràmica que podràs personalitzar com més t’agradi!',
+    imgAlt: 'Fotografia d´una participant del taller fent un posagots',
+    imgSrc: '/img/t-posagots.png',
   },
 }
 
@@ -49,88 +55,27 @@ export const tallersArray = Object.entries(tallers).map(([id, taller]) => ({
 export const events: Event[] = [
   {
     tallerId: 'bossa',
-    price: 14,
+    price: 15,
     date: {
-      day: 25,
-      month: 2,
-      year: 2024,
-    },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    availability: 'some',
-  },
-  {
-    tallerId: 'mirallet',
-    price: 14,
-    date: {
-      day: 4,
+      day: 2,
       month: 3,
       year: 2024,
     },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    availability: 'some',
-  },
-  {
-    tallerId: 'potet',
-    price: 14,
-    date: {
-      day: 11,
-      month: 3,
-      year: 2024,
-    },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
+    time: '10:30 - 12:30',
+    location: 'Espai Coopelia',
     availability: 'none',
   },
   {
-    tallerId: 'un event a mida que resulta que hi ha',
-    customTitle: `Event especial llançament web!`,
-    price: 14,
-    date: {
-      day: 18,
-      month: 3,
-      year: 2024,
-    },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    availability: 'last',
-  },
-  {
     tallerId: 'bossa',
-    price: 14,
+    price: 15,
     date: {
-      day: 25,
+      day: 13,
       month: 3,
       year: 2024,
     },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    availability: 'some',
-  },
-  {
-    tallerId: 'mirallet',
-    price: 14,
-    date: {
-      day: 1,
-      month: 4,
-      year: 2024,
-    },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    availability: 'some',
-  },
-  {
-    tallerId: 'potet',
-    price: 14,
-    date: {
-      day: 8,
-      month: 4,
-      year: 2024,
-    },
-    time: '19:00',
-    location: 'Centre Civic Cotxeres Borrell, Barcelona',
-    availability: 'some',
+    time: '18:30 - 20:30',
+    location: 'Espai Coopelia',
+    availability: 'last',
   },
 ]
 
