@@ -7,7 +7,6 @@ interface Taller {
 }
 interface Event {
   tallerId: string
-  customTitle?: string
   price: number
   date: {
     day: number
@@ -44,6 +43,12 @@ export const tallers: Record<TallerId, Taller> = {
     desc: 'En aquest talleret farem dos posagots de ceràmica que podràs personalitzar com més t’agradi!',
     imgAlt: 'Fotografia d´una participant del taller fent un posagots',
     imgSrc: '/img/t-posagots.png',
+  },
+  aMida: {
+    title: 'Taller a mida. Tens alguna idea?',
+    desc: 'Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et cuadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.',
+    imgAlt: 'Ilustració de dos potets amb pinzells',
+    imgSrc: '/icons/mida-gran.svg',
   },
 }
 
