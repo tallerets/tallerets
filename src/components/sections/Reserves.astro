@@ -2,8 +2,8 @@
 interface Props {
   mailto: string
 }
-
 const { mailto } = Astro.props
+
 import { constants } from '../../config'
 ---
 
@@ -13,13 +13,16 @@ import { constants } from '../../config'
     teu nom i cognom.
   </li>
 
-  <a
-    href={`mailto:${mailto}`}
-    class="inline-block border rounded-full px-2 py-1 hover:-rotate-3 my-2 hover:text-red hover:border-red"
-  >
-    <b class="mx-1">✎</b>
-    {constants.email}
-  </a>
+  <li>
+    <a
+      href={`mailto:${mailto}`}
+      aria-label="Enviar email per reservar una plaça al talleret"
+      class="inline-block border rounded-full px-2 py-1 hover:-rotate-3 transition-all my-2 hover:text-red hover:border-red"
+    >
+      <b class="mx-1">✎</b>
+      {constants.email}
+    </a>
+  </li>
 
   <li class="font-bold mt-3">
     Rebràs un email de confirmació amb les instruccions per fer el pagament.
@@ -34,7 +37,7 @@ import { constants } from '../../config'
   Consulta les condicions de <a
     class="underline hover:text-red"
     href="/terms-conditions">reserva i cancel·lació</a
-  >., i la <a class="underline hover:text-red" href="/privacy-policy">
+  >, i la <a class="underline hover:text-red" href="/privacy-policy">
     política de privacitat
   </a>.
 </small>

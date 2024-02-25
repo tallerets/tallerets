@@ -1,4 +1,8 @@
 ---
+interface Props {
+  className: string
+}
+
 const { className } = Astro.props
 ---
 
@@ -7,10 +11,10 @@ const { className } = Astro.props
     <a href="/reserva">reserva</a>
   </li>
   <li>
-    <a href="/#bio">sobre mi</a>
+    <a href="/tallers">tallerets</a>
   </li>
   <li>
-    <a href="/tallers">tallerets</a>
+    <a href="/#bio">sobre mi</a>
   </li>
   <li>
     <a href="/#contact">contacte</a>

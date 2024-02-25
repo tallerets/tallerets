@@ -6,20 +6,20 @@ import { config } from '../config'
 
 interface Props {
   title: string
-  description?: string // Maximum length 150 characters
+  description?: string
 }
 
-const { title, description } = Astro.props
+const defaultDescription = 'Tallers creatius per desconectar a Barcelona'
+const { title, description = defaultDescription } = Astro.props
 const scrollClass =
   import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
-const defaultDescription = 'Tallers creatius per desconectar a Barcelona'
 ---
 
 <!doctype html>
 <html lang="ca" dir="ltr" class={`${scrollClass} bg-dark`}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description ?? defaultDescription} />
+    <meta name="description" content={description} />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"

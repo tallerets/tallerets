@@ -1,4 +1,8 @@
 ---
+interface Props {
+  className?: string
+}
+
 const { className } = Astro.props
 
 import MobileMenu from '../MobileMenu.astro'
@@ -11,7 +15,7 @@ import NavLinks from '../_partials/NavLinks.astro'
   <a href="/" class="me-auto text-4xl md:text-5xl italic">
     <img
       src="/icons/logo.svg"
-      alt="tallerets"
+      alt="A handwritten logo that says 'Tallerets'."
       class="w-32 md:w-48 xl:w-64"
       width="256"
       height="69"

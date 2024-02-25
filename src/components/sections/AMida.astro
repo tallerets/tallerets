@@ -1,5 +1,6 @@
 ---
 import { constants } from '../../config'
+import { tallers } from '../../content'
 ---
 
 <section id="contact" class="page-padding md:max-w-[100ch] mx-auto my-20">
@@ -11,7 +12,7 @@ import { constants } from '../../config'
         perque si, o bé no et cuadren les dates? Proposa’m la teva idea i podem
         fer un talleret a mida a partir de 4 persones.
       </p>
-      <div class="flex items-center gap-6">
+      <address class="flex items-center gap-6">
         <a
           class="c-button flex items-center gap-3"
           href=`mailto:${constants.email}`
@@ -21,7 +22,7 @@ import { constants } from '../../config'
             {constants.email}
           </span>
         </a>
-      </div>
+      </address>
     </div>
 
     <img
@@ -29,7 +30,7 @@ import { constants } from '../../config'
       height="216"
       class="text-dark w-64 object-cover rounded-sm"
       src="/icons/mida.svg"
-      alt="Il·lustració de un pastís amb pinzells com a veles representant el fet de que un talleret a mida pot ser un perfecte regal"
+      alt={tallers.aMida.imgAlt}
     />
   </div>
 </section>

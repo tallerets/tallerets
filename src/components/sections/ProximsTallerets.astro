@@ -1,9 +1,12 @@
 ---
-import { formattedEventArray } from '../../content'
-import { getNextTallerets, dateToString } from '../../utils'
+import { nextEvents, tallers, type FormattedEvent } from '../../content'
+import { dateToString, createEventUniqueId } from '../../utils'
 import TallerPostcard from '../TallerPostcard.astro'
 
-const nextTallerets = getNextTallerets()
+const nextTwoEvents = nextEvents.slice(0, 2)
+
+const noEventsMessage =
+  "Més tallers properament! Consulta la llista completa i contacta'm si voldries organitzar-ne un."
 ---
 
 <section id="tallerets" class="page-padding py-24">
@@ -11,32 +14,29 @@ const nextTallerets = getNextTallerets()
 
   <ul class="flex flex-col gap-8 md:flex-row md:justify-center my-24 flex-wrap">
     {
-      nextTallerets.length !== 0 &&
-        nextTallerets.map((taller) => {
-          const relatedEvent = formattedEventArray.find(
-            (e) => e.tallerId === taller.id,
-          )
-          const dateString = dateToString(relatedEvent?.date ?? 'Properament')
+      nextTwoEvents.length !== 0 ? (
+        nextTwoEvents.map((event) => {
+          const taller = tallers[event.tallerId]
+          if (!taller) {
+            console.error(`Taller with id ${event.tallerId} not found`)
+            return null
+          }
+          const href = `/reserva#${event && createEventUniqueId(event)}`
 
           return (
             <TallerPostcard
-              id={taller.id}
+              id={event.tallerId}
               title={taller.title}
               desc={taller.desc}
               imgSrc={taller.imgSrc}
               imgAlt={taller.imgAlt}
-              data={dateString}
-              href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
+              data={dateToString(event?.date) ?? 'Properament'}
+              href={href}
             />
           )
         })
-    }
-    {
-      nextTallerets.length === 0 && (
-        <p class="text-center italic">
-          Més tallers properament! Consulta la llista completa i contacta'm si
-          voldries organitzar-ne un.
-        </p>
+      ) : (
+        <p class="text-center italic">{noEventsMessage}</p>
       )
     }
   </ul>

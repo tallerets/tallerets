@@ -13,7 +13,7 @@ import { constants } from '../../config'
       height="64"
       class="w-24 text-sm text-center"
       src="icons/carta.svg"
-      alt="il·lustració de una carteta amb un cor al mitg"
+      alt="Il·lustració de una carta amb un cor al mitg"
     />
     <div class="text-base md:text-lg">
       <p class="py-2">
@@ -22,6 +22,7 @@ import { constants } from '../../config'
           href={`https://www.instagram.com/${constants.instagramId}`}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Perfil d'Instagram"
         >
           <b class="me-1 text-lg">♡</b>
           <span class="underline">
@@ -29,14 +30,18 @@ import { constants } from '../../config'
           </span>
         </a>
       </p>
-      <p class="py-2">
-        <a class="p-2" href={`mailto:${constants.email}`}>
+      <address class="py-2">
+        <a
+          class="p-2"
+          href={`mailto:${constants.email}`}
+          aria-label="Enviar correu electrònic"
+        >
           <b class="me-1 text-xl">✎</b>
           <span class="underline">
             {constants.email}
           </span>
         </a>
-      </p>
+      </address>
     </div>
   </div>
 </section>
