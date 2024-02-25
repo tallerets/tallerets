@@ -11,103 +11,101 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%22
 ---
 
 <li
-  class="cursor-pointer border rounded w-60 target:outline odd:rotate-1 even:-rotate-1 hover:rotate-0 target:outline-red target:outline-2"
+  class="border rounded w-56 odd:-rotate-2 even:rotate-2 hover:rotate-0 hover:text-red transition-all"
 >
   <button
-    class="h-full flex flex-col"
+    class="h-full flex flex-col w-full"
     onclick=`document.getElementById('${id}').showModal();window.location.hash = '#${id}'`
   >
-    <header
-      class="bg-dark text-soft flex justify-center p-2 border-b font-bold w-full"
-    >
-      <p class="font-mono">{date} — {time}</p>
+    <header class="bg-dark text-soft py-3 px-1 border-b w-full">
+      <p class="font-mono uppercase">{date}</p>
     </header>
-    <div class="px-4 py-3 flex flex-col w-full">
-      <h3 class="uppercase pb-3 text-wrap">{title}</h3>
-      <small>{location}</small>
+    <div class="px-4 pt-3 flex flex-col w-full">
+      <h3 class="mb-2 text-wrap font-bold">{title}</h3>
+      <p class="mb-2">{time}</p>
+      <small>{location && `☉ ${location}`}</small>
     </div>
 
-    <div class="px-4 pb-3 mt-auto flex items-center w-full">
-      <p class="font-mono">{price}</p>
+    <div class="px-4 my-3 flex items-center w-full">
+      <p class="font-mono text-sm">{price}</p>
       <small class="text-sm block ms-auto italic">
         {slots}
       </small>
     </div>
   </button>
-</li>
 
-<dialog
-  id={id}
-  class="bg-soft min-w-62 backdrop:bg-dark backdrop:bg-opacity-50 rounded border border-dark p-4"
->
-  <div class="flex justify-between items-center mb-4 gap-2">
-    <h2 class="font-bold text-xl sm:text-2xl">
-      Reserva per el talleret '{title}'
-    </h2>
-    <form method="dialog">
-      <button
-        autofocus
-        class="p-2 rounded-full filter invert hover:invert-0 hover:bg-dark"
-      >
-        <img
-          src="/icons/close.svg"
-          class="min-w-6 w-6"
-          width="48"
-          height="48"
-        />
-      </button>
-    </form>
-  </div>
-
-  <div class="max-w-[40rem] flex gap-4 border-b pb-4">
-    <p>
-      {linkedTaller?.desc}
-    </p>
-  </div>
-
-  <h3 class="text-xl font-bold mt-3">Com reservar?</h3>
-
-  <button
-    id={`copy-${id}`}
-    class="flex gap-4 p-2 border rounded my-4 w-full text-start items-center hover:text-red transition-all duration-150 flex-wrap"
+  <dialog
+    id={id}
+    class="bg-soft min-w-62 backdrop:bg-dark backdrop:bg-opacity-50 rounded border border-dark p-4"
   >
-    <div>
-      <p class="font-bold">Detalls</p>
-      <p class="italic">
-        {date} — {time}
-        <br />
-        {location}
-        <br />
-        {price}
-      </p>
+    <div class="flex justify-between items-center mb-4 gap-2">
+      <h2 class="font-bold text-xl sm:text-2xl">
+        Reserva per el talleret '{title}'
+      </h2>
+      <form method="dialog">
+        <button
+          autofocus
+          onclick=`window.location.hash = ''`
+          class="p-2 rounded-full filter invert hover:invert-0 hover:bg-dark"
+        >
+          <img
+            src="/icons/close.svg"
+            class="min-w-6 w-6"
+            width="48"
+            height="48"
+          />
+        </button>
+      </form>
     </div>
-    <p class="ms-auto px-4 text-center text-sm text-red w-32">
-      ☐ clica per copiar
-    </p>
-  </button>
 
-  <div class="max-w-[40rem]">
-    <Reserves mailto={mailTo} />
-  </div>
+    <div class="max-w-[40rem] flex gap-4 border-b pb-4">
+      <p>{linkedTaller?.desc}</p>
+    </div>
 
-  <script define:vars={{ id, title, date, time, location }}>
-    const mailBody = `Talleret '${title}' del dia ${date} a les ${time} a ${location}.`
+    <h3 class="text-xl font-bold mt-3">Com reservar?</h3>
 
-    const copyButton = document.getElementById(`copy-${id}`)
-    copyButton.addEventListener('click', () => {
-      const text = copyButton.textContent
-      navigator.clipboard.writeText(mailBody)
-      copyButton.lastElementChild.textContent = '☑ copiat!'
-      setTimeout(() => {
-        copyButton.lastElementChild.textContent = '☐ clica per copiar'
-      }, 2000)
-    })
-  </script>
+    <button
+      id={`copy-${id}`}
+      class="flex gap-4 p-2 border rounded my-4 w-full text-start items-center hover:text-red transition-all duration-150 flex-wrap"
+    >
+      <div>
+        <p class="font-bold">Detalls</p>
+        <p class="italic">
+          {date} — {time}
+          <br />
+          {location}
+          <br />
+          {price}
+        </p>
+      </div>
+      <p class="ms-auto px-4 text-center text-sm text-red w-32">
+        ☐ clica per copiar
+      </p>
+    </button>
 
-  <style>
-    dialog {
-      max-width: 100vw;
-      max-height: 100vh;
-    }
-  </style>
-</dialog>
+    <div class="max-w-[40rem]">
+      <Reserves mailto={mailTo} />
+    </div>
+
+    <script define:vars={{ id, title, date, time, location }}>
+      const mailBody = `Talleret '${title}' del dia ${date} a les ${time} a ${location}.`
+
+      const copyButton = document.getElementById(`copy-${id}`)
+      copyButton.addEventListener('click', () => {
+        const text = copyButton.textContent
+        navigator.clipboard.writeText(mailBody)
+        copyButton.lastElementChild.textContent = '☑ copiat!'
+        setTimeout(() => {
+          copyButton.lastElementChild.textContent = '☐ clica per copiar'
+        }, 2000)
+      })
+    </script>
+
+    <style>
+      dialog {
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+    </style>
+  </dialog>
+</li>

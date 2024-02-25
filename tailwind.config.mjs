@@ -12,6 +12,7 @@ export default {
     },
     fontFamily: {
       serif: ['Noto Serif Variable', ...defaultTheme.fontFamily.serif],
+      mono: [...defaultTheme.fontFamily.mono],
     },
   },
   plugins: [],

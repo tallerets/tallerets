@@ -1,36 +1,23 @@
 ---
-import { formattedEventArray, tallers } from '../../content'
+import { formattedEventArray } from '../../content'
+import { getNextTallerets, dateToString } from '../../utils'
 import TallerPostcard from '../TallerPostcard.astro'
 
-const nextAvailableTallers = formattedEventArray
-  .filter((e) => e.availability !== 'none')
-  .filter((e) => new Date(e.date) > new Date())
-  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-  .splice(0, 2)
-  .map((e) => ({
-    id: e.tallerId,
-    ...tallers[e.tallerId],
-  }))
+const nextTallerets = getNextTallerets()
 ---
 
 <section id="tallerets" class="page-padding py-24">
   <h3 class="text-4xl md:text-5xl md:text-center">pròxims tallerets</h3>
 
-  <div
-    class="flex flex-col gap-8 md:flex-row md:justify-center my-24 flex-wrap"
-  >
+  <ul class="flex flex-col gap-8 md:flex-row md:justify-center my-24 flex-wrap">
     {
-      nextAvailableTallers.length !== 0 &&
-        nextAvailableTallers.map((taller) => {
+      nextTallerets.length !== 0 &&
+        nextTallerets.map((taller) => {
           const relatedEvent = formattedEventArray.find(
             (e) => e.tallerId === taller.id,
           )
-          const dateString =
-            relatedEvent?.date.toLocaleString('ca-ES', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            }) ?? 'Properament'
+          const dateString = dateToString(relatedEvent?.date ?? 'Properament')
+
           return (
             <TallerPostcard
               id={taller.id}
@@ -45,14 +32,14 @@ const nextAvailableTallers = formattedEventArray
         })
     }
     {
-      nextAvailableTallers.length === 0 && (
+      nextTallerets.length === 0 && (
         <p class="text-center italic">
           Més tallers properament! Consulta la llista completa i contacta'm si
           voldries organitzar-ne un.
         </p>
       )
     }
-  </div>
+  </ul>
 
   <div class="flex justify-center gap-6 flex-wrap">
     <a class="c-button" href="/tallers">tots els tallers</a>

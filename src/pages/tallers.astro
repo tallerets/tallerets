@@ -54,7 +54,7 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5B
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
-              }) ?? 'Properament'
+              }) ?? "Contacta'm per mes dates"
             return (
               <TallerPostcard
                 id={taller.id}
@@ -68,15 +68,6 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5B
             )
           })
         }
-        <TallerPostcard
-          id="taller-a-mida"
-          title="Tens alguna idea?"
-          desc="Tens una idea de talleret que vols fer amb els teus amics per un event o perque si, o bé no et cuadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones."
-          imgSrc="/icons/mida-gran.svg"
-          imgAlt="Ilustració de dos potets amb pinzells"
-          data="A convenir!"
-          href="/reserva#taller-a-mida"
-        />
       </ul>
     </section>
   </main>
