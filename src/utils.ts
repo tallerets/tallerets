@@ -3,7 +3,6 @@ import {
   AVAILABILITY_LABELS,
   events,
   formattedEventArray,
-  tallers,
   type FormattedEvent,
 } from './content'
 
@@ -14,7 +13,7 @@ export const getNextAvailableEvents = () =>
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
 export const getMonthsWithEvents = () => {
-  const allMonths = events.map((event) => event.date.month - 1)
+  const allMonths = events.map((event) => event.date.month - 1).sort()
   return Array.from(new Set(allMonths))
 }
 
@@ -48,4 +47,4 @@ export const createMailToString = ({
   time?: string
   location?: string
 }) =>
-  `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%22${title}%22&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20NOM%20I%20COGNOMS%20per%20NUM%20places%20al%20talleret%20%22${title}%22%20del%20dia%20${date}%20a%20les%20${time}%20a%20${location}.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
+  `mailto:${constants.email}?subject=Reserva%20per%20talleret%20${title}&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20[NOM]%20I%20[COGNOMS]%20per%20[NUM]%20places%20al%20talleret%20${title}%20del%20dia%20${date}%20a%20les%20${time}%20a%20${location}.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`

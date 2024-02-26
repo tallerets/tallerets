@@ -1,5 +1,5 @@
 ---
-import { tallers } from '../content'
+import { AVAILABILITY_LABELS, tallers } from '../content'
 import { createMailToString } from '../utils'
 import Reserves from './sections/Reserves.astro'
 
@@ -12,20 +12,24 @@ interface Props {
   slots?: string
   price?: string
   time?: string
+  isDisabled?: boolean
 }
 const { id, tallerId, title, slots, date, location, price, time } = Astro.props
 
 const linkedTaller = tallers[tallerId]
 
 const mailTo = createMailToString({ title, date, time, location })
+const isDisabled =
+  slots === AVAILABILITY_LABELS.none || new Date(date) < new Date()
 ---
 
 <li
-  class="border rounded w-56 odd:-rotate-2 even:rotate-2 hover:rotate-0 hover:text-red transition-all"
+  class=`border odd:-rotate-2 even:rotate-2  rounded w-56 ${isDisabled ? 'opacity-75 rotate-0' : ' hover:rotate-0 hover:text-red transition-all'}`
 >
   <button
+    id={`openModal-${id}`}
+    disabled={isDisabled}
     class="h-full flex flex-col w-full"
-    onclick="showModal()"
     aria-label={`Detalls de reserva del talleret '${title}'`}
   >
     <header class="bg-dark text-soft py-3 px-1 border-b w-full">
@@ -47,7 +51,7 @@ const mailTo = createMailToString({ title, date, time, location })
 
   <dialog
     id={id}
-    class="bg-soft min-w-62 backdrop:bg-dark backdrop:bg-opacity-50 rounded border border-dark p-4"
+    class="bg-soft w-[48rem] backdrop:bg-dark backdrop:bg-opacity-50 rounded border border-dark p-4"
   >
     <div class="flex justify-between items-center mb-4 gap-2">
       <h2 class="font-bold text-xl sm:text-2xl">
@@ -55,7 +59,7 @@ const mailTo = createMailToString({ title, date, time, location })
       </h2>
       <button
         autofocus
-        onclick="closeDialog()"
+        id={`closeModal-${id}`}
         class="p-2 rounded-full filter invert hover:invert-0 hover:bg-dark"
         aria-label="Tancar detalls de reserva"
       >
@@ -70,7 +74,7 @@ const mailTo = createMailToString({ title, date, time, location })
 
     {
       linkedTaller?.desc && (
-        <div class="max-w-[40rem] flex gap-4 border-b pb-4">
+        <div class="max-w-full flex gap-4 border-b pb-4">
           <p>{linkedTaller.desc}</p>
         </div>
       )
@@ -80,10 +84,9 @@ const mailTo = createMailToString({ title, date, time, location })
 
     <button
       id={`copy-${id}`}
-      onclick="copyToClipboard()"
       class="flex gap-4 p-2 border rounded my-4 w-full text-start items-center hover:text-red transition-all duration-150 flex-wrap"
     >
-      <div>
+      <div class="me-auto">
         <p class="font-bold">Detalls</p>
         <p class="italic">
           {date} — {time}
@@ -93,7 +96,7 @@ const mailTo = createMailToString({ title, date, time, location })
           {price}
         </p>
       </div>
-      <p class="ms-auto px-4 text-center text-sm text-red w-32">
+      <p class="p-4 ps-0 text-center text-sm text-red md:w-32">
         ☐ clica per copiar
       </p>
     </button>
@@ -102,31 +105,37 @@ const mailTo = createMailToString({ title, date, time, location })
       <Reserves mailto={mailTo} />
     </div>
   </dialog>
+
+  <script define:vars={{ id, title, date, time, location }}>
+    const eventDetails = `Talleret '${title}' del dia ${date} a les ${time} a ${location}.`
+    const dialog = document.getElementById(`${id}`)
+    const copyButton = document.getElementById(`copy-${id}`)
+    const openButton = document.getElementById(`openModal-${id}`)
+    const closeButton = document.getElementById(`closeModal-${id}`)
+
+    closeButton.onclick = () => {
+      dialog.close()
+      window.history.replaceState({}, '', '#')
+      openButton.focus()
+    }
+
+    window.addEventListener('popstate', () => {
+      dialog.close()
+      openButton.focus()
+    })
+
+    openButton.onclick = () => {
+      dialog.showModal()
+      window.history.replaceState({}, '', `#${id}`)
+    }
+
+    copyButton.onclick = () => {
+      navigator.clipboard.writeText(eventDetails)
+      copyButton.lastElementChild.textContent = '☑ copiat!'
+      setTimeout(
+        () => (copyButton.lastElementChild.textContent = '☐ clica per copiar'),
+        2000,
+      )
+    }
+  </script>
 </li>
-
-<script define:vars={{ id, title, date, time, location }}>
-  const eventDetails = `Talleret '${title}' del dia ${date} a les ${time} a ${location}.`
-  const copyButton = document.getElementById(`copy-${id}`)
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(eventDetails)
-    copyButton.lastElementChild.textContent = '☑ copiat!'
-    setTimeout(
-      () => (copyButton.lastElementChild.textContent = '☐ clica per copiar'),
-      2000,
-    )
-  }
-
-  const showModal = (id) => {
-    document.getElementById(id).showModal()
-    window.location.hash = '#' + id
-  }
-  const closeDialog = () => history.pushState(null, '', '#')
-</script>
-
-<style>
-  dialog {
-    max-width: 100vw;
-    max-height: 100vh;
-  }
-</style>
