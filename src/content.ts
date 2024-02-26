@@ -1,5 +1,7 @@
 import { getNextAvailableEvents } from './utils'
 
+// ---- Types ----
+
 type TallerId = string
 
 interface Taller {
@@ -22,10 +24,13 @@ export interface Event {
   availability: 'none' | 'some' | 'last'
 }
 
-export interface FormattedEvent extends Omit<Event, 'date' | 'availability'> {
-  date: Date
-  availability: string
-}
+export const AVAILABILITY_LABELS = {
+  some: 'Places lliures',
+  none: 'Complet',
+  last: 'Ultimes places!',
+} as const
+
+// ---- Content ----
 
 export const tallers: Record<TallerId, Taller> = {
   bossa: {
@@ -61,11 +66,6 @@ export const tallers: Record<TallerId, Taller> = {
   },
 } as const
 
-export const tallersArray = Object.entries(tallers).map(([id, taller]) => ({
-  id,
-  ...taller,
-}))
-
 export const events: Event[] = [
   {
     tallerId: 'bossa',
@@ -93,11 +93,17 @@ export const events: Event[] = [
   },
 ] as const
 
-export const AVAILABILITY_LABELS = {
-  some: 'Places lliures',
-  none: 'Complet',
-  last: 'Ultimes places!',
-} as const
+// ---- Extended Content ----
+
+export interface FormattedEvent extends Omit<Event, 'date' | 'availability'> {
+  date: Date
+  availability: string
+}
+
+export const tallersArray = Object.entries(tallers).map(([id, taller]) => ({
+  id,
+  ...taller,
+}))
 
 export const formattedEventArray: FormattedEvent[] = events.map((event) => ({
   ...event,
