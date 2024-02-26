@@ -51,10 +51,10 @@ import { createEventUniqueId, dateToString } from '../utils'
             )
             const dateString =
               dateToString(relatedEvent?.date) ?? "Contacta'm per mes dates"
-
-            const href = `/reserva#${
-              relatedEvent && createEventUniqueId(relatedEvent)
-            }`
+            const eventId =
+              taller.id === 'aMida'
+                ? taller.id
+                : relatedEvent && createEventUniqueId(relatedEvent)
 
             return (
               <TallerPostcard
@@ -64,7 +64,7 @@ import { createEventUniqueId, dateToString } from '../utils'
                 imgSrc={taller.imgSrc}
                 imgAlt={taller.imgAlt}
                 data={dateString}
-                href={href}
+                href={`/reserva#${eventId}`}
               />
             )
           })
