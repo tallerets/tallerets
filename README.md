@@ -1,11 +1,11 @@
 | <img width="16" alt="favicon-32x32" src="https://github.com/aymyo/tallerets/assets/40371955/9ac0d5f4-a04d-49b5-b01b-773bf6468a0d"> | [tallerets.com](https://www.tallerets.com/) |
 | :--------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------ |
 
-# tallerets
+# 🍒 tallerets
 
 tallerets.com és la pàgina web del projecte de tallers creatius de la Noor. Aquesta pàgina web proporciona informació sobre els diferents tallers que s'ofereixen, així com detalls sobre la ubicació, el preu i la disponibilitat de places.
 
-## 🆕 Actualitzar contingut
+## 📯 Actualitzar contingut
 
 Les pàgines principials estàn situades a la carpeta `src/pages`. Per actualitzar el contingut d'una pàgina, només cal editar el fitxer corresponent.
 Per afegir nous tallers o events cal editar el fitxer `src/content.ts`. Els dos tallers que tinguin places més propers es mostraràn a la pàgina principal.
