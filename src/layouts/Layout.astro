@@ -9,7 +9,9 @@ interface Props {
   description?: string
 }
 
-const defaultDescription = 'Tallers creatius per desconectar a Barcelona'
+const defaultTitle = 'tallerets – tallers creatius a Barcelona per desconectar'
+const defaultDescription =
+  'Per crear no cal experiència ni cap habilitat especial, només ganes de passar una estona amb tu mateixa.'
 const { title, description = defaultDescription } = Astro.props
 const scrollClass =
   import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
@@ -19,14 +21,31 @@ const scrollClass =
 <html lang="ca" dir="ltr" class={`${scrollClass} bg-dark`}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <Favicon />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
     <title>{title}</title>
+    <meta name="title" content={defaultTitle} />
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tallerets.com/" />
+    <meta property="og:title" content={defaultTitle} />
+    <meta property="og:description" content={defaultDescription} />
+    <meta property="og:image" content="/img/thumb.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.tallerets.com/" />
+    <meta property="twitter:title" content={defaultTitle} />
+    <meta property="twitter:description" content={defaultDescription} />
+    <meta property="twitter:image" content="/img/thumb.png" />
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">
     {config.maintenance ? <Mantainance /> : <slot />}
