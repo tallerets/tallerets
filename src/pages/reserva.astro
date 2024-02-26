@@ -112,9 +112,14 @@ const mailTo = createMailToString({
 </Layout>
 
 <script>
+  const getDialogByHash = () =>
+    document.getElementById(
+      decodeURI(window.location.hash).substring(1),
+    ) as HTMLDialogElement
+
+  getDialogByHash()?.showModal()
+
   window.addEventListener('popstate', () => {
-    const hash = decodeURI(window.location.hash).substring(1)
-    const dialog = document.getElementById(hash) as HTMLDialogElement
-    dialog?.showModal()
+    getDialogByHash()?.showModal()
   })
 </script>
