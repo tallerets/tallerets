@@ -2,22 +2,26 @@
 import Layout from '../layouts/Layout.astro'
 import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
-import { events, tallers, formattedEventArray, tallersArray } from '../content'
+import { tallers, formattedEventArray, tallersArray } from '../content'
 import EventCard from '../components/EventCard.astro'
 import Contact from '../components/sections/Contact.astro'
 import Reserves from '../components/sections/Reserves.astro'
-import { constants } from '../config'
-import { dateToString, getMonthsWithEvents } from '../utils'
+import {
+  createEventUniqueId,
+  createMailToString,
+  dateToWeekday,
+  getMonthsWithEvents,
+  getWrittenMonth,
+} from '../utils'
 
 const monthsWithEvents = getMonthsWithEvents()
 
-const availabilityMap = {
-  some: 'Places lliures',
-  none: 'Complet',
-  last: 'Ultimes places!',
-}
-
-const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5BTITOL%5D&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20%5BNOM%20I%20COGNOMS%5D%20per%20%5BNUMERO%20DE%20PLACES%5D%20places%20al%20talleret%20%5BTITOL%5D%20del%20dia%20%5BDIA%5D%20a%20les%20%5BHORA%5D%20a%20%5BESPAI%5D.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
+const mailTo = createMailToString({
+  title: '[TALLERET]',
+  date: '[DIA]',
+  time: '[HORA]',
+  location: '[ESPAI]',
+})
 ---
 
 <Layout title="tallerets: calendari">
@@ -50,34 +54,22 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5B
             return (
               <>
                 <h2 class="text-2xl md:text-4xl mb-4 text-center mt-8">
-                  {new Date(0, month).toLocaleString('ca-ES', {
-                    month: 'long',
-                  })}
+                  {getWrittenMonth(month)}
                 </h2>
                 <ul class="page-padding flex flex-wrap gap-4 py-6 overflow-hidden justify-center">
                   {formattedEventArray
                     .filter((e) => e.date.getMonth() === month)
-                    .map((event) => {
-                      const dateString = event.date.toLocaleDateString(
-                        'ca-ES',
-                        { weekday: 'long', day: 'numeric' },
-                      )
-
-                      const id = event.tallerId + dateToString(event.date)
-
-                      const title = tallers[event.tallerId]?.title
-                      const availability = availabilityMap[event.availability]
-
+                    .map((e) => {
                       return (
                         <EventCard
-                          id={id}
-                          tallerId={event.tallerId}
-                          title={title}
-                          date={dateString}
-                          time={event.time}
-                          price={event.price + '€/pax'}
-                          slots={availability}
-                          location={event.location}
+                          id={createEventUniqueId(e)}
+                          tallerId={e.tallerId}
+                          title={tallers[e.tallerId]?.title}
+                          date={dateToWeekday(e.date)}
+                          time={e.time}
+                          price={e.price + '€/pax'}
+                          slots={e.availability}
+                          location={e.location}
                         />
                       )
                     })}

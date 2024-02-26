@@ -1,11 +1,15 @@
+import { getNextAvailableEvents } from './utils'
+
 type TallerId = string
+
 interface Taller {
   title: string
   desc: string
   imgAlt: string
   imgSrc: string
 }
-interface Event {
+
+export interface Event {
   tallerId: string
   price: number
   date: {
@@ -16,6 +20,11 @@ interface Event {
   time: string
   location: string
   availability: 'none' | 'some' | 'last'
+}
+
+export interface FormattedEvent extends Omit<Event, 'date' | 'availability'> {
+  date: Date
+  availability: string
 }
 
 export const tallers: Record<TallerId, Taller> = {
@@ -50,7 +59,7 @@ export const tallers: Record<TallerId, Taller> = {
     imgAlt: 'Ilustració de dos potets amb pinzells',
     imgSrc: '/icons/mida-gran.svg',
   },
-}
+} as const
 
 export const tallersArray = Object.entries(tallers).map(([id, taller]) => ({
   id,
@@ -82,9 +91,18 @@ export const events: Event[] = [
     location: 'Espai Coopelia',
     availability: 'last',
   },
-]
+] as const
 
-export const formattedEventArray = events.map((event) => ({
+export const AVAILABILITY_LABELS = {
+  some: 'Places lliures',
+  none: 'Complet',
+  last: 'Ultimes places!',
+} as const
+
+export const formattedEventArray: FormattedEvent[] = events.map((event) => ({
   ...event,
   date: new Date(event.date.year, event.date.month - 1, event.date.day),
+  availability: AVAILABILITY_LABELS[event.availability],
 }))
+
+export const nextEvents = getNextAvailableEvents()

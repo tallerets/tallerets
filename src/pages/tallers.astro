@@ -2,20 +2,17 @@
 import Layout from '../layouts/Layout.astro'
 import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
-import { tallersArray, formattedEventArray } from '../content'
-import TallerPostcard from '../components/TallerPostcard.astro'
 import Contact from '../components/sections/Contact.astro'
-import Reserves from '../components/sections/Reserves.astro'
-import { constants } from '../config'
-
-const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5BTITOL%5D&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20%5BNOM%20I%20COGNOMS%5D%20per%20%5BNUMERO%20DE%20PLACES%5D%20places%20al%20talleret%20%5BTITOL%5D%20del%20dia%20%5BDIA%5D%20a%20les%20%5BHORA%5D%20a%20%5BESPAI%5D.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
+import TallerPostcard from '../components/TallerPostcard.astro'
+import { tallersArray, nextEvents } from '../content'
+import { createEventUniqueId, dateToString } from '../utils'
 ---
 
 <Layout title="tallerets: llista">
   <Header className="border-b bg-soft text-dark relative" />
   <main>
     <section
-      class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-6"
+      class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
     >
       <aside class="page-padding">
         <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
@@ -38,23 +35,24 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5B
               </a>
             </li>
           </ul>
-          <div class="flex mb-8">
+          <div class="flex">
             <a class="c-button" href="/reserva">veure calendari</a>
           </div>
         </div>
       </aside>
-      <ul class="page-padding flex flex-col gap-8 py-6 overflow-hidden">
+      <ul class="page-padding flex flex-col gap-8 pt-6 pb-12 overflow-hidden">
         {
           tallersArray.map((taller) => {
-            const relatedEvent = formattedEventArray.find(
+            const relatedEvent = nextEvents.find(
               (e) => e.tallerId === taller.id,
             )
             const dateString =
-              relatedEvent?.date.toLocaleString('ca-ES', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              }) ?? "Contacta'm per mes dates"
+              dateToString(relatedEvent?.date) ?? "Contacta'm per mes dates"
+
+            const href = `/reserva#${
+              relatedEvent && createEventUniqueId(relatedEvent)
+            }`
+
             return (
               <TallerPostcard
                 id={taller.id}
@@ -63,7 +61,7 @@ const mailTo = `mailto:${constants.email}?subject=Reserva%20per%20talleret%20%5B
                 imgSrc={taller.imgSrc}
                 imgAlt={taller.imgAlt}
                 data={dateString}
-                href={`/reserva#${relatedEvent?.tallerId}${dateString}`}
+                href={href}
               />
             )
           })
