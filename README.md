@@ -1,6 +1,14 @@
-# tallerets
 
-La pàgina web del projecte de tallers creatius de la Noor
+<img width="16" alt="favicon-32x32" src="https://github.com/aymyo/tallerets/assets/40371955/9ac0d5f4-a04d-49b5-b01b-773bf6468a0d">
+
+# tallerets.com
+
+La pàgina web del 
+
+
+
+
+rojecte de tallers creatius de la Noor
 
 ## 🧞 Commands
 
