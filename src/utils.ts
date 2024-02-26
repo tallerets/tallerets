@@ -34,7 +34,10 @@ export const dateToWeekday = (date: Date) => {
 }
 
 export const createEventUniqueId = (formattedEvent: FormattedEvent) =>
-  `${formattedEvent.tallerId}-${dateToString(formattedEvent.date)}`
+  `${formattedEvent.tallerId}-${dateToString(formattedEvent.date)?.replace(
+    /\s/g,
+    '-',
+  )}`
 
 export const createMailToString = ({
   title,
