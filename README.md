@@ -19,6 +19,16 @@ Per desplegar els canvis:
 
 En uns segons, s'haurien de veure els canvis a la pàgina web. Si hi haguès cap problema, fes un rollback a Vercel.
 
+## ⚜️ Sistema de disseny
+
+Tipografia — [Noto Serif](https://fonts.google.com/specimen/Noto+Serif?query=noto+serif)
+
+Colors:
+
+- Clar - #FFFBEC
+- Fosc - #1a1a1a
+- Vermell - #D60000
+
 ## 🧞 Project Commands
 
 All commands are run from the root of the project, from a terminal:
