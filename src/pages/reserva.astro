@@ -24,7 +24,10 @@ const mailTo = createMailToString({
 })
 ---
 
-<Layout title="tallerets — calendari i reserves">
+<Layout
+  title="tallerets — calendari i reserves"
+  description="Aquí pots trobar totes les dates del següents tallers creatius a Barcelona, entre setmana, per les tardes i els caps de setmana."
+>
   <Header className="border-b bg-soft text-dark relative" />
   <main>
     <section
@@ -109,9 +112,9 @@ const mailTo = createMailToString({
 </Layout>
 
 <script>
-  // on hash change
-
-  const hash = decodeURI(window.location.hash).substring(1)
-  const dialog = document.getElementById(hash) as HTMLDialogElement
-  dialog?.showModal()
+  window.addEventListener('popstate', () => {
+    const hash = decodeURI(window.location.hash).substring(1)
+    const dialog = document.getElementById(hash) as HTMLDialogElement
+    dialog?.showModal()
+  })
 </script>

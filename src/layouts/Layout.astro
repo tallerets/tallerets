@@ -6,13 +6,14 @@ import { config } from '../config'
 
 interface Props {
   title: string
-  description?: string
+  description: string
 }
 
-const defaultTitle = 'tallerets – tallers creatius a Barcelona per desconectar'
-const defaultDescription =
+export const defaultTitle =
+  'tallerets – tallers creatius a Barcelona per desconectar'
+export const defaultDescription =
   'Per crear no cal experiència ni cap habilitat especial, només ganes de passar una estona amb tu mateixa.'
-const { title, description = defaultDescription } = Astro.props
+const { title, description } = Astro.props
 const scrollClass =
   import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
 ---

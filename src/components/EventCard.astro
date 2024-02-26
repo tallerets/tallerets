@@ -115,7 +115,7 @@ const isDisabled =
 
     closeButton.onclick = () => {
       dialog.close()
-      window.history.replaceState({}, '', '#')
+      window.history.pushState({}, '', '#')
       openButton.focus()
     }
 
@@ -126,7 +126,7 @@ const isDisabled =
 
     openButton.onclick = () => {
       dialog.showModal()
-      window.history.replaceState({}, '', `#${id}`)
+      window.history.pushState({}, '', `#${id}`)
     }
 
     copyButton.onclick = () => {
