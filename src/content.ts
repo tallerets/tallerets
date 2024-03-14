@@ -71,30 +71,6 @@ export const events: Event[] = [
     tallerId: 'bossa',
     price: 15,
     date: {
-      day: 2,
-      month: 3,
-      year: 2024,
-    },
-    time: '10:30 - 12:30',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
-  {
-    tallerId: 'bossa',
-    price: 15,
-    date: {
-      day: 13,
-      month: 3,
-      year: 2024,
-    },
-    time: '18:30 - 20:30',
-    location: 'Espai Coopelia',
-    availability: 'last',
-  },
-  {
-    tallerId: 'bossa',
-    price: 15,
-    date: {
       day: 15,
       month: 3,
       year: 2024,
