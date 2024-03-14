@@ -91,6 +91,18 @@ export const events: Event[] = [
     location: 'Espai Coopelia',
     availability: 'last',
   },
+  {
+    tallerId: 'bossa',
+    price: 15,
+    date: {
+      day: 15,
+      month: 3,
+      year: 2024,
+    },
+    time: '17:30 - 19:30',
+    location: 'Espai Coopelia',
+    availability: 'last',
+  }
 ] as const
 
 // ---- Extended Content ----
