@@ -71,7 +71,7 @@ export const events: Event[] = [
     tallerId: 'bossa',
     price: 15,
     date: {
-      day: 16,
+      day: 9,
       month: 4,
       year: 2024,
     },
