@@ -19,6 +19,7 @@ const { id, tallerId, title, slots, date, location, price, time } = Astro.props
 const linkedTaller = tallers[tallerId]
 
 const mailTo = createMailToString({ title, date, time, location })
+console.log(new Date())
 const isDisabled =
   slots === AVAILABILITY_LABELS.none || new Date(date) < new Date()
 ---
