@@ -46,6 +46,12 @@ export const tallers: Record<TallerId, Taller> = {
     imgAlt: 'Fotografia d`una mà pintant un test de fang',
     imgSrc: '/img/t-testos.webp',
   },
+   collage: {
+    title: 'Fes uns punts de llibre en collage',
+    desc: 'En aquest talleret farem dos punts de llibre amb tècniques mixtes de collage i pintura - perfecte per sant Jordi!!',
+    imgAlt: 'Fotografia d´una participant del taller fent collage',
+    imgSrc: '/img/t-collage.webp',
+  },
   mirallet: {
     title: 'Pinta un mirallet',
     desc: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 a on després podràs mirar-te cada dia!',
@@ -115,6 +121,18 @@ export const events: Event[] = [
     date: {
       day: 31,
       month: 5,
+      year: 2024,
+    },
+    time: '18:30 - 20:30',
+    location: 'Espai Coopelia',
+    availability: 'some',
+  },
+     {
+    tallerId: 'collage',
+    price: 15,
+    date: {
+      day: 16,
+      month: 4,
       year: 2024,
     },
     time: '18:30 - 20:30',
