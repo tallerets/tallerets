@@ -40,6 +40,12 @@ export const tallers: Record<TallerId, Taller> = {
       'Fotografia de dues participants del taller pintant bosses de tela amb pintura acrílica',
     imgSrc: '/img/t-bosses.png',
   },
+  testos: {
+    title: 'Pinta un test de fang per les teves plantes',
+    desc: 'En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!',
+    imgAlt: 'Fotografia d`una mà pintant un test de fang',
+    imgSrc: '/img/t-testos.webp',
+  },
   mirallet: {
     title: 'Pinta un mirallet',
     desc: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 a on després podràs mirar-te cada dia!',
@@ -57,12 +63,6 @@ export const tallers: Record<TallerId, Taller> = {
     desc: 'En aquest talleret farem dos posagots de ceràmica que podràs personalitzar com més t’agradi!',
     imgAlt: 'Fotografia d´una participant del taller fent un posagots',
     imgSrc: '/img/t-posagots.png',
-  },
-  testos: {
-    title: 'Pinta un test de fang per les teves plantes',
-    desc: 'En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!',
-    imgAlt: 'Fotografia d`una mà pintant un test de fang',
-    imgSrc: '/img/t-testos.webp',
   },
   aMida: {
     title: 'Taller a mida. Tens alguna idea?',
