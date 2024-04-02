@@ -58,6 +58,12 @@ export const tallers: Record<TallerId, Taller> = {
     imgAlt: 'Fotografia d´una participant del taller fent un posagots',
     imgSrc: '/img/t-posagots.png',
   },
+  testos: {
+    title: 'Pinta un test de fang per les teves plantes',
+    desc: 'En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!',
+    imgAlt: 'Fotografia d`una mà pintant un test de fang',
+    imgSrc: '/img/t-testos.webp',
+  },
   aMida: {
     title: 'Taller a mida. Tens alguna idea?',
     desc: 'Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et cuadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.',
@@ -88,6 +94,30 @@ export const events: Event[] = [
       year: 2024,
     },
     time: '17:00 - 19:00',
+    location: 'Espai Coopelia',
+    availability: 'last',
+  },
+  {
+    tallerId: 'testos',
+    price: 20,
+    date: {
+      day: 17,
+      month: 5,
+      year: 2024,
+    },
+    time: '18:30 - 20:30',
+    location: 'Espai Coopelia',
+    availability: 'some',
+  },
+   {
+    tallerId: 'testos',
+    price: 20,
+    date: {
+      day: 31,
+      month: 5,
+      year: 2024,
+    },
+    time: '18:30 - 20:30',
     location: 'Espai Coopelia',
     availability: 'some',
   }
