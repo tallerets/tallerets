@@ -81,7 +81,7 @@ export const tallers: Record<TallerId, Taller> = {
 export const events: Event[] = [
 {
     tallerId: 'bossa',
-    price: 15,
+    price: 18,
     date: {
       day: 9,
       month: 4,
@@ -89,11 +89,11 @@ export const events: Event[] = [
     },
     time: '18:00 - 20:00',
     location: 'Espai Coopelia',
-    availability: 'some',
+    availability: 'none',
   },
   {
     tallerId: 'bossa',
-    price: 15,
+    price: 18,
     date: {
       day: 20,
       month: 4,
@@ -101,7 +101,7 @@ export const events: Event[] = [
     },
     time: '17:00 - 19:00',
     location: 'Espai Coopelia',
-    availability: 'last',
+    availability: 'none',
   },
   {
     tallerId: 'testos',
