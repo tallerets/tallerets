@@ -113,7 +113,7 @@ export const events: Event[] = [
     },
     time: '18:30 - 20:30',
     location: 'Espai Coopelia',
-    availability: 'some',
+    availability: 'last',
   },
    {
     tallerId: 'testos',
@@ -125,7 +125,7 @@ export const events: Event[] = [
     },
     time: '18:30 - 20:30',
     location: 'Espai Coopelia',
-    availability: 'some',
+    availability: 'last',
   },
      {
     tallerId: 'collage',
@@ -137,7 +137,7 @@ export const events: Event[] = [
     },
     time: '18:30 - 20:30',
     location: 'Espai Coopelia',
-    availability: 'some',
+    availability: 'none',
   }
 ] as const
 
