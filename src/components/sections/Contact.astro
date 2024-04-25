@@ -4,7 +4,7 @@ import { constants } from '../../config'
 
 <section class="page-padding flex items-center flex-wrap gap-8 py-6">
   <h3 class="text-3xl me-auto">
-    per més informació, segueix-me a instagram o envia'm un correu!
+    per més informació, segueix-me a instagram, escriu-me o truca'm!
   </h3>
 
   <div class="text-xl flex gap-6 flex-wrap">
@@ -39,6 +39,14 @@ import { constants } from '../../config'
           <b class="me-1 text-xl">✎</b>
           <span class="underline">
             {constants.email}
+          </span>
+        </a>
+      </address>
+      <address class="py-2">
+        <a class="p-2" href={`tel:${constants.mobile}`} aria-label="Trucar">
+          <b class="me-1 text-xl">🖁</b>
+          <span class="underline">
+            {constants.mobile}
           </span>
         </a>
       </address>

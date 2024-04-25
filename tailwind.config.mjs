@@ -8,7 +8,7 @@ export default {
     colors: {
       soft: '#FFFBEC',
       dark: '#1a1a1a',
-      red: '#D60000',
+      red: '#612500',
     },
     fontFamily: {
       serif: ['Noto Serif Variable', ...defaultTheme.fontFamily.serif],
