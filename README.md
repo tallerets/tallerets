@@ -15,7 +15,7 @@ Per afegir nous tallers o events cal editar el fitxer `src/content.ts`. Els dos 
 1. Anar al fitxer [src/content.ts](src/content.ts), editar el fitxer clicant ✎ i modificar `events`.
 2. Un cop afegit el nou event (pots consultar l'estructura a la part superior del mateix fitxer), clicar <b style="color: green">Commit changes...</b>. Si cliques 'Commit directly to `main` branch' els canvis s'aplicarán directament. També pots 'create a new branch and start a pull requests', lo qual et permetrà veure una previsualització dels canvis abans de publicar. Un cop contenta amb els canvis, clica <b style="color: green">Merge Pull Request</b>.
 
- ### 2. Afegir un nou taller
+### 2. Afegir un nou taller
 
 1. Hauràs de tenir preparada la imatge i el text del taller, així com pensar en un identificador únic per després utilitzar-lo quan afageixis events.
 2. Per la imatge, considera que les 'cartes' de tallers es mostren de manera diferent a mòvil i a l'ordinador. Et recomano una imatge de `360x480px`, en format `.webp`. Aquesta eina web va super bé per modificar les imatges ràpidament i canviar-les de format [https://ezgif.com/](https://ezgif.com/)
@@ -25,15 +25,9 @@ Per afegir nous tallers o events cal editar el fitxer `src/content.ts`. Els dos 
 
 ## ⚜️ Sistema de disseny
 
-Tipografia — [Noto Serif](https://fonts.google.com/specimen/Noto+Serif?query=noto+serif)
+Els colors i les fonts utilitzades es troben a [tailwind.config.js](tailwind.config.js). Si vols canviar-los, pots fer-ho editant aquest fitxer. Tanmateix, no és recomanable que els canviis perque ja estan pensats per tenir el contrast adequat.
 
-Colors:
-
-- Clar - #FFFBEC
-- Fosc - #1a1a1a
-- Vermell - #D60000
-
------
+---
 
 ## 🧞 Project Commands
 

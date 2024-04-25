@@ -1,9 +1,10 @@
 ---
 interface Props {
   className: string
+  isMobile?: boolean
 }
 
-const { className } = Astro.props
+const { className, isMobile } = Astro.props
 ---
 
 <ul class={className}>
@@ -14,15 +15,15 @@ const { className } = Astro.props
     <a href="/tallers">tallerets</a>
   </li>
   <li>
-    <a href="/#bio">sobre mi</a>
+    <a href="/#bio" target={isMobile ? '_blank' : ''}>sobre mi</a>
   </li>
   <li>
-    <a href="/#contact">contacte</a>
+    <a href="/#contact" target={isMobile ? '_blank' : ''}>contacte</a>
   </li>
 </ul>
 
 <style>
   a {
-    @apply block border bg-soft rounded-full text-center px-5 pb-[0.4rem] pt-[0.3rem] hover:-rotate-3 hover:border-red hover:text-red transition-all;
+    @apply block border bg-soft rounded-full text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:-rotate-6 hover:border-red hover:text-red transition-transform;
   }
 </style>

@@ -35,13 +35,13 @@ const isDisabled =
     <header class="bg-dark text-soft py-3 px-1 border-b w-full">
       <p class="font-mono uppercase">{date}</p>
     </header>
-    <div class="px-4 pt-3 flex flex-col w-full">
+    <div class="px-4 py-3 flex flex-col w-full">
       <h3 class="mb-2 text-wrap font-bold">{title}</h3>
       <p class="mb-2">{time}</p>
       <small>{location && `☉ ${location}`}</small>
     </div>
 
-    <div class="px-4 my-3 flex items-center w-full">
+    <div class="px-4 my-4 mt-auto flex items-center w-full">
       <p class="font-mono text-sm">{price}</p>
       <small class="text-sm block ms-auto italic">
         {slots}
@@ -96,7 +96,7 @@ const isDisabled =
           {price}
         </p>
       </div>
-      <p class="p-4 ps-0 text-center text-sm text-red md:w-32">
+      <p class="p-4 ps-0 text-center text-lg text-red md:w-32">
         ☐ clica per copiar
       </p>
     </button>
@@ -134,7 +134,7 @@ const isDisabled =
       copyButton.lastElementChild.textContent = '☑ copiat!'
       setTimeout(
         () => (copyButton.lastElementChild.textContent = '☐ clica per copiar'),
-        2000,
+        2000
       )
     }
   </script>
