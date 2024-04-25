@@ -34,4 +34,13 @@
     src: url('/fonts/ClashDisplayMedium.woff2') format('woff2');
     font-weight: 500;
   }
+  @font-face {
+    font-family: 'Adjusted Arial Fallback';
+    font-weight: 300;
+    src: local(Arial);
+    size-adjust: 99%;
+    ascent-override: 94%;
+    descent-override: 21%;
+    line-gap-override: 8%;
+  }
 }

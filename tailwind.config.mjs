@@ -11,7 +11,11 @@ export default {
       red: '#A22400',
     },
     fontFamily: {
-      serif: ['Clash Display', ...defaultTheme.fontFamily.serif],
+      serif: [
+        'Clash Display',
+        'Adjusted Arial Fallback',
+        ...defaultTheme.fontFamily.serif,
+      ],
       mono: [...defaultTheme.fontFamily.mono],
     },
   },
