@@ -6,12 +6,12 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
-      soft: '#FFFBEC',
+      soft: '#FEFAE9',
       dark: '#1a1a1a',
-      red: '#612500',
+      red: '#A22400',
     },
     fontFamily: {
-      serif: ['Noto Serif Variable', ...defaultTheme.fontFamily.serif],
+      serif: ['Clash Display', ...defaultTheme.fontFamily.serif],
       mono: [...defaultTheme.fontFamily.mono],
     },
   },

@@ -10,20 +10,20 @@ import NavLinks from '../_partials/NavLinks.astro'
 ---
 
 <header
-  class={`${className} page-padding z-10 flex items-center py-5 top-0 w-full `}
+  class={`${className} page-padding z-10 flex items-center py-5 sm:py-7 top-0 w-full `}
 >
   <a href="/" class="me-auto text-4xl md:text-5xl italic">
     <img
       src="/icons/logo.png"
-      alt="Logo de Tallerets"
-      class="w-32 md:w-48 xl:w-64"
-      width="256"
-      height="69"
+      alt="Tallerets"
+      class="w-28 md:w-36 xl:w-48"
+      width="260"
+      height="130"
     />
   </a>
   <nav class="flex justify-center">
     <NavLinks
-      className="hidden md:flex items-center gap-4 text-base text-nowrap"
+      className="hidden md:flex items-center gap-4 text-nowrap font-[500]"
     />
   </nav>
   <MobileMenu className="md:hidden" />

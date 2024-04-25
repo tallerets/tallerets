@@ -18,34 +18,38 @@ import { constants } from '../../config'
     <div class="text-base md:text-lg">
       <p class="py-2">
         <a
-          class="p-2"
+          class="p-2 text-red"
           href={`https://www.instagram.com/${constants.instagramId}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Perfil d'Instagram"
         >
           <b class="me-1 text-lg">♡</b>
-          <span class="underline">
+          <span class="hover:underline">
             @{constants.instagramId}
           </span>
         </a>
       </p>
       <address class="py-2">
         <a
-          class="p-2"
+          class="p-2 text-red"
           href={`mailto:${constants.email}`}
           aria-label="Enviar correu electrònic"
         >
           <b class="me-1 text-xl">✎</b>
-          <span class="underline">
+          <span class="hover:underline">
             {constants.email}
           </span>
         </a>
       </address>
       <address class="py-2">
-        <a class="p-2" href={`tel:${constants.mobile}`} aria-label="Trucar">
+        <a
+          class="p-2 text-red"
+          href={`tel:${constants.mobile}`}
+          aria-label="Trucar"
+        >
           <b class="me-1 text-xl">🖁</b>
-          <span class="underline">
+          <span class="hover:underline">
             {constants.mobile}
           </span>
         </a>
