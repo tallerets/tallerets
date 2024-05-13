@@ -171,9 +171,9 @@ export const events: Event[] = [
       month: 6,
       year: 2024,
     },
-    time: '16:00 - 18:00',
+    time: '11:00 - 13:00',
     location: 'Espai Coopelia',
-    availability: 'none',
+    availability: 'some',
   },
 ] as const
 
