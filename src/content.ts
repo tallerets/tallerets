@@ -79,30 +79,6 @@ export const tallers: Record<TallerId, Taller> = {
 } as const
 
 export const events: Event[] = [
-{
-    tallerId: 'bossa',
-    price: 18,
-    date: {
-      day: 9,
-      month: 4,
-      year: 2024,
-    },
-    time: '18:00 - 20:00',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
-  {
-    tallerId: 'bossa',
-    price: 18,
-    date: {
-      day: 20,
-      month: 4,
-      year: 2024,
-    },
-    time: '17:00 - 19:00',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
   {
     tallerId: 'testos',
     price: 20,
@@ -113,7 +89,7 @@ export const events: Event[] = [
     },
     time: '18:30 - 20:30',
     location: 'Espai Coopelia',
-    availability: 'last',
+    availability: 'none',
   },
    {
     tallerId: 'testos',
@@ -125,20 +101,8 @@ export const events: Event[] = [
     },
     time: '18:30 - 20:30',
     location: 'Espai Coopelia',
-    availability: 'last',
-  },
-     {
-    tallerId: 'collage',
-    price: 15,
-    date: {
-      day: 16,
-      month: 4,
-      year: 2024,
-    },
-    time: '18:30 - 20:30',
-    location: 'Espai Coopelia',
     availability: 'none',
-  }, 
+  },
    {
     tallerId: 'mirallet',
     price: 23,
@@ -172,7 +136,31 @@ export const events: Event[] = [
       year: 2024,
     },
     time: '11:00 - 13:00',
-    location: 'Espai Coopelia',
+    location: 'Espai Tallerets',
+    availability: 'some',
+  },
+   {
+    tallerId: 'collage',
+    price: 18,
+    date: {
+      day: 14,
+      month: 6,
+      year: 2024,
+    },
+    time: '19:00 - 21:00',
+    location: 'Espai tallerets',
+    availability: 'last',
+  },
+     {
+    tallerId: 'testos',
+    price: 20,
+    date: {
+      day: 29,
+      month: 6,
+      year: 2024,
+    },
+    time: '19:00 - 21:00',
+    location: 'Espai tallerets',
     availability: 'some',
   },
 ] as const
