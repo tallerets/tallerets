@@ -176,7 +176,7 @@ export const events: Event[] = [
     price: 89,
     date: {
       day: 3 i 10,
-      month: 6,
+      month: 7,
       year: 2024,
     },
     time: '18:00 - 21:00',
