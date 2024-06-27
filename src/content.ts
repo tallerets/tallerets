@@ -78,13 +78,10 @@ export const tallers: Record<TallerId, Taller> = {
   },
   estiu: {
     title: 'Workshop especial estiu',
-    desc: 'Aquest workshop especial d'estiu consisteix en dues tardes a on farem 3 tallerets! 
-    Talleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil
-      Talleret d'autoretrat: on aprendràs a mirar-te amb amor
-      Talleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu',
+    desc: "Aquest workshop especial d'estiu consisteix en dues tardes a on farem 3 tallerets!\nTalleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil\nTalleret d'autoretrat: on aprendràs a mirar-te amb amor\nTalleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu",
     imgAlt: 'Fotografia d´una participant del taller fent collage',
     imgSrc: '/img/t-collage.webp',
-      }
+  }
 } as const
 
 export const events: Event[] = [
