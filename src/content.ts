@@ -76,7 +76,7 @@ export const tallers: Record<TallerId, Taller> = {
     imgAlt: 'Ilustració de dos potets amb pinzells',
     imgSrc: '/icons/mida-gran.svg',
   },
-  posagots: {
+  estiu: {
     title: 'Workshop especial estiu',
     desc: 'Aquest workshop especial d'estiu consisteix en dues tardes a on farem 3 tallerets! 
     Talleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil
@@ -172,16 +172,29 @@ export const events: Event[] = [
     availability: 'none',
   },
    {
-    tallerId: 'Workshop especial estiu',
+    tallerId: 'estiu',
     price: 89,
     date: {
-      day: 3 i 10,
+      day: 3,
       month: 7,
       year: 2024,
     },
     time: '18:00 - 21:00',
     location: 'Espai tallerets',
     availability: 'some',
+   },
+  {
+    tallerId: 'estiu',
+    price: 89,
+    date: {
+      day: 10,
+      month: 7,
+      year: 2024,
+    },
+    time: '18:00 - 21:00',
+    location: 'Espai tallerets',
+    availability: 'some',
+   }
 ] as const
 
 // ---- Extended Content ----
