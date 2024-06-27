@@ -84,6 +84,7 @@ export const tallers: Record<TallerId, Taller> = {
       Talleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu',
     imgAlt: 'Fotografia d´una participant del taller fent collage',
     imgSrc: '/img/t-collage.webp',
+      }
 } as const
 
 export const events: Event[] = [
