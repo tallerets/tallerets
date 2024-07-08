@@ -1,5 +1,3 @@
-import { getNextAvailableEvents } from './utils'
-
 // ---- Types ----
 
 type TallerId = string
@@ -33,6 +31,12 @@ export const AVAILABILITY_LABELS = {
 // ---- Content ----
 
 export const tallers: Record<TallerId, Taller> = {
+  estiu: {
+    title: 'Workshop especial estiu',
+    desc: "Aquest workshop especial d'estiu consisteix en dues tardes a on farem 3 tallerets!\nTalleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil\nTalleret d'autoretrat: on aprendràs a mirar-te amb amor\nTalleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu",
+    imgAlt: 'Fotografia d´una participant del taller fent collage',
+    imgSrc: '/img/t-collage.webp',
+  },
   bossa: {
     title: 'Pinta una bossa de tela',
     desc: 'Segur que tens moltes bosses de tela per anar a la compra, però cap amb el teu propi disseny per anar txulejant pel mercat. En aquest taller pintaràs una bossa de cotó de 40x37 a on després podràs portar totes les teves fruites i verdures.',
@@ -46,7 +50,7 @@ export const tallers: Record<TallerId, Taller> = {
     imgAlt: 'Fotografia d`una mà pintant un test de fang',
     imgSrc: '/img/t-testos.webp',
   },
-   collage: {
+  collage: {
     title: 'Fes uns punts de llibre en collage',
     desc: 'En aquest talleret farem dos punts de llibre amb tècniques mixtes de collage i pintura - perfecte per sant Jordi!!',
     imgAlt: 'Fotografia d´una participant del taller fent collage',
@@ -76,12 +80,6 @@ export const tallers: Record<TallerId, Taller> = {
     imgAlt: 'Ilustració de dos potets amb pinzells',
     imgSrc: '/icons/mida-gran.svg',
   },
-  estiu: {
-    title: 'Workshop especial estiu',
-    desc: "Aquest workshop especial d'estiu consisteix en dues tardes a on farem 3 tallerets!\nTalleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil\nTalleret d'autoretrat: on aprendràs a mirar-te amb amor\nTalleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu",
-    imgAlt: 'Fotografia d´una participant del taller fent collage',
-    imgSrc: '/img/t-collage.webp',
-  }
 } as const
 
 export const events: Event[] = [
@@ -97,7 +95,7 @@ export const events: Event[] = [
     location: 'Espai Coopelia',
     availability: 'none',
   },
-   {
+  {
     tallerId: 'testos',
     price: 20,
     date: {
@@ -109,7 +107,7 @@ export const events: Event[] = [
     location: 'Espai Coopelia',
     availability: 'none',
   },
-   {
+  {
     tallerId: 'mirallet',
     price: 23,
     date: {
@@ -145,7 +143,7 @@ export const events: Event[] = [
     location: 'Espai Tallerets',
     availability: 'none',
   },
-   {
+  {
     tallerId: 'collage',
     price: 18,
     date: {
@@ -157,7 +155,7 @@ export const events: Event[] = [
     location: 'Espai tallerets',
     availability: 'none',
   },
-     {
+  {
     tallerId: 'testos',
     price: 20,
     date: {
@@ -169,7 +167,7 @@ export const events: Event[] = [
     location: 'Espai tallerets',
     availability: 'none',
   },
-   {
+  {
     tallerId: 'estiu',
     price: 89,
     date: {
@@ -180,7 +178,7 @@ export const events: Event[] = [
     time: '18:00 - 21:00',
     location: 'Espai tallerets',
     availability: 'some',
-   },
+  },
   {
     tallerId: 'estiu',
     price: 89,
@@ -192,7 +190,7 @@ export const events: Event[] = [
     time: '18:00 - 21:00',
     location: 'Espai tallerets',
     availability: 'some',
-   }
+  },
 ] as const
 
 // ---- Extended Content ----
@@ -212,5 +210,3 @@ export const formattedEventArray: FormattedEvent[] = events.map((event) => ({
   date: new Date(event.date.year, event.date.month - 1, event.date.day),
   availability: AVAILABILITY_LABELS[event.availability],
 }))
-
-export const nextEvents = getNextAvailableEvents()

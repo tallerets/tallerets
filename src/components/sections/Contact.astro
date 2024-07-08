@@ -1,5 +1,5 @@
 ---
-import { constants } from '../../config'
+import { contacts } from '../../data/contact'
 ---
 
 <section class="page-padding flex items-center flex-wrap gap-8 py-6">
@@ -12,45 +12,45 @@ import { constants } from '../../config'
       width="96"
       height="64"
       class="w-24 text-sm text-center"
-      src="icons/carta.svg"
+      src="/icons/carta.svg"
       alt="Il·lustració de una carta amb un cor al mitg"
     />
     <div class="text-base md:text-lg">
       <p class="py-2">
         <a
           class="p-2 text-red"
-          href={`https://www.instagram.com/${constants.instagramId}`}
+          href={contacts.instagramUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Perfil d'Instagram"
         >
           <b class="me-1 text-lg">♡</b>
           <span class="hover:underline">
-            @{constants.instagramId}
+            @{contacts.instagramId}
           </span>
         </a>
       </p>
       <address class="py-2">
         <a
           class="p-2 text-red"
-          href={`mailto:${constants.email}`}
+          href={`mailto:${contacts.email}`}
           aria-label="Enviar correu electrònic"
         >
           <b class="me-1 text-xl">✎</b>
           <span class="hover:underline">
-            {constants.email}
+            {contacts.email}
           </span>
         </a>
       </address>
       <address class="py-2">
         <a
           class="p-2 text-red"
-          href={`tel:${constants.mobile}`}
+          href={`tel:${contacts.mobile}`}
           aria-label="Trucar"
         >
           <b class="me-1 text-xl">🖁</b>
           <span class="hover:underline">
-            {constants.mobile}
+            {contacts.mobile}
           </span>
         </a>
       </address>

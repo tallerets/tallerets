@@ -1,10 +1,10 @@
 ---
+import { contacts } from '../../data/contact'
+
 interface Props {
   mailto: string
 }
 const { mailto } = Astro.props
-
-import { constants } from '../../config'
 ---
 
 <ol class="list-decimal ps-5">
@@ -19,7 +19,7 @@ import { constants } from '../../config'
       class="inline-block border rounded-full px-2 py-1 hover:-rotate-3 transition-all my-2 hover:text-red hover:border-red"
     >
       <b class="mx-1">✎</b>
-      {constants.email}
+      {contacts.email}
     </a>
   </li>
 

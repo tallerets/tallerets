@@ -1,6 +1,7 @@
 ---
 import Mantainance from '../components/sections/Mantainance.astro'
 import Favicon from './_partials/Favicon.astro'
+import { getLangFromUrl } from '../utils'
 import { config } from '../config'
 import '../styles/main.css'
 
@@ -8,18 +9,14 @@ interface Props {
   title: string
   description: string
 }
-
-export const defaultTitle =
-  'tallerets – tallers creatius a Barcelona per desconectar'
-export const defaultDescription =
-  'Per crear no cal experiència ni cap habilitat especial, només ganes de passar una estona amb tu mateixa.'
 const { title, description } = Astro.props
+const lang = getLangFromUrl(Astro.url)
 const scrollClass =
   import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
 ---
 
 <!doctype html>
-<html lang="ca" dir="ltr" class={`${scrollClass} bg-dark`}>
+<html lang={lang} dir="ltr" class={`${scrollClass} bg-dark`}>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -31,21 +28,21 @@ const scrollClass =
 
     <!-- Primary Meta Tags -->
     <title>{title}</title>
-    <meta name="title" content={defaultTitle} />
+    <meta name="title" content={title} />
     <meta name="description" content={description} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.tallerets.com/" />
-    <meta property="og:title" content={defaultTitle} />
-    <meta property="og:description" content={defaultDescription} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:image" content="/img/thumb.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.tallerets.com/" />
-    <meta property="twitter:title" content={defaultTitle} />
-    <meta property="twitter:description" content={defaultDescription} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="/img/thumb.png" />
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">

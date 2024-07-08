@@ -1,0 +1,18 @@
+---
+import { languages } from '../../utils'
+---
+
+<ul>
+  {
+    Object.entries(languages).map(([lang, label]) => {
+      const href = lang === 'es' ? '/' : `/${lang}/`
+      return (
+        <li class="text-right">
+          <a class="lowercase" href={href}>
+            {label}
+          </a>
+        </li>
+      )
+    })
+  }
+</ul>

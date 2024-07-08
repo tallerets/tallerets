@@ -1,27 +1,5 @@
 ---
-import Layout, {
-  defaultTitle,
-  defaultDescription,
-} from '../layouts/Layout.astro'
-import Footer from '../components/sections/Footer.astro'
-import Contact from '../components/sections/Contact.astro'
-import AMida from '../components/sections/AMida.astro'
-import Bio from '../components/sections/Bio.astro'
-import Hero from '../components/sections/Hero.astro'
-import ProximsTallerets from '../components/sections/ProximsTallerets.astro'
+import HomePage from '../components/screens/HomePage.astro'
 ---
 
-<Layout title={defaultTitle} description={defaultDescription}>
-  <main>
-    <Hero />
-    <Bio />
-    <hr />
-    <ProximsTallerets />
-    <hr />
-    <AMida />
-  </main>
-
-  <hr />
-  <Contact />
-  <Footer />
-</Layout>
+<HomePage />

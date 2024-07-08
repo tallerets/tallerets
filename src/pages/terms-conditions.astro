@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
-import { constants } from '../config'
+import { contacts } from '../data/contact'
 ---
 
 <Layout
@@ -65,7 +65,7 @@ import { constants } from '../config'
     <h2 class="text-3xl py-3 font-bold mt-8">Contacte</h2>
     <p>
       Si teniu alguna pregunta o preocupació sobre els Termes d'ús o la Política
-      de privacitat, poseu-vos en contacte a {constants.email}.
+      de privacitat, poseu-vos en contacte a {contacts.email}.
     </p>
   </main>
 </Layout>

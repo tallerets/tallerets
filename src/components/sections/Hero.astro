@@ -1,5 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from '../../utils'
 import Header from './Header.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="relative h-screen overflow-hidden">
@@ -12,11 +16,7 @@ import Header from './Header.astro'
       class="video absolute z-1"
       title="video amb petites escenes de diferents tallerets fets anteriorment"
     >
-      <source src="vids/hero.mp4" type="video/mp4" />
-      <span class="text-soft">
-        Aqui hi ha un video d'alguns tallarets! Però sembla que el teu navegador
-        no el pot reproduir 😢
-      </span>
+      <source src="/vids/hero.mp4" type="video/mp4" />
     </video>
   </div>
   <Header className="text-dark absolute" />
@@ -26,7 +26,8 @@ import Header from './Header.astro'
     <h1
       class="text-dark text-8xl sm:text-8xl lg:text-[9rem] mt-auto pt-20 mb-8 font-[300]"
     >
-      una pausa<br />per crear
+      {t('hero.h1-1')}<br />
+      {t('hero.h1-2')}
     </h1>
 
     <div class="flex justify-end items-center w-full gap-4">

@@ -1,5 +1,5 @@
 ---
-import { constants } from '../../config'
+import { contacts } from '../../data/contact'
 ---
 
 <main
@@ -21,13 +21,13 @@ import { constants } from '../../config'
         target="_blank"
         class="underline"
         rel="noopener noreferrer"
-        href={`https://www.instagram.com/${constants.instagramId}`}
+        href={contacts.instagramUrl}
       >
-        @{constants.instagramId}
+        @{contacts.instagramId}
       </a>
       o escriure un email a{' '}
-      <a class="underline" href={`mailto:${constants.email}`}>
-        {constants.email}
+      <a class="underline" href={`mailto:${contacts.email}`}>
+        {contacts.email}
       </a>
     </p>
   </div>

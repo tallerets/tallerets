@@ -1,5 +1,6 @@
 ---
-import { constants } from '../../config'
+import { contacts } from '../../data/contact'
+import LangSelector from './LangSelector.astro'
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">
@@ -26,13 +27,14 @@ import { constants } from '../../config'
         <a href="/privacy-policy">política de privacitat i cookies</a>
       </li>
     </ul>
+    <LangSelector />
   </nav>
 </footer>
 <hr class="text-soft" />
 <p class="page-padding bg-dark text-soft text-xs py-4">
   <b class="textxl me-2">♧</b>
   disseny i desenvolupament web per
-  <a class="underline" href={constants.authorLink}> @aymyo</a>
+  <a class="underline" href={contacts.webAuthorUrl}> @aymyo</a>
   ~ Barcelona, 2024
 </p>
 

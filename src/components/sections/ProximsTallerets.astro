@@ -1,10 +1,13 @@
 ---
-import { nextEvents, tallers, type FormattedEvent } from '../../content'
-import { dateToString, createEventUniqueId } from '../../utils'
-import TallerPostcard from '../TallerPostcard.astro'
+import { formattedEventArray, tallers } from '../../data/content'
+import {
+  dateToString,
+  createEventUniqueId,
+  getNextAvailableEvents,
+} from '../../utils'
+import TallerPostcard from '../cards/TallerPostcard.astro'
 
-const nextTwoEvents = nextEvents.slice(0, 2)
-
+const nextTwoEvents = getNextAvailableEvents(formattedEventArray).slice(0, 2)
 const noEventsMessage =
   "Més tallers properament! Consulta la llista completa i contacta'm si voldries organitzar-ne un."
 ---

@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import Footer from '../components/sections/Footer.astro'
 import Header from '../components/sections/Header.astro'
-import { constants } from '../config'
+import { contacts } from '../data/contact'
 
 const currentHref = Astro.url.href
 ---
@@ -34,15 +34,15 @@ const currentHref = Astro.url.href
         contactar-me a Instragam
         <a
           class="underline"
-          href={`https://www.instagram.com/${constants.instagramId}`}
+          href={contacts.instagramUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
-          @{constants.instagramId}
+          @{contacts.instagramId}
         </a>
         o escriu un email a{' '}
-        <a class="underline" href={`mailto:${constants.email}`}>
-          {constants.email}
+        <a class="underline" href={`mailto:${contacts.email}`}>
+          {contacts.email}
         </a>
       </p>
 
