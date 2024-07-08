@@ -1,16 +1,17 @@
 ---
 import { contacts } from '../../data/contact'
-import { tallers } from '../../data/content'
+import { getLangFromUrl, useTranslations } from '../../utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section id="contact" class="page-padding md:max-w-[100ch] mx-auto my-20">
   <div class="my-12 flex gap-8 flex-wrap justify-between items-center">
     <div class="lg:max-w-[50%]">
-      <h3 class="text-4xl md:text-5xl font-[500]">tallerets a mida</h3>
+      <h3 class="text-4xl md:text-5xl font-[500]">{t('amida.title')}</h3>
       <p class="text-xl my-6">
-        Tens una idea de talleret que vols fer amb els teus amics per un event o
-        perque si, o bé no et cuadren les dates? Proposa’m la teva idea i podem
-        fer un talleret a mida a partir de 4 persones.
+        {t('amida.text')}
       </p>
       <address class="flex items-center gap-6">
         <a
@@ -30,7 +31,7 @@ import { tallers } from '../../data/content'
       height="216"
       class="text-dark w-64 object-cover rounded-sm"
       src="/icons/mida.svg"
-      alt={tallers.aMida.imgAlt}
+      alt=""
     />
   </div>
 </section>

@@ -8,14 +8,7 @@ const t = useTranslations(lang)
 
 <section class="relative h-screen overflow-hidden">
   <div class="container">
-    <video
-      autoplay
-      loop
-      muted
-      playsinline
-      class="video absolute z-1"
-      title="video amb petites escenes de diferents tallerets fets anteriorment"
-    >
+    <video autoplay loop muted playsinline class="video absolute z-1">
       <source src="/vids/hero.mp4" type="video/mp4" />
     </video>
   </div>
@@ -32,7 +25,7 @@ const t = useTranslations(lang)
 
     <div class="flex justify-end items-center w-full gap-4">
       <a href="#tallerets" class="c-button my-10 bg-soft me-auto text-nowrap">
-        pròxims tallerets
+        {t('hero.cta')}
       </a>
     </div>
   </div>

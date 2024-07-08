@@ -1,5 +1,9 @@
 ---
 import { contacts } from '../../data/contact'
+import { getLangFromUrl, useTranslations } from '../../utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <main
@@ -12,11 +16,10 @@ import { contacts } from '../../data/contact'
     alt="il·lustració de uns pots de vidre i uns pinzells"
   />
   <div class="max-w-[50rem]">
-    <h1 class="text-4xl md:text-6xl mb-6">Estem fent obres a la web!</h1>
+    <h1 class="text-4xl md:text-6xl mb-6">{t('mantainance.title')}</h1>
 
     <p class="text-lg md:text-2xl mt-8">
-      Si tens qualsevol dubte o vols informació sobre els tallers, pots
-      seguir-me a Instagram a{' '}
+      {t('mantainance.text')}
       <a
         target="_blank"
         class="underline"
@@ -25,7 +28,7 @@ import { contacts } from '../../data/contact'
       >
         @{contacts.instagramId}
       </a>
-      o escriure un email a{' '}
+      {t('mantainance.text2')}
       <a class="underline" href={`mailto:${contacts.email}`}>
         {contacts.email}
       </a>

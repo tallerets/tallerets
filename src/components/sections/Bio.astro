@@ -1,6 +1,13 @@
+---
+import { getLangFromUrl, useTranslations } from '../../utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
 <section id="bio" class="page-padding md:max-w-[55ch] mx-auto py-16 md:py-24">
   <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
-    soc la Noor i organitzo tallers creatius
+    {t('bio.title')}
     <span>
       <img
         width="48"
@@ -19,12 +26,7 @@
     src="/img/bio-noor.png"
     alt="Fotos de la Noor facilitant tallerets"
   />
-  <p class="text-xl mb-8">
-    Com més connecto amb mi i amb els demés ha estat sempre a través de l’art.
-  </p>
   <p class="text-xl">
-    Amb tallerets vull transmetre i ensenyar que quan fem coses amb les nostres
-    mans ens sentim més presents i vius. Que per crear no cal experiència ni cap
-    habilitat especial, només ganes de passar una estona amb tu mateixa.
+    {t('bio.text')}
   </p>
 </section>

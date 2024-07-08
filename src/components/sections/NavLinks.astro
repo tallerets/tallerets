@@ -1,24 +1,31 @@
 ---
+import { getLangFromUrl, useTranslations } from '../../utils'
+
 interface Props {
   className: string
   isMobile?: boolean
 }
 
 const { className, isMobile } = Astro.props
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <ul class={className}>
   <li>
-    <a href="/reserva">reserva</a>
+    <a href="/reserva">{t('nav.a.reserva')}</a>
   </li>
   <li>
-    <a href="/tallers">tallerets</a>
+    <a href="/tallers">{t('nav.a.tallers')}</a>
   </li>
   <li>
-    <a href="/#bio" target={isMobile ? '_blank' : ''}>sobre mi</a>
+    <a href="/#bio" target={isMobile ? '_blank' : ''}>{t('nav.a.bio')}</a>
   </li>
   <li>
-    <a href="/#contact" target={isMobile ? '_blank' : ''}>contacte</a>
+    <a href="/#contact" target={isMobile ? '_blank' : ''}
+      >{t('nav.a.contact')}</a
+    >
   </li>
 </ul>
 

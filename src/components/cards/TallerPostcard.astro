@@ -1,4 +1,6 @@
 ---
+import { getLangFromUrl } from '../../utils'
+
 interface Props {
   id: string
   title: string
@@ -41,7 +43,7 @@ const cursorClass = href ? 'hover:cursor-pointer' : ''
       <img
         class="pointer-events-none cursos-none w-full h-full border-soft object-cover rounded-b border-t sm:rounded-e sm:rounded-bl-none sm:border-s sm:border-t-0"
         src={imgSrc}
-        alt={imgAlt}
+        alt=""
       />
     </div>
   </a>

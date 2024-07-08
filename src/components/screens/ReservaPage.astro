@@ -5,7 +5,6 @@ import Header from '../sections/Header.astro'
 import { tallers, formattedEventArray, tallersArray } from '../../data/content'
 import EventCard from '../cards/EventCard.astro'
 import Contact from '../sections/Contact.astro'
-import Reserves from '../sections/Reserves.astro'
 import {
   createEventUniqueId,
   createMailToString,
@@ -15,6 +14,7 @@ import {
   getLangFromUrl,
   useTranslations,
 } from '../../utils'
+import HowToBook from '../sections/HowToBook.astro'
 
 const monthsWithEvents = getMonthsWithEvents()
 const mailTo = createMailToString({
@@ -36,18 +36,13 @@ const t = useTranslations(lang)
     >
       <aside class="page-padding">
         <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
-          <h1 class="text-2xl md:text-4xl mb-4">calendari</h1>
-          <p>
-            Aquí tens els pròxims tallerets que estic organitzant. Si no hi ha
-            cap data que t’interessi, pots reservar un talleret a mida per a tu
-            i els teus.
-          </p>
-          <div class="flex my-8">
-            <a class="c-button" href="/tallers">llista de tallers</a>
-          </div>
-          <h2 class="text-xl md:text-3xl mb-4">com reservar?</h2>
+          <h1 class="text-2xl md:text-4xl mb-4">{t('reserva.title')}</h1>
+          <p class="mb-8">{t('reserva.text')}</p>
+          <h2 class="text-2xl md:text-4xl mb-6">
+            {t('reserva.how')}
+          </h2>
           <div class="border rounded p-3">
-            <Reserves mailto={mailTo} />
+            <HowToBook mailto={mailTo} />
           </div>
         </div>
       </aside>
@@ -68,7 +63,7 @@ const t = useTranslations(lang)
                         <EventCard
                           id={createEventUniqueId(e)}
                           tallerId={e.tallerId}
-                          title={tallers[e.tallerId]?.title}
+                          title={tallers[e.tallerId]?.title[lang]}
                           date={dateToWeekday(e.date, lang)}
                           time={e.time}
                           price={e.price + '€/pax'}
@@ -84,7 +79,7 @@ const t = useTranslations(lang)
         }
 
         <h2 class="text-2xl md:text-4xl mb-4 text-center mt-8">
-          trobem la data adequada!
+          {t('reserva.dataAdequada')}
         </h2>
         <ul
           class="page-padding flex flex-wrap gap-6 py-6 overflow-hidden justify-center"
@@ -95,9 +90,9 @@ const t = useTranslations(lang)
                 <EventCard
                   id={taller.id}
                   tallerId={taller.id}
-                  title={taller.title}
-                  date="Quan vulguis!"
-                  location="Preu i localització a convenir. Entre 4 i 16 persones. Contacta'm!"
+                  title={taller.title[lang]}
+                  date={t('reserva.dataCustom')}
+                  location={t('reserva.locCustom')}
                 />
               )
             })

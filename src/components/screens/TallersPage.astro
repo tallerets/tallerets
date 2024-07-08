@@ -4,14 +4,16 @@ import Footer from '../../components/sections/Footer.astro'
 import Header from '../../components/sections/Header.astro'
 import Contact from '../../components/sections/Contact.astro'
 import TallerPostcard from '../cards/TallerPostcard.astro'
-import { tallersArray, nextEvents } from '../../data/content'
+import { formattedEventArray, tallersArray } from '../../data/content'
 import {
   createEventUniqueId,
   dateToString,
   getLangFromUrl,
+  getNextAvailableEvents,
   useTranslations,
 } from '../../utils'
 
+const nextEvents = getNextAvailableEvents(formattedEventArray)
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
@@ -24,27 +26,22 @@ const t = useTranslations(lang)
     >
       <aside class="page-padding">
         <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
-          <h1 class="text-2xl md:text-4xl mb-4">tots els tallerets</h1>
+          <h1 class="text-2xl md:text-4xl mb-6">{t('tallers.title')}</h1>
           <ul class="mb-8">
             {
               tallersArray.map((taller) => {
                 return (
                   <li class="mb-1 list-decimal ms-4">
                     <a href={`#${taller.id}`} class="hover:underline">
-                      {taller.title}
+                      {taller.title[lang]}
                     </a>
                   </li>
                 )
               })
             }
-            <li class="mb-1 list-decimal ms-4">
-              <a href="#taller-a-mida" class="hover:underline">
-                Tens alguna idea? Tallers a mida!
-              </a>
-            </li>
           </ul>
           <div class="flex">
-            <a class="c-button" href="/reserva">veure calendari</a>
+            <a class="c-button" href="/reserva">{t('tallers.a.reserva')}</a>
           </div>
         </div>
       </aside>
@@ -55,7 +52,7 @@ const t = useTranslations(lang)
               (e) => e.tallerId === taller.id
             )
             const dateString =
-              dateToString(relatedEvent?.date) ?? "Contacta'm per mes dates"
+              dateToString(relatedEvent?.date) ?? t('tallers.emptyDate')
             const eventId =
               taller.id === 'aMida'
                 ? taller.id
@@ -64,10 +61,10 @@ const t = useTranslations(lang)
             return (
               <TallerPostcard
                 id={taller.id}
-                title={taller.title}
-                desc={taller.desc}
+                title={taller.title[lang]}
+                desc={taller.desc[lang]}
                 imgSrc={taller.imgSrc}
-                imgAlt={taller.imgAlt}
+                imgAlt=""
                 data={dateString}
                 href={`/reserva#${eventId}`}
               />

@@ -1,30 +1,38 @@
 ---
 import { contacts } from '../../data/contact'
+import { getLangFromUrl, useTranslations } from '../../utils'
 import LangSelector from './LangSelector.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">
   <nav class="py-8 flex justify-between items-center">
     <ul>
       <li>
-        <a href="/reserva">reserva</a>
+        <a href="/reserva">{t('footer.a.reserva')}</a>
       </li>
       <li>
-        <a href="/tallers">tallerets</a>
+        <a href="/tallers">{t('footer.a.tallers')}</a>
       </li>
       <li>
-        <a href="/#bio">sobre mi</a>
+        <a href="/#bio">{t('footer.a.bio')}</a>
       </li>
       <li>
-        <a href="/#contact">contacte</a>
+        <a href="/#contact">{t('footer.a.contact')}</a>
       </li>
     </ul>
-    <ul class="text-end">
+    <ul class="text-center">
       <li>
-        <a href="/terms-conditions">termes i condicions dels tallers</a>
+        <a href="/terms-conditions">
+          {t('footer.a.terms')}
+        </a>
       </li>
       <li>
-        <a href="/privacy-policy">política de privacitat i cookies</a>
+        <a href="/privacy-policy">
+          {t('footer.a.privacy')}
+        </a>
       </li>
     </ul>
     <LangSelector />
@@ -33,8 +41,9 @@ import LangSelector from './LangSelector.astro'
 <hr class="text-soft" />
 <p class="page-padding bg-dark text-soft text-xs py-4">
   <b class="textxl me-2">♧</b>
-  disseny i desenvolupament web per
+  {t('footer.author')}
   <a class="underline" href={contacts.webAuthorUrl}> @aymyo</a>
+  {t('footer.place.year')}
   ~ Barcelona, 2024
 </p>
 

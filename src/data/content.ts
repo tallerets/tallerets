@@ -3,9 +3,14 @@
 type TallerId = string
 
 interface Taller {
-  title: string
-  desc: string
-  imgAlt: string
+  title: {
+    es: string
+    ca: string
+  }
+  desc: {
+    es: string
+    ca: string
+  }
   imgSrc: string
 }
 
@@ -32,52 +37,91 @@ export const AVAILABILITY_LABELS = {
 
 export const tallers: Record<TallerId, Taller> = {
   estiu: {
-    title: 'Workshop especial estiu',
-    desc: "Aquest workshop especial d'estiu consisteix en dues tardes a on farem 3 tallerets!\nTalleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil\nTalleret d'autoretrat: on aprendràs a mirar-te amb amor\nTalleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu",
-    imgAlt: 'Fotografia d´una participant del taller fent collage',
+    title: {
+      es: 'Taller especial verano',
+      ca: 'Taller especial estiu',
+    },
+    desc: {
+      es: 'Este taller especial de verano consiste en dos tardes a donde haremos 3 talleres!\nTaller de iniciación al ganchillo: donde te harás una bolsita para el móvil\nTaller de autorretrato: donde aprenderás a mirarte con amor\nTaller de journaling y pintura: donde pintarás y te llevarás tu diario de verano',
+      ca: "Aquest taller especial d'estiu consisteix en dues tardes a on farem 3 tallerets!\nTalleret d'iniciació al ganxet: on et faràs una bosseta pel mòbil\nTalleret d'autoretrat: on aprendràs a mirar-te amb amor\nTalleret de journaling i pintura: a on pintaràs i t'enduràs el teu diari d'estiu",
+    },
     imgSrc: '/img/t-collage.webp',
   },
   bossa: {
-    title: 'Pinta una bossa de tela',
-    desc: 'Segur que tens moltes bosses de tela per anar a la compra, però cap amb el teu propi disseny per anar txulejant pel mercat. En aquest taller pintaràs una bossa de cotó de 40x37 a on després podràs portar totes les teves fruites i verdures.',
-    imgAlt:
-      'Fotografia de dues participants del taller pintant bosses de tela amb pintura acrílica',
+    title: {
+      es: 'Pinta una bolsa de tela',
+      ca: 'Pinta una bossa de tela',
+    },
+    desc: {
+      es: 'Seguro que tienes muchas bolsas de tela para ir a la compra, pero ninguna con tu propio diseño para lucir en el mercado. En este taller pintarás una bolsa de algodón de 40x37 donde después podrás llevar todas tus frutas y verduras.',
+      ca: 'Segur que tens moltes bosses de tela per anar a la compra, però cap amb el teu propi disseny per anar txulejant pel mercat. En aquest taller pintaràs una bossa de cotó de 40x37 on després podràs portar totes les teves fruites i verdures.',
+    },
     imgSrc: '/img/t-bosses.png',
   },
   testos: {
-    title: 'Pinta un test de fang per les teves plantes',
-    desc: 'En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!',
-    imgAlt: 'Fotografia d`una mà pintant un test de fang',
+    title: {
+      es: 'Pinta un tiesto de barro para tus plantas',
+      ca: 'Pinta un test de fang per les teves plantes',
+    },
+    desc: {
+      es: 'En este taller pintaremos un tiesto de barro para que puedas poner tus plantas o semillas.',
+      ca: 'En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!',
+    },
     imgSrc: '/img/t-testos.webp',
   },
   collage: {
-    title: 'Fes uns punts de llibre en collage',
-    desc: 'En aquest talleret farem dos punts de llibre amb tècniques mixtes de collage i pintura - perfecte per sant Jordi!!',
-    imgAlt: 'Fotografia d´una participant del taller fent collage',
+    title: {
+      es: 'Haz unos puntos de libro en collage',
+      ca: 'Fes uns punts de llibre en collage',
+    },
+    desc: {
+      es: 'En este taller haremos dos puntos de libro con técnicas mixtas de collage y pintura, ¡perfecto para Sant Jordi!',
+      ca: 'En aquest talleret farem dos punts de llibre amb tècniques mixtes de collage i pintura - perfecte per sant Jordi!!',
+    },
     imgSrc: '/img/t-collage.webp',
   },
   mirallet: {
-    title: 'Pinta un mirallet',
-    desc: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 a on després podràs mirar-te cada dia!',
-    imgAlt: "Fotografia d'una participant del taller pintant un mirallet",
+    title: {
+      es: 'Pinta un espejo',
+      ca: 'Pinta un mirallet',
+    },
+    desc: {
+      es: '¿Espejo, espejito... quién es la más guapa del reino?" ¡Imagina no tener un espejo al que poder hacerle estas preguntas! En este taller pintaremos juntas un espejo de 30x30 donde después podrás mirarte cada día.',
+      ca: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 on després podràs mirar-te cada dia!',
+    },
     imgSrc: '/img/t-mirallets.png',
   },
   potet: {
-    title: 'Pinta un potet de vidre',
-    desc: 'Saps aquests potets de cigrons, melmelada i olives que vas acumulant a la cuina perquè “segur que ho faré servir en algun moment”? doncs en aquest talleret podràs donar-li una segona vida a un d’aquests potets i després utilitzar-los per posar una espelma, llapis, una planteta… dues hores de desconnexió i de pas, reutilització!',
-    imgAlt: 'Cartell de taller de pintar pots de vidre',
+    title: {
+      es: 'Pinta un tarro de vidrio',
+      ca: 'Pinta un potet de vidre',
+    },
+    desc: {
+      es: '¿Sabes esos tarros de garbanzos, mermelada y aceitunas que acumulas en la cocina porque "seguro que lo utilizaré en algún momento"? Pues en este taller podrás darles una segunda vida a uno de esos tarros y luego utilizarlos para poner una vela, lápices, una plantita... ¡dos horas de desconexión y reutilización!',
+      ca: 'Saps aquests potets de cigrons, melmelada i olives que vas acumulant a la cuina perquè “segur que ho faré servir en algun moment”? doncs en aquest talleret podràs donar-li una segona vida a un d’aquests potets i després utilitzar-los per posar una espelma, llapis, una planteta… dues hores de desconnexió i de pas, reutilització!',
+    },
     imgSrc: '/img/t-potets2.png',
   },
   posagots: {
-    title: 'Fes un posagots de ceràmica',
-    desc: 'En aquest talleret farem dos posagots de ceràmica que podràs personalitzar com més t’agradi!',
-    imgAlt: 'Fotografia d´una participant del taller fent un posagots',
+    title: {
+      es: 'Haz un posavasos de cerámica',
+      ca: 'Fes un posagots de ceràmica',
+    },
+    desc: {
+      es: 'En este taller haremos dos posavasos de cerámica que podrás personalizar como más te guste.',
+      ca: 'En aquest talleret farem dos posagots de ceràmica que podràs personalitzar com més t’agradi!',
+    },
     imgSrc: '/img/t-posagots.png',
   },
   aMida: {
-    title: 'Taller a mida. Tens alguna idea?',
-    desc: 'Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et cuadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.',
-    imgAlt: 'Ilustració de dos potets amb pinzells',
+    title: {
+      es: 'Taller a medida. ¿Tienes alguna idea?',
+      ca: 'Taller a mida. Tens alguna idea?',
+    },
+    desc: {
+      es: '¿Tienes una idea de taller que quieres hacer con tus amigos para un evento, o no te cuadran las fechas? ¡Propónme tu idea y podemos hacer un taller a medida a partir de 4 personas!',
+      ca: 'Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et cuadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.',
+    },
     imgSrc: '/icons/mida-gran.svg',
   },
 } as const
@@ -193,7 +237,7 @@ export const events: Event[] = [
   },
 ] as const
 
-// ---- Extended Content ----
+// ---- Extended Content [no tocar!] ----
 
 export interface FormattedEvent extends Omit<Event, 'date' | 'availability'> {
   date: Date

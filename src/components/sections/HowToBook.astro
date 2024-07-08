@@ -1,21 +1,24 @@
 ---
 import { contacts } from '../../data/contact'
+import { getLangFromUrl, useTranslations } from '../../utils'
 
 interface Props {
   mailto: string
 }
 const { mailto } = Astro.props
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <ol class="list-decimal ps-5">
   <li class="mb-3 font-bold">
     <p class="mb-3">
-      Envia'm un email amb els detalls del talleret, el numero de persones i el
-      teu nom i cognom.
+      {t('reserva.step1')}
     </p>
     <a
       href={`mailto:${mailto}`}
-      aria-label="Enviar email per reservar una plaça al talleret"
+      aria-label={t('reserva.btn')}
       class="inline-block border rounded-full px-2 py-1 hover:-rotate-3 transition-all my-2 hover:text-red hover:border-red"
     >
       <b class="mx-1">✎</b>
@@ -24,19 +27,21 @@ const { mailto } = Astro.props
   </li>
 
   <li class="font-bold mt-3">
-    Rebràs un email de confirmació amb les instruccions per fer el pagament.
+    {t('reserva.step2')}
   </li>
 
   <li class="font-bold mt-3">
-    Un cop fet el pagament, les places quedaràn reservades ☆
+    {t('reserva.step3')}
   </li>
 </ol>
 
 <small class="block mt-4">
-  Consulta les condicions de <a
-    class="underline hover:text-red"
-    href="/terms-conditions">reserva i cancel·lació</a
-  >, i la <a class="underline hover:text-red" href="/privacy-policy">
-    política de privacitat
+  {t('reserva.conditions1')}
+  <a class="underline hover:text-red" href="/terms-conditions">
+    {t('reserva.conditions4')}
+  </a>
+  {t('reserva.conditions3')}
+  <a class="underline hover:text-red" href="/privacy-policy">
+    {t('reserva.conditions4')}
   </a>.
 </small>
