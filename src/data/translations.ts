@@ -59,20 +59,20 @@ const es: Translations = {
   'popup.details': 'Detalles del taller',
   'popup.copy': '(haz clic para copiar la info)',
   'popup.copied': '✓ copiado!',
-  'mantainance.title': '¡Estamos de obras en la web!',
-  'mantainance.text':
+  'maintenance.title': '¡Estamos de obras en la web!',
+  'maintenance.text':
     'Si tienes alguna duda o quieres información sobre los talleres, puedes seguirme en Instagram ',
-  'mantainance.text2': 'o envíame un email a',
+  'maintenance.text2': 'o envíame un email a',
   '404.title': 'Parece que la página que buscas no está aquí',
   '404.text':
-    'Puede que se haya movido o traspapelado. Si no encuentras lo que buscas, puedes concactarme en mi email o cuenta de Instagram:',
+    'Puede que se haya movido o traspapelado. Si no encuentras lo que buscas, puedes contactarme en mi email o cuenta de Instagram:',
   '404.back': 'volver a la página principal',
   'conditions.seo.title': 'tallerets – términos y condiciones de los talleres',
   'conditions.seo.desc':
     'Condiciones de reserva y cancelación de los talleres creativos de tallerets.',
   'conditions.date': 'Fecha de entrada en vigor: 1 de julio de 2024',
   'conditions.disclaimer':
-    'Reservando y uniendose a un taller, se aceptan estos términos y condiciones',
+    'Reservando y uniéndose a un taller, se aceptan estos términos y condiciones',
   'conditions.title': 'Términos y condiciones de los talleres',
   'conditions.reserva': 'Reserva y cancelaciones',
   'conditions.reserva.text':
@@ -128,70 +128,124 @@ const es: Translations = {
     'Si tienes alguna pregunta o preocupación sobre los Términos de uso o la Política de privacidad, ponte en contacto en',
 } as const
 
-/*  <p>
-      Aquesta Política de privacitat descriu el procés de recopilació, ús i
-      protecció de la informació recollida.
-    </p>
-
-    <h2 class="text-2xl py-3 font-bold">Recolecció i us</h2>
-
-    <h3 class="font-bold">Adreça de correu electrònic</h3>
-    <p class="mb-4">
-      Recollim la vostra adreça de correu electrònic quan envieu una sol·licitud
-      de reserva a {contacts.email}. L'adreça de correu electrònic s'utilitzarà
-      únicament amb fins de comunicació relacionats amb els tallers.
-    </p>
-
-    <h3 class="font-bold">Fotografies dels assistents als taller</h3>
-    <p class="mb-4">
-      Es possible que es facin fotografies durant els tallers amb fins
-      promocionals. En assistir a un taller, accepteu la possibilitat que la
-      vostra imatge sigui utilitzada tant a les xarxes com altres metodes de
-      promoció. Si preferiu que no es mostri el vostre rostre, si us plau,
-      notifiqueu-ho amb antelació quan reserveu el taller.
-    </p>
-
-    <h3 class="font-bold">Cookies</h3>
-    <p>No es recullen cookies en aquest lloc web.</p>
-
-    <h2 class="text-2xl py-3 font-bold">Tractament de dades</h2>
-    <p>
-      No compartim ni venem la vostra informació personal amb tercers. Les
-      fotografies poden ser utilitzades per promocionar tallerets. Si no voleu
-      que sigui així, podeu enviar un email per esborrar-les.
-    </p>
-    <p>
-      Les dades recollides es mantindran fins que sol·liciteu la seva
-      eliminació.
-    </p>
-    <p>Les dades són emmagatzemades a Google Drive.</p>
-    <p>
-      Podeu sol·licitar i eliminar les vostres dades enviant un correu
-      electrònic a {contacts.email}.
-    </p>
-
-    <h2 class="text-2xl py-3 font-bold">
-      Canvis en aquesta Política de privacitat
-    </h2>
-    <p>
-      Podem actualitzar aquesta Política de privacitat segons sigui necessari.
-      Qualsevol canvi es publicarà en aquesta pàgina amb una data d'entrada en
-      vigor revisada.
-    </p>
-
-    <h2 class="text-3xl py-3 font-bold mt-8">Contacte</h2>
-    <p>
-      Si teniu alguna pregunta o preocupació sobre els Termes d'ús o la Política
-      de privacitat, poseu-vos en contacte a {contacts.email}.
-    </p>
-  </main>*/
-
 const ca: Translations = {
-  'seo.title': 'tallerets – tallers creatius a Barcelona per desconectar',
+  'seo.title': 'tallerets – tallers creatius a Barcelona per desconnectar',
   'seo.desc':
     'Per crear no cal experiència ni cap habilitat especial, només ganes de passar una estona amb tu mateixa.',
-  'nav.home': 'Accueil',
-  'nav.about': 'À propos',
+  'seo.reserva.title': 'tallerets - Reserva el teu taller creatiu a Barcelona',
+  'seo.reserva.desc':
+    'Descobreix els tallers creatius a Barcelona de tallerets i reserva la teva plaça.',
+  'seo.tallers.title': 'tallerets - Tallers creatius a Barcelona',
+  'nav.a.reserva': 'reserva',
+  'nav.a.tallers': 'tallers',
+  'nav.a.bio': 'sobre mi',
+  'nav.a.contact': 'contacte',
+  'nav.twitter': 'Twitter',
+  'hero.h1-1': 'Una pausa',
+  'hero.h1-2': 'per crear',
+  'hero.cta': 'propers tallers',
+  'bio.title': 'Sóc Noor i organitzo tallers creatius',
+  'bio.text':
+    'Amb tallerets vull transmetre i ensenyar que quan fem coses amb les nostres mans ens sentim més presents i vius. Que per crear no cal experiència ni cap habilitat especial, només ganes de passar una estona amb tu mateixa.',
+  'next.title': 'propers tallers',
+  'next.properament': 'properament',
+  'next.empty':
+    'No hi ha tallers programats! Consulta la llista completa i contacta’m si vols que n’organitzi un.',
+  'next.a.tallers': 'veure tots els tallers',
+  'next.a.reserva': 'calendari i reserves',
+  'amida.title': 'tallers a mida',
+  'amida.text':
+    'Tens una idea de taller que vols fer amb les teves amigues o per a un esdeveniment, o bé no et quadren les dates? Proposa-me-la i podem fer un taller a mida a partir de 6 persones.',
+  'contact.title':
+    'per a més informació, segueix-me a Instagram, escriu-me o truca’m!',
+  'footer.a.reserva': 'calendari i reserves',
+  'footer.a.tallers': 'veure tots els tallers',
+  'footer.a.bio': 'sobre tallerets',
+  'footer.a.contact': 'contacte',
+  'footer.a.terms': 'termes i condicions dels tallers',
+  'footer.a.privacy': 'política de privacitat i cookies',
+  'footer.author': 'disseny i desenvolupament per',
+  'footer.year.place': ' ~ Barcelona, 2024',
+  'tallers.title': 'tots els tallers',
+  'tallers.a.reserva': 'calendari i reserves',
+  'tallers.emptyDate': 'Contacta’m per buscar una data!',
+  'reserva.title': 'calendari',
+  'reserva.text':
+    'Aquí veuràs els següents tallers planificats. Si cap et va bé, pots organitzar un taller a mida en l’espai i data que vulguis.',
+  'reserva.how': 'com reservar?',
+  'reserva.step1':
+    'Envia’m un email amb els detalls del taller que t’interessa, el nombre de places a reservar i el teu nom i cognom.',
+  'reserva.btn': 'Enviar email per reservar una plaça',
+  'reserva.step2': 'Rebràs un email amb els detalls de pagament.',
+  'reserva.step3': 'Un cop fet el pagament, les places estaran reservades ☆',
+  'reserva.conditions1': 'Consulta les condicions de',
+  'reserva.conditions2': 'reserva i cancel·lació',
+  'reserva.conditions3': 'i la',
+  'reserva.conditions4': 'política de privacitat',
+  'reserva.dataAdequada': 'data a mida',
+  'reserva.dataCustom': 'Quan vulguis!',
+  'reserva.locCustom':
+    'Preu i localització a convenir. Entre 6 i 16 persones. Contacta’m!',
+  'popup.title': 'Reservar el taller',
+  'popup.details': 'Detalls del taller',
+  'popup.copy': '(fes clic per copiar la info)',
+  'popup.copied': '✓ copiat!',
+  'maintenance.title': 'Estem en obres al web!',
+  'maintenance.text':
+    'Si tens algun dubte o vols informació sobre els tallers, pots seguir-me a Instagram',
+  'maintenance.text2': 'o enviar-me un email a',
+  '404.title': 'Sembla que la pàgina que busques no està aquí',
+  '404.text':
+    'Pot ser que s’hagi mogut o traspaperat. Si no trobes el que busques, pots contactar-me al meu email o compte d’Instagram:',
+  '404.back': 'tornar a la pàgina principal',
+  'conditions.seo.title': 'tallerets – termes i condicions dels tallers',
+  'conditions.seo.desc':
+    'Condicions de reserva i cancel·lació dels tallers creatius de tallerets.',
+  'conditions.date': 'Data d’entrada en vigor: 1 de juliol de 2024',
+  'conditions.disclaimer':
+    'Reservant i unint-se a un taller, s’accepten aquests termes i condicions',
+  'conditions.title': 'Termes i condicions dels tallers',
+  'conditions.reserva': 'Reserva i cancel·lacions',
+  'conditions.reserva.text':
+    'Si has de cancel·lar la teva plaça, avisa’m amb un mínim de 72h d’antelació i et tornaré el 100% del pagament.',
+  'conditions.reserva.bold':
+    'Si cancel·les amb menys de 72h d’antelació, no es retornarà l’import.',
+  'conditions.fotos.title': 'Fotografies i gravacions dels assistents',
+  'conditions.fotos.text':
+    'És possible que es facin fotografies durant els tallers amb fins promocionals. Assistint a un taller, acceptes la possibilitat que la teva imatge sigui utilitzada tant a xarxes com altres mètodes de promoció. Si prefereixes que no es mostri la teva cara, si us plau, notifica-ho amb antelació al reservar el taller.',
+  'conditions.fotos.info':
+    'Per a més informació sobre l’ús d’aquestes dades, consulta la',
+  'conditions.fotos.a.privacy': 'política de privacitat',
+  'conditions.terms.title': 'Termes i condicions del web',
+  'conditions.terms.ip': 'Propietat intel·lectual',
+  'conditions.terms.ip.text':
+    'Tot el contingut d’aquest web, incloent textos, imatges, vídeos i logotips, està protegit per drets de propietat intel·lectual. No pots utilitzar, reproduir o distribuir el nostre contingut sense el nostre permís explícit.',
+  'conditions.terms.changes': 'Canvis en els termes',
+  'conditions.terms.changes.text':
+    'Podem actualitzar aquests termes de tant en tant. Qualsevol canvi serà efectiu en publicar-lo en aquesta pàgina.',
+  'conditions.contact': 'Contacte',
+  'conditions.contact.text':
+    'Si tens alguna pregunta o preocupació sobre els termes d’ús o la política de privacitat, posa’t en contacte a',
+  'privacy.seo.title': 'tallerets – política de privacitat i cookies',
+  'privacy.seo.desc': 'Política de privacitat i cookies del web de tallerets.',
+  'privacy.date': 'Data d’entrada en vigor: 1 de juliol de 2024',
+  'privacy.disclaimer':
+    'En utilitzar aquest web, acceptes aquesta política de privacitat',
+  'privacy.title': 'Política de privacitat',
+  'privacy.desc':
+    'Aquesta política descriu el procés de recopilació, ús i protecció de la informació recollida.',
+  'privacy.recoleccion': 'Recopilació i ús',
+  'privacy.email': 'Correu electrònic',
+  'privacy.email.text':
+    'Recollim la teva adreça de correu electrònic quan envies una sol·licitud de reserva. L’adreça de correu electrònic s’utilitzarà únicament amb fins de comunicació relacionats amb els tallers.',
+  'privacy.fotos': 'Fotografies dels assistents als tallers',
+  'privacy.fotos.text':
+    'És possible que es facin fotografies durant els tallers amb fins promocionals. Assistint a un taller, acceptes la possibilitat que la teva imatge sigui utilitzada tant a xarxes com altres mètodes de promoció. Si prefereixes que no es mostri la teva cara, si us plau, notifica-ho amb antelació al reservar el taller.',
+  'privacy.cookies': 'Cookies',
+  'privacy.cookies.text': 'No es recullen cookies en aquest web.',
+  'privacy.tratamiento': 'Tractament de dades',
+  'privacy.tratamiento.text':
+    'No compartim ni venem la teva informació personal amb tercers. Les fotografies poden ser utilitzades',
 } as const
 
 /* Types */
