@@ -187,6 +187,30 @@ export const events: Event[] = [
     location: 'Espai tallerets',
     availability: 'some',
   },
+  {
+    tallerId: 'bossa',
+    price: 25,
+    date: {
+      day: 18,
+      month: 7,
+      year: 2024,
+    },
+    time: '19:00 - 21:00',
+    location: 'Espai tallerets',
+    availability: 'some',
+  },
+  {
+    tallerId: 'bossa',
+    price: 25,
+    date: {
+      day: 29,
+      month: 8,
+      year: 2024,
+    },
+    time: '19:00 - 21:00',
+    location: 'Espai tallerets',
+    availability: 'some',
+  },
 ] as const
 
 // ---- Extended Content [no tocar!] ----
