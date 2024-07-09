@@ -1,4 +1,5 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
 import { getLangFromUrl, useTranslations } from '../../utils'
 
@@ -9,6 +10,8 @@ const { mailto } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const termsUrl = getRelativeLocaleUrl(lang, 'condicions')
+const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
 ---
 
 <ol class="list-decimal ps-5">
@@ -37,11 +40,11 @@ const t = useTranslations(lang)
 
 <small class="block mt-4">
   {t('reserva.conditions1')}
-  <a class="underline hover:text-red" href="/terms-conditions">
+  <a class="underline hover:text-red" href={termsUrl}>
     {t('reserva.conditions4')}
   </a>
   {t('reserva.conditions3')}
-  <a class="underline hover:text-red" href="/privacy-policy">
+  <a class="underline hover:text-red" href={privacyUrl}>
     {t('reserva.conditions4')}
   </a>.
 </small>

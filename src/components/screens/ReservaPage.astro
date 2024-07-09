@@ -17,15 +17,17 @@ import {
 import HowToBook from '../sections/HowToBook.astro'
 
 const monthsWithEvents = getMonthsWithEvents()
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
 const mailTo = createMailToString({
   title: '[TALLERET]',
   date: '[DIA]',
   time: '[HORA]',
   location: '[ESPAI]',
+  lang,
 })
-
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 ---
 
 <Layout title={t('seo.reserva.title')} description={t('seo.reserva.desc')}>

@@ -14,8 +14,8 @@ export const getMonthsWithEvents = () => {
   return Array.from(new Set(allMonths))
 }
 
-export const dateToString = (date: Date | undefined) =>
-  date?.toLocaleString('ca', {
+export const dateToString = (date: Date | undefined, lang = 'ca') =>
+  date?.toLocaleString(lang, {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
@@ -41,13 +41,17 @@ export const createMailToString = ({
   date,
   time,
   location,
+  lang,
 }: {
   title: string
   date: string
   time?: string
   location?: string
+  lang: string
 }) =>
-  `mailto:${contacts.email}?subject=Reserva%20per%20talleret%20${title}&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20[NOM]%20I%20[COGNOMS]%20per%20[NUM]%20places%20al%20talleret%20${title}%20del%20dia%20${date}%20a%20les%20${time}%20a%20${location}.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
+  lang === 'ca'
+    ? `mailto:${contacts.email}?subject=Reserva%20per%20talleret%20${title}&body=Hola!%0D%0AM'agradaria%20fer%20una%20reserva%20a%20nom%20de%20[NOM]%20I%20[COGNOMS]%20per%20[NUM]%20places%20al%20talleret%20${title}%20del%20dia%20${date}%20a%20les%20${time}%20a%20${location}.%0D%0A%0D%0AGr%C3%A0cies!%0D%0A`
+    : `mailto:${contacts.email}?subject=Reserva%20para%20talleret%20${title}&body=Hola!%0D%0AMe%20gustar%C3%ADa%20hacer%20una%20reserva%20a%20nombre%20de%20[NOMBRE]%20Y%20[APELLIDOS]%20para%20[NUM]%20plazas%20en%20el%20talleret%20${title}%20del%20d%C3%ADa%20${date}%20a%20las%20${time}%20en%20${location}.%0D%0A%0D%0AGracias!%0D%0A`
 
 export const languages = {
   es: 'Español',

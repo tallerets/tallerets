@@ -4,6 +4,7 @@ import Header from './Header.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const nextUrl = '#tallerets'
 ---
 
 <section class="relative h-screen overflow-hidden">
@@ -24,7 +25,7 @@ const t = useTranslations(lang)
     </h1>
 
     <div class="flex justify-end items-center w-full gap-4">
-      <a href="#tallerets" class="c-button my-10 bg-soft me-auto text-nowrap">
+      <a href={nextUrl} class="c-button my-10 bg-soft me-auto text-nowrap">
         {t('hero.cta')}
       </a>
     </div>

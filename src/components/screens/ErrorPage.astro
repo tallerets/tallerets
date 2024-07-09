@@ -1,0 +1,71 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n'
+import { contacts } from '../../data/contact'
+import Layout from '../../layouts/Layout.astro'
+import { getLangFromUrl, useTranslations } from '../../utils'
+import Footer from '../sections/Footer.astro'
+import Header from '../sections/Header.astro'
+
+const currentHref = Astro.url.href
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
+const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
+const homeUrl = getRelativeLocaleUrl(lang, '/')
+---
+
+<Layout
+  title="tallerets — Error 404"
+  description=`${t('404.title')} ${t('404.text')}`
+>
+  <Header />
+  <main
+    class="flex flex-col md:flex-row items-center justify-center gap-16 pb-16 page-padding min-h-[calc(100vh-8rem)]"
+  >
+    <img
+      width="288"
+      class="w-56 md:w-72"
+      src="/icons/potets.svg"
+      alt="il·lustració de uns pots de vidre i uns pinzells"
+    />
+    <div class="max-w-[48rem]">
+      <h1 class="text-4xl md:text-6xl mb-4">
+        {t('404.title')}
+      </h1>
+      <small
+        class="font-mono mt-4 bg-dark text-soft py-1 px-2 rounded-md inline-block"
+        >Error 404 — {currentHref}</small
+      >
+      <p class="text-lg mt-8">
+        {t('404.text')}
+        <ul class="mt-4 flex gap-4">
+          <li>
+            <a
+              class="underline"
+              href={contacts.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @{contacts.instagramId}
+            </a>
+          </li>
+          <li>
+            <a class="underline" href={`mailto:${contacts.email}`}>
+              {contacts.email}
+            </a>
+          </li>
+        </ul>
+      </p>
+
+      <div class="flex gap-6 flex-wrap mt-8">
+        <a class="c-button" href={tallersUrl}>{t('next.a.tallers')}</a>
+        <a class="c-button" href={reservaUrl}>{t('next.a.reserva')}</a>
+        <a class="c-button" href={homeUrl}>{t('404.back')}</a>
+      </div>
+    </div>
+  </main>
+
+  <hr />
+  <Footer />
+</Layout>

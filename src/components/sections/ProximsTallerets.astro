@@ -1,4 +1,5 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import { formattedEventArray, tallers } from '../../data/content'
 import {
   dateToString,
@@ -12,6 +13,9 @@ import TallerPostcard from '../cards/TallerPostcard.astro'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const nextTwoEvents = getNextAvailableEvents(formattedEventArray).slice(0, 2)
+
+const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
+const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
 ---
 
 <section id="tallerets" class="page-padding py-24">
@@ -28,16 +32,16 @@ const nextTwoEvents = getNextAvailableEvents(formattedEventArray).slice(0, 2)
             console.error(`Taller with id ${event.tallerId} not found`)
             return null
           }
-          const href = `/reserva#${event && createEventUniqueId(event)}`
+          const href = `${reservaUrl}#${event && createEventUniqueId(event)}`
 
           return (
             <TallerPostcard
               id={event.tallerId}
-              title={taller.title}
-              desc={taller.desc}
+              title={taller.title[lang]}
+              desc={taller.desc[lang]}
               imgSrc={taller.imgSrc}
-              imgAlt={taller.imgAlt}
-              data={dateToString(event?.date) ?? t('next.properament')}
+              imgAlt=""
+              data={dateToString(event?.date, lang) ?? t('next.properament')}
               href={href}
             />
           )
@@ -49,7 +53,7 @@ const nextTwoEvents = getNextAvailableEvents(formattedEventArray).slice(0, 2)
   </ul>
 
   <div class="flex justify-center gap-6 flex-wrap">
-    <a class="c-button" href="/tallers">{t('next.a.tallers')}</a>
-    <a class="c-button" href="/reserva">{t('next.a.reserva')}</a>
+    <a class="c-button" href={tallersUrl}>{t('next.a.tallers')}</a>
+    <a class="c-button" href={reservaUrl}>{t('next.a.reserva')}</a>
   </div>
 </section>

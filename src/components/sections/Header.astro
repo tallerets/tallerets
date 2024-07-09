@@ -1,18 +1,22 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import MobileMenu from './MobileMenu.astro'
 import NavLinks from './NavLinks.astro'
+import { getLangFromUrl } from '../../utils'
 
 interface Props {
   className?: string
 }
 
 const { className } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const homeUrl = getRelativeLocaleUrl(lang, '')
 ---
 
 <header
   class={`${className} page-padding z-10 flex items-center py-5 sm:py-7 top-0 w-full `}
 >
-  <a href="/" class="me-auto text-4xl md:text-5xl italic">
+  <a href={homeUrl} class="me-auto text-4xl md:text-5xl italic">
     <img
       src="/icons/logo.png"
       alt="Tallerets"

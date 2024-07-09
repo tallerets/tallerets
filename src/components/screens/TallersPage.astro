@@ -12,10 +12,13 @@ import {
   getNextAvailableEvents,
   useTranslations,
 } from '../../utils'
+import { getRelativeLocaleUrl } from 'astro:i18n'
 
 const nextEvents = getNextAvailableEvents(formattedEventArray)
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
 ---
 
 <Layout title={t('seo.tallers.title')} description={t('seo.tallers.desc')}>
@@ -41,7 +44,7 @@ const t = useTranslations(lang)
             }
           </ul>
           <div class="flex">
-            <a class="c-button" href="/reserva">{t('tallers.a.reserva')}</a>
+            <a class="c-button" href={reservaUrl}>{t('tallers.a.reserva')}</a>
           </div>
         </div>
       </aside>
@@ -52,7 +55,7 @@ const t = useTranslations(lang)
               (e) => e.tallerId === taller.id
             )
             const dateString =
-              dateToString(relatedEvent?.date) ?? t('tallers.emptyDate')
+              dateToString(relatedEvent?.date, lang) ?? t('tallers.emptyDate')
             const eventId =
               taller.id === 'aMida'
                 ? taller.id
@@ -66,7 +69,7 @@ const t = useTranslations(lang)
                 imgSrc={taller.imgSrc}
                 imgAlt=""
                 data={dateString}
-                href={`/reserva#${eventId}`}
+                href={`${reservaUrl}#${eventId}`}
               />
             )
           })

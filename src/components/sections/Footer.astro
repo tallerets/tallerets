@@ -1,38 +1,42 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
 import { getLangFromUrl, useTranslations } from '../../utils'
 import LangSelector from './LangSelector.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
+const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
+const bioUrl = '#bio'
+const contactUrl = '#contact'
+const termsUrl = getRelativeLocaleUrl(lang, 'condicions')
+const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">
   <nav class="py-8 flex justify-between items-center">
     <ul>
       <li>
-        <a href="/reserva">{t('footer.a.reserva')}</a>
+        <a href={reservaUrl}>{t('footer.a.reserva')}</a>
       </li>
       <li>
-        <a href="/tallers">{t('footer.a.tallers')}</a>
+        <a href={tallersUrl}>{t('footer.a.tallers')}</a>
       </li>
       <li>
-        <a href="/#bio">{t('footer.a.bio')}</a>
+        <a href={bioUrl}>{t('footer.a.bio')}</a>
       </li>
       <li>
-        <a href="/#contact">{t('footer.a.contact')}</a>
+        <a href={contactUrl}>{t('footer.a.contact')}</a>
       </li>
     </ul>
     <ul class="text-center">
       <li>
-        <a href="/terms-conditions">
-          {t('footer.a.terms')}
-        </a>
+        <a href={termsUrl}>{t('footer.a.terms')}</a>
       </li>
       <li>
-        <a href="/privacy-policy">
-          {t('footer.a.privacy')}
-        </a>
+        <a href={privacyUrl}>{t('footer.a.privacy')}</a>
       </li>
     </ul>
     <LangSelector />

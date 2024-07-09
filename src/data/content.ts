@@ -128,54 +128,6 @@ export const tallers: Record<TallerId, Taller> = {
 
 export const events: Event[] = [
   {
-    tallerId: 'testos',
-    price: 20,
-    date: {
-      day: 17,
-      month: 5,
-      year: 2024,
-    },
-    time: '18:30 - 20:30',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
-  {
-    tallerId: 'testos',
-    price: 20,
-    date: {
-      day: 31,
-      month: 5,
-      year: 2024,
-    },
-    time: '18:30 - 20:30',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
-  {
-    tallerId: 'mirallet',
-    price: 23,
-    date: {
-      day: 11,
-      month: 5,
-      year: 2024,
-    },
-    time: '11:00 - 13:00',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
-  {
-    tallerId: 'potet',
-    price: 18,
-    date: {
-      day: 11,
-      month: 5,
-      year: 2024,
-    },
-    time: '16:00 - 18:00',
-    location: 'Espai Coopelia',
-    availability: 'none',
-  },
-  {
     tallerId: 'bossa',
     price: 25,
     date: {

@@ -25,7 +25,7 @@ const linkedTaller = tallers[tallerId]
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const mailTo = createMailToString({ title, date, time, location })
+const mailTo = createMailToString({ title, date, time, location, lang })
 const isDisabled =
   slots === AVAILABILITY_LABELS.none /*|| new Date(date) < new Date()*/
 
@@ -84,17 +84,15 @@ const copiedText = t('popup.copied')
 
     {
       linkedTaller?.desc && (
-        <div class="max-w-full flex gap-4 border-b pb-4">
+        <div class="max-w-full flex gap-4 pb-4">
           <p>{linkedTaller.desc[lang]}</p>
         </div>
       )
     }
 
-    <h3 class="text-xl font-bold mt-3">{t('reserva.how')}</h3>
-
     <button
       id={`copy-${id}`}
-      class="flex gap-4 p-2 border rounded my-4 w-full text-start items-center hover:text-red transition-all duration-150 flex-wrap"
+      class="flex gap-4 p-2 border rounded mb-4 w-full text-start items-center hover:text-red transition-all duration-150 flex-wrap"
     >
       <div class="me-auto">
         <p class="font-bold mb-3">{t('popup.details')}</p>
@@ -110,6 +108,8 @@ const copiedText = t('popup.copied')
         {copyText}
       </p>
     </button>
+
+    <h3 class="text-xl font-bold mb-3">{t('reserva.how')}</h3>
 
     <div class="max-w-[40rem]">
       <HowToBook mailto={mailTo} />
