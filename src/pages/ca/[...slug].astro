@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content'
+import MonoTaller from '../../components/screens/MonoTaller.astro'
+
+export async function getStaticPaths() {
+  const allSections = await getCollection('sections')
+
+  return allSections.map(({ slug, data, body }) => {
+    return {
+      params: { slug },
+      props: {
+        title: data.title,
+        desc: body,
+        image: data.image,
+      },
+    }
+  })
+}
+
+const { title, desc, image } = Astro.props
+---
+
+<MonoTaller title={title} desc={desc} image={image} />

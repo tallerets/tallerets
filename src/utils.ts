@@ -1,18 +1,6 @@
 import { contacts } from './data/contact'
-import { AVAILABILITY_LABELS, events } from './data/content'
-import type { FormattedEvent } from './data/content'
+
 import { ui } from './data/translations'
-
-export const getNextAvailableEvents = (events: FormattedEvent[]) =>
-  events
-    .filter((e) => e.availability !== AVAILABILITY_LABELS.none)
-    .filter((e) => new Date(e.date) > new Date())
-    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-
-export const getMonthsWithEvents = () => {
-  const allMonths = events.map((event) => event.date.month - 1).sort()
-  return Array.from(new Set(allMonths))
-}
 
 export const dateToString = (date: Date | undefined, lang = 'ca') =>
   date?.toLocaleString(lang, {
@@ -29,12 +17,6 @@ export const getWrittenMonth = (month: number, lang = 'ca') => {
 export const dateToWeekday = (date: Date, lang = 'ca') => {
   return date.toLocaleString(lang, { weekday: 'long', day: 'numeric' })
 }
-
-export const createEventUniqueId = (formattedEvent: FormattedEvent) =>
-  `${formattedEvent.tallerId}-${dateToString(formattedEvent.date)?.replace(
-    /\s/g,
-    '-',
-  )}`
 
 export const createMailToString = ({
   title,
@@ -58,7 +40,7 @@ export const languages = {
   ca: 'Català',
 } as const
 
-export const defaultLang = 'es'
+export const defaultLang = 'ca'
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/')

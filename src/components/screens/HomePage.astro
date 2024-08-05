@@ -1,15 +1,22 @@
 ---
 import Footer from '../sections/Footer.astro'
-import Contact from '../sections/Contact.astro'
-import AMida from '../sections/AMida.astro'
 import Bio from '../sections/Bio.astro'
 import Hero from '../sections/Hero.astro'
-import ProximsTallerets from '../sections/ProximsTallerets.astro'
 import Layout from '../../layouts/Layout.astro'
 import { getLangFromUrl, useTranslations } from '../../utils'
+import { getCollection } from 'astro:content'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+import SectionCard from '../cards/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+const allSections = await getCollection('sections', ({ id }) => {
+  return id.startsWith(lang)
+})
+
+const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
+const blogUrl = getRelativeLocaleUrl(lang, 'blog')
 ---
 
 <Layout title={t('seo.title')} description={t('seo.desc')}>
@@ -17,12 +24,36 @@ const t = useTranslations(lang)
     <Hero />
     <Bio />
     <hr />
-    <ProximsTallerets />
-    <hr />
-    <AMida />
+    <ul class="my-24 flex gap-4 justify-center flex-wrap p-4">
+      {
+        allSections.map((section) => (
+          <SectionCard
+            title={section.data.title}
+            desc={section.body}
+            href={section.slug}
+            image={section.data.image}
+          />
+        ))
+      }
+
+      <SectionCard
+        title="Tallers monogràfics"
+        desc="Descobreix els tallers monogràfics que oferim"
+        href={tallersUrl}
+        image={{
+          url: '/img/t-bosses.png',
+          alt: '',
+        }}
+      />
+      <SectionCard
+        title="Ultimes noticies!"
+        desc="Descobreix les últimes novetats!"
+        image={{ url: '/img/t-posagots.png', alt: '' }}
+        href={blogUrl}
+      />
+    </ul>
   </main>
 
   <hr />
-  <Contact />
   <Footer />
 </Layout>

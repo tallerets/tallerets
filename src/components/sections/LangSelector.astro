@@ -6,7 +6,7 @@ const currentLang = getLangFromUrl(Astro.url)
 <ul>
   {
     Object.entries(languages).map(([lang, label]) => {
-      const href = lang === 'es' ? '/' : `/${lang}/`
+      const href = `/${lang}/`
       return (
         <li
           class={`text-end lowercase ${currentLang === lang && 'decoration'}`}

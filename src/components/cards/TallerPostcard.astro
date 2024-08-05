@@ -10,7 +10,7 @@ interface Props {
   data?: string
   href?: string
 }
-const { id, title, desc, imgSrc, imgAlt, data, href } = Astro.props
+const { id, title, desc, imgSrc, data, href } = Astro.props
 
 const cursorClass = href ? 'hover:cursor-pointer' : ''
 ---

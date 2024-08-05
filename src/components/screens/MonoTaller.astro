@@ -1,0 +1,40 @@
+---
+import Footer from '../sections/Footer.astro'
+
+import Layout from '../../layouts/Layout.astro'
+import Header from '../sections/Header.astro'
+
+const { title, desc, image } = Astro.props
+---
+
+<Layout title={title} description={desc}>
+  <Header />
+  <section id="bio" class="page-padding md:max-w-[55ch] mx-auto py-16 md:py-24">
+    <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
+      {title}
+      <span>
+        <img
+          width="48"
+          height="48"
+          class="w-12 inline text-sm"
+          src="/icons/flor.svg"
+          alt="dibuix de una floreta"
+        />
+      </span>
+    </h2>
+
+    <img
+      width="380"
+      height="328"
+      class="my-16 mx-auto w-96 bg-dark rounded"
+      src={image.url}
+      alt={image.alt}
+    />
+    <p class="text-xl">
+      {desc}
+    </p>
+  </section>
+
+  <hr />
+  <Footer />
+</Layout>
