@@ -5,9 +5,9 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<section id="bio" class="page-padding md:max-w-[55ch] mx-auto py-16 md:py-24">
+<section id="bio" class="page-padding mx-auto py-16 md:py-36">
   <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
-    {t('bio.title')}
+    Soc la Noor i organitzo <br /> tallers creatius
     <span>
       <img
         width="48"
@@ -19,14 +19,24 @@ const t = useTranslations(lang)
     </span>
   </h2>
 
-  <img
-    width="380"
-    height="328"
-    class="my-16 mx-auto w-96"
-    src="/img/bio-noor.png"
-    alt="Fotos de la Noor facilitant tallerets"
-  />
-  <p class="text-xl">
-    {t('bio.text')}
-  </p>
+  <div
+    class="flex flex-wrap md:flex-nowrap gap-16 md:gap-28 items-center justify-center mt-16"
+  >
+    <img
+      width="320"
+      height="328"
+      class="min-w-[320px] border-8 border-dark bg-dark rounded"
+      src="/img/noor.png"
+      alt="Fotos de la Noor facilitant tallerets"
+    />
+    <div class="text-2xl md:text-3xl max-w-[20ch]">
+      <p>Fer coses amb les mans ens fa conectar amb nosaltres mateixes.</p>
+      <p class="my-6">
+        A tallerets trobaràs un espai on potenciar l’expressió, la creativitat i
+        la desconnexió del món digital. Alhora, un espai on conèixer a gent i
+        formar comunitat.
+      </p>
+      <a class="hover:underline transition-all">T'apuntes?</a>
+    </div>
+  </div>
 </section>

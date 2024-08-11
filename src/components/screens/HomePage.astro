@@ -23,35 +23,37 @@ const blogUrl = getRelativeLocaleUrl(lang, 'blog')
   <main>
     <Hero />
     <Bio />
-    <hr />
-    <ul class="my-24 flex gap-4 justify-center flex-wrap p-4">
-      {
-        allSections.map((section) => (
-          <SectionCard
-            title={section.data.title}
-            desc={section.body}
-            href={section.slug}
-            image={section.data.image}
-          />
-        ))
-      }
 
-      <SectionCard
-        title="Tallers monogràfics"
-        desc="Descobreix els tallers monogràfics que oferim"
-        href={tallersUrl}
-        image={{
-          url: '/img/t-bosses.png',
-          alt: '',
-        }}
-      />
-      <SectionCard
+    <div class="flex items-center justify-center">
+      <ul class="mb-24 flex gap-8 justify-center flex-wrap p-4 max-w-[80ch]">
+        {
+          allSections.map((section) => (
+            <SectionCard
+              title={section.data.title}
+              desc={section.body}
+              href={section.slug}
+              image={section.data.image}
+            />
+          ))
+        }
+
+        <SectionCard
+          title="Tallers monogràfics"
+          desc="Descobreix els tallers monogràfics que oferim"
+          href={tallersUrl}
+          image={{
+            url: '/icons/potet.svg',
+            alt: '',
+          }}
+        />
+        <!-- <SectionCard
         title="Ultimes noticies!"
         desc="Descobreix les últimes novetats!"
-        image={{ url: '/img/t-posagots.png', alt: '' }}
+        image={{ url: '/icons/mida-gran.svg', alt: '' }}
         href={blogUrl}
-      />
-    </ul>
+        /> -->
+      </ul>
+    </div>
   </main>
 
   <hr />

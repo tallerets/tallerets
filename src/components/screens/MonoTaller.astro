@@ -9,7 +9,7 @@ const { title, desc, image } = Astro.props
 
 <Layout title={title} description={desc}>
   <Header />
-  <section id="bio" class="page-padding md:max-w-[55ch] mx-auto py-16 md:py-24">
+  <section id="bio" class="page-padding md:max-w-[55ch] mx-auto pt-8">
     <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
       {title}
       <span>
@@ -36,5 +36,6 @@ const { title, desc, image } = Astro.props
   </section>
 
   <hr />
+
   <Footer />
 </Layout>

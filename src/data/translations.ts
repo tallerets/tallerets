@@ -146,7 +146,7 @@ const ca: Translations = {
   'hero.cta': 'propers tallers',
   'bio.title': 'Sóc Noor i organitzo tallers creatius',
   'bio.text':
-    'Amb tallerets vull transmetre i ensenyar que quan fem coses amb les nostres mans ens sentim més presents i vius. Que per crear no cal experiència ni cap habilitat especial, només ganes de passar una estona amb tu mateixa.',
+    'Quan fem coses amb les mans és quan realment conectem amb nosaltres mateixes. En un món en el que cada cop som més invididualistes i estem més desconectats del moment present, és necesari crear espais a on en generi una comunitat. Un espai on hi hagi conversa, potenciem l’expressió, la creativitat i  la desconnexió del món digital.',
   'next.title': 'propers tallers',
   'next.properament': 'properament',
   'next.empty':

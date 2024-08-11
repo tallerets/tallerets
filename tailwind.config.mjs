@@ -16,6 +16,7 @@ export default {
         'Adjusted Arial Fallback',
         ...defaultTheme.fontFamily.serif,
       ],
+      sans: ['Helvetica', ...defaultTheme.fontFamily.serif],
       mono: [...defaultTheme.fontFamily.mono],
     },
   },

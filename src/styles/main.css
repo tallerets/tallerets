@@ -44,3 +44,12 @@
     line-gap-override: 8%;
   }
 }
+
+a.link {
+  color: inherit;
+  @apply hover:underline decoration-dark decoration-2;
+}
+
+a:hover {
+  @apply decoration-red text-red cursor-pointer;
+}

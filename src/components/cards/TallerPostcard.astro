@@ -1,66 +1,31 @@
 ---
-import { getLangFromUrl } from '../../utils'
+const { taller } = Astro.props
+const { id, data, render, slug } = taller
+const { title, desc, image } = data
+const { Content } = await render()
 
-interface Props {
-  id: string
-  title: string
-  desc: string
-  imgSrc: string
-  imgAlt: string
-  data?: string
-  href?: string
-}
-const { id, title, desc, imgSrc, data, href } = Astro.props
-
-const cursorClass = href ? 'hover:cursor-pointer' : ''
+const cursorClass = slug ? 'hover:cursor-pointer' : ''
 ---
 
-<li
-  class="odd:rotate-1 even:-rotate-1 text-soft hover:rotate-0 transition-all list-none"
->
+<li class="rotate-2 text-soft hover:rotate-0 transition-all list-none">
   <a
     id={id}
-    href={href}
+    href={slug}
     title="Reservar per el seguent talleret"
-    class={`${cursorClass} border bg-dark max-w-[40rem] min-h-[26rem] rounded-md flex flex-col sm:flex-row relative`}
+    class={`${cursorClass} hover:text-soft bg-dark max-w-[32rem] max-h-[32rem] rounded-md flex flex-col sm:flex-col relative`}
   >
-    <div
-      class="cursor min-w-24 h-24 absolute hidden rounded-full bg-red justify-center items-center text-soft border border-soft top-2/3"
-    >
-      <p>reserva!</p>
-    </div>
-
-    <div class="p-8 flex flex-col">
-      <p class="uppercase text-2xl">{title}</p>
-      <div class="py-5 mb-auto font-[300]">
-        {desc}
+    <div class="p-5 flex flex-col">
+      <p class="text-3xl font-bold mb-4">{title}</p>
+      <div class="h-[40%] w-full rounded bg-dark">
+        <img
+          class="h-[12rem] w-[32rem] object-cover rounded-2xl mb-4"
+          src={image.url}
+          alt={image.alt}
+        />
       </div>
-      {data && <p class="font-lg font-[400] uppercase">{data}</p>}
-    </div>
-    <div
-      class="min-w-[40%] md:w-[40%] h-[14rem] sm:h-[26rem] bg-dark rounded-b sm:rounded-e sm:rounded-bl-none"
-    >
-      <img
-        class="pointer-events-none cursos-none w-full h-full border-soft object-cover rounded-b border-t sm:rounded-e sm:rounded-bl-none sm:border-s sm:border-t-0"
-        src={imgSrc}
-        alt=""
-      />
+      <div class="mb-auto text-lg">
+        <Content />
+      </div>
     </div>
   </a>
 </li>
-
-<style>
-  .postcard {
-    transition:
-      transform 0.3s,
-      border-color 0.3s;
-  }
-  li:hover .cursor {
-    transition: display 1s ease-in-out;
-    display: flex;
-    border-color: var(--color-red);
-    transform: rotate(-25deg);
-    left: 52.6%;
-    top: 66%;
-  }
-</style>

@@ -1,12 +1,16 @@
 ---
-title: 'Taller a mida. Tens alguna idea?'
+title: 'Taller a mida: aniversaris, festes, esdeveniments...'
+desc: 'Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et quadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.'
 image:
   {
-    url: '/icons/mida-gran.svg',
+    url: '/icons/regal.svg',
     alt: 'un pastís fet amb pinzells representant un taller a mida per un aniversari o ocasió especial',
   }
+links: [{ url: '/ca/contacte', text: 'Contacta amb mi' }]
 ---
 
-## 'Taller a mida. Tens alguna idea?'
+Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et quadren les dates?
 
-Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et cuadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.
+<br/>
+
+Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.

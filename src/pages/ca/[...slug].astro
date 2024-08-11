@@ -1,23 +1,19 @@
 ---
 import { getCollection } from 'astro:content'
-import MonoTaller from '../../components/screens/MonoTaller.astro'
+import SectionMore from '../../components/screens/SectionMore.astro'
 
 export async function getStaticPaths() {
   const allSections = await getCollection('sections')
 
-  return allSections.map(({ slug, data, body }) => {
+  return allSections.map((section) => {
     return {
-      params: { slug },
-      props: {
-        title: data.title,
-        desc: body,
-        image: data.image,
-      },
+      params: { slug: section.slug },
+      props: { section },
     }
   })
 }
 
-const { title, desc, image } = Astro.props
+const { section } = Astro.props
 ---
 
-<MonoTaller title={title} desc={desc} image={image} />
+<SectionMore section={section} />
