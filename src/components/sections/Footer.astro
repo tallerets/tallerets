@@ -16,35 +16,56 @@ const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">
-  <nav class="py-8 flex justify-between items-center">
-    <ul>
-      <li>
-        <a href={reservaUrl}>{t('footer.a.reserva')}</a>
-      </li>
-      <li>
-        <a href={tallersUrl}>{t('footer.a.tallers')}</a>
-      </li>
-      <li>
-        <a href={bioUrl}>{t('footer.a.bio')}</a>
-      </li>
-      <li>
-        <a href={contactUrl}>{t('footer.a.contact')}</a>
-      </li>
-    </ul>
-    <ul class="text-center">
-      <li>
-        <a href={termsUrl}>{t('footer.a.terms')}</a>
-      </li>
-      <li>
-        <a href={privacyUrl}>{t('footer.a.privacy')}</a>
-      </li>
-    </ul>
-    <!-- <LangSelector /> -->
-  </nav>
+  <section class="flex justify-between gap-8 px-4 pt-16 pb-12">
+    <div class="flex flex-col justify-center">
+      <img
+        src="/icons/logo-s.png"
+        alt="Tallerets"
+        class="w-32"
+        width="260"
+        height="130"
+      />
+      <p class="mt-2">Una pausa per crear</p>
+      <p class="mt-2 opacity-60">
+        Copyright © 2024 - Tots els drets reservats
+      </p>
+    </div>
+    <div>
+      <h5 class="font-bold opacity-60">LINKS</h5>
+      <ul>
+        <li>
+          <a href={reservaUrl}>{t('footer.a.reserva')}</a>
+        </li>
+        <li>
+          <a href={tallersUrl}>{t('footer.a.tallers')}</a>
+        </li>
+        <li>
+          <a href={bioUrl}>{t('footer.a.bio')}</a>
+        </li>
+        <li>
+          <a href={contactUrl}>{t('footer.a.contact')}</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-bold opacity-60">LEGAL</h5>
+      <ul>
+        <li>
+          <a href={termsUrl}>{t('footer.a.terms')}</a>
+        </li>
+        <li>
+          <a href={privacyUrl}>{t('footer.a.privacy')}</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <!-- <LangSelector /> -->
+    </div>
+  </section>
 </footer>
-<hr class="text-soft" />
-<p class="page-padding bg-dark text-soft text-xs py-4">
-  <b class="textxl me-2">♧</b>
+<p
+  class="page-padding bg-dark text-soft text-xs pb-4 pt-4 text-center text-opacity-60"
+>
   {t('footer.author')}
   <a class="underline" href={contacts.webAuthorUrl}> @aymyo</a>
   {t('footer.place.year')}
@@ -53,9 +74,6 @@ const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
 
 <style>
   li {
-    margin: 0.5rem 0;
-  }
-  a:hover {
-    text-decoration: underline;
+    margin: 0.5rem 0 0;
   }
 </style>

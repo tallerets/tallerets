@@ -5,19 +5,15 @@ import MonoTaller from '../../../components/screens/MonoTaller.astro'
 export async function getStaticPaths() {
   const allTallers = await getCollection('mono')
 
-  return allTallers.map(({ slug, data, body }) => {
+  return allTallers.map((taller) => {
     return {
-      params: { slug },
-      props: {
-        title: data.title,
-        desc: body,
-        image: data.image,
-      },
+      params: { slug: taller.slug },
+      props: { taller },
     }
   })
 }
 
-const { title, desc, image } = Astro.props
+const { taller } = Astro.props
 ---
 
-<MonoTaller title={title} desc={desc} image={image} />
+<MonoTaller taller={taller} />

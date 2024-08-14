@@ -14,7 +14,7 @@ const t = useTranslations(lang)
 
 const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
 const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
-const bioUrl = '#bio'
+const aboutUrl = getRelativeLocaleUrl(lang, 'sobre-mi')
 const contactUrl = getRelativeLocaleUrl(lang, 'contacte')
 ---
 
@@ -26,7 +26,7 @@ const contactUrl = getRelativeLocaleUrl(lang, 'contacte')
     <a href={tallersUrl}>{t('nav.a.tallers')}</a>
   </li>
   <li>
-    <a href={bioUrl} target={isMobile ? '_blank' : ''}>{t('nav.a.bio')}</a>
+    <a href={aboutUrl}>{t('nav.a.bio')}</a>
   </li>
   <li>
     <a href={contactUrl} target={isMobile ? '_blank' : ''}>

@@ -4,19 +4,19 @@ import Bio from '../sections/Bio.astro'
 import Hero from '../sections/Hero.astro'
 import Layout from '../../layouts/Layout.astro'
 import { getLangFromUrl, useTranslations } from '../../utils'
-import { getCollection } from 'astro:content'
+import { getEntry } from 'astro:content'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import SectionCard from '../cards/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const allSections = await getCollection('sections', ({ id }) => {
-  return id.startsWith(lang)
-})
-
+const aMidaSection = await getEntry('sections', `${lang}/amida`)
+const clubSection = await getEntry('sections', `${lang}/club`)
+const empresesSection = await getEntry('sections', `${lang}/empreses`)
 const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
-const blogUrl = getRelativeLocaleUrl(lang, 'blog')
+
+// const blogUrl = getRelativeLocaleUrl(lang, 'blog')
 ---
 
 <Layout title={t('seo.title')} description={t('seo.desc')}>
@@ -27,31 +27,44 @@ const blogUrl = getRelativeLocaleUrl(lang, 'blog')
     <div class="flex items-center justify-center">
       <ul class="mb-24 flex gap-8 justify-center flex-wrap p-4 max-w-[80ch]">
         {
-          allSections.map((section) => (
+          aMidaSection && (
             <SectionCard
-              title={section.data.title}
-              desc={section.body}
-              href={section.slug}
-              image={section.data.image}
+              title={aMidaSection.data.title}
+              desc={aMidaSection.data.desc}
+              href={aMidaSection.slug}
+              image={aMidaSection.data.image}
             />
-          ))
+          )
+        }
+
+        {
+          clubSection && (
+            <SectionCard
+              title={clubSection.data.title}
+              desc={clubSection.data.desc}
+              href={clubSection.slug}
+              image={clubSection.data.image}
+            />
+          )
+        }
+
+        {
+          empresesSection && (
+            <SectionCard
+              title={empresesSection.data.title}
+              desc={empresesSection.data.desc}
+              href={empresesSection.slug}
+              image={empresesSection.data.image}
+            />
+          )
         }
 
         <SectionCard
           title="Tallers monogràfics"
           desc="Descobreix els tallers monogràfics que oferim"
           href={tallersUrl}
-          image={{
-            url: '/icons/potet.svg',
-            alt: '',
-          }}
+          image={{ url: '/icons/potet.svg', alt: '' }}
         />
-        <!-- <SectionCard
-        title="Ultimes noticies!"
-        desc="Descobreix les últimes novetats!"
-        image={{ url: '/icons/mida-gran.svg', alt: '' }}
-        href={blogUrl}
-        /> -->
       </ul>
     </div>
   </main>
