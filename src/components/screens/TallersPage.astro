@@ -4,7 +4,6 @@ import Footer from '../../components/sections/Footer.astro'
 import Header from '../../components/sections/Header.astro'
 import TallerPostcard from '../cards/TallerPostcard.astro'
 import { getLangFromUrl, useTranslations } from '../../utils'
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import { getCollection } from 'astro:content'
 
 const lang = getLangFromUrl(Astro.url)

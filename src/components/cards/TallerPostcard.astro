@@ -1,7 +1,7 @@
 ---
 const { taller } = Astro.props
 const { id, data, render, slug } = taller
-const { title, desc, image } = data
+const { title, image } = data
 const { Content } = await render()
 
 const cursorClass = slug ? 'hover:cursor-pointer' : ''

@@ -5,7 +5,7 @@ import Header from '../sections/Header.astro'
 
 const { section } = Astro.props
 const { Content } = await section.render()
-const { title, desc, image, links } = section.data
+const { title, desc, links } = section.data
 ---
 
 <Layout title={title} description={desc}>
