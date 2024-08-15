@@ -1,7 +1,6 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
-import { getLangFromUrl, useTranslations } from '../../utils'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 
 interface Props {
   mailto: string
@@ -10,8 +9,10 @@ const { mailto } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const termsUrl = getRelativeLocaleUrl(lang, 'condicions')
-const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
+const translatePath = useTranslatedPath(lang)
+
+const termsUrl = translatePath('/condicions')
+const privacyUrl = translatePath('/privacitat')
 ---
 
 <ol class="list-decimal ps-5">

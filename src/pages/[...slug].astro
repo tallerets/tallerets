@@ -1,13 +1,15 @@
 ---
 import { getCollection } from 'astro:content'
-import SectionMore from '../../components/screens/SectionMore.astro'
+import SectionMore from '../components/screens/SectionMore.astro'
 
 export async function getStaticPaths() {
   const allSections = await getCollection('sections')
 
   return allSections.map((section) => {
+    const slug = section.slug.replace('ca', '')
+
     return {
-      params: { slug: section.slug },
+      params: { slug },
       props: { section },
     }
   })

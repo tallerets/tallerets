@@ -1,6 +1,5 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
-import { getLangFromUrl, useTranslations } from '../../utils'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 
 interface Props {
   className: string
@@ -11,11 +10,12 @@ const { className, isMobile } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const translatePath = useTranslatedPath(lang)
 
-// const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
-const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
-const aboutUrl = getRelativeLocaleUrl(lang, 'sobre-mi')
-const contactUrl = getRelativeLocaleUrl(lang, 'contacte')
+// const reservaUrl = translatePath('/reserva')
+const tallersUrl = translatePath('/tallers')
+const aboutUrl = translatePath('/sobre-mi')
+const contactUrl = translatePath('/contacte')
 ---
 
 <ul class={className}>

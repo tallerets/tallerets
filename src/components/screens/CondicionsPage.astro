@@ -1,14 +1,13 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
-import Layout from '../../layouts/Layout.astro'
-import { getLangFromUrl, useTranslations } from '../../utils'
+import Layout from '../../layouts/BaseLayout.astro'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 import Footer from '../sections/Footer.astro'
 import Header from '../sections/Header.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
+const translatePath = useTranslatedPath(lang)
 ---
 
 <Layout
@@ -34,7 +33,7 @@ const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
 
     <p>
       {t('conditions.fotos.info')}
-      <a href={privacyUrl} class="text-primary underline">
+      <a href={translatePath('/privacitat')} class="text-primary underline">
         {t('conditions.fotos.a.privacy')}
       </a>.
     </p>

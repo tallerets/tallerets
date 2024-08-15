@@ -1,16 +1,22 @@
 ---
+import { getLangFromUrl, useTranslatedPath } from '../../utils'
+
 const { taller } = Astro.props
 const { id, data, render, slug } = taller
 const { title, image } = data
 const { Content } = await render()
 
+const lang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(lang)
+
+const correctedSlug = translatePath('/tallers') + slug.replace('ca', '')
 const cursorClass = slug ? 'hover:cursor-pointer' : ''
 ---
 
 <li class="rotate-2 text-soft hover:rotate-0 transition-all list-none">
   <a
     id={id}
-    href={slug}
+    href={correctedSlug}
     title="Reservar per el seguent talleret"
     class={`${cursorClass} hover:text-soft bg-dark max-w-[32rem] max-h-[32rem] rounded-md flex flex-col sm:flex-col relative`}
   >

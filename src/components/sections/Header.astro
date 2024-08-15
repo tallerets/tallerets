@@ -1,8 +1,7 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import MobileMenu from './MobileMenu.astro'
 import NavLinks from './NavLinks.astro'
-import { getLangFromUrl } from '../../utils'
+import { getLangFromUrl, useTranslatedPath } from '../../utils'
 
 interface Props {
   className?: string
@@ -10,7 +9,9 @@ interface Props {
 
 const { className } = Astro.props
 const lang = getLangFromUrl(Astro.url)
-const homeUrl = getRelativeLocaleUrl(lang, '')
+const translatePath = useTranslatedPath(lang)
+
+const homeUrl = translatePath('/')
 ---
 
 <header

@@ -1,17 +1,18 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
-import { getLangFromUrl, useTranslations } from '../../utils'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-// const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
-const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
-const aboutUrl = getRelativeLocaleUrl(lang, 'sobre-mi')
-const contactUrl = getRelativeLocaleUrl(lang, 'contacte')
-const termsUrl = getRelativeLocaleUrl(lang, 'condicions')
-const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
+const translatePath = useTranslatedPath(lang)
+
+// const reservaUrl = translatePath(lang, 'reserva')
+const tallersUrl = translatePath('/tallers')
+const aboutUrl = translatePath('/sobre-mi')
+const contactUrl = translatePath('/contacte')
+const termsUrl = translatePath('/condicions')
+const privacyUrl = translatePath('/privacitat')
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">

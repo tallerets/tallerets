@@ -2,10 +2,9 @@
 import Footer from '../sections/Footer.astro'
 import Bio from '../sections/Bio.astro'
 import Hero from '../sections/Hero.astro'
-import Layout from '../../layouts/Layout.astro'
-import { getLangFromUrl, useTranslations } from '../../utils'
+import Layout from '../../layouts/BaseLayout.astro'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 import { getEntry } from 'astro:content'
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import SectionCard from '../cards/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
@@ -14,9 +13,11 @@ const t = useTranslations(lang)
 const aMidaSection = await getEntry('sections', `${lang}/amida`)
 const clubSection = await getEntry('sections', `${lang}/club`)
 const empresesSection = await getEntry('sections', `${lang}/empreses`)
-const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
 
-// const blogUrl = getRelativeLocaleUrl(lang, 'blog')
+const translatePath = useTranslatedPath(lang)
+const tallersUrl = translatePath('/tallers')
+
+// const blogUrl = translatePath('/blog')
 ---
 
 <Layout title={t('seo.title')} description={t('seo.desc')}>
@@ -34,7 +35,7 @@ const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
             <SectionCard
               title={aMidaSection.data.title}
               desc={aMidaSection.data.desc}
-              href={aMidaSection.slug}
+              href={aMidaSection.slug.replace('ca', '')}
               image={aMidaSection.data.image}
             />
           )
@@ -45,7 +46,7 @@ const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
             <SectionCard
               title={clubSection.data.title}
               desc={clubSection.data.desc}
-              href={clubSection.slug}
+              href={clubSection.slug.replace('ca', '')}
               image={clubSection.data.image}
             />
           )
@@ -56,7 +57,7 @@ const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
             <SectionCard
               title={empresesSection.data.title}
               desc={empresesSection.data.desc}
-              href={empresesSection.slug}
+              href={empresesSection.slug.replace('ca', '')}
               image={empresesSection.data.image}
             />
           )

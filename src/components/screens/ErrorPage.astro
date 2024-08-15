@@ -1,8 +1,7 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
-import Layout from '../../layouts/Layout.astro'
-import { getLangFromUrl, useTranslations } from '../../utils'
+import Layout from '../../layouts/BaseLayout.astro'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 import Footer from '../sections/Footer.astro'
 import Header from '../sections/Header.astro'
 
@@ -10,9 +9,10 @@ const currentHref = Astro.url.href
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
-const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
-const homeUrl = getRelativeLocaleUrl(lang, '/')
+const translatePath = useTranslatedPath(lang)
+
+const tallersUrl = translatePath('/tallers')
+const homeUrl = translatePath('/')
 ---
 
 <Layout
@@ -60,7 +60,7 @@ const homeUrl = getRelativeLocaleUrl(lang, '/')
 
       <div class="flex gap-6 flex-wrap mt-8">
         <a class="c-button" href={tallersUrl}>{t('next.a.tallers')}</a>
-        <a class="c-button" href={reservaUrl}>{t('next.a.reserva')}</a>
+        <!-- <a class="c-button" href={reservaUrl}>{t('next.a.reserva')}</a> -->
         <a class="c-button" href={homeUrl}>{t('404.back')}</a>
       </div>
     </div>
