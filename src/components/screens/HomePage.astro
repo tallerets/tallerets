@@ -25,7 +25,10 @@ const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
     <Bio />
 
     <div class="flex items-center justify-center">
-      <ul class="mb-24 flex gap-8 justify-center flex-wrap p-4 max-w-[80ch]">
+      <ul
+        id="tallers"
+        class="pt-32 pb-24 flex gap-8 justify-center flex-wrap p-4 max-w-[80ch]"
+      >
         {
           aMidaSection && (
             <SectionCard

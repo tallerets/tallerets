@@ -12,16 +12,16 @@ const { className, isMobile } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
+// const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
 const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
 const aboutUrl = getRelativeLocaleUrl(lang, 'sobre-mi')
 const contactUrl = getRelativeLocaleUrl(lang, 'contacte')
 ---
 
 <ul class={className}>
-  <li>
+  <!-- <li>
     <a href={reservaUrl}>{t('nav.a.reserva')}</a>
-  </li>
+  </li> -->
   <li>
     <a href={tallersUrl}>{t('nav.a.tallers')}</a>
   </li>

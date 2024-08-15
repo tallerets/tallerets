@@ -2,15 +2,14 @@
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import { contacts } from '../../data/contact'
 import { getLangFromUrl, useTranslations } from '../../utils'
-import LangSelector from './LangSelector.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
 const reservaUrl = getRelativeLocaleUrl(lang, 'reserva')
 const tallersUrl = getRelativeLocaleUrl(lang, 'tallers')
-const bioUrl = '#bio'
-const contactUrl = '#contact'
+const aboutUrl = getRelativeLocaleUrl(lang, 'sobre-mi')
+const contactUrl = getRelativeLocaleUrl(lang, 'contacte')
 const termsUrl = getRelativeLocaleUrl(lang, 'condicions')
 const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
 ---
@@ -33,14 +32,14 @@ const privacyUrl = getRelativeLocaleUrl(lang, 'privacitat')
     <div>
       <h5 class="font-bold opacity-60">LINKS</h5>
       <ul>
-        <li>
+        <!-- <li>
           <a href={reservaUrl}>{t('footer.a.reserva')}</a>
-        </li>
+        </li> -->
         <li>
           <a href={tallersUrl}>{t('footer.a.tallers')}</a>
         </li>
         <li>
-          <a href={bioUrl}>{t('footer.a.bio')}</a>
+          <a href={aboutUrl}>{t('footer.a.bio')}</a>
         </li>
         <li>
           <a href={contactUrl}>{t('footer.a.contact')}</a>
