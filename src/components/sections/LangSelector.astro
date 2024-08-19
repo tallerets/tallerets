@@ -1,12 +1,12 @@
 ---
-import { getLangFromUrl, languages } from '../../utils'
+import { defaultLang, getLangFromUrl, languages } from '../../utils'
 const currentLang = getLangFromUrl(Astro.url)
 ---
 
 <ul>
   {
     Object.entries(languages).map(([lang, label]) => {
-      const href = `/${lang}/`
+      const href = lang === defaultLang ? '/' : `/${lang}/`
       return (
         <li
           class={`text-end lowercase ${currentLang === lang && 'decoration'}`}

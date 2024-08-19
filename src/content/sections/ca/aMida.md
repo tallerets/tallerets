@@ -6,7 +6,7 @@ image:
     url: '/icons/regal.svg',
     alt: 'un pastís fet amb pinzells representant un taller a mida per un aniversari o ocasió especial',
   }
-links: [{ url: '/ca/contacte', text: 'Contacta amb mi' }]
+links: [{ url: '/contacte', text: 'Contacta amb mi' }]
 ---
 
 Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et quadren les dates?

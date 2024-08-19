@@ -1,7 +1,7 @@
 ---
 title: Derrera de tallerets
 image: { url: '/img/noor.png', alt: '' }
-links: [{ url: '/ca/contacte', text: 'Contacta amb mi' }]
+links: [{ url: '/contacte', text: 'Contacta amb mi' }]
 ---
 
 Sóc la Noor, la persona derrera de tallerets! M'encanta crear i acompanyar a les persones a desenvolupar la seva persona, creativitat i projectes. Després de treballar molt de temps en el món empresarial, aparcant la meva vertent creativa, em vaig adonar que havia de replantejar-me les meves prioritats. Així va nèixer tallerets per dedicar-me a les meves passions: compartir, formar i generar comunitat.
@@ -9,7 +9,7 @@ Sóc la Noor, la persona derrera de tallerets! M'encanta crear i acompanyar a le
 <img
   width="300"
   height="300"
-  class="object-cover border-4 border-dark bg-dark rounded float-left me-6 my-1"
+  class="object-cover border-4 border-dark bg-dark rounded float-left me-6"
   src='/img/noor.png'
   alt=""
 />

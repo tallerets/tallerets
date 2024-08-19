@@ -12,16 +12,12 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 
-// const reservaUrl = translatePath('/reserva')
 const tallersUrl = translatePath('/tallers')
 const aboutUrl = translatePath('/sobre-mi')
 const contactUrl = translatePath('/contacte')
 ---
 
 <ul class={className}>
-  <!-- <li>
-    <a href={reservaUrl}>{t('nav.a.reserva')}</a>
-  </li> -->
   <li>
     <a href={tallersUrl}>{t('nav.a.tallers')}</a>
   </li>
@@ -29,9 +25,7 @@ const contactUrl = translatePath('/contacte')
     <a href={aboutUrl}>{t('nav.a.bio')}</a>
   </li>
   <li>
-    <a href={contactUrl} target={isMobile ? '_blank' : ''}>
-      {t('nav.a.contact')}
-    </a>
+    <a href={contactUrl}>{t('nav.a.contact')}</a>
   </li>
 </ul>
 

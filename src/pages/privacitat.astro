@@ -1,5 +1,10 @@
 ---
-import PrivacitatPage from '../components/screens/PrivacitatPage.astro'
+import { getEntry } from 'astro:content'
+import { getLangFromUrl } from '../utils'
+import ArticleLayout from '../layouts/ArticleLayout.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const condicionsSection = await getEntry('sections', `${lang}/privacitat`)
 ---
 
-<PrivacitatPage />
+<ArticleLayout section={condicionsSection} />

@@ -1,13 +1,13 @@
 ---
 import { contacts } from '../../data/contact'
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
+import LangSelector from './LangSelector.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
 const translatePath = useTranslatedPath(lang)
 
-// const reservaUrl = translatePath(lang, 'reserva')
 const tallersUrl = translatePath('/tallers')
 const aboutUrl = translatePath('/sobre-mi')
 const contactUrl = translatePath('/contacte')
@@ -33,9 +33,6 @@ const privacyUrl = translatePath('/privacitat')
     <div>
       <h5 class="font-bold opacity-60">LINKS</h5>
       <ul>
-        <!-- <li>
-          <a href={reservaUrl}>{t('footer.a.reserva')}</a>
-        </li> -->
         <li>
           <a href={tallersUrl}>{t('footer.a.tallers')}</a>
         </li>
@@ -58,9 +55,9 @@ const privacyUrl = translatePath('/privacitat')
         </li>
       </ul>
     </div>
-    <div>
-      <!-- <LangSelector /> -->
-    </div>
+    <!-- <div>
+      <LangSelector />
+    </div> -->
   </section>
 </footer>
 <p

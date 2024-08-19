@@ -1,5 +1,10 @@
 ---
-import CondicionsPage from '../components/screens/CondicionsPage.astro'
+import { getEntry } from 'astro:content'
+import { getLangFromUrl } from '../utils'
+import ArticleLayout from '../layouts/ArticleLayout.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const section = await getEntry('sections', `${lang}/condicions`)
 ---
 
-<CondicionsPage />
+<ArticleLayout section={section} />

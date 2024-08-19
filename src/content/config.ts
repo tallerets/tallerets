@@ -3,12 +3,14 @@ import { z, defineCollection } from 'astro:content'
 const monoCollection = defineCollection({
   type: 'content',
   schema: z.object({
-    title: z.string(),
+    title: z.string().optional(),
     desc: z.string().optional(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string(),
-    }),
+    image: z
+      .object({
+        url: z.string(),
+        alt: z.string(),
+      })
+      .optional(),
     links: z
       .array(
         z.object({

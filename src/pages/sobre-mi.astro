@@ -1,10 +1,10 @@
 ---
 import { getEntry } from 'astro:content'
 import { getLangFromUrl } from '../utils'
-import AboutPage from '../components/screens/AboutPage.astro'
+import ArticleLayout from '../layouts/ArticleLayout.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const aboutSection = await getEntry('sections', `${lang}/about`)
 ---
 
-<AboutPage section={aboutSection} />
+<ArticleLayout section={aboutSection} />
