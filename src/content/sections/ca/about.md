@@ -4,7 +4,9 @@ image: { url: '/img/noor.png', alt: '' }
 links: [{ url: '/contacte', text: 'Contacta amb mi' }]
 ---
 
-Sóc la Noor, la persona derrera de tallerets! M'encanta crear i acompanyar a les persones a desenvolupar la seva persona, creativitat i projectes. Després de treballar molt de temps en el món empresarial, aparcant la meva vertent creativa, em vaig adonar que havia de replantejar-me les meves prioritats. Així va nèixer tallerets per dedicar-me a les meves passions: compartir, formar i generar comunitat.
+Soc la Noor, la persona darrera de tallerets! M'encanta crear i acompanyar a les persones a desenvolupar la seva creativitat i projectes. Sempre he dibuixat, pintat, il·lustrat, fet tota mena de manualitats...
+
+Després de portar tota la vida en el món empresarial, vaig veure com a poc a poc perdia aquesta part creativa. Quan estàs atrapat al dia a dia, i estàs animat a produir, acabes deixant de banda aquests espais amb tu. És per això que vaig iniciar el projecte tallerets, per poder donar un espai i generar una comunitat en la qual puguem crear de forma segura, i traiem aquesta part creativa que totes tenim!
 
 <img
   width="300"
@@ -14,11 +16,7 @@ Sóc la Noor, la persona derrera de tallerets! M'encanta crear i acompanyar a le
   alt=""
 />
 
-Fer coses amb les mans ens permet conectar amb nosaltres mateixes i concretar les nostres idees. Ens ajuda a desconnectar del món digital i a viure més el moment present. També ens fa sentir menys soles, perquè crear a casa està molt bé, però quan treballem davant de l'ordinador tantes hores (moltes de nosaltres teletreballant) el que més ens ve de gust és sortir de casa i tenir contacte amb altres persones. Intercanviar, inspirar-nos, sentir també que formem part d'una comunitat que ens enriqueix.
+Quan va ser l'últim cop que feies alguna cosa pel simple plaer de fer-la?
+A tallerets fem les coses per fer. Pel plaer de gaudir el procés. Quan fem coses amb les mans connectem amb nosaltres mateixes. Ens ajuda a viure el moment present. Ens ajuda a explorar nous tactes, colors, habilitats. Ens ajuda també a desconnectar del món digital i de les pantalles que tant ens acompanyen en el nostre dia a dia. Ens ajuda a veure que estem fets per crear, i que totes i cadascuna de nosaltres tenim creativitat i habilitat!
 
-Així que, a tallerets trobaràs un espai on potenciar l'expressió, la creativitat i la desconnexió del món digital. Alhora, un espai on conèixer a gent i formar comunitat.
-També m'agrada potenciar la part creativa de qualsevol persona, perquè totes som creatives, només cal despertar-ho i donar-li l'espai que es mereix, i fugir de la perfecció, perquè la creativitat és un procés, no un resultat.
-
-A tallerets trobaràs un espai on potenciar l’expressió, la creativitat i
-la desconnexió del món digital. Alhora, un espai on conèixer a gent i
-formar comunitat.
+Tallerets és per mi tot el que més m'agrada: crear, compartir, formar i generar comunitat. T'animes a compartir-ho amb mi?
