@@ -1,5 +1,5 @@
 ---
-title: Derrera de tallerets
+title: Darrera de tallerets
 image: { url: '/img/noor.png', alt: '' }
 links: [{ url: '/contacte', text: 'Contacta amb mi' }]
 ---
@@ -18,14 +18,6 @@ Fer coses amb les mans ens permet conectar amb nosaltres mateixes i concretar le
 
 Així que, a tallerets trobaràs un espai on potenciar l'expressió, la creativitat i la desconnexió del món digital. Alhora, un espai on conèixer a gent i formar comunitat.
 També m'agrada potenciar la part creativa de qualsevol persona, perquè totes som creatives, només cal despertar-ho i donar-li l'espai que es mereix, i fugir de la perfecció, perquè la creativitat és un procés, no un resultat.
-
-<!-- <img
-  width="300"
-  height="200"
-  class="object-cover border-4 border-dark bg-dark rounded float-right ms-6 my-1"
-  src='/img/t-bossa-2.png'
-  alt=""
-/> -->
 
 A tallerets trobaràs un espai on potenciar l’expressió, la creativitat i
 la desconnexió del món digital. Alhora, un espai on conèixer a gent i
