@@ -1,6 +1,6 @@
 ---
 title: 'Talleret per equips i empreses'
-image: { url: '', alt: '' }
+image: { url: '/icons/equips.png', alt: '' }
 links: [{ url: '/contacte', text: 'Contacta amb mi' }]
 ---
 

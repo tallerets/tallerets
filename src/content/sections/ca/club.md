@@ -1,6 +1,6 @@
 ---
 title: 'Tallerets Club: el teu espai creatiu habitual'
-image: { url: '', alt: '' }
+image: { url: '/icons/club.png', alt: '' }
 links:
   [
     {

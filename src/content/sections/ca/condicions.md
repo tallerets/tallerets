@@ -7,7 +7,7 @@ links: [{ url: '/contacte', text: "Dubtes? Contacta'm" }]
 <small>Reservant i unint-se a un taller, s’accepten aquests termes i condicions</small>
 <br/>
 
-## Termes i condicions dels tallers
+# Termes i condicions dels tallers
 
 **Reserva i cancel·lacions**
 

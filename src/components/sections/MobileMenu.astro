@@ -10,14 +10,14 @@ const { className } = Astro.props
 <div class={className}>
   <input class="hidden" type="checkbox" id="nav-menu" />
   <label for="nav-menu" id="open-button" class="text-3xl cursor-pointer z-20">
-    <img src="/icons/menu.svg" width="32" height="32" alt="Abrir menú" />
+    <img src="/icons/menu.svg" width="48" height="48" alt="Abrir menú" />
   </label>
   <label
     for="nav-menu"
     id="close-button"
-    class="hidden text-3xl cursor-pointer z-20 top-8 right-5"
+    class="hidden text-3xl cursor-pointer z-20 top-6 right-5"
   >
-    <img src="/icons/close.svg" width="32" height="32" alt="Cerrar menú" />
+    <img src="/icons/close.svg" width="48" height="48" alt="Cerrar menú" />
   </label>
   <nav id="overlay" class="c-menu bg-dark">
     <NavLinks isMobile className="text-2xl flex flex-col gap-12" />

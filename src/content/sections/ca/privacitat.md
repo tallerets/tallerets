@@ -7,7 +7,7 @@ links: [{ url: '/contacte', text: "Dubtes? Contacta'm" }]
 <small>En utilitzar aquest web, acceptes aquesta política de privacitat</small>
 <br/>
 
-## Política de privacitat
+# Política de privacitat
 
 Aquesta política descriu el procés de recopilació, ús i protecció de la informació recollida.
 

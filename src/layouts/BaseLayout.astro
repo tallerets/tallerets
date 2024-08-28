@@ -1,8 +1,6 @@
 ---
-import Maintenance from '../components/sections/Maintenance.astro'
 import Favicon from './_partials/Favicon.astro'
 import { getLangFromUrl } from '../utils'
-import { config } from '../config'
 import '../styles/main.css'
 
 interface Props {
@@ -46,7 +44,7 @@ const scrollClass =
     <meta property="twitter:image" content="/img/thumb.png" />
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">
-    {config.maintenance ? <Maintenance /> : <slot />}
+    <slot />
     <style is:global>
       .page-padding {
         @apply px-4 sm:px-6 md:px-8;

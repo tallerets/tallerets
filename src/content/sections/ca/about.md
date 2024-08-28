@@ -1,5 +1,5 @@
 ---
-title: Darrera de tallerets
+title: sobre mi
 image: { url: '/img/noor.png', alt: '' }
 links: [{ url: '/contacte', text: 'Contacta amb mi' }]
 ---
