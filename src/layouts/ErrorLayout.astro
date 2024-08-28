@@ -1,6 +1,7 @@
 ---
-import Footer from '../components/sections/Footer.astro'
-import Header from '../components/sections/Header.astro'
+import LinkList from '../components/LinkList.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header/Header.astro'
 import BaseLayout from './BaseLayout.astro'
 
 const { title, desc, image, links } = Astro.props
@@ -21,20 +22,7 @@ const { title, desc, image, links } = Astro.props
       <p class="text-3xl mt-8">
         {desc}
       </p>
-      {
-        links && (
-          <div class="mt-12 flex items-center gap-4">
-            {links.map((link: { url: string; text: string }) => (
-              <a
-                href={link.url}
-                class="block border-2 px-4 py-3 rounded-full text-2xl font-bold hover:-rotate-6 transition-transform"
-              >
-                {link.text}
-              </a>
-            ))}
-          </div>
-        )
-      }
+      {links && <LinkList links={links} />}
     </div>
   </main>
 

@@ -3,10 +3,9 @@ import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 
 interface Props {
   className: string
-  isMobile?: boolean
 }
 
-const { className, isMobile } = Astro.props
+const { className } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)

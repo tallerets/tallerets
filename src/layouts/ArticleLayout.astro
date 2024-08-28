@@ -1,6 +1,7 @@
 ---
-import Footer from '../components/sections/Footer.astro'
-import Header from '../components/sections/Header.astro'
+import LinkList from '../components/LinkList.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header/Header.astro'
 import BaseLayout from './BaseLayout.astro'
 
 const { section } = Astro.props
@@ -10,10 +11,10 @@ const { title, desc, links } = section.data
 
 <BaseLayout title={title} description={desc}>
   <Header />
-  <section class="page-padding mx-auto pb-12 mt-2 flex flex-col items-center">
+  <section class="page-padding mx-auto pb-20 pt-4 flex flex-col items-center">
     {
       title && (
-        <h1 class="text-center md:leading-tight font-[500] max-w-[20ch] mt-0 mb-16">
+        <h1 class="text-4xl md:text-6xl text-center md:leading-tight font-[500] max-w-[20ch] mt-0 mb-8 md:mb-12">
           {title}
           <span>
             <img
@@ -32,20 +33,7 @@ const { title, desc, links } = section.data
       <Content />
     </div>
 
-    {
-      links && (
-        <div class="pb-8 pt-12 flex items-center gap-4">
-          {links.map((link: { url: string; text: string }) => (
-            <a
-              href={link.url}
-              class="block border-2 px-4 py-3 rounded-full text-2xl font-bold hover:-rotate-6 transition-transform"
-            >
-              {link.text}
-            </a>
-          ))}
-        </div>
-      )
-    }
+    {links && <LinkList links={links} />}
   </section>
 
   <Footer />

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
-import MonoTaller from '../../components/screens/MonoTaller.astro'
+import MonoTaller from '../../layouts/TallerLayout.astro'
+import TallerLayout from '../../layouts/TallerLayout.astro'
 
 export async function getStaticPaths() {
   const allTallers = await getCollection('mono')
@@ -17,4 +18,4 @@ export async function getStaticPaths() {
 const { taller } = Astro.props
 ---
 
-<MonoTaller taller={taller} />
+<TallerLayout taller={taller} />

@@ -1,5 +1,5 @@
 ---
-import { defaultLang, getLangFromUrl, languages } from '../../utils'
+import { defaultLang, getLangFromUrl, languages } from '../utils'
 const currentLang = getLangFromUrl(Astro.url)
 ---
 
@@ -8,10 +8,10 @@ const currentLang = getLangFromUrl(Astro.url)
     Object.entries(languages).map(([lang, label]) => {
       const href = lang === defaultLang ? '/' : `/${lang}/`
       return (
-        <li
-          class={`text-end lowercase ${currentLang === lang && 'decoration'}`}
-        >
-          <a href={href}>{label}</a>
+        <li class={`lowercase ${currentLang === lang && 'decoration'}`}>
+          <a href={href} class="capitalize">
+            {label}
+          </a>
         </li>
       )
     })
@@ -21,5 +21,6 @@ const currentLang = getLangFromUrl(Astro.url)
 <style>
   li.decoration::before {
     content: '☞';
+    margin-right: 0.5rem;
   }
 </style>

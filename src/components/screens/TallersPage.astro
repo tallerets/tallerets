@@ -1,8 +1,8 @@
 ---
 import Layout from '../../layouts/BaseLayout.astro'
-import Footer from '../../components/sections/Footer.astro'
-import Header from '../../components/sections/Header.astro'
-import TallerPostcard from '../cards/TallerPostcard.astro'
+import Footer from '../Footer.astro'
+import Header from '../Header/Header.astro'
+import TallerPostcard from '../TallerCard.astro'
 import { getLangFromUrl, useTranslations } from '../../utils'
 import { getCollection } from 'astro:content'
 
@@ -19,7 +19,7 @@ const allTallers = await getCollection('mono', ({ id }) => {
   <Header className="bg-soft text-dark relative" />
   <main>
     <h1
-      class="mt-2 text-4xl md:text-6xl text-center md:leading-tight font-[500]"
+      class="pt-4 text-4xl md:text-6xl text-center md:leading-tight font-[500]"
     >
       {t('tallers.title')}
       <span>

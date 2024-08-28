@@ -20,7 +20,9 @@ const { className } = Astro.props
     <img src="/icons/close.svg" width="48" height="48" alt="Cerrar menú" />
   </label>
   <nav id="overlay" class="c-menu bg-dark">
-    <NavLinks isMobile className="text-2xl flex flex-col gap-12" />
+    <NavLinks
+      className="text-4xl flex flex-col gap-12 text-nowrap font-[500]"
+    />
   </nav>
 
   <style>

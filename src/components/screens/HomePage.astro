@@ -1,11 +1,10 @@
 ---
-import Footer from '../sections/Footer.astro'
-import Bio from '../sections/Bio.astro'
-import Hero from '../sections/Hero.astro'
+import Footer from '../Footer.astro'
+import HeroHeader from '../Header/HeroHeader.astro'
 import Layout from '../../layouts/BaseLayout.astro'
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
 import { getEntry } from 'astro:content'
-import SectionCard from '../cards/SectionCard.astro'
+import SectionCard from '../SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -16,19 +15,56 @@ const empresesSection = await getEntry('sections', `${lang}/empreses`)
 
 const translatePath = useTranslatedPath(lang)
 const tallersUrl = translatePath('/tallers')
-
-// const blogUrl = translatePath('/blog')
 ---
 
 <Layout title={t('seo.title')} description={t('seo.desc')}>
   <main>
-    <Hero />
-    <Bio />
+    <HeroHeader />
 
+    <section id="bio" class="page-padding mx-auto pt-16 md:pt-20">
+      <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
+        Soc la Noor i organitzo <br /> tallers creatius
+        <span>
+          <img
+            width="48"
+            height="48"
+            class="w-12 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+
+      <div
+        class="flex flex-wrap md:flex-nowrap gap-16 md:gap-28 items-center justify-center mt-16"
+      >
+        <img
+          width="320"
+          height="328"
+          class="min-w-[320px] border-4 border-dark bg-dark rounded"
+          src="/img/noor.png"
+          alt="Fotos de la Noor facilitant tallerets"
+        />
+        <div class="text-2xl md:text-3xl max-w-[20ch]">
+          <p>Fer coses amb les mans ens fa conectar amb nosaltres mateixes.</p>
+          <p class="mt-6">
+            A tallerets trobaràs un espai on potenciar l’expressió, la
+            creativitat i la desconnexió del món digital. Alhora, un espai on
+            conèixer a gent i formar comunitat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <h3
+      class="my-16 text-4xl md:text-5xl text-center md:leading-tight font-[500]"
+    >
+      T'apuntes?
+    </h3>
     <div class="flex items-center justify-center">
       <ul
         id="tallers"
-        class="py-12 md:py-32 flex gap-8 justify-center flex-wrap p-4 max-w-[80ch]"
+        class="pb-12 md:pb-32 flex gap-8 justify-center flex-wrap px-4 max-w-[80ch]"
       >
         {
           aMidaSection && (

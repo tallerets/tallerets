@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import SectionMore from '../components/screens/SectionMore.astro'
+import SectionLayout from '../layouts/SectionLayout.astro'
 
 export async function getStaticPaths() {
   const allSections = await getCollection('sections')
@@ -18,4 +18,4 @@ export async function getStaticPaths() {
 const { section } = Astro.props
 ---
 
-<SectionMore section={section} />
+<SectionLayout section={section} />
