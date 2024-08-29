@@ -1,8 +1,9 @@
 import { defineMiddleware } from 'astro:middleware'
 import { getLangFromUrl } from './utils'
 
+const isMaintenanceMode = true
+
 export const onRequest = defineMiddleware((request, next) => {
-  const isMaintenanceMode = import.meta.env.MAINTENANCE_MODE === 'true'
   const isMaintenancePath = request.url.pathname.endsWith('/manteniment')
 
   if (!isMaintenanceMode && isMaintenancePath) {
