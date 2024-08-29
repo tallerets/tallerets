@@ -1,10 +1,9 @@
 ---
 import { getCollection } from 'astro:content'
-import MonoTaller from '../../layouts/TallerLayout.astro'
 import TallerLayout from '../../layouts/TallerLayout.astro'
 
 export async function getStaticPaths() {
-  const allTallers = await getCollection('mono')
+  const allTallers = await getCollection('tallers')
 
   return allTallers.map((taller) => {
     const slug = taller.slug.replace('ca', '')

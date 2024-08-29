@@ -1,16 +1,18 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../utils'
+import { getEntry } from 'astro:content'
+import { getLangFromUrl } from '../../utils'
 import Header from './Header.astro'
 
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
-const nextUrl = '#tallers'
+const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+const cta = heroSection?.data.links?.[0]
+const rendered = await heroSection?.render()
 ---
 
 <section class="relative h-screen overflow-hidden">
   <div class="container">
     <video autoplay loop muted playsinline class="video absolute z-1">
-      <source src="/vids/hero.mp4" type="video/mp4" />
+      <source src={heroSection?.data.image?.url} type="video/mp4" />
     </video>
   </div>
   <Header className="text-dark absolute" />
@@ -18,20 +20,23 @@ const nextUrl = '#tallers'
     class="relative page-padding h-[100vh] bg-black flex flex-col items-start pb-8"
   >
     <h1
-      class="text-dark text-8xl sm:text-8xl lg:text-[10rem] mt-auto pt-20 mb-6 font-[500]"
+      class="text-dark text-8xl sm:text-9xl lg:text-[10rem] mt-auto pt-20 mb-6 font-[500]"
     >
-      {t('hero.h1-1')}<br />
-      {t('hero.h1-2')}
+      {rendered && <rendered.Content />}
     </h1>
 
-    <div class="flex justify-end items-center w-full">
-      <a
-        href={nextUrl}
-        class="block border-2 px-4 py-3 rounded-full text-2xl font-bold hover:-rotate-6 transition-transform my-4 md:my-8 bg-soft me-auto text-nowrap"
-      >
-        {t('hero.cta')}
-      </a>
-    </div>
+    {
+      cta && (
+        <div class="flex justify-end items-center w-full">
+          <a
+            href={cta?.url}
+            class="block border-2 px-4 py-3 rounded-full text-2xl font-bold hover:-rotate-6 transition-transform my-4 md:my-8 bg-soft me-auto text-nowrap"
+          >
+            {cta?.text}
+          </a>
+        </div>
+      )
+    }
   </div>
 </section>
 

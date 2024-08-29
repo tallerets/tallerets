@@ -1,5 +1,6 @@
 ---
 links: [{ url: '/contacte', text: "Dubtes? Contacta'm" }]
+title: Política de privacitat
 ---
 
 <small>Data d’entrada en vigor: 1 de juliol de 2024</small>

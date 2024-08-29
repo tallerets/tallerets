@@ -1,18 +1,17 @@
 ---
-import { contacts } from '../data/contact'
-import { getLangFromUrl, useTranslatedPath, useTranslations } from '../utils'
+import { getCollection, getEntry } from 'astro:content'
+import { getLangFromUrl, useTranslatedPath } from '../utils'
 import LangSelector from './LangSelector.astro'
 
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
-
 const translatePath = useTranslatedPath(lang)
 
-const tallersUrl = translatePath('/tallers')
-const aboutUrl = translatePath('/sobre-mi')
-const contactUrl = translatePath('/contacte')
-const termsUrl = translatePath('/condicions')
-const privacyUrl = translatePath('/privacitat')
+const footerSection = await getEntry('sections', `${lang}/partial_footer`)
+const footerLinks = footerSection?.data.links || []
+
+const legalDocs = await getCollection('legal', ({ id }) => {
+  return id.startsWith(lang)
+})
 ---
 
 <footer class="page-padding mx-auto bg-dark text-soft">
@@ -25,38 +24,48 @@ const privacyUrl = translatePath('/privacitat')
         width="260"
         height="130"
       />
-      <p class="mt-2">Una pausa per crear</p>
+      <p class="mt-2">{footerSection?.data.title}</p>
       <p class="mt-2 opacity-60">
-        Copyright © 2024 - Tots els drets reservats
+        {footerSection?.data.other.copyright}
       </p>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">LINKS</h5>
+      <h5 class="font-bold opacity-60">
+        {footerSection?.data.other.labels[0]}
+      </h5>
       <ul>
-        <li>
-          <a href={tallersUrl}>{t('footer.a.tallers')}</a>
-        </li>
-        <li>
-          <a href={aboutUrl}>{t('footer.a.bio')}</a>
-        </li>
-        <li>
-          <a href={contactUrl}>{t('footer.a.contact')}</a>
-        </li>
+        {
+          footerLinks &&
+            footerLinks.map((link) => (
+              <li>
+                <a href={link.url}>{link.text}</a>
+              </li>
+            ))
+        }
       </ul>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">LEGAL</h5>
+      <h5 class="font-bold opacity-60">
+        {footerSection?.data.other.labels[1]}
+      </h5>
       <ul>
-        <li>
-          <a href={termsUrl}>{t('footer.a.terms')}</a>
-        </li>
-        <li>
-          <a href={privacyUrl}>{t('footer.a.privacy')}</a>
-        </li>
+        {
+          legalDocs.map(({ slug, data: { title } }) => {
+            const correctedSlug =
+              translatePath('/legal') + slug.replace('ca', '')
+            return (
+              <li>
+                <a href={correctedSlug}>{title}</a>
+              </li>
+            )
+          })
+        }
       </ul>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">IDIOMA</h5>
+      <h5 class="font-bold opacity-60">
+        {footerSection?.data.other.labels[2]}
+      </h5>
       <LangSelector />
     </div>
   </section>
@@ -64,9 +73,14 @@ const privacyUrl = translatePath('/privacitat')
 <p
   class="page-padding bg-dark text-soft text-xs pb-4 pt-4 text-center text-opacity-60"
 >
-  {t('footer.author')}
-  <a class="underline" href={contacts.webAuthorUrl}> @aymyo</a>
-  {t('footer.place.year')}
+  {footerSection?.data.other.authorTitle}
+  <a
+    target="_blank"
+    class="underline"
+    href={footerSection?.data.other.authorUrl}
+  >
+    {footerSection?.data.other.authorName}
+  </a>
   ~ Barcelona, 2024
 </p>
 

@@ -1,5 +1,6 @@
 ---
-import { getLangFromUrl, useTranslatedPath, useTranslations } from '../../utils'
+import { getEntry } from 'astro:content'
+import { getLangFromUrl } from '../../utils'
 
 interface Props {
   className: string
@@ -8,24 +9,23 @@ interface Props {
 const { className } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
-const translatePath = useTranslatedPath(lang)
-
-const tallersUrl = translatePath('/tallers')
-const aboutUrl = translatePath('/sobre-mi')
-const contactUrl = translatePath('/contacte')
+const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+const [_, ...restLinks] = heroSection?.data.links || []
+const links = restLinks.map((link) => ({
+  url: link.url,
+  text: link.text,
+}))
 ---
 
 <ul class={className}>
-  <li>
-    <a href={tallersUrl}>{t('nav.a.tallers')}</a>
-  </li>
-  <li>
-    <a href={aboutUrl}>{t('nav.a.bio')}</a>
-  </li>
-  <li>
-    <a href={contactUrl}>{t('nav.a.contact')}</a>
-  </li>
+  {
+    links &&
+      links.map((link) => (
+        <li>
+          <a href={link.url}>{link.text}</a>
+        </li>
+      ))
+  }
 </ul>
 
 <style>

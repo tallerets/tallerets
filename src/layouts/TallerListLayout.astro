@@ -1,27 +1,30 @@
 ---
-import Layout from '../../layouts/BaseLayout.astro'
-import Footer from '../Footer.astro'
-import Header from '../Header/Header.astro'
-import TallerPostcard from '../TallerCard.astro'
-import { getLangFromUrl, useTranslations } from '../../utils'
-import { getCollection } from 'astro:content'
+import Layout from './BaseLayout.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header/Header.astro'
+import TallerPostcard from '../components/TallerCard.astro'
+import { getLangFromUrl } from '../utils'
+import { getCollection, getEntry } from 'astro:content'
 
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 
-const reservaUrl = 'https://tallerets.setmore.com/tallerets'
-const allTallers = await getCollection('mono', ({ id }) => {
+const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
+const cta = monoSection?.data.links?.[0]
+const allTallers = await getCollection('tallers', ({ id }) => {
   return id.startsWith(lang)
 })
 ---
 
-<Layout title={t('seo.tallers.title')} description={t('seo.tallers.desc')}>
+<Layout
+  title={monoSection?.data.title || 'Tallers'}
+  description={monoSection?.data.desc || ''}
+>
   <Header className="bg-soft text-dark relative" />
   <main>
     <h1
       class="pt-4 text-4xl md:text-6xl text-center md:leading-tight font-[500]"
     >
-      {t('tallers.title')}
+      {monoSection?.data.title}
       <span>
         <img
           width="48"
@@ -38,7 +41,7 @@ const allTallers = await getCollection('mono', ({ id }) => {
       <aside class="page-padding">
         <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
           <h2 class="hidden md:block text-3xl mb-4 font-bold">
-            Índex de tallers
+            {monoSection?.data.other.titleIndex}
           </h2>
           <ul class="mb-8 text-lg">
             {
@@ -53,9 +56,15 @@ const allTallers = await getCollection('mono', ({ id }) => {
               })
             }
           </ul>
-          <div class="flex">
-            <a class="c-button" href={reservaUrl}>{t('tallers.a.reserva')}</a>
-          </div>
+          {
+            cta && (
+              <div class="flex">
+                <a class="c-button" href={cta.url}>
+                  {cta.text}
+                </a>
+              </div>
+            )
+          }
         </div>
       </aside>
       <ul class="page-padding flex flex-col gap-10 pt-6 pb-12 overflow-hidden">
