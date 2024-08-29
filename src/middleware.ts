@@ -12,11 +12,11 @@ export const onRequest = defineMiddleware((context, next) => {
   if (!isMaintenanceMode && isMaintenancePath) {
     const lang = getLangFromUrl(context.url)
     const redirectTo = lang === 'ca' ? '/' : `/${lang}/`
-    return Response.redirect(new URL(redirectTo, context.url.host), 307)
+    return Response.redirect(`https://tallerets.com/${redirectTo}`, 307)
   } else if (isMaintenanceMode && !isMaintenancePath) {
     const lang = getLangFromUrl(context.url)
     const redirectTo = lang === 'ca' ? '/manteniment' : `/${lang}/manteniment`
-    return Response.redirect(new URL(redirectTo, context.url.host), 307)
+    return Response.redirect(`https://tallerets.com/${redirectTo}`, 307)
   }
 
   return next()
