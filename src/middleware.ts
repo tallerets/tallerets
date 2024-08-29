@@ -21,6 +21,4 @@ export const onRequest = defineMiddleware((context, next) => {
     return context.redirect(redirectTo, 302);
     return Response.redirect(`https://${host}/${redirectTo}`, 307)
   }
-
-  return next()
 })
