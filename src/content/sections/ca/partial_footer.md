@@ -26,8 +26,3 @@ other:
   }
 ---
 
-Fer coses amb les mans ens fa conectar amb nosaltres mateixes.
-
-<br/>
-
-A tallerets trobaràs un espai on potenciar l’expressió, la creativitat i la desconnexió del món digital. Alhora, un espai on conèixer a gent i formar comunitat.
