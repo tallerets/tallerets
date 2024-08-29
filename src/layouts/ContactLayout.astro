@@ -1,0 +1,69 @@
+---
+import { getEntry } from 'astro:content'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header/Header.astro'
+import BaseLayout from './BaseLayout.astro'
+import { getLangFromUrl } from '../utils'
+
+const lang = getLangFromUrl(Astro.url)
+
+const contactEntry = await getEntry('sections', `${lang}/partial_contacte`)
+const { adreça, links } = contactEntry?.data.other
+---
+
+<BaseLayout
+  title={contactEntry?.data.title || 'Contacte'}
+  description={contactEntry?.data.desc || ''}
+>
+  <Header className="bg-soft text-dark relative" />
+  <main class="flex flex-col items-center mx-auto pt-4 pb-40 px-4">
+    <h1
+      class="text-4xl md:text-6xl text-center md:leading-tight mb-10 md:mb-14 font-[500]"
+    >
+      {contactEntry?.data.title}
+      <span>
+        <img
+          width="48"
+          height="48"
+          class="w-12 inline text-sm"
+          src="/icons/flor.svg"
+          alt=""
+        />
+      </span>
+    </h1>
+    <section
+      class="flex gap-8 md:gap-12 md:items-center flex-wrap lg:flex-nowrap px-4"
+    >
+      <div class="text-xl">
+        <b>
+          {adreça[0]}
+        </b>
+        <address class="not-italic uppercase mb-6">
+          {adreça[1]}<br />{adreça[2]}<br />{adreça[3]}
+        </address>
+
+        {
+          links &&
+            links.map((link: { label: string; url: string; text: string }) => {
+              return (
+                <div class="mb-6">
+                  <b>{link.label}</b>
+                  <address class="not-italic">
+                    <a href={link.url}>{link.text}</a>
+                  </address>
+                </div>
+              )
+            })
+        }
+      </div>
+      <div>
+        <iframe
+          width="600"
+          height="400"
+          src={contactEntry?.data.image.url}
+          class="border-4 rounded w-[90vw] md:w-[600px]"></iframe>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

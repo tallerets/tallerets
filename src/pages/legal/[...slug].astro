@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content'
+import ArticleLayout from '../../layouts/ArticleLayout.astro'
+
+export async function getStaticPaths() {
+  const allTallers = await getCollection('legal')
+
+  return allTallers.map((taller) => {
+    const slug = taller.slug.replace('ca', '')
+    const removedTitle = { ...taller, data: { title: '' } }
+    return {
+      params: { slug },
+      props: { doc: removedTitle },
+    }
+  })
+}
+
+const { doc } = Astro.props
+---
+
+<ArticleLayout section={doc} />

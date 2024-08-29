@@ -1,0 +1,35 @@
+---
+import { getEntry } from 'astro:content'
+import { getLangFromUrl } from '../../utils'
+
+interface Props {
+  className: string
+}
+
+const { className } = Astro.props
+
+const lang = getLangFromUrl(Astro.url)
+const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+const [_, ...restLinks] = heroSection?.data.links || []
+const links = restLinks.map((link) => ({
+  url: link.url,
+  text: link.text,
+}))
+---
+
+<ul class={className}>
+  {
+    links &&
+      links.map((link) => (
+        <li>
+          <a href={link.url}>{link.text}</a>
+        </li>
+      ))
+  }
+</ul>
+
+<style>
+  a {
+    @apply block border-2 bg-soft rounded-full text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:-rotate-6 hover:border-red hover:text-red transition-transform;
+  }
+</style>

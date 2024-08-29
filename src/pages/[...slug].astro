@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content'
+import SectionLayout from '../layouts/SectionLayout.astro'
+
+export async function getStaticPaths() {
+  const allSections = await getCollection('sections')
+
+  return allSections.map((section) => {
+    const slug = section.slug.replace('ca', '')
+
+    return {
+      params: { slug },
+      props: { section },
+    }
+  })
+}
+
+const { section } = Astro.props
+---
+
+<SectionLayout section={section} />

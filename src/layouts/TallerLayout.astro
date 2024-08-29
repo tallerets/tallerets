@@ -1,0 +1,52 @@
+---
+import Footer from '../components/Footer.astro'
+import BaseLayout from './BaseLayout.astro'
+import Header from '../components/Header/Header.astro'
+import LinkList from '../components/LinkList.astro'
+
+const { taller } = Astro.props
+const { Content } = await taller.render()
+const { title, desc, image, links } = taller.data
+---
+
+<BaseLayout title={title} description={desc}>
+  <Header />
+  <section class="page-padding md:max-w-[72ch] mx-auto pt-4 mb-16">
+    <h1
+      class="text-4xl md:text-5xl text-center md:leading-tight font-[500] max-w-[16ch] mb-10 mx-auto"
+    >
+      Taller: {title}
+      <span>
+        <img
+          width="48"
+          height="48"
+          class="w-12 inline text-sm"
+          src="/icons/flor.svg"
+          alt=""
+        />
+      </span>
+    </h1>
+
+    <img
+      width="1152"
+      height="288"
+      class="mb-12 h-[16rem] w-full object-cover rounded-2xl mx-auto border-8 border-dark bg-dark"
+      src={image.url}
+      alt={image.alt}
+    />
+
+    <div class="text-2xl md:text-3xl content">
+      <Content />
+    </div>
+
+    {links && <LinkList links={links} />}
+  </section>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .content > p {
+    margin-bottom: 4rem;
+  }
+</style>

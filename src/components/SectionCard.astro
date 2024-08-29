@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string
+  desc?: string
+  href: string
+  image: {
+    url: string
+    alt: string
+  }
+}
+const { title, image, href } = Astro.props
+---
+
+<li
+  class="overflow-clip w-[24rem] h-[20rem] border-dark border-8 bg-dark rounded hover:-rotate-3 transition-all"
+>
+  <a
+    href={href}
+    class="rounded flex flex-col items-center justify-center h-full"
+  >
+    <img
+      class="w-2/3 max-h-[12rem] rounded object-cover mx-auto bg-dark"
+      src={image.url}
+      alt={image.alt}
+    />
+    <h4 class="text-3xl font-bold text-soft text-center px-4 py-2">{title}</h4>
+  </a>
+</li>

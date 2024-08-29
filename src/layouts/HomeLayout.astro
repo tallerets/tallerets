@@ -1,0 +1,114 @@
+---
+import Footer from '../components/Footer.astro'
+import HeroHeader from '../components/Header/HeroHeader.astro'
+import Layout from './BaseLayout.astro'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '../utils'
+import { getEntry } from 'astro:content'
+import SectionCard from '../components/SectionCard.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
+const clubSection = await getEntry('sections', `${lang}/club`)
+const empresesSection = await getEntry('sections', `${lang}/empreses`)
+
+const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
+const rendered = await bioSection?.render()
+
+const translatePath = useTranslatedPath(lang)
+const tallersUrl = translatePath('/tallers')
+---
+
+<Layout title={t('seo.title')} description={t('seo.desc')}>
+  <main>
+    <HeroHeader />
+
+    <section id="bio" class="page-padding mx-auto pt-16 md:pt-20">
+      <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
+        {bioSection?.data.other.title1}
+        <br />
+        {bioSection?.data.other.title2}
+        <span>
+          <img
+            width="48"
+            height="48"
+            class="w-12 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+
+      <div
+        class="flex flex-wrap md:flex-nowrap gap-16 md:gap-28 items-center justify-center mt-16"
+      >
+        <img
+          width="320"
+          height="328"
+          class="min-w-[320px] border-4 border-dark bg-dark rounded"
+          src={bioSection?.data.image.url}
+          alt={bioSection?.data.image.alt}
+        />
+        <div class="text-2xl md:text-3xl max-w-[20ch]">
+          {rendered && <rendered.Content />}
+        </div>
+      </div>
+
+      <h3
+        id="tallers"
+        class="py-16 text-4xl md:text-5xl text-center md:leading-tight font-[500]"
+      >
+        {bioSection?.data.other.subtitle}
+      </h3>
+      <div class="flex items-center justify-center">
+        <ul
+          class="pb-12 md:pb-32 flex gap-8 justify-center flex-wrap px-4 max-w-[80ch]"
+        >
+          {
+            aMidaSection && (
+              <SectionCard
+                title={aMidaSection.data.title}
+                desc={aMidaSection.data.desc}
+                href={aMidaSection.slug.replace('ca', '')}
+                image={aMidaSection.data.image}
+              />
+            )
+          }
+
+          {
+            clubSection && (
+              <SectionCard
+                title={clubSection.data.title}
+                desc={clubSection.data.desc}
+                href={clubSection.slug.replace('ca', '')}
+                image={clubSection.data.image}
+              />
+            )
+          }
+
+          {
+            empresesSection && (
+              <SectionCard
+                title={empresesSection.data.title}
+                desc={empresesSection.data.desc}
+                href={empresesSection.slug.replace('ca', '')}
+                image={empresesSection.data.image}
+              />
+            )
+          }
+
+          <SectionCard
+            title="Tallers monogràfics"
+            desc="Descobreix els tallers monogràfics que oferim"
+            href={tallersUrl}
+            image={{ url: '/icons/potet.svg', alt: '' }}
+          />
+        </ul>
+      </div>
+    </section>
+
+    <hr />
+    <Footer />
+  </main>
+</Layout>

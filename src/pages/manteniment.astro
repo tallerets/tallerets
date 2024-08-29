@@ -4,7 +4,7 @@ import ErrorLayout from '../layouts/ErrorLayout.astro'
 import { getLangFromUrl } from '../utils'
 
 const lang = getLangFromUrl(Astro.url)
-const errorEntry = await getEntry('errors', `${lang}/404`)
+const errorEntry = await getEntry('errors', `${lang}/manteniment`)
 ---
 
 <ErrorLayout {...errorEntry?.data} />
