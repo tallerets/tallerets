@@ -3,21 +3,21 @@ import { getLangFromUrl } from './utils'
 
 const isMaintenanceMode = true
 
-export const onRequest = defineMiddleware((request, next) => {
-  const isMaintenancePath = request.url.pathname.endsWith('/manteniment')
-  const host = request.site?.host; // Get the host from the request
+export const onRequest = defineMiddleware((context, next) => {
+  const isMaintenancePath = context.url.pathname.endsWith('/manteniment')
+
+  console.log('isMaintenanceMode', isMaintenanceMode)
+  console.log('context', context)
 
   if (!isMaintenanceMode && isMaintenancePath) {
-    const lang = getLangFromUrl(request.url)
+    const lang = getLangFromUrl(context.url)
     const redirectTo = lang === 'ca' ? '/' : `/${lang}/`
-     return Response.redirect(new URL(`https://${host}/${redirectTo}`, request.url), 307)
+    return Response.redirect(new URL(redirectTo, context.url), 307)
   } else if (isMaintenanceMode && !isMaintenancePath) {
-    const lang = getLangFromUrl(request.url)
+    const lang = getLangFromUrl(context.url)
     const redirectTo = lang === 'ca' ? '/manteniment' : `/${lang}/manteniment`
-    return Response.redirect(new URL(`https://${host}/${redirectTo}`, request.url), 307)
+    return Response.redirect(new URL(redirectTo, context.url), 307)
   }
 
   return next()
 })
-
- 
