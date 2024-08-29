@@ -5,16 +5,19 @@ const isMaintenanceMode = true
 
 export const onRequest = defineMiddleware((request, next) => {
   const isMaintenancePath = request.url.pathname.endsWith('/manteniment')
+  const host = request.site?.host; // Get the host from the request
 
   if (!isMaintenanceMode && isMaintenancePath) {
     const lang = getLangFromUrl(request.url)
     const redirectTo = lang === 'ca' ? '/' : `/${lang}/`
-    return Response.redirect(new URL(redirectTo, request.url), 307)
+     return Response.redirect(new URL(`https://${host}/${redirectTo}`, request.url), 320)
   } else if (isMaintenanceMode && !isMaintenancePath) {
     const lang = getLangFromUrl(request.url)
     const redirectTo = lang === 'ca' ? '/manteniment' : `/${lang}/manteniment`
-    return Response.redirect(new URL(redirectTo, request.url), 307)
+    return Response.redirect(new URL(`https://${host}/${redirectTo}`, request.url), 320)
   }
 
   return next()
 })
+
+ 
