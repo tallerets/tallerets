@@ -2,9 +2,8 @@
 import { getLangFromUrl, useTranslatedPath } from '../utils'
 
 const { taller } = Astro.props
-const { id, data, render, slug } = taller
-const { title, image } = data
-const { Content } = await render()
+const { id, data, slug } = taller
+const { title, image, desc } = data
 
 const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
@@ -30,7 +29,7 @@ const cursorClass = slug ? 'hover:cursor-pointer' : ''
         />
       </div>
       <div class="mb-auto text-lg">
-        <Content />
+        {desc}
       </div>
     </div>
   </a>

@@ -1,6 +1,8 @@
 ---
-links: [{ url: '/contacte', text: "Dubtes? Contacta'm" }]
 title: Termes i condicions dels tallers
+links:
+  - url: '/contacte'
+    text: "Dubtes? Contacta'm"
 ---
 
 <small>Data d’entrada en vigor: 1 de juliol de 2024</small>

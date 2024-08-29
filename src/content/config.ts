@@ -16,7 +16,7 @@ const taller = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
-    desc: z.string().optional(),
+    desc: z.string(),
     image: imgSchema,
     links: linkSchema.optional(),
   }),

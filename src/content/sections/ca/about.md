@@ -1,7 +1,11 @@
 ---
 title: Sobre mi
-image: { url: '/img/noor.png', alt: '' }
-links: [{ url: '/contacte', text: 'Contacta amb mi' }]
+image:
+  url: '/img/noor.png'
+  alt: ''
+links:
+  - url: '/contacte'
+    text: 'Contacta amb mi'
 ---
 
 Soc la Noor, la persona darrera de tallerets! M'encanta crear i acompanyar a les persones a desenvolupar la seva creativitat i projectes. Sempre he dibuixat, pintat, il·lustrat, fet tota mena de manualitats...
