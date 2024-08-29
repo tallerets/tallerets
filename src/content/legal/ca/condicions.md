@@ -14,6 +14,10 @@ title: Termes i condicions dels tallers
 
 Si has de cancel·lar la teva plaça, avisa’m amb un mínim de 72h d’antelació i et tornaré el 100% del pagament. Si cancel·les amb menys de 72h d’antelació, no es retornarà l’import.
 
+**Dret d'admissió**
+
+Tallerets es reserva el dret d'admissió a qualsevol de les activitats.
+
 **Fotografies i gravacions dels assistents**
 
 És possible que es facin fotografies durant els tallers amb fins promocionals. Assistint a un taller, acceptes la possibilitat que la teva imatge sigui utilitzada tant a xarxes com altres mètodes de promoció. Si prefereixes que no es mostri la teva cara, si us plau, notifica-ho amb antelació al reservar el taller.
