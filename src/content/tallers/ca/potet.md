@@ -4,4 +4,9 @@ desc: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir
 image:
   url: '/img/t-potets2.png'
   alt: 'Gent pintant pots de vidre'
+links:
+  - url: 'https://tallerets.setmore.com/tallerets'
+    text: 'Reserva'
+  - url: '/contacte'
+    text: "Contacta'm"
 ---
