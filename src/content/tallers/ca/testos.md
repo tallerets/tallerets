@@ -4,4 +4,9 @@ desc: 'En aquest talleret pintarem un test de fang per que puguis posar les teve
 image:
   url: '/img/t-testos.webp'
   alt: 'Gent pintant un mirallet'
+links:
+  - url: 'https://tallerets.setmore.com/tallerets'
+    text: 'Reserva'
+  - url: '/contacte'
+    text: "Contacta'm"
 ---
