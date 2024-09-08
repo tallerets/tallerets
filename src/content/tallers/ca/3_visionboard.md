@@ -4,6 +4,11 @@ desc: "Ets una dona emprenedora o amb metes personals i sents que necesites una 
 image:
   url: '/img/t-collage.webp'
   alt: 'Gent fent el seu propi vision board'
+links:
+  - url: 'https://tallerets.setmore.com/tallerets'
+    text: 'Reserva'
+  - url: '/contacte'
+    text: "Contacta'm"
 ---
 
 El vision board és un panell que crearem amb collage i altres materials on materializarem els nostres reptes i visualitzarem cap a on anem!
