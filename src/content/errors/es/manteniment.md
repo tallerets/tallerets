@@ -5,7 +5,7 @@ image:
   url: '/icons/potets.svg'
   alt: ''
 links:
-  - url: 'https://www.instagram.com/es/tallerets'
+  - url: 'https://www.instagram.com/tallerets'
     text: 'Instagram'
   - url: 'latallerets@gmail.com'
     text: 'Email'
