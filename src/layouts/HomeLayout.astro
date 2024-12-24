@@ -7,20 +7,24 @@ import { getEntry } from 'astro:content'
 import SectionCard from '../components/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 
 const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
 const clubSection = await getEntry('sections', `${lang}/club`)
 const empresesSection = await getEntry('sections', `${lang}/empreses`)
 
 const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
+const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+
 const rendered = await bioSection?.render()
 
 const translatePath = useTranslatedPath(lang)
 const tallersUrl = translatePath('/tallers')
 ---
 
-<Layout title={t('seo.title')} description={t('seo.desc')}>
+<Layout
+  title="Tallerets - Tallers Creatius a Barcelona"
+  description={heroSection?.data.desc || ''}
+>
   <main>
     <HeroHeader />
 
