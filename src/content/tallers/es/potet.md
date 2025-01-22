@@ -1,7 +1,7 @@
 ---
-title: 'Pinta un potet de vidre'
-desc: 'Mirall, mirallet.... qui és la més guapa del regne?” Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 on després podràs mirar-te cada dia!'
+title: 'Pinta un botecito'
+desc: "En este taller podrás decorar y personalizar a tu gusto los típicos botes que acumulamos en la cocina. Una experiencia única para explorar tu creatividad mientras haces algo práctico y bonito."
 image:
-  url: '/img/t-potets2.png'
-  alt: 'Gent pintant pots de vidre'
+  url: '/img/t-posagots.png'
+  alt: 'Gente haciendo posavasos'
 ---
