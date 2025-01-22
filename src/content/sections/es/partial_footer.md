@@ -1,5 +1,5 @@
 ---
-title: 'Una pausa per crear'
+title: 'Una pausa para crear'
 image:
   url: '/img/noor.png'
   alt: "Fotografía de la Noor a l'espai tallerets"
