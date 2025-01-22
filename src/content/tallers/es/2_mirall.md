@@ -1,7 +1,7 @@
 ---
-title: 'Pinta un mirallet'
-desc: "'Mirall, mirallet.... qui és la més guapa del regne?' Imagina no tenir un mirall a qui poder-li fer aquestes preguntes! En aquest talleret pintarem juntes un mirall de 30x30 on després podràs mirar-te cada dia!"
+title: 'Pinta un espejito'
+desc: "'Espejito, espejito... ¿quién es la más guapa del reino?' ¡Imagina no tener un espejo para poder hacerle estas preguntas! En este taller pintaremos juntas un espejo de 30x30 en el que después podrás mirarte cada día."
 image:
   url: '/img/t-mirallets.png'
-  alt: 'Gent pintant un mirallet'
+  alt: 'Gente pintando un espejito'
 ---
