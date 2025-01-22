@@ -1,15 +1,21 @@
 ---
-title: 'Talleret per equips i empreses'
+title: 'Taller para equipos y empresas'
 image:
   url: '/icons/equips.png'
   alt: ''
 links:
-  - url: '/contacte'
-    text: 'Contacta amb mi'
+  - url: '/contacto'
+    text: 'Contáctame'
 ---
 
-Si vols fer un talleret amb els teus companys de feina, ja sigui per fer un regal a un company que marxa, per celebrar un aniversari o per fer un "teambuilding", aquest és el teu talleret.
+El tiempo para desarrollar la creatividad y fortalecer los vínculos en un equipo es clave para mejorar el bienestar y la productividad en el trabajo. En **Tallerets**, creemos en el poder de la creatividad como herramienta para fomentar la comunicación, la colaboración y el espíritu de equipo.  
+
+Ofrecemos una amplia variedad de talleres y dinámicas creativas diseñadas específicamente para empresas y equipos. Desde sesiones prácticas de manualidades hasta dinámicas grupales de expresión artística, nos adaptamos a las necesidades y objetivos de tu empresa.  
+
+Ya sea que quieras hacer un regalo especial para un compañero, celebrar un aniversario o mejorar la cohesión de tu equipo a través de una actividad de "teambuilding", estamos aquí para ayudarte a crear una experiencia inolvidable.  
 
 <br/>
 
-Proposa’m la teva idea i podem fer un talleret a mida a partir de 8 persones.
+Propón tu idea y podemos organizar un taller a medida a partir de 8 personas.  
+
+En **Tallerets**, la creatividad no tiene límites. ¡Hagamos algo único para tu equipo!
