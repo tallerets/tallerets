@@ -1,12 +1,12 @@
 ---
-title: 'Tallers monogràfics'
-desc: 'Tallers creatius a Barcelona monogràfics durant dues hores'
+title: 'Talleres monográficos'
+desc: 'Talleres creativos monográficos en Barcelona de dos horas de duración'
 image:
   url: '/img/noor.png'
-  alt: "Fotografía de la Noor a l'espai tallerets"
+  alt: "Fotografía de Noor en el espacio Tallerets"
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Calendari i reserves'
+    text: 'Calendario y reservas'
 
-other: { titleIndex: 'Índex dels tallers' }
+other: { titleIndex: 'Índice de los talleres' }
 ---
