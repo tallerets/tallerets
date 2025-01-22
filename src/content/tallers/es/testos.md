@@ -1,7 +1,7 @@
 ---
-title: 'Pinta un test de fang per les teves plantes'
-desc: 'En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!'
+title: 'Pinta una maceta de barro para tus plantas'
+desc: 'En este taller pintaremos una maceta de barro para que puedas colocar tus plantas o semillas.'
 image:
   url: '/img/t-testos.webp'
-  alt: 'Gent pintant un mirallet'
+  alt: 'Gente pintando una maceta de barro'
 ---
