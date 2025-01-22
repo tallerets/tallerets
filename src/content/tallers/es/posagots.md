@@ -1,7 +1,7 @@
 ---
-title: 'Fes un posagots de ceràmica'
-desc: "En aquest talleret farem dos posagots de ceràmica que podràs personalitzar com més t’agradi!'"
+title: 'Haz un posavasos de cerámica'
+desc: "En este taller haremos dos posavasos de cerámica que podrás personalizar como más te guste."
 image:
   url: '/img/t-posagots.png'
-  alt: 'Gent fent els posagots'
+  alt: 'Gente haciendo posavasos'
 ---
