@@ -1,16 +1,16 @@
 ---
-title: Sobre mi
+title: Sobre mí
 image:
   url: '/img/noor.png'
   alt: ''
 links:
-  - url: '/contacte'
-    text: 'Contacta amb mi'
+  - url: '/contacto'
+    text: 'Contáctame'
 ---
 
-Soc la Noor, la persona darrera de tallerets! M'encanta crear i acompanyar a les persones a desenvolupar la seva creativitat i projectes. Sempre he dibuixat, pintat, il·lustrat, fet tota mena de manualitats...
+Soy Noor, la persona detrás de Tallerets. ¡Me encanta crear y acompañar a las personas a desarrollar su creatividad y proyectos! Siempre he dibujado, pintado, ilustrado y hecho todo tipo de manualidades...
 
-Després de portar tota la vida en el món empresarial, vaig veure com a poc a poc perdia aquesta part creativa. Quan estàs atrapat al dia a dia, i estàs animat a produir, acabes deixant de banda aquests espais amb tu. És per això que vaig iniciar el projecte tallerets, per poder donar un espai i generar una comunitat en la qual puguem crear de forma segura, i traiem aquesta part creativa que totes tenim!
+Después de pasar toda la vida en el mundo empresarial, vi cómo poco a poco perdía esa parte creativa. Cuando estás atrapado en el día a día y enfocado en producir, terminas dejando de lado esos espacios para ti mismo. Por eso inicié el proyecto Tallerets, para crear un espacio y generar una comunidad donde podamos crear de forma segura y sacar esa parte creativa que todas tenemos.
 
 <img
   width="300"
@@ -20,7 +20,8 @@ Després de portar tota la vida en el món empresarial, vaig veure com a poc a p
   alt=""
 />
 
-Quan va ser l'últim cop que feies alguna cosa pel simple plaer de fer-la?
-A tallerets fem les coses per fer. Pel plaer de gaudir el procés. Quan fem coses amb les mans connectem amb nosaltres mateixes. Ens ajuda a viure el moment present. Ens ajuda a explorar nous tactes, colors, habilitats. Ens ajuda també a desconnectar del món digital i de les pantalles que tant ens acompanyen en el nostre dia a dia. Ens ajuda a veure que estem fets per crear, i que totes i cadascuna de nosaltres tenim creativitat i habilitat!
+¿Cuándo fue la última vez que hiciste algo por el simple placer de hacerlo?  
+En Tallerets hacemos las cosas por hacer, por el placer de disfrutar el proceso. Cuando hacemos cosas con las manos, conectamos con nosotras mismas. Nos ayuda a vivir el momento presente, a explorar nuevas texturas, colores y habilidades. También nos ayuda a desconectar del mundo digital y de las pantallas que nos acompañan tanto en nuestro día a día. Nos recuerda que estamos hechas para crear, y que todas y cada una de nosotras tenemos creatividad y habilidad.
 
-Tallerets és per mi tot el que més m'agrada: crear, compartir, formar i generar comunitat. T'animes a compartir-ho amb mi?
+Tallerets es para mí todo lo que más me gusta: crear, compartir, formar y generar comunidad. ¿Te animas a compartirlo conmigo?
+
