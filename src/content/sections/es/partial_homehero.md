@@ -1,18 +1,18 @@
 ---
-title: 'Una pausa per crear'
-desc: 'Tallerets és un espai per connectar amb la teva creativitat i gaudir del procés de fer amb les mans. Vine a crear amb nosaltres!'
+title: 'Una pausa para crear'
+desc: 'Tallerets es un espacio para conectar con tu creatividad y disfrutar del proceso de crear con las manos. ¡Ven a crear con nosotros!'
 image:
   url: /vids/hero.mp4
-  alt: 'una paleta de colors amb pinzells representant un taller de pintura'
+  alt: 'una paleta de colores con pinceles representando un taller de pintura'
 links:
   - url: '#tallers'
-    text: 'veure els tallers'
+    text: 'ver los talleres'
   - url: '/tallers'
-    text: 'tallers'
+    text: 'talleres'
   - url: '/sobre-mi'
-    text: 'sobre mi'
+    text: 'sobre mí'
   - url: '/contacte'
-    text: 'contacte'
+    text: 'contacto'
 ---
 
-Una pausa <br/> per crear
+Una pausa <br/> para crear
