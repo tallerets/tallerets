@@ -1,37 +1,38 @@
 ---
-title: Política de privacitat
+title: Política de privacidad
 links:
-  - url: '/contacte'
-    text: "Dubtes? Contacta'm"
+  - url: '/contacto'
+    text: "¿Dudas? Contáctame"
 ---
 
-<small>Data d’entrada en vigor: 1 de juliol de 2024</small>
+<small>Fecha de entrada en vigor: 1 de julio de 2024</small>
 <br/>
-<small>En utilitzar aquest web, acceptes aquesta política de privacitat</small>
+<small>Al utilizar este sitio web, aceptas esta política de privacidad</small>
 <br/>
 
-# Política de privacitat
+# Política de privacidad
 
-Aquesta política descriu el procés de recopilació, ús i protecció de la informació recollida.
+Esta política describe el proceso de recopilación, uso y protección de la información recogida.
 
-### Recopilació i ús
+### Recopilación y uso
 
-**Correu electrònic**
+**Correo electrónico**
 
-Recollim la teva adreça de correu electrònic quan envies una sol·licitud de reserva. L’adreça de correu electrònic s’utilitzarà únicament amb fins de comunicació relacionats amb els tallers.
+Recogemos tu dirección de correo electrónico cuando envías una solicitud de reserva. La dirección de correo electrónico se utilizará únicamente con fines de comunicación relacionados con los talleres.
 
-**Fotografies dels assistents als tallers**
+**Fotografías de los asistentes a los talleres**
 
-És possible que es facin fotografies durant els tallers amb fins promocionals. Assistint a un taller, acceptes la possibilitat que la teva imatge sigui utilitzada tant a xarxes com altres mètodes de promoció. Si prefereixes que no es mostri la teva cara, si us plau, notifica-ho amb antelació al reservar el taller.
+Es posible que se tomen fotografías durante los talleres con fines promocionales. Al asistir a un taller, aceptas la posibilidad de que tu imagen sea utilizada tanto en redes sociales como en otros métodos de promoción. Si prefieres que no se muestre tu rostro, por favor, notifícalo con antelación al reservar el taller.
 
 **Cookies**
 
-No es recullen cookies en aquest web.
+No se recogen cookies en este sitio web.
 
-### Tractament de dades
+### Tratamiento de datos
 
-No compartim ni venem la teva adreça de correu o dades personals amb terces. Les fotografies poden fetes als tallers podràn ser utilitzades a la web o a les xarxes per tasques de promoció (si no expresses el teu desacord)
+No compartimos ni vendemos tu dirección de correo o datos personales a terceros. Las fotografías tomadas en los talleres podrán ser utilizadas en la web o en redes sociales con fines de promoción (si no expresas tu desacuerdo).
 
-### Contacte
+### Contacto
 
-Si tens alguna pregunta o preocupació sobre els termes d’ús o la política de privacitat, posa’t en contacte.
+Si tienes alguna pregunta o inquietud sobre los términos de uso o la política de privacidad, ponte en contacto.
+
