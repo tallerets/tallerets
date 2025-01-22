@@ -1,41 +1,46 @@
 ---
-title: Termes i condicions dels tallers
+title: Términos y condiciones del taller
 links:
   - url: '/contacte'
-    text: "Dubtes? Contacta'm"
+    text: "Tienes dudas? Contáctame"
 ---
 
-<small>Data d’entrada en vigor: 1 de juliol de 2024</small>
+<small>Fecha de entrada en vigor: 1 de julio de 2024</small>
 <br/>
-<small>Reservant i unint-se a un taller, s’accepten aquests termes i condicions</small>
+<small>Reservando y uniéndote a un taller, se aceptan estos términos y condiciones</small>
 <br/>
 
-# Termes i condicions dels tallers
+# Términos y condiciones de los talleres
 
-**Reserva i cancel·lacions**
+**Reserva y cancelaciones**
 
-Si has de cancel·lar la teva plaça, avisa’m amb un mínim de 72h d’antelació i et tornaré el 100% del pagament. Si cancel·les amb menys de 72h d’antelació, no es retornarà l’import.
+Talleres monogràficos:
+Si tienes que cancelar tu plaza, avísame con un mínimo de 72h de antelación y te devolveré el 100% del pago. Si cancelas con menos de 72h de antelación, no se devolverá el importe del taller. 
+Talleres a medida:
+Si tienes que cancelar o modificar tu taller a medida, avísame con un mínimo de 7 dias y te devolveré el 100% del pago. Si cancelas con menos de 7 dias de antelación, no se devolverá el importe de cuatro plazas de taller + el importe de la reserva de espacio en caso de no hacerlo en el espacio tallerets.
+Club tallerets:
+Si tienes que cancelar tu plaza en el club, avísame antes de final del mes en curso, para que pueda cancelar tu suscripción. En caso de no asistir a un dia del club, no se devolverá ni se recuperará la clase (aunque haremos lo posible para poderla recuperar)
 
-**Dret d'admissió**
+**Derecho de admisión**
 
-Tallerets es reserva el dret d'admissió a qualsevol de les activitats.
+Tallerets se reserva el derecho de admisión a cualquiera de los talleres así como la expulsión del taller en caso de comportamiento inapropiado. 
 
-**Fotografies i gravacions dels assistents**
+**Fotografias y grabaciones de los asistentes**
 
-És possible que es facin fotografies durant els tallers amb fins promocionals. Assistint a un taller, acceptes la possibilitat que la teva imatge sigui utilitzada tant a xarxes com altres mètodes de promoció. Si prefereixes que no es mostri la teva cara, si us plau, notifica-ho amb antelació al reservar el taller.
+Es posible que se hagan fotografias y/o videos durante los talleres con fines promocionales. Cuando asientes un taller, aceptas la posibilidad de que tu imagen sea usada en redes sociales y otros métodos de promoción, nunca con fines comerciales. Si prefieres que no se muestre tu cara, indícalo con antelación.
 
-Per a més informació sobre l’ús d’aquestes dades, consulta la política de privacitat.
+Para más información sobre el uso de estos datos, consulta la política de privacidad.
 
-## Termes i condicions del web
+## Términos y condiciones de la web
 
-**Propietat intel·lectual**
+**Propiedad intelectual**
 
-Tot el contingut d’aquest web, incloent textos, imatges, vídeos i logotips, està protegit per drets de propietat intel·lectual. No pots utilitzar, reproduir o distribuir el nostre contingut sense el nostre permís explícit.
+Todo el contenido de este sitio web, incluyendo textos, imágenes, videos y logotipos, está protegido por derechos de propiedad intelectual. No puedes utilizar, reproducir ni distribuir nuestro contenido sin nuestro permiso explícito.
 
-**Canvis en els termes**
+**Cambios en los términos**
 
-Podem actualitzar aquests termes de tant en tant. Qualsevol canvi serà efectiu en publicar-lo en aquesta pàgina.
+Podemos actualizar estos términos de vez en cuando. Cualquier cambio será efectivo al publicarlo en esta página.
 
-### Contacta'm
+### Contáctame
 
-Si tens alguna pregunta o preocupació sobre els termes d’ús o la política de privacitat, posa’t en contacte.
+Si tienes alguna pregunta o inquietud sobre los términos de uso o la política de privacidad, ponte en contacto.
