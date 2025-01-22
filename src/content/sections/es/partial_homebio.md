@@ -2,26 +2,27 @@
 title: ''
 image:
   url: '/img/noor.png'
-  alt: "Fotografía de la Noor a l'espai tallerets"
+  alt: "Fotografía de Noor en el espacio Tallerets"
 links:
   - url: '#tallers'
-    text: 'veure els tallers'
+    text: 'ver los talleres'
   - url: '/tallers'
-    text: 'tallers'
+    text: 'talleres'
   - url: '/sobre-mi'
-    text: 'sobre mi'
+    text: 'sobre mí'
   - url: '/contacte'
-    text: 'contacte'
+    text: 'contacto'
 other:
   {
-    title1: 'Soc la Noor i organitzo',
-    title2: 'tallers creatius',
-    subtitle: "T'apuntes?",
+    title1: 'Soy Noor y organizo',
+    title2: 'talleres creativos',
+    subtitle: '¿Te apuntas?',
   }
 ---
 
-Fer coses amb les mans ens fa conectar amb nosaltres mateixes.
+Hacer cosas con las manos nos hace conectar con nosotras mismas.
 
 <br/>
 
-A tallerets trobaràs un espai on potenciar l’expressió, la creativitat i la desconnexió del món digital. Alhora, un espai on conèixer a gent i formar comunitat.
+En Tallerets encontrarás un espacio donde potenciar la expresión, la creatividad y la desconexión del mundo digital. Al mismo tiempo, un lugar para conocer gente y formar comunidad.
+
