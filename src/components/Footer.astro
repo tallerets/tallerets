@@ -1,6 +1,6 @@
 ---
 import { getCollection, getEntry } from 'astro:content'
-import { getLangFromUrl, useTranslatedPath } from '../utils'
+import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 import LangSelector from './LangSelector.astro'
 
 const lang = getLangFromUrl(Astro.url)
@@ -52,7 +52,7 @@ const legalDocs = await getCollection('legal', ({ id }) => {
         {
           legalDocs.map(({ slug, data: { title } }) => {
             const correctedSlug =
-              translatePath('/legal') + slug.replace('ca', '')
+              translatePath('/legal') + removeLangFromSlug(slug)
             return (
               <li>
                 <a href={correctedSlug}>{title}</a>
@@ -62,12 +62,12 @@ const legalDocs = await getCollection('legal', ({ id }) => {
         }
       </ul>
     </div>
-    <!-- <div>
+    <div>
       <h5 class="font-bold opacity-60">
         {footerSection?.data.other.labels[2]}
       </h5>
       <LangSelector />
-    </div> -->
+    </div>
   </section>
 </footer>
 <p

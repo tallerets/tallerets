@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslatedPath } from '../utils'
+import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 
 const { taller } = Astro.props
 const { id, data, slug } = taller
@@ -8,7 +8,8 @@ const { title, image, desc } = data
 const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
 
-const correctedSlug = translatePath('/tallers') + slug.replace('ca', '')
+const correctedSlug = translatePath('/tallers') + removeLangFromSlug(slug)
+
 const cursorClass = slug ? 'hover:cursor-pointer' : ''
 ---
 

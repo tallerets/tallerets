@@ -1,7 +1,7 @@
 ---
 title: Términos y condiciones del taller
 links:
-  - url: '/contacte'
+  - url: '/es/contacte'
     text: "Tienes dudas? Contáctame"
 ---
 

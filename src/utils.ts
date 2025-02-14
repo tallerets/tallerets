@@ -59,3 +59,7 @@ export function useTranslations(lang: keyof typeof ui) {
     return ui[lang][key] || ui[defaultLang][key]
   }
 }
+
+export const removeLangFromSlug = (slug: string) => {
+  return '/' + slug.replace('es/', '').replace('ca/', '')
+}

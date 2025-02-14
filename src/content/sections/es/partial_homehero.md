@@ -7,11 +7,11 @@ image:
 links:
   - url: '#tallers'
     text: 'ver los talleres'
-  - url: '/tallers'
+  - url: '/es/tallers'
     text: 'talleres'
-  - url: '/sobre-mi'
+  - url: '/es/sobre-mi'
     text: 'sobre mí'
-  - url: '/contacte'
+  - url: '/es/contacte'
     text: 'contacto'
 ---
 

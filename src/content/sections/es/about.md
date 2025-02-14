@@ -4,11 +4,11 @@ image:
   url: '/img/noor.png'
   alt: ''
 links:
-  - url: '/contacto'
+  - url: '/es/contacto'
     text: 'Contáctame'
 ---
 
-Soy Noor, la persona detrás de Tallerets. ¡Me encanta crear y acompañar a las personas a desarrollar su creatividad y proyectos! Siempre he dibujado, pintado, ilustrado y hecho todo tipo de manualidades...
+Soy Noor, la persona detrás de Tallerets! Me encanta crear y acompañar a las personas a desarrollar su creatividad y proyectos! Siempre he dibujado, pintado, ilustrado y hecho todo tipo de manualidades...
 
 Después de pasar toda la vida en el mundo empresarial, vi cómo poco a poco perdía esa parte creativa. Cuando estás atrapado en el día a día y enfocado en producir, terminas dejando de lado esos espacios para ti mismo. Por eso inicié el proyecto Tallerets, para crear un espacio y generar una comunidad donde podamos crear de forma segura y sacar esa parte creativa que todas tenemos.
 

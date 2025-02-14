@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content'
+import TallerLayout from '../../../layouts/TallerLayout.astro'
+
+export async function getStaticPaths() {
+  const allTallers = await getCollection('tallers')
+
+  return allTallers.map((taller) => {
+    const slug = taller.slug.replace('es', '')
+    return {
+      params: { slug },
+      props: { taller },
+    }
+  })
+}
+
+const { taller } = Astro.props
+---
+
+<TallerLayout taller={taller} />

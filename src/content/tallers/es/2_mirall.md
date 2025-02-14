@@ -4,4 +4,9 @@ desc: "'Espejito, espejito... ¿quién es la más guapa del reino?' ¡Imagina no
 image:
   url: '/img/t-mirallets.png'
   alt: 'Gente pintando un espejito'
+links:
+  - url: 'https://tallerets.setmore.com/tallerets'
+    text: 'Reserva'
+  - url: '/es/contacte'
+    text: "Contáctame"
 ---

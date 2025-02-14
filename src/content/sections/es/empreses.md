@@ -4,7 +4,7 @@ image:
   url: '/icons/equips.png'
   alt: ''
 links:
-  - url: '/contacto'
+  - url: '/es/contacto'
     text: 'Contáctame'
 ---
 
