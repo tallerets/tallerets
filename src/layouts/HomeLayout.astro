@@ -2,7 +2,12 @@
 import Footer from '../components/Footer.astro'
 import HeroHeader from '../components/Header/HeroHeader.astro'
 import Layout from './BaseLayout.astro'
-import { getLangFromUrl, useTranslatedPath, useTranslations } from '../utils'
+import {
+  getLangFromUrl,
+  removeLangFromSlug,
+  useTranslatedPath,
+  useTranslations,
+} from '../utils'
 import { getEntry } from 'astro:content'
 import SectionCard from '../components/SectionCard.astro'
 
@@ -11,6 +16,7 @@ const lang = getLangFromUrl(Astro.url)
 const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
 const clubSection = await getEntry('sections', `${lang}/club`)
 const empresesSection = await getEntry('sections', `${lang}/empreses`)
+const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
 
 const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
 const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
@@ -74,7 +80,11 @@ const tallersUrl = translatePath('/tallers')
               <SectionCard
                 title={aMidaSection.data.title}
                 desc={aMidaSection.data.desc}
-                href={aMidaSection.slug.replace('ca', '')}
+                href={
+                  lang == 'ca'
+                    ? removeLangFromSlug(aMidaSection.slug)
+                    : '/' + aMidaSection.slug
+                }
                 image={aMidaSection.data.image}
               />
             )
@@ -85,7 +95,11 @@ const tallersUrl = translatePath('/tallers')
               <SectionCard
                 title={clubSection.data.title}
                 desc={clubSection.data.desc}
-                href={clubSection.slug.replace('ca', '')}
+                href={
+                  lang == 'ca'
+                    ? removeLangFromSlug(clubSection.slug)
+                    : '/' + clubSection.slug
+                }
                 image={clubSection.data.image}
               />
             )
@@ -96,15 +110,19 @@ const tallersUrl = translatePath('/tallers')
               <SectionCard
                 title={empresesSection.data.title}
                 desc={empresesSection.data.desc}
-                href={empresesSection.slug.replace('ca', '')}
+                href={
+                  lang == 'ca'
+                    ? removeLangFromSlug(empresesSection.slug)
+                    : '/' + empresesSection.slug
+                }
                 image={empresesSection.data.image}
               />
             )
           }
 
           <SectionCard
-            title="Tallers monogràfics"
-            desc="Descobreix els tallers monogràfics que oferim"
+            title={monoSection.data.title}
+            desc={monoSection.data.desc}
             href={tallersUrl}
             image={{ url: '/icons/potet.svg', alt: '' }}
           />

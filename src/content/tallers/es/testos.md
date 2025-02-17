@@ -4,4 +4,9 @@ desc: 'En este taller pintaremos una maceta de barro para que puedas colocar tus
 image:
   url: '/img/t-testos.webp'
   alt: 'Gente pintando una maceta de barro'
+links:
+  - url: 'https://tallerets.setmore.com/tallerets'
+    text: 'Reserva'
+  - url: '/es/contacte'
+    text: "Contáctame"
 ---

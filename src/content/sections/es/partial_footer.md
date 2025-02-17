@@ -4,23 +4,23 @@ image:
   url: '/img/noor.png'
   alt: "Fotografía de la Noor a l'espai tallerets"
 links:
-  - url: '/tallers'
-    text: 'Tallers monogràfics a Barcelona'
-  - url: '/a-mida'
-    text: 'Tallers creatius a mida'
-  - url: '/empreses'
-    text: 'Tallers creatius per empreses'
-  - url: '/club'
-    text: 'Club de tallers creatius'
-  - url: '/sobre-mi'
+  - url: '/es/tallers'
+    text: 'Talleres monogràficos en Barcelona'
+  - url: '/es/a-mida'
+    text: 'Talleres creativos a medida'
+  - url: '/es/empreses'
+    text: 'Talleres creativos para empreses'
+  - url: '/es/club'
+    text: 'Club de talleres creativoss'
+  - url: '/es/sobre-mi'
     text: 'Sobre mi'
-  - url: '/contacte'
-    text: 'Contacte'
+  - url: '/es/contacte'
+    text: 'Contacto'
 other:
   {
-    copyright: '© 2024 Tallerets. Tots els drets reservats.',
-    labels: ['ENLLAÇOS', 'LEGAL', 'IDIOMA'],
-    authorTitle: 'Disseny web i desenvolupament per',
+    copyright: '© 2024 Tallerets. Todos los derechos reservados.',
+    labels: ['ENLACES', 'LEGAL', 'IDIOMA'],
+    authorTitle: 'Diseño y desarrollo web de',
     authorName: '@aymyo',
     authorUrl: 'https://github.com/aymyo',
   }

@@ -5,6 +5,8 @@ image:
   url: '/img/t-collage.webp'
   alt: 'bolsas de tela pintadas'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets?step=time-slot&products=a02fe209-abb5-4cdd-9366-1c2d0c0b476f&type=class&staff=d3a75418-f4f4-4e4c-af9f-d42869859c41&staffSelected=false'
+  - url: 'https://tallerets.setmore.com/tallerets'
     text: 'Reserva'
+  - url: '/es/contacte'
+    text: "Contáctame"
 ---

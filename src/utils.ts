@@ -36,7 +36,7 @@ export const createMailToString = ({
 
 export const showDefaultLang = false
 export const languages = {
-  es: 'Español',
+  es: 'Castellano',
   ca: 'Català',
 } as const
 
@@ -58,4 +58,8 @@ export function useTranslations(lang: keyof typeof ui) {
   return function t(key: keyof (typeof ui)[typeof defaultLang]) {
     return ui[lang][key] || ui[defaultLang][key]
   }
+}
+
+export const removeLangFromSlug = (slug: string) => {
+  return '/' + slug.replace('es/', '').replace('ca/', '')
 }

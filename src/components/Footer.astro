@@ -1,6 +1,6 @@
 ---
 import { getCollection, getEntry } from 'astro:content'
-import { getLangFromUrl, useTranslatedPath } from '../utils'
+import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 import LangSelector from './LangSelector.astro'
 
 const lang = getLangFromUrl(Astro.url)
@@ -30,9 +30,9 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       </p>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">
+      <p class="font-bold opacity-60">
         {footerSection?.data.other.labels[0]}
-      </h5>
+      </p>
       <ul>
         {
           footerLinks &&
@@ -45,14 +45,14 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       </ul>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">
+      <p class="font-bold opacity-60">
         {footerSection?.data.other.labels[1]}
-      </h5>
+      </p>
       <ul>
         {
           legalDocs.map(({ slug, data: { title } }) => {
             const correctedSlug =
-              translatePath('/legal') + slug.replace('ca', '')
+              translatePath('/legal') + removeLangFromSlug(slug)
             return (
               <li>
                 <a href={correctedSlug}>{title}</a>
@@ -62,12 +62,12 @@ const legalDocs = await getCollection('legal', ({ id }) => {
         }
       </ul>
     </div>
-    <!-- <div>
-      <h5 class="font-bold opacity-60">
+    <div>
+      <p class="font-bold opacity-60">
         {footerSection?.data.other.labels[2]}
-      </h5>
+      </p>
       <LangSelector />
-    </div> -->
+    </div>
   </section>
 </footer>
 <p

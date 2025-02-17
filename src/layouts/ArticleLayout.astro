@@ -11,31 +11,32 @@ const { title, desc, links } = section.data
 
 <BaseLayout title={title} description={desc}>
   <Header />
-  <section class="page-padding mx-auto pb-20 pt-4 flex flex-col items-center">
-    {
-      title && (
-        <h1 class="text-4xl md:text-6xl text-center md:leading-tight font-[500] max-w-[20ch] mt-0 mb-8 md:mb-12">
-          {title}
-          <span>
-            <img
-              width="48"
-              height="48"
-              class="w-12 inline text-sm"
-              src="/icons/flor.svg"
-              alt=""
-            />
-          </span>
-        </h1>
-      )
-    }
+  <main>
+    <section class="page-padding mx-auto pb-20 pt-4 flex flex-col items-center">
+      {
+        title && (
+          <h1 class="text-4xl md:text-6xl text-center md:leading-tight font-[500] max-w-[20ch] mt-0 mb-8 md:mb-12">
+            {title}
+            <span>
+              <img
+                width="48"
+                height="48"
+                class="w-12 inline text-sm"
+                src="/icons/flor.svg"
+                alt=""
+              />
+            </span>
+          </h1>
+        )
+      }
 
-    <div class="text-2xl md:text-xl max-w-[50ch] content text-justify">
-      <Content />
-    </div>
+      <div class="text-2xl md:text-xl max-w-[50ch] content text-justify">
+        <Content />
+      </div>
 
-    {links && <LinkList links={links} />}
-  </section>
-
+      {links && <LinkList links={links} />}
+    </section>
+  </main>
   <Footer />
 </BaseLayout>
 

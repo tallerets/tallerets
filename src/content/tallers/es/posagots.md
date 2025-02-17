@@ -4,4 +4,9 @@ desc: "En este taller haremos dos posavasos de cerámica que podrás personaliza
 image:
   url: '/img/t-posagots.png'
   alt: 'Gente haciendo posavasos'
+links:
+  - url: 'https://tallerets.setmore.com/tallerets'
+    text: 'Reserva'
+  - url: '/es/contacte'
+    text: "Contáctame"
 ---

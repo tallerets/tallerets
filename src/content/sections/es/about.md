@@ -4,7 +4,7 @@ image:
   url: '/img/noor.png'
   alt: ''
 links:
-  - url: '/contacto'
+  - url: '/es/contacto'
     text: 'Contáctame'
 ---
 

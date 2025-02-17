@@ -1,7 +1,7 @@
 ---
 title: Política de privacidad
 links:
-  - url: '/contacto'
+  - url: '/es/contacte'
     text: "¿Dudas? Contáctame"
 ---
 
