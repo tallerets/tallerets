@@ -36,7 +36,7 @@ export const createMailToString = ({
 
 export const showDefaultLang = false
 export const languages = {
-  es: 'Español',
+  es: 'Castellano',
   ca: 'Català',
 } as const
 

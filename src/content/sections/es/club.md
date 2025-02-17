@@ -26,7 +26,7 @@ crearemos, haremos amigas y nos dedicaremos unas horas al mes sin pantallas y co
 
 <br />
 
-**Qué talleres haremos?
+**¿Qué talleres haremos?**
 
 puedes elegir qué quieres venir a hacer al club:  
 

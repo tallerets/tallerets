@@ -30,9 +30,9 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       </p>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">
+      <p class="font-bold opacity-60">
         {footerSection?.data.other.labels[0]}
-      </h5>
+      </p>
       <ul>
         {
           footerLinks &&
@@ -45,9 +45,9 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       </ul>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">
+      <p class="font-bold opacity-60">
         {footerSection?.data.other.labels[1]}
-      </h5>
+      </p>
       <ul>
         {
           legalDocs.map(({ slug, data: { title } }) => {
@@ -63,9 +63,9 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       </ul>
     </div>
     <div>
-      <h5 class="font-bold opacity-60">
+      <p class="font-bold opacity-60">
         {footerSection?.data.other.labels[2]}
-      </h5>
+      </p>
       <LangSelector />
     </div>
   </section>
