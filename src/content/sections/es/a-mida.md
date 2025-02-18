@@ -5,7 +5,7 @@ image:
   url: '/icons/regal.svg'
   alt: 'un pastel hecho con pinceles representando un taller a medida para un aniversario u ocasión especial'
 links:
-  - url: '/es/contacto'
+  - url: '/es/contacte'
     text: 'Contáctame'
 ---
 
