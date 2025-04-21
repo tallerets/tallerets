@@ -11,35 +11,48 @@ links:
     text: "¡Apúntate todo el trimestre!"
 ---
 
-El club tallerets son "extraescolares" para adultos es un espacio para explorar nuestra creatividad y formar comunidad. Ven **dos tardes al mes** a dedicarte un momento para ti y tener el espacio adecuado para hacerlo.
 
-A menudo, aunque tengamos los materiales o un espacio en casa, no encontramos el momento para explorar nuestra creatividad.  
-
-otras veces nos gustaría apuntarnos a talleres, pero todos son muy técnicos o demasiado cortos
-
-quizá nos gustaría hacer cosas creativas, pero no tenemos con quién
-
-el club tallerets reúne todas estas necesidades y ofrece un espacio donde nos reuniremos dos veces al mes para hacer manualidades de todo tipo:  
-
-estampación, pintura, collage, dibujo, journaling, escritura... ¡tú eliges!  
-
-crearemos, haremos amigas y nos dedicaremos unas horas al mes sin pantallas y conectando con el momento presente.
+El club tallerets es un club donde explorar nuestra creatividad y crear comunidad y barrio. Ven dos tardes al mes y dedícate un momento para ti en un espacio acogedor y rodeada de personas como tu!
 
 <br />
 
-**¿Qué talleres haremos?**
+**Qué es?**
 
-puedes elegir qué quieres venir a hacer al club:  
+El Club tallerets sueño las extra-escolares/laborales por adultxs que estabas esperando!
 
-puedes traer el kit de estampación que te regalaron en navidad y que no sabes qué hacer con él.
-puedes venir a dibujar, ilustrar, pintar, hacer crochet o cualquier otro hobby que tengas y para el cual quieras un lugar y un momento al mes para dedicarte a ello.
-puedes venir a expresar (o a encontrar) tu creatividad.
-puedes venir simplemente a desconectar de las pantallas y pasar un rato creativo con otras personas.
-puedes venir a probar esa nueva manualidad que has visto en tiktok.
+A menudo, a pesar de tener los materiales o el espacio a casa, no encontramos el momento de ponernos a explorar nuestra creatividad.
+Otras veces nos gustaría apuntarnos a talleres, pero todos su muy técnicos o mucho curso.
+Quizás voldriem hacer cosas creativas pero nos gustaría hacerlo en compañía y no tenemos con quién.
 
-¡todo el arte es bienvenido!
+El club reúne todas estas necesitats y ofrece un espacio de comunidad y de barrio donde sentirte a gusto!
 
+**Cómo funciona?**
 
+El club tallerets es una suscripció mensual o trimestral. Somos un grupo de máximo 12 personas y entes juntem dos tardes en el mes para crear, desconectar y hacer barrio!
+Es cómo si estuvieras apuntada a un gimnasio de manualidades, o a unas extra-escolares por adultxs!
+
+Su dos tardes en el mes de 18 a 21h. Puedes venir cuando quieras, y marchar cuando quieras en este margen de tiempo!
+
+Cada miembro tiene acceso al material básico y las herramientas para poder hacer todo tipos de manualidades, solo tendrás que llevar de casa los materiales que necesitis para hacer la manualidad concreta que hayamos o hayas escogido! Aprenderemos a hacer de todo: pintura, dibujo, collage, estampación, bordado, y mucho más! Puedes sumarte a una actividad que escogemos entre todas, venir a hacer la que tú escojas, o que te enseñe a hacer algo que no sabes vende bien como hacer.
+
+Es un espacio fuera de pantallas, para hacer amigas, para tener tu lugar para crear, para aprender nuevos hobbies y para inspirarte otras mujeres creativas!
+
+**Qué talleres haremos?**
+
+Puedes escoger qué te gustaría hacer al club:
+
+Puedes llevarte el kit de estampación que te regalaron a la navidad y que no has utilizado nunca.
+Puedes venir a dibujar, ilustrar, pintar, hacer aguja de gancho o cualquier otro hobbie que ya tengas y por el cual quieras encontrar el tiempo, el momento y el espacio para ponerte.
+Puedes venir a expresar o a encontrar tu creatividad
+Puedes venir simplemente a desconectar de pantallas y a pasar un rato haciendo cosea con las manos y a disfrutar del momento presente.
+Puedes venir a probar una de las mil manualidades que has guardado a tik tok
+Todo el arte es bienvenido, y no hace falta ninguna experiencia para venir, solo ganas!
+
+**Cómo me puedo apuntar?**
+
+Te puedes apuntar mediante el enlace que encontrarás en esta web
+Hay la opción mensual (60€ en el mes con IVA incluido) o trimestral (160€ en el mes con IVA incluido)
+Funciona como un gimnasio, y puedes decir no renovar la mensualidad o el trimestre el ultim día del club del mes.
 <br />
 
 Cualquier duda puedes contactarme por aquí o por email a latallerets@gmail.com.
