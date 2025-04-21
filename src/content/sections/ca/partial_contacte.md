@@ -7,9 +7,9 @@ image:
 other:
   adreça:
     - 'Adreça'
-    - 'Carrer del Moianès, 20'
+    - 'Carrer Antoni de Capmany, 71 Local F'
     - 'Sants-Montjuïc'
-    - '08014 Barcelona'
+    - '08028 Barcelona'
   links:
     - label: 'Telèfon (Whatsapp)'
       url: 'https://wa.me/34623951815'
