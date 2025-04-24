@@ -5,9 +5,9 @@ image:
   url: '/icons/club.png'
   alt: ''
 links:
-  - url: 'https://buy.stripe.com/aEU7vL88t2eS66Q288](https://buy.stripe.com/3cs9DTbkF3iWeDm14c'
+  - url: 'https://buy.stripe.com/aEU7vL88t2eS66Q288'
     text: "Apunta't un mes!"
-  - url: 'https://buy.stripe.com/5kA03j74p5r49j28wy](https://buy.stripe.com/4gw9DT2O9bPs3YI7sC'
+  - url: 'https://buy.stripe.com/5kA03j74p5r49j28wy'
     text: "Apunta't tot el trimestre"
 ---
 
