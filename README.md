@@ -31,6 +31,10 @@ Tots els textos de la pàgina es troben a la carpeta [src/data/translations.ts](
 
 Els colors i les fonts utilitzades es troben a [tailwind.config.js](tailwind.config.js). Si vols canviar-los, pots fer-ho editant aquest fitxer. Tanmateix, no és recomanable que els canviis perque ja estan pensats per tenir el contrast adequat.
 
+## 🥲 Per desplegar nous canvis
+
+Malauradament Vercel ha fet que ara nomes aquells que formen part de l'equip a Vercel puguin desplegar els canvis a la web. Si vull afegir-te hem de pagar... Així que a partir d'ara millor que m'avisis quan acabis els canvis i ho faig jo
+
 ---
 
 ## 🧞 Project Commands
