@@ -2,7 +2,7 @@
 title: 'Contacta con Tallerets'
 desc: 'Email, teléfono y dirección de Tallerets. Para cualquier duda o propuesta: no lo dudes, ¡escríbeme!'
 image:
-  url: '  url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.2153006861026!2d2.1310550765439094!3d41.3738574713016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10abb716c987543%3A0xb3eb03c61216d29e!2stallerets%20-%20tallers%20creatius!5e1!3m2!1sca!2ses!4v1745489910933!5m2!1sca!2ses''
+  url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.2153006861026!2d2.1310550765439094!3d41.3738574713016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10abb716c987543%3A0xb3eb03c61216d29e!2stallerets%20-%20tallers%20creatius!5e1!3m2!1sca!2ses!4v1745489910933!5m2!1sca!2ses'
   alt: ' '
 other:
   adreça:
