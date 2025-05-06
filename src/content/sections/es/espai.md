@@ -1,5 +1,5 @@
 ---
-title: Sobre mí
+title: Espacio Tallerets
 image:
   url: '/img/noor.png'
   alt: ''
@@ -24,4 +24,3 @@ Después de pasar toda la vida en el mundo empresarial, vi cómo poco a poco per
 En Tallerets hacemos las cosas por hacer, por el placer de disfrutar el proceso. Cuando hacemos cosas con las manos, conectamos con nosotras mismas. Nos ayuda a vivir el momento presente, a explorar nuevas texturas, colores y habilidades. También nos ayuda a desconectar del mundo digital y de las pantallas que nos acompañan tanto en nuestro día a día. Nos recuerda que estamos hechas para crear, y que todas y cada una de nosotras tenemos creatividad y habilidad.
 
 Tallerets es para mí todo lo que más me gusta: crear, compartir, formar y generar comunidad. ¿Te animas a compartirlo conmigo?
-

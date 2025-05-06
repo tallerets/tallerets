@@ -1,13 +1,13 @@
 ---
-title: 'Tallerets Club: el teu espai creatiu habitual'
+title: 'Club Tallerets: el teu espai creatiu habitual'
 desc: "Dues tardes al mes a Tallerets a Barcelona per fer el que més t'agradi: pintar, cosir, llegir, escriure, fer manualitats... Vine a gaudir del teu temps i formar part d'una comunitat creativa."
 image:
   url: '/icons/club.png'
   alt: ''
 links:
-  - url: 'https://buy.stripe.com/aEU7vL88t2eS66Q288'
+  - url: 'https://buy.stripe.com/3cs9DTbkF3iWeDm14c'
     text: "Apunta't un mes!"
-  - url: 'https://buy.stripe.com/5kA03j74p5r49j28wy'
+  - url: 'https://buy.stripe.com/cN2cQ59cxaLo1QAeV1'
     text: "Apunta't tot el trimestre"
 ---
 
@@ -38,7 +38,7 @@ Cada membre té accés al material bàsic i les eines per poder fer tot tipus de
 
 **Quins tallers farem?**
 
-Pots escollir què t'agradaria fer al club: 
+Pots escollir què t'agradaria fer al club:
 
 Pots portar-te el kit d'estampació que et van regalar al nadal i que no has utilitzat mai.
 Pots venir a dibuixar, il·lustrar, pintar, fer ganxet o qualsevol altre hobbie que ja tinguis i pel qual vulguis trobar el temps, el moment i l'espai per posar-t'hi.

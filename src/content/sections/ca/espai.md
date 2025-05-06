@@ -1,5 +1,5 @@
 ---
-title: Sobre mi
+title: Espai Tallerets
 image:
   url: '/img/noor.png'
   alt: ''

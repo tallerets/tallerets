@@ -7,10 +7,12 @@ image:
 links:
   - url: '#tallers'
     text: 'veure els tallers'
-  - url: '/tallers'
+  - url: '#tallers'
     text: 'tallers'
-  - url: '/sobre-mi'
-    text: 'sobre mi'
+  - url: 'newsletter'
+    text: 'novetats'
+  - url: '/espai'
+    text: 'espai'
   - url: '/contacte'
     text: 'contacte'
 ---

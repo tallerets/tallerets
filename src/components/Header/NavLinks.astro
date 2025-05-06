@@ -6,12 +6,17 @@ interface Props {
   className: string
 }
 
+interface Link {
+  url: string
+  text: string
+}
+
 const { className } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
 const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
 const [_, ...restLinks] = heroSection?.data.links || []
-const links = restLinks.map((link) => ({
+const links = restLinks.map((link: Link) => ({
   url: link.url,
   text: link.text,
 }))
@@ -20,7 +25,7 @@ const links = restLinks.map((link) => ({
 <ul class={className}>
   {
     links &&
-      links.map((link) => (
+      links.map((link: Link) => (
         <li>
           <a href={link.url}>{link.text}</a>
         </li>

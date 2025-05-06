@@ -12,8 +12,10 @@ links:
     text: 'Tallers creatius per empreses'
   - url: '/club'
     text: 'Club de tallers creatius'
-  - url: '/sobre-mi'
-    text: 'Sobre mi'
+  - url: '/intensius'
+    text: "Cursos creatius intensius d'estiu"
+  - url: '/espai'
+    text: 'Espai'
   - url: '/contacte'
     text: 'Contacte'
 other:
@@ -25,4 +27,3 @@ other:
     authorUrl: 'https://github.com/aymyo',
   }
 ---
-

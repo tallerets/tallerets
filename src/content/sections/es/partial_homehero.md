@@ -7,9 +7,11 @@ image:
 links:
   - url: '#tallers'
     text: 'ver los talleres'
-  - url: '/es/tallers'
+  - url: '#tallers'
     text: 'talleres'
-  - url: '/es/sobre-mi'
+  - url: '/es/newsletter'
+    text: 'novedades'
+  - url: '/es/espai'
     text: 'sobre mí'
   - url: '/es/contacte'
     text: 'contacto'

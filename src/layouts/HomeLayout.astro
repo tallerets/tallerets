@@ -17,9 +17,13 @@ const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
 const clubSection = await getEntry('sections', `${lang}/club`)
 const empresesSection = await getEntry('sections', `${lang}/empreses`)
 const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
+const intensiusSection = await getEntry('sections', `${lang}/intensius`)
+const curstetsSection = await getEntry('sections', `${lang}/cursets`)
+
 
 const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
 const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+
 
 const rendered = await bioSection?.render()
 
@@ -126,6 +130,21 @@ const tallersUrl = translatePath('/tallers')
             href={tallersUrl}
             image={{ url: '/icons/potet.svg', alt: '' }}
           />
+
+          {
+            intensiusSection && (
+              <SectionCard
+                title={intensiusSection.data.title}
+                desc={intensiusSection.data.desc}
+                href={
+                  lang == 'ca'
+                    ? removeLangFromSlug(intensiusSection.slug)
+                    : '/' + intensiusSection.slug
+                }
+                image={intensiusSection.data.image}
+              />
+            )
+          }
         </ul>
       </div>
     </section>

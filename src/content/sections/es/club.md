@@ -1,16 +1,15 @@
 ---
-title: 'Tallerets Club: tu espacio creativo habitual'
-desc: "Dos tardes al mes en Tallerets en Barcelona para hacer lo que más te guste: pintar, coser, leer, escribir, hacer manualidades... Ven a disfrutar de tu tiempo y formar parte de una comunidad creativa."
+title: 'Club Tallerets: tu espacio creativo habitual'
+desc: 'Dos tardes al mes en Tallerets en Barcelona para hacer lo que más te guste: pintar, coser, leer, escribir, hacer manualidades... Ven a disfrutar de tu tiempo y formar parte de una comunidad creativa.'
 image:
   url: '/icons/club.png'
   alt: ''
 links:
-  - url: 'https://buy.stripe.com/aEU7vL88t2eS66Q288'
-    text: "¡Apúntate un mes!"
-  - url: 'https://buy.stripe.com/5kA03j74p5r49j28wy'
-    text: "¡Apúntate todo el trimestre!"
+  - url: 'https://buy.stripe.com/3cs9DTbkF3iWeDm14c'
+    text: '¡Apúntate un mes!'
+  - url: 'https://buy.stripe.com/cN2cQ59cxaLo1QAeV1'
+    text: '¡Apúntate todo el trimestre!'
 ---
-
 
 El club tallerets es un club donde explorar nuestra creatividad y crear comunidad y barrio. Ven dos tardes al mes y dedícate un momento para ti en un espacio acogedor y rodeada de personas como tu!
 
