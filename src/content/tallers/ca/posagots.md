@@ -1,6 +1,6 @@
 ---
-title: 'Fes un posagots de fang'
-desc: "A aquest taller faràs dos posagots de fang que podràs personalitzar com més t'agradi."
+title: 'Broda una peça de roba o Broda una fotografia'
+desc: "En aquest talleret aprendrem els bàsics del brodat i li donarem una segona vida a una peça de roba o una fotografia."
 image:
   url: '/img/t-posagots.png'
   alt: 'Participants de tallerets fent un posagots de fang amb les mans'
