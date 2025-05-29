@@ -7,7 +7,7 @@ image:
 links:
   - url: '#tallers'
     text: 'veure els tallers'
-  - url: '#tallers'
+  - url: '/#tallers'
     text: 'tallers'
   - url: 'newsletter'
     text: 'novetats'
