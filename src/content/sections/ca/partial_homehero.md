@@ -9,7 +9,7 @@ links:
     text: 'veure els tallers'
   - url: '/#tallers'
     text: 'tallers'
-  - url: 'newsletter'
+  - url: '/newsletter'
     text: 'novetats'
   - url: '/espai'
     text: 'espai'
