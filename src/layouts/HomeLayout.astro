@@ -6,7 +6,6 @@ import {
   getLangFromUrl,
   removeLangFromSlug,
   useTranslatedPath,
-  useTranslations,
 } from '../utils'
 import { getEntry } from 'astro:content'
 import SectionCard from '../components/SectionCard.astro'
@@ -18,8 +17,6 @@ const clubSection = await getEntry('sections', `${lang}/club`)
 const empresesSection = await getEntry('sections', `${lang}/empreses`)
 const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
 const intensiusSection = await getEntry('sections', `${lang}/intensius`)
-const curstetsSection = await getEntry('sections', `${lang}/cursets`)
-
 
 const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
 const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
