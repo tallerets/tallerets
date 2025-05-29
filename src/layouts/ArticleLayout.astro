@@ -8,6 +8,7 @@ import Prose from '../components/Prose.astro'
 const { section } = Astro.props
 const { Content } = await section.render()
 const { title, desc, links } = section.data
+
 ---
 
 <BaseLayout title={title} description={desc}>
