@@ -8,5 +8,5 @@ links:
   - url: 'https://tallerets.setmore.com/tallerets'
     text: 'Reserva'
   - url: '/contacto'
-    text: "Contacta conmigo"
+    text: 'Contacta conmigo'
 ---
