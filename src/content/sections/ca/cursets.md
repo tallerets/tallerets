@@ -18,7 +18,9 @@ Un curs de sis sessions per aprendre a cosir a màquina, ideal si tens ganes de 
 No cal experiència prèvia — només ganes de passar-ho bé, aprendre i cosir en comunitat. 
 
 **Dates: Dijous 25 de setembre, 9 d'octubre, 23 d'octubre, 13 de novembre, 27 de novembre i 11 de desembre**
+
 **Horaris: Tria entre primer torn (15-18h) o segon torn (18-21h)**
+
 **PVP: 265€** *Tot el material inclòs menys les teles*
 
 Apunta’t i comença a portar coses fetes per tu!
@@ -33,7 +35,9 @@ Un curs pensat per a qui vol començar amb el ganxet des de zero o reprendre’l
 No cal experiència prèvia — només ganes de passar-ho bé, aprendre i teixir en comunitat. 
 
 **Dates: Dimecres 10 de setembre, 8 d'octubre, 22 d'octubre, 12 de novembre, 26 de novembre i 10 de desembre**
+
 **Horaris: Tria entre torn de matí (10-13h) o torn de tarda (18-21h)**
+
 **PVP: 265€** *Tot el material inclòs*
 
 Apunta’t i deixa’t atrapar pel món del ganxet!
