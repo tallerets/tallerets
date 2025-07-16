@@ -23,7 +23,7 @@ No cal experiència prèvia — només ganes de passar-ho bé, aprendre i cosir 
 
 Apunta’t i comença a portar coses fetes per tu!
 
-[Reserva aquí la teva plaça a curset de ganxet de 15 a 18h](hhttps://book.stripe.com/fZucN77935DVazQ4Gh7N60j)
+[Reserva aquí la teva plaça a curset de ganxet de 15 a 18h](https://book.stripe.com/fZucN77935DVazQ4Gh7N60j)
 [Reserva aquí la teva plaça al curset de ganxet de 18h a 21h](https://book.stripe.com/bJe5kFfFz3vN8rI3Cd7N60i)
 
 ## 🧶 CURS DE GANXET 🧶 CURSET DE GANXET 🧶
