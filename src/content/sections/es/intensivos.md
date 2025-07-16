@@ -1,12 +1,12 @@
 ---
-title: 'Intensivos'
-desc: 'Si quieres aprender a coser, tejer i mucho más, apúntate a nuestros tallerets'
+title: 'Cursets'
+desc: 'En Tallerets, creemos en el poder de la creatividad como herramienta para fomentar la comunicación, la colaboración y el espíritu de equipo.'
 image:
   url: '/icons/equips.png'
   alt: ''
 links:
-  - url: '/contacte'
-    text: 'Contacta amb mi'
+  - url: '/es/contacte'
+    text: 'Contáctame'
 ---
 En **Tallerets** ofrecemos cursos de iniciación en costura, bordado, ganchillo y mucho más. Talleres pensados para empezar desde cero, aprender con calma y compartir buenos momentos en comunidad.
 
