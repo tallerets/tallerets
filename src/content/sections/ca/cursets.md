@@ -1,6 +1,6 @@
 ---
 title: 'Cursets'
-desc: "Si vols aprendre costura, ganxet, o altres manualitats, apunta't aquest trimestre a tallerets"
+desc: "Si vols aprendre costura, ganxet, o altres manualitats, apuntat aquest trimestre a tallerets"
 image:
   url: '/icons/equips.png'
   alt: ''
