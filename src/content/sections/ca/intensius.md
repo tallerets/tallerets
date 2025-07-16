@@ -11,7 +11,7 @@ links:
 
 A **Tallerets** oferim cursets d’iniciació en costura, ganxet i molt més! Tallers pensats per començar des de zero, aprendre amb calma i compartir bons moments en comunitat.
 
-## ✂️ CURS DE COSTURA ✂️ CURSET DE COSTURA ✂️
+## ✂️ CURS DE COSTURA ✂️ 
 
 Un curs de sis sessions per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin. Tots els projectes te’ls podràs endur a casa!
 
@@ -29,7 +29,7 @@ Apunta’t i comença a portar coses fetes per tu!
 
 [Reserva aquí la teva plaça al curset de ganxet de 18h a 21h](https://book.stripe.com/bJe5kFfFz3vN8rI3Cd7N60i)
 
-## 🧶 CURS DE GANXET 🧶 CURSET DE GANXET 🧶
+## 🧶 CURS DE GANXET 🧶 
 
 Un curs pensat per a qui vol començar amb el ganxet des de zero o reprendre’l amb ganes. Aprendrem els punts bàsics, com llegir patrons i com crear petits projectes com cistellets, posa-vasos, clauers... En les sis sessions t’acompanyarem pas a pas perquè et sentis còmoda amb l’agulla i el fil, i puguis avançar al teu ritme. Tot el que facis te l’endús a casa!
 
@@ -48,7 +48,7 @@ Apunta’t i deixa’t atrapar pel món del ganxet!
 [Reserva aquí la teva plaça al curset de ganxet de 18-21h](https://book.stripe.com/aFa9AV2SNaYfdM2dcN7N60g)
 
 
-## 🏺 CURS DE CERÀMICA 🏺 CURSET DE CERÀMICA 🏺
+## 🏺 CURS DE CERÀMICA 🏺 
 
 Un curs de sis sessions per endinsar-te en el món de la ceràmica. Aprendrem les tècniques bàsiques de modelat a mà, com treballar el fang, crear textures, fer petites peces funcionals (com plats, tasses o testos) i decorar-les al teu gust.
 
