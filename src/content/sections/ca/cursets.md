@@ -3,7 +3,6 @@ title: 'Cursets'
 desc: "Si vols aprendre costura, ganxet, o altres manualitats, apuntat aquest trimestre a tallerets"
 image:
   url: '/icons/equips.png'
-  alt: ''
 links:
   url: '/contacte'
   - text: 'Contacta amb mi'
