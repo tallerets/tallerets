@@ -2,11 +2,11 @@
 title: 'Cursets'
 desc: 'Si vols aprendre costura, ganxet, o altres manualitats, apunta't aquest trimestre a tallerets' 
 image:
-  url: '/icons/equips.png'
-  alt: ''
+url: '/icons/equips.png'
+alt: ''
 links:
-  - url: '/contacte'
-    text: 'Contacta amb mi'
+url: '/contacte'
+text: 'Contacta amb mi'
 ---
 
 A **Tallerets** oferim cursets d’iniciació en costura, brodat, ganxet i molt més! Tallers pensats per començar des de zero, aprendre amb calma i compartir bons moments en comunitat.
