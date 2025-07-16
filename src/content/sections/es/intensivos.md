@@ -10,7 +10,7 @@ links:
 ---
 En **Tallerets** ofrecemos cursos de iniciación en costura, bordado, ganchillo y mucho más. Talleres pensados para empezar desde cero, aprender con calma y compartir buenos momentos en comunidad.
 
-## ✂️ CURSO DE COSTURA ✂️ CURSET DE COSTURA ✂️
+## ✂️ CURSO DE COSTURA ✂️ 
 
 Un curso de seis sesiones para aprender a coser a máquina, ideal si tienes ganas de empezar o de sacarle más partido a tu máquina de coser. Aprenderemos cómo funciona, cómo utilizarla de manera segura y eficiente, y pondremos en práctica lo que hemos aprendido cosiendo diferentes proyectos con las telas que más te gusten. ¡Todos los proyectos te los podrás llevar a casa!
 
@@ -25,7 +25,7 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y cose
 [Reserva aquí tu plaza al curso de ganchillo de 15 a 18h](https://book.stripe.com/fZucN77935DVazQ4Gh7N60j)  
 [Reserva aquí tu plaza al curso de ganchillo de 18h a 21h](https://book.stripe.com/bJe5kFfFz3vN8rI3Cd7N60i)
 
-## 🧶 CURSO DE GANCHILLO 🧶 CURSET DE GANXET 🧶
+## 🧶 CURSO DE GANCHILLO 🧶 
 
 Un curso pensado para quien quiere empezar con el ganchillo desde cero o retomarlo con ganas. Aprenderemos los puntos básicos, cómo leer patrones y cómo crear pequeños proyectos como cestitas, posavasos, llaveros... En las seis sesiones te acompañaremos paso a paso para que te sientas cómoda con la aguja y el hilo, y puedas avanzar a tu ritmo. ¡Todo lo que hagas te lo llevas a casa!
 
@@ -40,7 +40,7 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y teje
 [Reserva aquí tu plaza al curso de ganchillo de 10-13h](https://book.stripe.com/fZucN7eBv8Q79vM7St7N60h)  
 [Reserva aquí tu plaza al curso de ganchillo de 18-21h](https://book.stripe.com/aFa9AV2SNaYfdM2dcN7N60g)
 
-## 🏺 CURSO DE CERÁMICA 🏺 CURSET DE CERÀMICA 🏺
+## 🏺 CURSO DE CERÁMICA 🏺 
 
 Un curso de seis sesiones para adentrarte en el mundo de la cerámica. Aprenderemos las técnicas básicas de modelado a mano, cómo trabajar el barro, crear texturas, hacer pequeñas piezas funcionales (como platos, tazas o macetas) y decorarlas a tu gusto.
 
