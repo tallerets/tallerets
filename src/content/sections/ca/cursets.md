@@ -6,7 +6,7 @@ image:
   alt: ''
 links:
   url: '/contacte'
-  text: 'Contacta amb mi'
+  - text: 'Contacta amb mi'
 ---
 
 A **Tallerets** oferim cursets d’iniciació en costura, ganxet i molt més! Tallers pensats per començar des de zero, aprendre amb calma i compartir bons moments en comunitat.
