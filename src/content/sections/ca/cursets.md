@@ -1,11 +1,12 @@
 ---
 title: 'Cursets'
-desc: "Si vols aprendre costura, ganxet, o altres manualitats, apuntat aquest trimestre a tallerets"
+desc: 'Si vols fer un talleret amb els teus companys de feina, ja sigui per fer un regal a un company que marxa, per celebrar un aniversari o per fer un "teambuilding", aquest és el teu talleret.'
 image:
   url: '/icons/equips.png'
+  alt: ''
 links:
-  url: '/contacte'
-  - text: 'Contacta amb mi'
+  - url: '/contacte'
+    text: 'Contacta amb mi'
 ---
 
 A **Tallerets** oferim cursets d’iniciació en costura, ganxet i molt més! Tallers pensats per començar des de zero, aprendre amb calma i compartir bons moments en comunitat.
