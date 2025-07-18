@@ -21,7 +21,7 @@ No cal experiència prèvia — només ganes de passar-ho bé, aprendre i cosir 
 
 **Horaris: Tria entre primer torn (15-18h) o segon torn (18-21h)**
 
-**PVP: 265€** *Tot el material inclòs menys les teles*
+**PVP: 265€ els 4 mesos** 
 
 Apunta’t i comença a portar coses fetes per tu!
 
@@ -39,7 +39,7 @@ No cal experiència prèvia — només ganes de passar-ho bé, aprendre i teixir
 
 **Horaris: Tria entre torn de matí (10-13h) o torn de tarda (18-21h)**
 
-**PVP: 265€** *Tot el material inclòs*
+**PVP: 265€ els 4 mesos** *Tot el material inclòs*
 
 Apunta’t i deixa’t atrapar pel món del ganxet!
 
