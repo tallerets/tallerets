@@ -18,7 +18,7 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y cose
 
 **Fechas: Jueves 25 de septiembre, 9 de octubre, 23 de octubre, 13 de noviembre, 27 de noviembre y 11 de diciembre**  
 **Horarios: Elige entre primer turno (15-18h) o segundo turno (18-21h)**  
-**PVP: 265 €** *Todo el material incluido excepto las telas*
+**PVP: 265 € los 4 meses** 
 
 ¡Apúntate y empieza a llevarte cosas hechas por ti!
 
@@ -33,7 +33,7 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y teje
 
 **Fechas: Miércoles 10 de septiembre, 8 de octubre, 22 de octubre, 12 de noviembre, 26 de noviembre y 10 de diciembre**  
 **Horarios: Elige entre turno de mañana (10-13h) o turno de tarde (18-21h)**  
-**PVP: 265 €** *Todo el material incluido*
+**PVP: 265 € los 4 meses** 
 
 ¡Apúntate y déjate atrapar por el mundo del ganchillo!
 
