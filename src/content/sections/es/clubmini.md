@@ -1,14 +1,14 @@
 ---
-title: 'Club Tallerets mini artistas: Extraescolar de manualidades para niños y niñas'
-desc: "Una actividad extraescolar para hacer todo tipo de actividades creativas: manualidades, inventos ¡y mucho más! Para niños y niñas de 6 a 12 años"
+title: 'Extraescolar de manualidades para niños y niñas'
+desc: 'Una actividad extraescolar para hacer todo tipo de actividades creativas: manualidades, inventos ¡y mucho más! Para niños y niñas de 6 a 12 años'
 image:
   url: '/icons/club.png'
   alt: ''
 links:
   - url: 'https://buy.stripe.com/bJecN7bpjfev37ofkV7N60e'
-    text: "¡Apúntate un mes!"
+    text: '¡Apúntate un mes!'
   - url: 'https://buy.stripe.com/28EaEZctnc2jgYe1u57N60f'
-    text: "¡Apúntate un cuatrimestre"
+    text: '¡Apúntate un cuatrimestre'
 ---
 
 <br />
