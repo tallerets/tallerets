@@ -23,8 +23,8 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y cose
 
 ¡Apúntate y empieza a llevarte cosas hechas por ti! Solo 8 plazas.
 
-[Reserva aquí tu plaza al curso de costura de 15 a 18h](https://book.stripe.com/fZucN77935DVazQ4Gh7N60j)  
-[Reserva aquí tu plaza al curso de costura de 18h a 21h](https://book.stripe.com/bJe5kFfFz3vN8rI3Cd7N60i)
+[Reserva aquí tu plaza al curso de costura de 15 a 18h](https://book.stripe.com/28E7sNfFz7M35fwegR7N60m)
+[Reserva aquí tu plaza al curso de costura de 18h a 21h](https://book.stripe.com/cNi3cx7938Q7azQb4F7N60n)
 
 ## 🧶 CURSO DE GANCHILLO 🧶
 
@@ -38,8 +38,8 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y teje
 
 ¡Apúntate y déjate atrapar por el mundo del ganchillo! Solo 8 plazas!
 
-[Reserva aquí tu plaza al curso de ganchillo de 10-13h](https://book.stripe.com/fZucN7eBv8Q79vM7St7N60h)  
-[Reserva aquí tu plaza al curso de ganchillo de 18-21h](https://book.stripe.com/aFa9AV2SNaYfdM2dcN7N60g)
+[Reserva aquí tu plaza al curso de ganchillo de 10-13h](https://book.stripe.com/5kQ14p1OJ2rJ37oc8J7N60l)  
+[Reserva aquí tu plaza al curso de ganchillo de 18-21h](https://book.stripe.com/8x228tgJD0jB5fw8Wx7N60k)
 
 ## 🏺 CURSO DE CERÁMICA 🏺
 
