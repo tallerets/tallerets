@@ -1,6 +1,6 @@
 ---
-title: 'Fes un collage'
-desc: 'Segur que tens moltes bosses de tela per anar a la compra, però cap amb el teu propi disseny per anar txulejant pel mercat. En aquest taller pintaràs una bossa de cotó de 40x37 on després podràs portar totes les teves fruites i verdures.'
+title: 'Collage - visionboard'
+desc: 'Saps què és un vision board? És un collage d’intencions, somnis i propòsits. En aquest talleret t’aturaràs, et reconnectaràs amb el teu moment i crearàs amb imatges i paraules una brúixola visual que t’acompanyi. '
 image:
   url: '/img/t-collage.webp'
   alt: 'bosses de tela pintades'
