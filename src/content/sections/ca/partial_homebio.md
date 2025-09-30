@@ -14,13 +14,13 @@ links:
     text: 'contacte'
 other:
   {
-    title1: 'Soc la Noor i organitzo',
-    title2: 'tallers creatius',
-    subtitle: "T'apuntes?",
+    title1: "Benvingudes a l'espai tallerets:",
+    title2: 'comunitat i creació a Sants',
+    subtitle: 'Què pots fer a tallerets?',
   }
 ---
 
-Fer coses amb les mans ens fa conectar amb nosaltres mateixes.
+Soc la Noor i organitzo tallers creatius! Fer coses amb les mans ens fa conectar amb nosaltres mateixes.
 
 <br/>
 
