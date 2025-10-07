@@ -10,3 +10,5 @@ links:
   - url: '/contacto'
     text: 'Contacta conmigo'
 ---
+
+La cerámica permite hacer de todo: posavasos, jarrones, cuencos, vasos, platos... ¡un mundo de posibilidades! En este taller te acercamos al mundo de la cerámica. Te enseñaremos a moldear, pintar y realizar tus propios proyectos, y te llevarás a casa tus piezas una vez esmaltadas y cocidas.

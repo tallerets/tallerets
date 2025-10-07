@@ -10,3 +10,5 @@ links:
   - url: '/es/contacte'
     text: 'Contáctame'
 ---
+
+En este taller podrás decorar y personalizar a tu gusto los típicos botes que acumulamos en la cocina. Explora tu creatividad mientras haces algo práctico y bonito.

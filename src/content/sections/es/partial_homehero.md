@@ -7,8 +7,10 @@ image:
 links:
   - url: '#tallers'
     text: 'ver los talleres'
-  - url: '#tallers'
+  - url: '/es/tallers'
     text: 'talleres'
+  - url: '/es/curs'
+    text: 'cursillos'
   - url: '/es/newsletter'
     text: 'novedades'
   - url: '/es/espai'

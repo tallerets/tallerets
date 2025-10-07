@@ -10,3 +10,5 @@ links:
   - url: '/contacte'
     text: "Contacta'm"
 ---
+
+En aquest taller podràs decorar i personalitzar al teu gust els típics pots que acumulem a la cuina. Explora la teva creativitat mentre fas alguna cosa pràctica i bonica.

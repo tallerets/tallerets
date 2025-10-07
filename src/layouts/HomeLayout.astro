@@ -2,31 +2,24 @@
 import Footer from '../components/Footer.astro'
 import HeroHeader from '../components/Header/HeroHeader.astro'
 import Layout from './BaseLayout.astro'
-import {
-  getLangFromUrl,
-  removeLangFromSlug,
-  useTranslatedPath,
-} from '../utils'
+import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 import { getEntry } from 'astro:content'
 import SectionCard from '../components/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
 
-const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
-const clubSection = await getEntry('sections', `${lang}/club`)
-const empresesSection = await getEntry('sections', `${lang}/empreses`)
-const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
-const intensiusSection = await getEntry('sections', `${lang}/intensius`)
-const clubMiniSection = await getEntry('sections', `${lang}/clubmini`)
+const sections = ['a-mida', 'empreses', 'tallers', 'curs', 'clubmini', 'club']
+
+const sectionsData = await Promise.all(
+  sections.map((section) => getEntry('sections', `${lang}/${section}`)),
+)
 
 const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
 const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
 
-
 const rendered = await bioSection?.render()
 
 const translatePath = useTranslatedPath(lang)
-const tallersUrl = translatePath('/tallers')
 ---
 
 <Layout
@@ -78,85 +71,26 @@ const tallersUrl = translatePath('/tallers')
           class="pb-12 md:pb-32 flex gap-8 justify-center flex-wrap px-4 max-w-[80ch]"
         >
           {
-            aMidaSection && (
-              <SectionCard
-                title={aMidaSection.data.title}
-                desc={aMidaSection.data.desc}
-                href={
-                  lang == 'ca'
-                    ? removeLangFromSlug(aMidaSection.slug)
-                    : '/' + aMidaSection.slug
-                }
-                image={aMidaSection.data.image}
-              />
-            )
-          }
-
-          {
-            clubSection && (
-              <SectionCard
-                title={clubSection.data.title}
-                desc={clubSection.data.desc}
-                href={
-                  lang == 'ca'
-                    ? removeLangFromSlug(clubSection.slug)
-                    : '/' + clubSection.slug
-                }
-                image={clubSection.data.image}
-              />
-            )
-          }
-
-          {
-            empresesSection && (
-              <SectionCard
-                title={empresesSection.data.title}
-                desc={empresesSection.data.desc}
-                href={
-                  lang == 'ca'
-                    ? removeLangFromSlug(empresesSection.slug)
-                    : '/' + empresesSection.slug
-                }
-                image={empresesSection.data.image}
-              />
-            )
-          }
-
-          <SectionCard
-            title={monoSection.data.title}
-            desc={monoSection.data.desc}
-            href={tallersUrl}
-            image={{ url: '/icons/potet.svg', alt: '' }}
-          />
-
-          {
-            intensiusSection && (
-              <SectionCard
-                title={intensiusSection.data.title}
-                desc={intensiusSection.data.desc}
-                href={
-                  lang == 'ca'
-                    ? removeLangFromSlug(intensiusSection.slug)
-                    : '/' + intensiusSection.slug
-                }
-                image={intensiusSection.data.image}
-              />
-            )
-          }
-
-          {
-            clubMiniSection && (
-              <SectionCard
-                title={clubMiniSection.data.title}
-                desc={clubMiniSection.data.desc}
-                href={
-                  lang == 'ca'
-                    ? removeLangFromSlug(clubMiniSection.slug)
-                    : '/' + clubMiniSection.slug
-                }
-                image={clubMiniSection.data.image}
-              />
-            )
+            sectionsData.map((section) => {
+              const hasCustomSlug = !!section?.data.customSlug
+              const defaultSlug =
+                lang == 'ca'
+                  ? removeLangFromSlug(section?.slug || '')
+                  : '/' + section?.slug
+              const href = hasCustomSlug
+                ? section?.data.customSlug
+                : defaultSlug
+              return (
+                section && (
+                  <SectionCard
+                    title={section.data.title}
+                    desc={section.data.desc}
+                    href={href || ''}
+                    image={section.data.image}
+                  />
+                )
+              )
+            })
           }
         </ul>
       </div>

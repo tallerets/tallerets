@@ -15,15 +15,15 @@ links:
 
 **¿Qué es?**
 
-EL CLUB TALLERETS MINI ARTISTAS SON ACTIVIDADES EXTRAESCOLARES PARA NIÑOS Y NIÑAS DE 6 A 12 AÑOS.
+El club tallerets mini artistas son actividades extraescolares para niños y niñas de 6 a 12 años.
 
-OFRECEMOS UN ESPACIO DONDE CREAR Y HACER COSAS CON LAS MANOS, MIENTRAS DESARROLLAMOS LA AUTOESTIMA, LA AUTORREALIZACIÓN Y LA CREATIVIDAD.
+Ofrecemos un espacio donde crear y hacer cosas con las manos, mientras desarrollamos la autoestima, la autorrealización y la creatividad.
 
-A MENUDO LOS NIÑOS Y NIÑAS QUIEREN HACER ALGO CREATIVO PERO NO QUIEREN APUNTARSE A CLASES DE PINTURA, DIBUJO U OTRAS.
+A menudo los niños y niñas quieren hacer algo creativo pero no quieren apuntarse a clases de pintura, dibujo u otras.
 
-EN TALLERETS OFRECEMOS UNA ACTIVIDAD EXTRAESCOLAR DE MANUALIDADES DONDE SE HARÁ PINTURA, COLLAGE, INVENTOS, BARRO, TELA Y MUCHO MÁS.
+En tallerets ofrecemos una actividad extraescolar de manualidades donde se hará pintura, collage, inventos, barro, tela y mucho más.
 
-OFRECEMOS SESIONES DE DOS HORAS (17–19H) CON HORARIO FLEXIBLE DE ENTRADA Y SALIDA DENTRO DE ESE PERIODO. PUEDES ELEGIR UNA O DOS VECES POR SEMANA.
+Ofrecemos sesiones de dos horas (17–19h) con horario flexible de entrada y salida dentro de ese periodo. puedes elegir una o dos veces por semana.
 
 **¿Como funciona?**
 

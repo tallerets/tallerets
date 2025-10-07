@@ -10,3 +10,5 @@ links:
   - url: '/contacte'
     text: "Contacta'm"
 ---
+
+En aquest talleret aprendrem els bàsics del brodat i li donarem una segona vida a una peça de roba o una fotografia.

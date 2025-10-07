@@ -2,17 +2,21 @@
 import { getEntry } from 'astro:content'
 import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 
-const { taller } = Astro.props
+type Props = {
+  taller: any
+  colection: 'tallers' | 'curs'
+}
+const { taller, colection } = Astro.props
 const { id, data, slug } = taller
 const { title, image, links } = data
 
 const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
 
-const correctedSlug = translatePath('/tallers') + removeLangFromSlug(slug)
+const correctedSlug = translatePath(`/${colection}`) + removeLangFromSlug(slug)
 
-const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
-const infoBtn = monoSection.data.other.infoBtn
+const thisSection = await getEntry('sections', `${lang}/${colection}`)
+const infoBtn = thisSection.data.other.infoBtn
 ---
 
 <li

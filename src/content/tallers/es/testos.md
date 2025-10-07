@@ -10,3 +10,5 @@ links:
   - url: '/es/contacte'
     text: 'Contáctame'
 ---
+
+En este taller pintaremos una maceta de barro para que puedas colocar tus plantas o semillas.

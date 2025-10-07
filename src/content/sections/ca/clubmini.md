@@ -15,15 +15,15 @@ links:
 
 **Què és?**
 
-EL CLUB TALLERETS MINI ARTISTES SON EXTRA-ESCOLARS PER NENS I NENES DE 6 A 12 ANYS.
+Eel club tallerets mini artistes són extraescolars per nens i nenes de 6 a 12 anys.
 
-OFERIM UN ESPAI A ON CREAR I FER COSES AMB LES MANS, MENTRE DESENVOLUPEM LA AUTOESTIMA, L’AUTOREALITZACIÓ I LA CREATIVITAT
+Oferim un espai on crear i fer coses amb les mans, mentre desenvolupem l'autoestima, l'autorealització i la creativitat.
 
-SOVINT ELS NENS I NENES VOLDRIEN FER ALGUNA COSA CREATIVA PERÒ NO VOLEN APUNTAR-SE A CLASSES DE PINTURA, DIBUIX O ALTRES.
+Sovint els nens i nenes voldrien fer alguna cosa creativa però no volen apuntar-se a classes de pintura, dibuix o altres.
 
-A TALLERETS OFERIM UNA EXTRA-ESCOLAR DE MANUALITATS A ON ES FARÀ PINTURA, COLLAGE, INVENTS, FANG, TELA I MOLT MÉS
+Aa tallerets oferim una extraescolar de manualitats on es farà pintura, collage, invents, fang, tela i molt més.
 
-OFERIM SESSIONS DE DUES HORES (17-19H) AMB HORARI FLEXIBLE D’ENTRADA I SORTIDA DINS D’AQUEST PERIODE. POTS ESCOLLIR UN COP A LA SETMANA, O DOS.
+Oferim sessions de dues hores (17-19h) amb horari flexible d’entrada i sortida dins d’aquest període. pots escollir un cop a la setmana, o dues.
 
 **Com funciona?**
 

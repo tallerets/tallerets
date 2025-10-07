@@ -7,30 +7,35 @@ import { getLangFromUrl, removeLangFromSlug } from '../utils'
 import { getCollection, getEntry } from 'astro:content'
 import SectionCard from '../components/SectionCard.astro'
 
+interface Props {
+  colection: 'tallers' | 'curs'
+  sections: string[]
+}
+
+const { colection, sections } = Astro.props
+
 const lang = getLangFromUrl(Astro.url)
 
-const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
-const allTallers = await getCollection('tallers', ({ id }) => {
+const thisSection = await getEntry('sections', `${lang}/${colection}`)
+const allTallers = await getCollection(colection, ({ id }) => {
   return id.startsWith(lang)
 })
 
-const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
-const clubSection = await getEntry('sections', `${lang}/club`)
-const empresesSection = await getEntry('sections', `${lang}/empreses`)
-const intensiusSection = await getEntry('sections', `${lang}/intensius`)
-const clubMiniSection = await getEntry('sections', `${lang}/clubmini`)
+const sectionsData = await Promise.all(
+  sections.map((section) => getEntry('sections', `${lang}/${section}`)),
+)
 ---
 
 <Layout
-  title={monoSection?.data.title || 'Tallers'}
-  description={monoSection?.data.desc || ''}
+  title={thisSection?.data.title || 'Tallers'}
+  description={thisSection?.data.desc || ''}
 >
   <Header className="bg-soft text-dark relative" />
   <main>
     <h1
       class="pt-4 text-4xl md:text-6xl text-center md:leading-tight font-[500]"
     >
-      {monoSection?.data.title}
+      {thisSection?.data.title}
       <span>
         <img
           width="48"
@@ -47,7 +52,11 @@ const clubMiniSection = await getEntry('sections', `${lang}/clubmini`)
       <ul
         class="page-padding flex flex-wrap gap-10 pt-6 pb-12 overflow-hidden items-center justify-center"
       >
-        {allTallers.map((taller) => <TallerPostcard taller={taller} />)}
+        {
+          allTallers.map((taller) => (
+            <TallerPostcard taller={taller} colection={colection} />
+          ))
+        }
       </ul>
     </section>
     <section
@@ -56,7 +65,7 @@ const clubMiniSection = await getEntry('sections', `${lang}/clubmini`)
       <h2
         class="text-3xl mb-12 md:text-4xl text-center md:leading-tight font-[500]"
       >
-        {monoSection?.data.other.secondTitle}
+        {thisSection?.data.other.secondTitle}
         <span>
           <img
             width="48"
@@ -71,74 +80,24 @@ const clubMiniSection = await getEntry('sections', `${lang}/clubmini`)
         class="pb-12 md:pb-32 flex gap-8 justify-center flex-wrap px-4 max-w-[80ch]"
       >
         {
-          aMidaSection && (
-            <SectionCard
-              title={aMidaSection.data.title}
-              desc={aMidaSection.data.desc}
-              href={
-                lang == 'ca'
-                  ? removeLangFromSlug(aMidaSection.slug)
-                  : '/' + aMidaSection.slug
-              }
-              image={aMidaSection.data.image}
-            />
-          )
-        }
-        {
-          clubSection && (
-            <SectionCard
-              title={clubSection.data.title}
-              desc={clubSection.data.desc}
-              href={
-                lang == 'ca'
-                  ? removeLangFromSlug(clubSection.slug)
-                  : '/' + clubSection.slug
-              }
-              image={clubSection.data.image}
-            />
-          )
-        }
-        {
-          intensiusSection && (
-            <SectionCard
-              title={intensiusSection.data.title}
-              desc={intensiusSection.data.desc}
-              href={
-                lang == 'ca'
-                  ? removeLangFromSlug(intensiusSection.slug)
-                  : '/' + intensiusSection.slug
-              }
-              image={intensiusSection.data.image}
-            />
-          )
-        }
-        {
-          clubMiniSection && (
-            <SectionCard
-              title={clubMiniSection.data.title}
-              desc={clubMiniSection.data.desc}
-              href={
-                lang == 'ca'
-                  ? removeLangFromSlug(clubMiniSection.slug)
-                  : '/' + clubMiniSection.slug
-              }
-              image={clubMiniSection.data.image}
-            />
-          )
-        }
-        {
-          empresesSection && (
-            <SectionCard
-              title={empresesSection.data.title}
-              desc={empresesSection.data.desc}
-              href={
-                lang == 'ca'
-                  ? removeLangFromSlug(empresesSection.slug)
-                  : '/' + empresesSection.slug
-              }
-              image={empresesSection.data.image}
-            />
-          )
+          sectionsData.map((section) => {
+            const hasCustomSlug = !!section?.data.customSlug
+            const defaultSlug =
+              lang == 'ca'
+                ? removeLangFromSlug(section?.slug || '')
+                : '/' + section?.slug
+            const href = hasCustomSlug ? section?.data.customSlug : defaultSlug
+            return (
+              section && (
+                <SectionCard
+                  title={section.data.title}
+                  desc={section.data.desc}
+                  href={href || ''}
+                  image={section.data.image}
+                />
+              )
+            )
+          })
         }
       </ul>
     </section>

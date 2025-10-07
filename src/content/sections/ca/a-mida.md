@@ -11,8 +11,8 @@ links:
 
 T'agradaria fer un talleret amb les teves amigues però no et quadren les dates?
 Tens una idea de talleret que vols fer amb els teus amics per un event?
-Tens un comiat de soltera i vols fer algo diferent? 
-Tens un teambuilding i t'agradaria fer alguna cosa especial? 
+Tens un comiat de soltera i vols fer algo diferent?
+Tens un teambuilding i t'agradaria fer alguna cosa especial?
 
 <br/>
 

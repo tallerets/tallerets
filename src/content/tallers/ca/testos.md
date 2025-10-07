@@ -10,3 +10,5 @@ links:
   - url: '/contacte'
     text: "Contacta'm"
 ---
+
+En aquest talleret pintarem un test de fang per que puguis posar les teves plantes o llavors!

@@ -6,12 +6,6 @@ image:
 links:
   - url: '#tallers'
     text: 'ver los talleres'
-  - url: '/tallers'
-    text: 'talleres'
-  - url: '/sobre-mi'
-    text: 'sobre mí'
-  - url: '/contacte'
-    text: 'contacto'
 other:
   {
     title1: 'Bienvenidas a espacio tallerets:',

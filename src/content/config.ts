@@ -26,6 +26,7 @@ const section = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    customSlug: z.string().optional(),
     desc: z.string().optional(),
     image: imgSchema,
     links: linkSchema.optional(),
@@ -53,6 +54,7 @@ const errors = defineCollection({
 
 export const collections = {
   tallers: taller,
+  curs: taller,
   sections: section,
   legal: legalDoc,
   blog: taller,

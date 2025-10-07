@@ -10,3 +10,5 @@ links:
   - url: '/es/contacte'
     text: 'Contáctame'
 ---
+
+En este talleret aprenderemos los básicos del bordado y le daremos una segunda vida a una prenda de ropa o una fotografía.

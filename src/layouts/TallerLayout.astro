@@ -5,7 +5,7 @@ import Header from '../components/Header/Header.astro'
 import LinkList from '../components/LinkList.astro'
 import Prose from '../components/Prose.astro'
 
-const { taller } = Astro.props
+const { taller, tipus } = Astro.props
 const { Content } = await taller.render()
 const { title, desc, image, links } = taller.data
 ---
@@ -13,7 +13,7 @@ const { title, desc, image, links } = taller.data
 <BaseLayout title={title} description={desc}>
   <Header />
   <section class="page-padding md:max-w-[72ch] mx-auto pt-4 mb-16">
-    <p class="text-2xl font-bold underline text-center">Taller</p>
+    <p class="text-2xl font-bold underline text-center">{tipus}</p>
     <h1
       class="text-4xl md:text-5xl text-center md:leading-tight font-[500] max-w-[16ch] mt-4 mb-10 mx-auto"
     >
@@ -38,7 +38,6 @@ const { title, desc, image, links } = taller.data
     />
 
     <div>
-      <p class="text-lg mb-4">{desc}</p>
       <Prose>
         <Content />
       </Prose>

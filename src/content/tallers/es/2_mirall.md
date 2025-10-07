@@ -10,3 +10,5 @@ links:
   - url: '/es/contacte'
     text: 'Contáctame'
 ---
+
+'Espejito, espejito... ¿quién es la más guapa del reino?' ¡Imagina no tener un espejo para poder hacerle estas preguntas! En este taller pintaremos juntas un espejo de 30x30 en el que después podrás mirarte cada día.
