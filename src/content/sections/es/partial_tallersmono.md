@@ -8,5 +8,5 @@ links:
   - url: 'https://tallerets.setmore.com/tallerets'
     text: 'Calendario y reservas'
 
-other: { secondTitle: 'Más en tallerets' }
+other: { secondTitle: 'Más en tallerets', infoBtn: 'Más información' }
 ---

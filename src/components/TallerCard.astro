@@ -1,4 +1,5 @@
 ---
+import { getEntry } from 'astro:content'
 import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 
 const { taller } = Astro.props
@@ -9,6 +10,9 @@ const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
 
 const correctedSlug = translatePath('/tallers') + removeLangFromSlug(slug)
+
+const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
+const infoBtn = monoSection.data.other.infoBtn
 ---
 
 <li
@@ -20,18 +24,20 @@ const correctedSlug = translatePath('/tallers') + removeLangFromSlug(slug)
   >
     <div class="p-5 flex flex-col">
       <div class="h-[40%] w-full rounded bg-dark">
-        <img
-          class="h-[12rem] w-[32rem] object-cover rounded-lg mb-4"
-          src={image.url}
-          alt={image.alt}
-        />
+        <a href={correctedSlug}>
+          <img
+            class="h-[12rem] w-[32rem] object-cover rounded-lg mb-4"
+            src={image.url}
+            alt={image.alt}
+          />
+        </a>
       </div>
       <h6 class="text-3xl font-bold">{title}</h6>
       <div class="mt-4 flex gap-4">
         <a href={links[0].url} class="btn text-md text-dark bg-soft">
           {links[0].text}
         </a>
-        <a href={correctedSlug} class="btn text-md text-soft"> Més info</a>
+        <a href={correctedSlug} class="btn text-md text-soft">{infoBtn}</a>
       </div>
     </div>
   </div>
@@ -39,6 +45,6 @@ const correctedSlug = translatePath('/tallers') + removeLangFromSlug(slug)
 
 <style>
   .btn {
-    @apply block border-2 rounded-full text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:border-red hover:text-red transition-transform;
+    @apply block font-medium border-2 rounded-full text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:bg-soft hover:border-red hover:text-red transition-transform;
   }
 </style>
