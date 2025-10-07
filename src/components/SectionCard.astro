@@ -12,14 +12,11 @@ const { title, image, href } = Astro.props
 ---
 
 <li
-  class="overflow-clip w-[24rem] h-[20rem] border-dark border-8 bg-dark rounded hover:-rotate-3 transition-all"
+  class="overflow-clip w-[24rem] h-[12rem] border-dark border-8 bg-dark rounded hover:-rotate-3 transition-all"
 >
-  <a
-    href={href}
-    class="rounded flex flex-col items-center justify-center h-full"
-  >
+  <a href={href} class="rounded flex items-center justify-center h-full">
     <img
-      class="w-2/3 max-h-[12rem] rounded object-cover mx-auto bg-dark"
+      class="max-w-[6rem] max-h-[12rem] rounded object-cover bg-dark"
       src={image.url}
       alt={image.alt}
     />

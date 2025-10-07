@@ -8,5 +8,5 @@ links:
   - url: 'https://tallerets.setmore.com/tallerets'
     text: 'Calendari i reserves'
 
-other: { titleIndex: 'Índex dels tallers' }
+other: { secondTitle: 'Més de tallerets' }
 ---

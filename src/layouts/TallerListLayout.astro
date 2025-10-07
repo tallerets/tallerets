@@ -3,16 +3,22 @@ import Layout from './BaseLayout.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header/Header.astro'
 import TallerPostcard from '../components/TallerCard.astro'
-import { getLangFromUrl } from '../utils'
+import { getLangFromUrl, removeLangFromSlug } from '../utils'
 import { getCollection, getEntry } from 'astro:content'
+import SectionCard from '../components/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
 
 const monoSection = await getEntry('sections', `${lang}/partial_tallersmono`)
-const cta = monoSection?.data.links?.[0]
 const allTallers = await getCollection('tallers', ({ id }) => {
   return id.startsWith(lang)
 })
+
+const aMidaSection = await getEntry('sections', `${lang}/a-mida`)
+const clubSection = await getEntry('sections', `${lang}/club`)
+const empresesSection = await getEntry('sections', `${lang}/empreses`)
+const intensiusSection = await getEntry('sections', `${lang}/intensius`)
+const clubMiniSection = await getEntry('sections', `${lang}/clubmini`)
 ---
 
 <Layout
@@ -38,40 +44,101 @@ const allTallers = await getCollection('tallers', ({ id }) => {
     <section
       class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
     >
-      <aside class="page-padding">
-        <div class="md:w-[40rem] xl:w-80 sticky top-12 pt-4">
-          <h2 class="hidden md:block text-3xl mb-4 font-bold">
-            {monoSection?.data.other.titleIndex}
-          </h2>
-          <ul class="mb-8 text-lg">
-            {
-              allTallers.map((taller) => {
-                return (
-                  <li class="mb-1 list-decimal ms-4">
-                    <a href={`#${taller.id}`} class="hover:underline">
-                      {taller.data.title}
-                    </a>
-                  </li>
-                )
-              })
-            }
-          </ul>
-          {
-            cta && (
-              <div class="flex">
-                <a class="c-button" href={cta.url}>
-                  {cta.text}
-                </a>
-              </div>
-            )
-          }
-        </div>
-      </aside>
-      <ul class="page-padding flex flex-col gap-10 pt-6 pb-12 overflow-hidden">
+      <ul
+        class="page-padding flex flex-wrap gap-10 pt-6 pb-12 overflow-hidden items-center justify-center"
+      >
+        {allTallers.map((taller) => <TallerPostcard taller={taller} />)}
+      </ul>
+    </section>
+    <section
+      class="my-4 lg:my-12 flex flex-col items-center justify-center flex-wrap gap-x-16 gap-y-4"
+    >
+      <h2
+        class="text-3xl mb-12 md:text-4xl text-center md:leading-tight font-[500]"
+      >
+        {monoSection?.data.other.secondTitle}
+        <span>
+          <img
+            width="48"
+            height="48"
+            class="w-12 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+      <ul
+        class="pb-12 md:pb-32 flex gap-8 justify-center flex-wrap px-4 max-w-[80ch]"
+      >
         {
-          allTallers.map((taller) => {
-            return <TallerPostcard taller={taller} />
-          })
+          aMidaSection && (
+            <SectionCard
+              title={aMidaSection.data.title}
+              desc={aMidaSection.data.desc}
+              href={
+                lang == 'ca'
+                  ? removeLangFromSlug(aMidaSection.slug)
+                  : '/' + aMidaSection.slug
+              }
+              image={aMidaSection.data.image}
+            />
+          )
+        }
+        {
+          clubSection && (
+            <SectionCard
+              title={clubSection.data.title}
+              desc={clubSection.data.desc}
+              href={
+                lang == 'ca'
+                  ? removeLangFromSlug(clubSection.slug)
+                  : '/' + clubSection.slug
+              }
+              image={clubSection.data.image}
+            />
+          )
+        }
+        {
+          intensiusSection && (
+            <SectionCard
+              title={intensiusSection.data.title}
+              desc={intensiusSection.data.desc}
+              href={
+                lang == 'ca'
+                  ? removeLangFromSlug(intensiusSection.slug)
+                  : '/' + intensiusSection.slug
+              }
+              image={intensiusSection.data.image}
+            />
+          )
+        }
+        {
+          clubMiniSection && (
+            <SectionCard
+              title={clubMiniSection.data.title}
+              desc={clubMiniSection.data.desc}
+              href={
+                lang == 'ca'
+                  ? removeLangFromSlug(clubMiniSection.slug)
+                  : '/' + clubMiniSection.slug
+              }
+              image={clubMiniSection.data.image}
+            />
+          )
+        }
+        {
+          empresesSection && (
+            <SectionCard
+              title={empresesSection.data.title}
+              desc={empresesSection.data.desc}
+              href={
+                lang == 'ca'
+                  ? removeLangFromSlug(empresesSection.slug)
+                  : '/' + empresesSection.slug
+              }
+              image={empresesSection.data.image}
+            />
+          )
         }
       </ul>
     </section>
