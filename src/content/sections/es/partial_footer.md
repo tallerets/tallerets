@@ -13,7 +13,7 @@ links:
   - url: '/es/club'
     text: 'Club de talleres creativoss'
   - url: '/intensius'
-    text: 'Cursos creativos intensivos en verano'
+    text: 'Cursillos creativos regulares'
   - url: '/espai'
     text: 'Sobre el espacio'
   - url: '/es/contacte'

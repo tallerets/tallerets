@@ -1,5 +1,5 @@
 ---
-title: 'Cursillos'
+title: 'Cursillos regulares'
 desc: 'En Tallerets, creemos en el poder de la creatividad como herramienta para fomentar la comunicación, la colaboración y el espíritu de equipo.'
 image:
   url: '/icons/equips.png'
@@ -31,7 +31,7 @@ No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y cose
 
 Un curso pensado para quien quiere empezar con el ganchillo desde cero o retomarlo con ganas. Aprenderemos los puntos básicos, cómo leer patrones y cómo crear pequeños proyectos como cestitas, posavasos, llaveros... En las cuatro sesiones te acompañaremos paso a paso para que te sientas cómoda con la aguja y el hilo, y puedas avanzar a tu ritmo. ¡Todo lo que hagas te lo llevas a casa!
 
-No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y tejer en comunidad. 
+No hace falta experiencia previa — solo ganas de pasarlo bien, aprender y tejer en comunidad.
 
 **Fechas: Miércoles 8 de octubre, 22 de octubre, 12 de noviembre, 26 de noviembre**  
 **Horarios: Elige entre turno de mañana (10-13h) o turno de tarde (18-21h)**  

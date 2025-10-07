@@ -13,7 +13,7 @@ links:
   - url: '/club'
     text: 'Club de tallers creatius'
   - url: '/intensius'
-    text: "Cursos creatius intensius d'estiu"
+    text: 'Cursets creatius regulars'
   - url: '/espai'
     text: 'Espai'
   - url: '/contacte'
