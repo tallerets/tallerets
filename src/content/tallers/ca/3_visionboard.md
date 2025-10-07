@@ -1,12 +1,12 @@
 ---
 title: 'Fes el teu visionboard'
-desc: "Ets una dona emprenedora o amb metes personals i sents que necesites una guia per aconseguir els teus objectius o projectes? Vine a tallerets a fer un visionboard!"
+desc: 'Ets una dona emprenedora o amb metes personals i sents que necesites una guia per aconseguir els teus objectius o projectes? Vine a tallerets a fer un visionboard!'
 image:
   url: '/img/t-vision.webp'
   alt: 'Gent fent el seu propi vision board'
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Reserva'
+    text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"
 ---

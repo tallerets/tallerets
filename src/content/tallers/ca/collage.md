@@ -6,7 +6,7 @@ image:
   alt: 'bosses de tela pintades'
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Reserva'
+    text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"
 ---

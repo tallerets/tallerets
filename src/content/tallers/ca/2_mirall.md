@@ -6,7 +6,7 @@ image:
   alt: 'Gent pintant un mirallet'
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Reserva'
+    text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"
 ---

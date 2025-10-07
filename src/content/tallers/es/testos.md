@@ -6,7 +6,7 @@ image:
   alt: 'Gente pintando una maceta de barro'
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Reserva'
+    text: 'Me apunto!'
   - url: '/es/contacte'
-    text: "Contáctame"
+    text: 'Contáctame'
 ---

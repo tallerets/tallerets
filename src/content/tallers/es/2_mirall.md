@@ -6,7 +6,7 @@ image:
   alt: 'Gente pintando un espejito'
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Reserva'
+    text: 'Me apunto!'
   - url: '/es/contacte'
-    text: "Contáctame"
+    text: 'Contáctame'
 ---

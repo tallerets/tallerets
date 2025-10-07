@@ -6,7 +6,7 @@ image:
   alt: 'cerámica'
 links:
   - url: 'https://tallerets.setmore.com/tallerets'
-    text: 'Reserva'
+    text: 'Me apunto!'
   - url: '/contacto'
     text: 'Contacta conmigo'
 ---
