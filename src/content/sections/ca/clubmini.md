@@ -24,7 +24,7 @@ Aa tallerets oferim una extraescolar de manualitats on es farà pintura, collage
 Oferim sessions de dues hores (17-19h) amb horari flexible d’entrada i sortida dins d’aquest període. pots escollir un cop a la setmana, o dues.
 
 image: 
-  url:'/img/kids.jpg'
+  url:'/img/kids.jpeg'
   
 **Com funciona?**
 
