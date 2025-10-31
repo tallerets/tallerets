@@ -1,5 +1,5 @@
 ---
-title: 'Curset de punt'
+title: 'Club de punt'
 desc: 'Un curs pensat per a qui vol començar amb el punt des de zero o reprendre’l amb ganes.'
 image:
   url: '/img/c-punt.jpg'
