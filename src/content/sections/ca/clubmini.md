@@ -7,8 +7,6 @@ image:
 links:
   - url: 'https://buy.stripe.com/bJecN7bpjfev37ofkV7N60e'
     text: "Apunta't un mes!"
-  - url: 'https://buy.stripe.com/28EaEZctnc2jgYe1u57N60f'
-    text: "Apunta't tot el trimestre"
 ---
 
 <br />
@@ -25,6 +23,8 @@ Aa tallerets oferim una extraescolar de manualitats on es farà pintura, collage
 
 Oferim sessions de dues hores (17-19h) amb horari flexible d’entrada i sortida dins d’aquest període. pots escollir un cop a la setmana, o dues.
 
+image: 
+  url:'/img/kids.jpge
 **Com funciona?**
 
 El club tallerets és una suscripció mensual o trimestral. Pots apuntarte al mes per 65€, o pots fer de setembre a desembre per 236€!
