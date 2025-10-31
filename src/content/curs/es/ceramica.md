@@ -2,7 +2,7 @@
 title: 'Club de cerámica'
 desc: 'Un club semanal para aprender a hacer cerámica a mano, ideal si tienes ganas de empezar pero no sabes como! o si ya haces pero necesitas un espacio en el barrio'
 image:
-  url: '/img/c-costura.jpeg'
+  url: '/img/F9A3F14F-9643-4545-8A51-1391EF800CD0.jpeg'
   alt: 'Fotografia de les participants fent costura'
 links:
   - url: 'https://tally.so/r/mV2bGM'
