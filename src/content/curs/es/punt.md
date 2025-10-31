@@ -1,5 +1,5 @@
 ---
-title: 'Cursillo de punto'
+title: 'Club de punto'
 desc: 'Un curso pensado para quien quiere comenzar con el punto o retomarlo con ganas.'
 image:
   url: '/img/c-punt.jpg'
