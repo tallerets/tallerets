@@ -1,6 +1,6 @@
 ---
-title: 'Cursillo de ganchillo'
-desc: 'Un cursillo semanal pensado para quien quiere comenzar con el ganchillo o retomarlo con ilusión.'
+title: 'Club de ganchillo'
+desc: 'Un curso semanal pensado para quien quiere comenzar con el ganchillo o retomarlo con ilusión.'
 image:
   url: '/img/c-ganxet.jpeg'
   alt: 'Fotografia de les participants fent ganxet'
