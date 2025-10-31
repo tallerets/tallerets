@@ -18,7 +18,13 @@ Un cursillo semanal para aprender a coser a máquina. Ideal si tienes ganas de e
 Proyectos Enero, Febrero y Marzo: Coletero, llavero, funda de libreta o libro, bolsa de tela, neceser con cremallera.
 Proyectos Abril, Mayo y Junio: Top, falda, bolso y inicio de proyecto personal.
 
-Fechas y horarios: Lunes de 18:30 a 20:30 o de 10:30 a 13:30
+**Fechas y horarios:** Lunes 
+
+Grupo 1: 11:00 a 13:00 
+Grupo 2: 16:30 a 18:30 
+Grupo 3: 18:30 a 20:30h
+
+Plazas muy limitadas, trae tu máquina! (si no tienes máquina, te la podemos dejar) 
 
 **No hace falta experiencia!** Solo ganas de pasar un buen rato :)
 
