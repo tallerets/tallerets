@@ -5,7 +5,7 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Fotografia de les participants fent costura'
 links:
-  - url: '(https://buy.stripe.com/9B614palfgiz37odcN7N60t)'
+  - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"
