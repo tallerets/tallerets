@@ -1,6 +1,6 @@
 ---
-title: 'Cursillo de costura'
-desc: 'Un cursillo semanal para aprender a coser a máquina. Ideal si tienes ganas de empezar o de sacar más partido a tu máquina de coser. Aprenderemos como funciona, como utilizarla de manera segura y eficiente, y pondremos en práctica lo que hemos aprendido cosiendo diferentes proyectos con las telas que más te gusten.'
+title: 'Club de costura'
+desc: 'Un curso semanal para aprender a coser a máquina. Ideal si tienes ganas de empezar o de sacar más partido a tu máquina de coser. Aprenderemos como funciona, como utilizarla de manera segura y eficiente, y pondremos en práctica lo que hemos aprendido cosiendo diferentes proyectos con las telas que más te gusten.'
 image:
   url: '/img/c-costura.jpeg'
   alt: 'Fotografia de las participantes haciendo costura'
