@@ -43,5 +43,7 @@ Funciona com un gimnàs, i pots decir no renovar la mensualitat o el trimestre l
 
 <br />
 
+<img src="/img/kids.jpeg" alt="" width="200" align="center">
+
 Qualsevol dubte pots contactar-me per aquí o per email a latallerets@gmail.com
 T'espero al club!!!
