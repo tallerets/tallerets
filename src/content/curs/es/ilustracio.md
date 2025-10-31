@@ -11,7 +11,7 @@ links:
     text: 'Contacto'
 ---
 
-**Inicio de curso: Noviembre 2025**
+**Inicio de curso: Enero 2026**
 
 Un cursillo semanal para experimentar y jugar con distintas técnicas de dibujo y color. Probaremos materiales diversos -lapiz, rotulador, acuarela, tinta, collage...- y descubriremos maneras creativas de dar forma a nuestras ideas. Cada sesión es una invicación a explorar sin presión, crear proyectos personales y disfrutar del proceso. Todo lo que ilustres te lo llevas a casa!
 
