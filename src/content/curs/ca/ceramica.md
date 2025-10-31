@@ -2,7 +2,7 @@
 title: 'Club de ceràmica'
 desc: 'Un curset setmanal per aprendre a fer ceràmica a mà, ideal si tens ganes de començar a fer ceràmica però no saps com!'
 image:
-  url: '/img/c-costura.jpeg'
+  url: '/img/F9A3F14F-9643-4545-8A51-1391EF800CD0.jpeg'
   alt: 'Fotografia de les participants fent costura'
 links:
   - url: 'https://tally.so/r/mV2bGM'
