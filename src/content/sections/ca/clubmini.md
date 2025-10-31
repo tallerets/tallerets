@@ -22,9 +22,6 @@ Sovint els nens i nenes voldrien fer alguna cosa creativa però no volen apuntar
 Aa tallerets oferim una extraescolar de manualitats on es farà pintura, collage, invents, fang, tela i molt més.
 
 Oferim sessions de dues hores (17-19h) amb horari flexible d’entrada i sortida dins d’aquest període. pots escollir un cop a la setmana, o dues.
-
-image: 
-  url:'/img/kids.jpeg'
   
 **Com funciona?**
 
