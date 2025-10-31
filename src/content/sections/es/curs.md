@@ -1,5 +1,5 @@
 ---
-title: 'Cursillos regulares'
+title: 'Tallerets regulares'
 desc: 'En Tallerets, creemos en el poder de la creatividad como herramienta para fomentar la comunicación, la colaboración y el espíritu de equipo.'
 image:
   url: '/icons/equips.png'
