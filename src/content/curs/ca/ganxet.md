@@ -1,5 +1,5 @@
 ---
-title: 'Curset de ganxet'
+title: 'Club de ganxet'
 desc: 'Un curset setmanal pensat per a qui vol començar amb el ganxet des de zero o reprendre’l amb il·lusió.'
 image:
   url: '/img/c-ganxet.jpeg'
