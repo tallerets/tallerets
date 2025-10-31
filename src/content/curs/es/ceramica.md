@@ -1,6 +1,6 @@
 ---
-title: 'Curset de ceràmica'
-desc: 'Un curset setmanal per aprendre a fer ceràmica a mà, ideal si tens ganes de començar a fer ceràmica però no saps com!'
+title: 'Club de cerámica'
+desc: 'Un club semanal para aprender a hacer cerámica a mano, ideal si tienes ganas de empezar pero no sabes como! o si ya haces pero necesitas un espacio en el barrio'
 image:
   url: '/img/c-costura.jpeg'
   alt: 'Fotografia de les participants fent costura'
@@ -11,16 +11,16 @@ links:
     text: "Contacta'm"
 ---
 
-**Inici del següent curs: gener 2026**
+**Inicio del club de ceramica: enero 2026**
 
-Un curset setmanal per aprendre a fer ceràmica amb les mans, ideal si tens ganes de començar i no saps com!
+Un cursillo semanal para aprender a hacer cerámica con las manos, ideal si tienes ganas de empezar y no sabes cómo!
 
-Farem diversos projectes de ceràmica pinçada, pintarem i esmaltarem :) La cocció la fem al barri, i 2 setmanes després tindràs les peces llestes!
+Haremos varios proyectos de cerámica pinzada, pintaremos y esmaltaremos :) La cocción la hacemos en el barrio, y 2 semanas después tendrás las piezas listas!
 
-**Dates i horaris:** Dijous de 16:30 a 18:30 - Divendres de 11:00 a 13:00 
+**Fechas y horarios:** Jueves de 16:30 a 18:30 - Viernes de 11:00 a 13:00
 
-Places molt limitades. Materials i eines inclossos (cocció apart, segons volum)
+Plazas muy limitadas. Materiales y herramientas incluidos (cocción aparte, según volumen)
 
-**No cal experiència!** Només ganes de passar una bona estona :)
+**No hace falta experiencia!** Solo ganas de pasar un buen rato :)
 
-Vols apuntar-t’hi? T’esperem!
+Quieres apuntarte? Te esperamos!
