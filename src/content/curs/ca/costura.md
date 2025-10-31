@@ -1,5 +1,5 @@
 ---
-title: 'Curset de costura'
+title: 'Club de costura'
 desc: 'Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin'
 image:
   url: '/img/c-costura.jpeg'
