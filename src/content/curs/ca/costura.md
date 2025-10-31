@@ -19,7 +19,9 @@ Projectes per gener, febrer i març: Coletero, clauer, funda de llibreta o llibr
 
 Projectes per abril, maig i juny: Top, Faldilla, Bolso i inici projecte personal.
 
-Dates i horaris: Dilluns de 18:30 a 20:30 o de 10:30 a 13:30
+Dates i horaris: Dilluns de 11:00 a 13:00 - 16:30 a 18:30 - 18:30 a 20:30h
+
+Places molt limitades. Porta la teva màquina i teles. (si no tens màquina, te la podem deixar)
 
 **No cal experiència!** Només ganes de passar una bona estona :)
 
