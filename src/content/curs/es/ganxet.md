@@ -19,7 +19,7 @@ Proyectos para enero, febrer y març: gorro y cuello
 
 Proyectos para abril, mayo y junio: bolsito y bandana
 
-Fechas y horarios: Miércoles de 18:30 a 20:30 o de 10:30 a 13:30h
+Fechas y horarios: Miércoles de 18:30 a 20:30 
 
 **No hace falta experiencia previa**, solo ganas de pasarlo bien, aprender y tejer en comunidad :)
 
