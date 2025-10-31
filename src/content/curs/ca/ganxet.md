@@ -19,7 +19,7 @@ Projectes per gener, febrer i març: gorro i coll
 
 Projectes per abril, maig i juny: bolset i bandana
 
-Dates i horaris: Dimecres de 18:30 a 20:30 o de 10:30 a 13:30h
+Dates i horaris: Dimecres de 18:30 a 20:30 
 
 **No cal experiència prèvia**, només ganes de passar-ho bé, aprendre i teixir en comunitat :)
 
