@@ -1,6 +1,6 @@
 ---
-title: 'Taller a mida: aniversaris, esdeveniments...'
-desc: 'Tens una idea de talleret que vols fer amb els teus amics per un event, o bé no et quadren les dates? Proposa’m la teva idea i podem fer un talleret a mida a partir de 4 persones.'
+title: 'Tarjetes Regal tallerets'
+desc: 'Regala tallerets, regala barri i creativitat'
 image:
   url: '/icons/regal.svg'
   alt: 'un pastís fet amb pinzells representant un taller a mida per un aniversari o ocasió especial'
@@ -9,11 +9,10 @@ links:
     text: 'Contacta amb mi'
 ---
 
-T'agradaria fer un talleret amb les teves amigues però no et quadren les dates?
-Tens una idea de talleret que vols fer amb els teus amics per un event?
-Tens un comiat de soltera i vols fer algo diferent?
-Tens un teambuilding i t'agradaria fer alguna cosa especial?
+Arriba el nadal i moltes volem fer tarjeta regal d'experiències encomptes de comprar coses materials.
+T'agradaria regalar barri, comunitat i creativitat? Amb les tarjetes de regal tallerets pots regalar una tarjeta física o virtual.
+Pot ser una tarjeta per a un taller concret, o bé, un import per poder usar en qualsevol taller.
 
 <br/>
 
-Proposa’m la teva idea i podem fer un talleret a mida a partir de 6 persones!
+Passa't per tallerets a buscar la teva tarjeta física o bé escriume a latallerets@gmail.com per demanar una tarjeta virtual!
