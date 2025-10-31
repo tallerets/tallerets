@@ -38,8 +38,7 @@ Farem tot tipus de tallers creatius. Manualitats, invents. Potenciarem la autoes
 **Com puc a puntar al meu fill o filla?**
 
 Et pots apuntar mitjançant l'enllaç que trobaràs en aquesta web
-Hi ha la opció mensual (65€ al mes amb IVA inclòs) o quatrimestral (236€ al mes amb IVA inclòs)
-Funciona com un gimnàs, i pots decir no renovar la mensualitat o el trimestre l'ultim dia del club del mes.
+Funciona com un gimnàs, i pots decir no renovar la mensualitat l'ultim dia del club del mes.
 
 <br />
 
