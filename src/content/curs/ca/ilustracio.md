@@ -11,7 +11,7 @@ links:
     text: 'Contacto'
 ---
 
-**Inici del curs: Novembre 2025**
+**Inici del curs: Gener 2026**
 
 Un curset setmanal per experimentar i jugar amb diferents tècniques de dibuix i color. Provarem materials diversos —llapis, retoladors, aquarel·la, tinta, collage…— i descobrirem maneres creatives de donar forma a les idees. Cada sessió és una invitació a explorar sense pressió, crear projectes personals i gaudir del procés. Tot el que facis te l’endús a casa!
 
