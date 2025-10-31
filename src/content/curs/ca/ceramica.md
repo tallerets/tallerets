@@ -1,5 +1,5 @@
 ---
-title: 'Curset de ceràmica'
+title: 'Club de ceràmica'
 desc: 'Un curset setmanal per aprendre a fer ceràmica a mà, ideal si tens ganes de començar a fer ceràmica però no saps com!'
 image:
   url: '/img/c-costura.jpeg'
