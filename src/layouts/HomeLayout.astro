@@ -8,7 +8,15 @@ import SectionCard from '../components/SectionCard.astro'
 
 const lang = getLangFromUrl(Astro.url)
 
-const sections = ['a-mida', 'empreses', 'tallers', 'curs', 'clubmini', 'club']
+const sections = [
+  'a-mida',
+  'empreses',
+  'tallers',
+  'curs',
+  'clubmini',
+  'club',
+  'targeta-regal',
+]
 
 const sectionsData = await Promise.all(
   sections.map((section) => getEntry('sections', `${lang}/${section}`)),
