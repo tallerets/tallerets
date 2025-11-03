@@ -26,8 +26,6 @@ const bioSection = await getEntry('sections', `${lang}/partial_homebio`)
 const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
 
 const rendered = await bioSection?.render()
-
-const translatePath = useTranslatedPath(lang)
 ---
 
 <Layout
