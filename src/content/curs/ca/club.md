@@ -47,6 +47,12 @@ Pots venir simplement a desconnectar de pantalles i a passar una estona fent cos
 Pots venir a provar una de les mil manualitats que has guardat a tik tok
 Tot l'art és benvingut, i no cal cap experiència per venir, només ganes!
 
+**Quins horaris hi ha disponibles?**
+
+Els dimecres d'11 a 13h
+Els dimecres de 16:30 a 18:30h
+Els dijous de 18:30 a 20:30h
+
 **Com em puc apuntar?**
 
 Et pots apuntar mitjançant l'enllaç que trobaràs en aquesta web.
