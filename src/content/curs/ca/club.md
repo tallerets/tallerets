@@ -52,6 +52,8 @@ Tot l'art és benvingut, i no cal cap experiència per venir, només ganes!
 Et pots apuntar mitjançant l'enllaç que trobaràs en aquesta web.
 Funciona com un gimnàs, i pots decir no renovar la mensualitat el dia 20 de cada mes.
 
+Reserva la teva plaça ara per començar a desembre o gener 2026!
+
 <br />
 
 Qualsevol dubte pots contactar-me per aquí o per email a latallerets@gmail.com
