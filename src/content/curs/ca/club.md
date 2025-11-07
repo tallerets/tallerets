@@ -5,10 +5,8 @@ image:
   url: '/img/c-club.jpeg'
   alt: 'Fotografia de les participants del club tallerets'
 links:
-  - url: 'https://buy.stripe.com/3cs9DTbkF3iWeDm14c'
+  - url: 'https://buy.stripe.com/4gM6oJdxr0jB9vM1u57N60x'
     text: "M'apunto!"
-  - url: 'https://buy.stripe.com/cN2cQ59cxaLo1QAeV1'
-    text: "Apunta't tot el trimestre"
   - url: '/contacte'
     text: "Contacta'm"
 ---
