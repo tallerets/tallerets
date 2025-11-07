@@ -52,6 +52,7 @@ Todo el arte es bienvenido, y no hace falta ninguna experiencia para venir, solo
 Te puedes apuntar mediante el enlace que encontrarás en esta web.
 Funciona como un gimnasio, y puedes decir no renovar la mensualidad el día 20 de cada mes.
 
+Reserva tu plaza ahora para empezar en diciembre o enero 2026!
 <br />
 
 Cualquier duda puedes contactarme por aquí o por email a latallerets@gmail.com.
