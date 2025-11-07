@@ -1,6 +1,6 @@
 ---
 title: 'Club Tallerets: el teu espai creatiu habitual'
-desc: "Dues tardes al mes a Tallerets a Barcelona per fer el que més t'agradi: pintar, cosir, llegir, escriure, fer manualitats... Vine a gaudir del teu temps i formar part d'una comunitat creativa."
+desc: "Una estona per fer el que més t'agradi: pintar, cosir, llegir, escriure, fer manualitats... Vine a gaudir del teu temps i formar part d'una comunitat creativa."
 image:
   url: '/img/c-club.jpeg'
   alt: 'Fotografia de les participants del club tallerets'
@@ -13,7 +13,7 @@ links:
     text: "Contacta'm"
 ---
 
-El club és un espai on explorar la nostra creativitat i formar comunitat. Vine **dues tardes al mes** dedicar-te un moment per tu i tenir l'espai adequat per fer-ho.
+El club és un espai on explorar la nostra creativitat i formar comunitat. Vine una tarda a la setmana dedicar-te un moment per tu i dona't l'espai adequat per fer-ho.
 
 <br />
 
@@ -29,10 +29,10 @@ El club reuneix totes aquestes necesitats i ofereix un espai de comunitat i de b
 
 **Com funciona?**
 
-El club tallerets és una suscripció mensual o trimestral. Som un grup de màxim 12 persones i ens juntem dues tardes al mes per crear, desconnectar i fer barri!
+El club tallerets és una suscripció mensual. Som un grup de màxim 10-12 persones i ens juntem una tarda a la setmana per crear, desconnectar i fer barri!
 És com si estiguessis apuntada a un gimnàs de manualitats, o a unes extra-escolars per adultxs!
 
-Son dues tardes al mes de 18 a 21h. Pots venir quan vulguis, i marxar quan vulguis en aquest marge de temps!
+L'horari és de dues hores a la setmana. Escull l'horari que et vagi millor i reserva't aquesta estona! 
 
 Cada membre té accés al material bàsic i les eines per poder fer tot tipus de manualitats, només hauràs de portar de casa els materials que necesitis per fer la manualitat concreta que haguem o hagis escollit! Aprendrem a fer de tot: pintura, dibuix, collage, estampació, brodat, i molt més! Pots sumar-te a una activitat que escollim entre totes, venir a fer la que tu escullis, o que t'ensenyi a fer alguna cosa que no saps ven bé com fer.
 
@@ -51,9 +51,8 @@ Tot l'art és benvingut, i no cal cap experiència per venir, només ganes!
 
 **Com em puc apuntar?**
 
-Et pots apuntar mitjançant l'enllaç que trobaràs en aquesta web
-Hi ha la opció mensual (60€ al mes amb IVA inclòs) o trimestral (160€ al mes amb IVA inclòs)
-Funciona com un gimnàs, i pots decir no renovar la mensualitat o el trimestre l'ultim dia del club del mes.
+Et pots apuntar mitjançant l'enllaç que trobaràs en aquesta web.
+Funciona com un gimnàs, i pots decir no renovar la mensualitat el dia 20 de cada mes.
 
 <br />
 
