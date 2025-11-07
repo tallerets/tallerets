@@ -1,6 +1,6 @@
 ---
 title: 'Club Tallerets: tu espacio creativo habitual'
-desc: 'Dos tardes al mes en Tallerets en Barcelona para hacer lo que más te guste: pintar, coser, leer, escribir, hacer manualidades... Ven a disfrutar de tu tiempo y formar parte de una comunidad creativa.'
+desc: 'Una tarde a la semana para hacer lo que más te guste: pintar, coser, leer, escribir, hacer manualidades... Ven a disfrutar de tu tiempo y formar parte de una comunidad creativa.'
 image:
   url: '/img/c-club.jpeg'
   alt: 'Fotografia de las participantes del Club Tallerets'
@@ -13,26 +13,26 @@ links:
     text: 'Contacto'
 ---
 
-El club tallerets es un club donde explorar nuestra creatividad y crear comunidad y barrio. Ven dos tardes al mes y dedícate un momento para ti en un espacio acogedor y rodeada de personas como tu!
+El club tallerets es un club donde explorar nuestra creatividad y crear comunidad y barrio. Ven una tarde a la semana y dedícate un momento para ti en un espacio acogedor y rodeada de personas como tu!
 
 <br />
 
 **Qué es?**
 
-El Club tallerets sueño las extra-escolares/laborales por adultxs que estabas esperando!
+El Club tallerets son las extra-escolares/laborales por adultxs que estabas esperando!
 
 A menudo, a pesar de tener los materiales o el espacio a casa, no encontramos el momento de ponernos a explorar nuestra creatividad.
 Otras veces nos gustaría apuntarnos a talleres, pero todos su muy técnicos o mucho curso.
 Quizás voldriem hacer cosas creativas pero nos gustaría hacerlo en compañía y no tenemos con quién.
 
-El club reúne todas estas necesitats y ofrece un espacio de comunidad y de barrio donde sentirte a gusto!
+El club reúne todas estas necesidades y ofrece un espacio de comunidad y de barrio donde sentirte a gusto!
 
 **Cómo funciona?**
 
-El club tallerets es una suscripció mensual o trimestral. Somos un grupo de máximo 12 personas y entes juntem dos tardes en el mes para crear, desconectar y hacer barrio!
-Es cómo si estuvieras apuntada a un gimnasio de manualidades, o a unas extra-escolares por adultxs!
+Es una suscripció mensual. Somos un grupo de máximo 10-12 personas y nos juntamos un rato a la semana para crear, desconectar y hacer barrio!
+Es cómo si estuvieras apuntada a un gimnasio de manualidades, o a unas extra-escolares para adultxs!
 
-Su dos tardes en el mes de 18 a 21h. Puedes venir cuando quieras, y marchar cuando quieras en este margen de tiempo!
+El horario es de dos horas en la semana. Escoge el horario que te vaya mejor y resérvate este rato para ti.
 
 Cada miembro tiene acceso al material básico y las herramientas para poder hacer todo tipos de manualidades, solo tendrás que llevar de casa los materiales que necesitis para hacer la manualidad concreta que hayamos o hayas escogido! Aprenderemos a hacer de todo: pintura, dibujo, collage, estampación, bordado, y mucho más! Puedes sumarte a una actividad que escogemos entre todas, venir a hacer la que tú escojas, o que te enseñe a hacer algo que no sabes vende bien como hacer.
 
@@ -51,9 +51,9 @@ Todo el arte es bienvenido, y no hace falta ninguna experiencia para venir, solo
 
 **Cómo me puedo apuntar?**
 
-Te puedes apuntar mediante el enlace que encontrarás en esta web
-Hay la opción mensual (60€ en el mes con IVA incluido) o trimestral (160€ en el mes con IVA incluido)
-Funciona como un gimnasio, y puedes decir no renovar la mensualidad o el trimestre el ultim día del club del mes.
+Te puedes apuntar mediante el enlace que encontrarás en esta web.
+Funciona como un gimnasio, y puedes decir no renovar la mensualidad el día 20 de cada mes.
+
 <br />
 
 Cualquier duda puedes contactarme por aquí o por email a latallerets@gmail.com.
