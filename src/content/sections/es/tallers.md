@@ -5,7 +5,7 @@ image:
   url: '/icons/potet.svg'
   alt: ''
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://tallerets.setmore.com'
     text: 'Calendario y reservas'
 
 other: { secondTitle: 'Más en tallerets', infoBtn: 'Más información' }

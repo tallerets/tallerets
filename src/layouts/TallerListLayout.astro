@@ -24,6 +24,8 @@ const allTallers = await getCollection(colection, ({ id }) => {
 const sectionsData = await Promise.all(
   sections.map((section) => getEntry('sections', `${lang}/${section}`)),
 )
+
+const links = thisSection?.data.links || []
 ---
 
 <Layout
@@ -46,6 +48,18 @@ const sectionsData = await Promise.all(
         />
       </span>
     </h1>
+    {
+      colection === 'tallers' && links.length && (
+        <div class="flex items-center justify-center mt-8 sm:mt-16">
+          <a
+            href={links[0].url}
+            class="block border-2 px-4 py-3 rounded-full text-xl sm:text-2xl font-bold hover:-rotate-6 transition-transform"
+          >
+            {links[0].text}
+          </a>
+        </div>
+      )
+    }
     <section
       class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
     >
