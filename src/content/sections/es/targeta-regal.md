@@ -5,8 +5,8 @@ image:
   url: '/icons/regal.svg'
   alt: 'Ilustración de un pastel con pinceles en lugar de velas de cumpleaños'
 links:
-  - url: '/es/contacte'
-    text: 'Contacta!'
+  - url: 'https://buy.stripe.com/bJe5kF0KFc2jbDUgoZ7N60w'
+    text: 'Quiero regalar tallerets!'
 ---
 
 Llega la Navidad y toca darle vueltas a como encontrar las mejores ideas para regalos. ¡Además, muchas buscamos regalar experiencias en lugar de cosas materiales: para eso hemos hecho las tarjetas de regalo de tallerets!
