@@ -5,7 +5,7 @@ image:
   url: '/icons/potet.svg'
   alt: ''
 links:
-  - url: 'https://tallerets.setmore.com'
+  - url: 'https://app.zenamu.com/espai-tallerets'
     text: 'Calendario y reservas'
 
 other: { secondTitle: 'Más en tallerets', infoBtn: 'Más información' }
