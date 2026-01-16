@@ -5,7 +5,7 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Fotografia de las participantes haciendo costura'
 links:
-  - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
+  - url: 'https://tally.so/r/mV2bGM'
     text: 'Me apunto!'
   - url: '/contacte'
     text: 'Contacto'
