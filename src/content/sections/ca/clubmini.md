@@ -1,48 +1,83 @@
 ---
-title: 'Extraescolar de manualitats per nens i nenes'
-desc: "Una extraescolar per fer tot tipus d'activitats creatives: manualitats, invents i molt més! Per nens i nenes de 6 a 12 anys"
+title: 'Retir Creatiu'
+desc: "Un retir per crear i desconnectar a la natura"
 image:
   url: '/icons/club.png'
   alt: ''
 links:
-  - url: 'https://buy.stripe.com/bJecN7bpjfev37ofkV7N60e'
-    text: "Apunta't un mes!"
+  - url: 'https://tally.so/r/VLzVjy'
+    text: "Reserva la teva plaça"
 ---
 
 <br />
 
-**Què és?**
+**Sobre el retir**
 
-Eel club tallerets mini artistes són extraescolars per nens i nenes de 6 a 12 anys.
+El retir creatiu de tallerets és un cap de setmana a la natura, molt centrat en crear, desconnectar de pantalles i fer coses amb les mans. 
 
-Oferim un espai on crear i fer coses amb les mans, mentre desenvolupem l'autoestima, l'autorealització i la creativitat.
-
-Sovint els nens i nenes voldrien fer alguna cosa creativa però no volen apuntar-se a classes de pintura, dibuix o altres.
-
-Aa tallerets oferim una extraescolar de manualitats on es farà pintura, collage, invents, fang, tela i molt més.
-
-Oferim sessions de dues hores (17-19h) amb horari flexible d’entrada i sortida dins d’aquest període. pots escollir un cop a la setmana, o dues.
+Farem tallers creatius, passejarem pel bosc, crearem pel plaer de crear, i fins hi tot potser trobaràs noves aficions. Aquest retir és per experimentar, passar temps amb tu en contacte amb la natura i conèixer companyes amb les mateixes inquetuds que tu!
   
-**Com funciona?**
+**Agenda**
 
-El club tallerets és una suscripció mensual o trimestral. Pots apuntarte al mes per 65€, o pots fer de setembre a desembre per 236€!
+**15-05 Divendres**
 
-El club és un dia a la setmana de 17 a 19h. Pots arribar quan vulguis i marxar quan vulguis, dins d'aquest espai de temps.
+18:00h Arribada, check in, jocs per conèixen’s creant. Trencar el gel creatiu
 
-Cada membre té accés al material i les eines per poder fer tot tipus de manualitats.
+21:00h Sopar
+22:00h Meditació guiada i mini taller de journaling  
 
-**Quins tallers farem?**
+**16-05 Dissabte**
 
-Farem tot tipus de tallers creatius. Manualitats, invents. Potenciarem la autoestima, la creativitat i l'expressió de cada nen i nena, fora de pantalles, fora del món digital. Fent coses amb les mans.
+8:30h Meditació guiada i moviment per despertar*
 
-**Com puc a puntar al meu fill o filla?**
+9:00h Esmorzar
 
-Et pots apuntar mitjançant l'enllaç que trobaràs en aquesta web
-Funciona com un gimnàs, i pots decir no renovar la mensualitat l'ultim dia del club del mes.
+9:45h Passeig per la muntanya, il·lustració botànica i recollida de flors i fulles seques
+
+12:00h Taller de Cianotipia amb elements de la natura
+
+14:00h Dinar i temps lliure 
+Opcional: Piscina, passeig, lectura compartida 
+
+17:00h Taller fes el teu propi xampú natural
+
+19:00h Taller de comic col·lectiu +Fent un fanzine autoretrat
+
+21:00h Sopar
+
+22:00 Meditació i journaling
+
+**17-05 Diumenge**
+
+8:30h Meditació guiada i moviment per despertar
+
+9:00h Esmorzar i recollida d’habitacions
+
+10:00 Taller d’ex-libris
+
+14:00h Dinar 
+
+15:00h Escriptura creativa i visionar amb collage
+
+16:00h Tancament i posada en comú
+
+
+**Què inclou? Com reservo?**
+
+El preu de 310€ (290€ per sòcies tallerets) inclou:
+
+Dues nits en habitació compartida de 4 o 5 persones a la casa rural CAL FARO
+Esmorzars, dinars, berenars i sopars desde el divendres a la nit fins la sortida el diumenge a les 17h
+Tots els àpats son vegetarians i saludables, de l’hort propi i casolans
+Totes les activitats i materials necesaris per a realitzar-les
+
+**Condicions de la reserva**
+
+Per poder reservar la teva plaça, hauràs de fer la primera part del pagament (150€).
+Si cancel·les amb mes d’un mes d’antel·lació, et tornarem el 100%, si no, perdràs l’import de la reserva. Places molt limitades.
+
+Som un projecte petit fet per persones, i per a persones. Esperem que et sumis i que vinguis a gaudir amb nosaltres!
 
 <br />
 
-<img src="/img/kids.jpeg" alt="" width="200" align="center">
-
 Qualsevol dubte pots contactar-me per aquí o per email a latallerets@gmail.com
-T'espero al club!!!
