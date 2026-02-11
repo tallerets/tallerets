@@ -5,7 +5,7 @@ image:
   url: '/img/c-ganxet.jpeg'
   alt: 'Fotografia de les participants fent ganxet'
 links:
-  - url: 'https://buy.stripe.com/eVq6oJgJDc2jgYe1u57N60v'
+  - url: 'https://tally.so/r/mV2bGM'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"

@@ -5,7 +5,7 @@ image:
   url: '/img/F9A3F14F-9643-4545-8A51-1391EF800CD0.jpeg'
   alt: 'Fotografia de les participants fent ceramica'
 links:
-  - url: 'https://buy.stripe.com/4gMfZj793giz7nE3Cd7N60u'
+  - url: 'https://tally.so/r/mV2bGM'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"
