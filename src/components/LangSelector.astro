@@ -9,7 +9,10 @@ const currentLang = getLangFromUrl(Astro.url)
       const href = lang === defaultLang ? '/' : `/${lang}/`
       return (
         <li class={`lowercase ${currentLang === lang && 'decoration'}`}>
-          <a href={href} class="capitalize">
+          <a
+            href={href}
+            class="capitalize hover:underline hover:decoration-soft hover:text-soft"
+          >
             {label}
           </a>
         </li>

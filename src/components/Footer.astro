@@ -25,12 +25,12 @@ const legalDocs = await getCollection('legal', ({ id }) => {
         height="130"
       />
       <p class="mt-2">{footerSection?.data.title}</p>
-      <p class="mt-2 opacity-60">
+      <p class="mt-2 opacity-70">
         {footerSection?.data.other.copyright}
       </p>
     </div>
     <div>
-      <p class="font-bold opacity-60">
+      <p class="font-bold opacity-70">
         {footerSection?.data.other.labels[0]}
       </p>
       <ul>
@@ -38,14 +38,19 @@ const legalDocs = await getCollection('legal', ({ id }) => {
           footerLinks &&
             footerLinks.map((link) => (
               <li>
-                <a href={link.url}>{link.text}</a>
+                <a
+                  class="hover:underline hover:decoration-soft hover:text-soft"
+                  href={link.url}
+                >
+                  {link.text}
+                </a>
               </li>
             ))
         }
       </ul>
     </div>
     <div>
-      <p class="font-bold opacity-60">
+      <p class="font-bold opacity-70">
         {footerSection?.data.other.labels[1]}
       </p>
       <ul>
@@ -55,7 +60,12 @@ const legalDocs = await getCollection('legal', ({ id }) => {
               translatePath('/legal') + removeLangFromSlug(slug)
             return (
               <li>
-                <a href={correctedSlug}>{title}</a>
+                <a
+                  class="hover:underline hover:decoration-soft hover:text-soft"
+                  href={correctedSlug}
+                >
+                  {title}
+                </a>
               </li>
             )
           })
@@ -63,7 +73,7 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       </ul>
     </div>
     <div>
-      <p class="font-bold opacity-60">
+      <p class="font-bold opacity-70">
         {footerSection?.data.other.labels[2]}
       </p>
       <LangSelector />
@@ -71,7 +81,7 @@ const legalDocs = await getCollection('legal', ({ id }) => {
   </section>
 </footer>
 <p
-  class="page-padding bg-dark text-soft text-xs pb-4 pt-4 text-center text-opacity-60"
+  class="page-padding bg-dark text-soft text-xs pb-4 pt-4 text-center text-opacity-70"
 >
   {footerSection?.data.other.authorTitle}
   <a

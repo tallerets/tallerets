@@ -4,36 +4,25 @@
 
 @layer base {
   @font-face {
-    font-family: 'Clash Display';
-    font-style: normal;
-    font-display: block;
-    src: url('/fonts/ClashDisplayExtralight.woff2') format('woff2');
-    font-weight: 100;
+    font-family: 'DM Sans';
+    src:
+      url('../fonts/DMSans-9ptItalic.woff2') format('woff2'),
+      url('../fonts/DMSans-9ptItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
   }
 
   @font-face {
-    font-family: 'Clash Display';
+    font-family: 'DM Sans';
+    src:
+      url('../fonts/subset-DMSans-9ptRegular.woff2') format('woff2'),
+      url('../fonts/subset-DMSans-9ptRegular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-display: block;
-    src: url('/fonts/ClashDisplayLight.woff2') format('woff2');
-    font-weight: 300;
+    font-display: swap;
   }
 
-  @font-face {
-    font-family: 'Clash Display';
-    font-style: normal;
-    font-display: block;
-    src: url('/fonts/ClashDisplayRegular.woff2') format('woff2');
-    font-weight: 400;
-  }
-
-  @font-face {
-    font-family: 'Clash Display';
-    font-style: normal;
-    font-display: block;
-    src: url('/fonts/ClashDisplayMedium.woff2') format('woff2');
-    font-weight: 500;
-  }
   @font-face {
     font-family: 'Adjusted Arial Fallback';
     font-weight: 300;
@@ -52,6 +41,10 @@ a.link {
 
 a:hover {
   @apply decoration-red text-red cursor-pointer;
+}
+
+img {
+  @apply !text-dark;
 }
 
 .markdown p {

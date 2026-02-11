@@ -2,7 +2,7 @@
 title: 'Tallerets semanales'
 desc: 'En Tallerets, creemos en el poder de la creatividad como herramienta para fomentar la comunicación, la colaboración y el espíritu de equipo.'
 image:
-  url: '/icons/brodat.png'
+  url: ''
   alt: ''
 links:
   - url: '/es/contacte'

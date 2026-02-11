@@ -25,6 +25,8 @@ const sectionsData = await Promise.all(
   sections.map((section) => getEntry('sections', `${lang}/${section}`)),
 )
 
+const isMonografic = colection === 'tallers'
+
 const links = thisSection?.data.links || []
 ---
 
@@ -49,11 +51,11 @@ const links = thisSection?.data.links || []
       </span>
     </h1>
     {
-      colection === 'tallers' && links.length && (
+      isMonografic && links.length && (
         <div class="flex items-center justify-center mt-8 sm:mt-16">
           <a
             href={links[0].url}
-            class="block border-2 px-4 py-3 rounded-full text-xl sm:text-2xl font-bold hover:-rotate-6 transition-transform"
+            class="block border-2 px-4 py-3 rounded-lg text-xl sm:text-2xl font-bold hover:-rotate-3 transition-transform"
           >
             {links[0].text}
           </a>

@@ -6,17 +6,17 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
-      soft: '#FEFAE9',
-      dark: '#1a1a1a',
-      red: '#A22400',
+      soft: '#F4EEED',
+      dark: '#0D33AB',
+      red: '#B40B19',
     },
     fontFamily: {
       serif: [
-        'Clash Display',
+        'DM Sans',
         'Adjusted Arial Fallback',
         ...defaultTheme.fontFamily.serif,
       ],
-      sans: ['Helvetica', ...defaultTheme.fontFamily.serif],
+      sans: ['DM Sans', ...defaultTheme.fontFamily.serif],
       mono: [...defaultTheme.fontFamily.mono],
     },
   },

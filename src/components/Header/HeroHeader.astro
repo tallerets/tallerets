@@ -20,7 +20,7 @@ const rendered = await heroSection?.render()
     class="relative page-padding h-[100vh] bg-black flex flex-col items-start pb-8"
   >
     <h1
-      class="text-dark text-8xl sm:text-9xl lg:text-[10rem] mt-auto pt-20 mb-6 font-[500]"
+      class="text-soft text-8xl sm:text-9xl lg:text-[10rem] mt-auto pt-20 mb-6 font-[800] text-shadow-soft"
     >
       {rendered && <rendered.Content />}
     </h1>
@@ -30,7 +30,7 @@ const rendered = await heroSection?.render()
         <div class="flex justify-end items-center w-full">
           <a
             href={cta?.url}
-            class="block border-2 px-4 py-3 rounded-full text-2xl font-bold hover:-rotate-6 transition-transform my-4 md:my-8 bg-soft me-auto text-nowrap"
+            class="block border-2 px-4 py-3 rounded-lg text-2xl font-bold hover:-rotate-3 transition-transform my-4 md:my-8 bg-dark text-soft border-soft hover:text-soft me-auto text-nowrap"
           >
             {cta?.text}
           </a>
@@ -47,8 +47,20 @@ const rendered = await heroSection?.render()
     position: relative;
   }
 
+  .text-shadow-soft {
+    text-shadow:
+      -2px -2px 0 #0d33ab,
+      2px -2px 0 #0d33ab,
+      -2px -2px 0 #0d33ab,
+      2px -2px 0 #0d33ab,
+      -3px 0px 0 #0d33ab,
+      3px 0px 0 #0d33ab,
+      0px -3px 0 #0d33ab,
+      0px 3px 0 #0d33ab;
+  }
+
   .video {
-    filter: contrast(1.4) opacity(0.7) blur(2.6px);
+    filter: contrast(1.2) opacity(0.9) blur(2.6px);
     min-width: 100vw;
     object-fit: cover;
     object-position: center;
