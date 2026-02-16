@@ -12,7 +12,7 @@ links:
     text: 'Tallers creatius per empreses'
   - url: '/club'
     text: 'Club de tallers creatius'
-  - url: '/curs'
+  - url: '/cursos'
     text: 'Cursets creatius curs'
   - url: '/espai'
     text: 'Espai'

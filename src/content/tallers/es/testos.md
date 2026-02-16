@@ -5,7 +5,7 @@ image:
   url: '/img/t-testos.webp'
   alt: 'Gente pintando una maceta de barro'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://app.zenamu.com/espai-tallerets/workshops'
     text: 'Me apunto!'
   - url: '/es/contacte'
     text: 'Contáctame'

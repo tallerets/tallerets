@@ -5,7 +5,7 @@ image:
   url: '/img/brodatfoto.jpg'
   alt: 'Participants de tallerets fent un posagots de fang amb les mans'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://app.zenamu.com/espai-tallerets/workshops'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"

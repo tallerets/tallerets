@@ -5,7 +5,7 @@ image:
   url: '/img/t-mirallets.png'
   alt: 'Gente pintando un espejito'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://app.zenamu.com/espai-tallerets/workshops'
     text: 'Me apunto!'
   - url: '/es/contacte'
     text: 'Contáctame'

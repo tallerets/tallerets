@@ -1,12 +1,16 @@
 ---
-import { getEntry } from 'astro:content'
+import { getEntry, render } from 'astro:content'
 import { getLangFromUrl } from '../../utils'
 import Header from './Header.astro'
 
 const lang = getLangFromUrl(Astro.url)
-const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+const heroSection = await getEntry('components', `${lang}/partial_homehero`)
+if (!heroSection) {
+  throw new Error(`Hero section not found`)
+}
 const cta = heroSection?.data.links?.[0]
-const rendered = await heroSection?.render()
+
+const { Content } = await render(heroSection)
 ---
 
 <section class="relative h-screen overflow-hidden">
@@ -22,7 +26,7 @@ const rendered = await heroSection?.render()
     <h1
       class="text-soft text-8xl sm:text-9xl lg:text-[10rem] mt-auto pt-20 mb-6 font-[800] text-shadow-soft"
     >
-      {rendered && <rendered.Content />}
+      <Content />
     </h1>
 
     {

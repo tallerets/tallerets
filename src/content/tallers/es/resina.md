@@ -5,7 +5,7 @@ image:
   url: '/img/t-potets2.png'
   alt: 'Gent pintant pots de vidre'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://app.zenamu.com/espai-tallerets/workshops'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"

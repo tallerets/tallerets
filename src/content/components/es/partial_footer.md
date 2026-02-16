@@ -12,7 +12,7 @@ links:
     text: 'Talleres creativos para empreses'
   - url: '/es/club'
     text: 'Club de talleres creativoss'
-  - url: '/es/curs'
+  - url: '/es/cursos'
     text: 'Cursillos creativos regulares'
   - url: '/es/espai'
     text: 'Sobre el espacio'

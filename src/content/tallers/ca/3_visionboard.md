@@ -5,7 +5,7 @@ image:
   url: '/img/t-vision.webp'
   alt: 'Gent fent el seu propi vision board'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://app.zenamu.com/espai-tallerets/workshops'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"

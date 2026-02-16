@@ -4,51 +4,52 @@ import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 
 type Props = {
   taller: any
-  colection: 'tallers' | 'curs'
+  infoBtn?: string
 }
-const { taller, colection } = Astro.props
+const { taller, infoBtn } = Astro.props
 const { id, data, slug } = taller
 const { title, image, links } = data
 
 const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
 
-const correctedSlug = translatePath(`/${colection}`) + removeLangFromSlug(slug)
-
-const thisSection = await getEntry('sections', `${lang}/${colection}`)
-const infoBtn = thisSection.data.other.infoBtn
+const correctedSlug =
+  translatePath(`/${taller.collection}`) + removeLangFromSlug(slug)
 ---
 
 <li
-  class="odd:rotate-2 even:-rotate-2 text-soft hover:rotate-0 transition-all list-none"
+  class="md:odd:rotate-2 md:even:-rotate-2 text-soft hover:rotate-0 transition-all list-none"
 >
   <div
     id={id}
-    class={`hover:text-soft bg-dark max-w-[32rem] max-h-[32rem] rounded-xl flex flex-col sm:flex-col relative`}
+    class="hover:text-soft bg-dark max-w-[32rem] max-h-[32rem] rounded-xl flex flex-col sm:flex-col relative"
   >
-    <div class="p-5 flex flex-col">
+    <div class="p-3 md:p-5 flex flex-col">
       <div class="h-[40%] w-full rounded bg-dark">
         <a href={correctedSlug}>
           <img
-            class="h-[12rem] w-[32rem] object-cover rounded-lg mb-4"
+            class="h-[12rem] w-[32rem] object-cover rounded-lg"
             src={image.url}
             alt={image.alt}
           />
         </a>
       </div>
-      <h6 class="text-3xl font-bold">{title}</h6>
-      <div class="mt-4 flex gap-4">
-        <a href={links[0].url} class="btn text-md text-dark bg-soft">
+      <h6 class="my-2 md:my-4 text-2xl md:text-3xl font-bold">{title}</h6>
+      <div class="flex gap-2 md:gap-4 flex-wrap">
+        <a
+          href={links[0].url}
+          class="btn flex items-center text-md text-dark bg-soft"
+        >
           {links[0].text}
         </a>
-        <a href={correctedSlug} class="btn text-md text-soft">{infoBtn}</a>
+        {
+          infoBtn && (
+            <a href={correctedSlug} class="btn text-md text-soft">
+              {infoBtn}
+            </a>
+          )
+        }
       </div>
     </div>
   </div>
 </li>
-
-<style>
-  .btn {
-    @apply block font-medium border-2 rounded-lg text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:bg-soft hover:border-red hover:text-red transition-transform;
-  }
-</style>

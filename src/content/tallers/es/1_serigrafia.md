@@ -5,7 +5,7 @@ image:
   url: '/img/t-bosses.png'
   alt: 'bosses de tela pintades'
 links:
-  - url: 'https://tallerets.setmore.com/tallerets'
+  - url: 'https://app.zenamu.com/espai-tallerets/workshops'
     text: 'Me apunto!'
   - url: '/contacte'
     text: "Contacta'm"

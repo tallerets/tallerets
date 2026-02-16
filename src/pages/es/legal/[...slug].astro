@@ -7,7 +7,6 @@ export async function getStaticPaths() {
 
   return allTallers.map((taller) => {
     const slug = taller.slug.replace('es', '')
-    console.log('slug', slug)
     const removedTitle = { ...taller, data: { title: '' } }
     return {
       params: { slug },

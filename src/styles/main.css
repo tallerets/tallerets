@@ -16,8 +16,8 @@
   @font-face {
     font-family: 'DM Sans';
     src:
-      url('../fonts/subset-DMSans-9ptRegular.woff2') format('woff2'),
-      url('../fonts/subset-DMSans-9ptRegular.woff') format('woff');
+      url('../fonts/DMSans-9ptRegular.woff2') format('woff2'),
+      url('../fonts/DMSans-9ptRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,6 +32,10 @@
     descent-override: 21%;
     line-gap-override: 8%;
   }
+}
+
+.btn {
+  @apply flex font-medium border-2 rounded-lg text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:bg-soft hover:border-red hover:text-red transition-transform;
 }
 
 a.link {

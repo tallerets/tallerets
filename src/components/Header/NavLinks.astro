@@ -14,7 +14,7 @@ interface Link {
 const { className } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
-const heroSection = await getEntry('sections', `${lang}/partial_homehero`)
+const heroSection = await getEntry('components', `${lang}/partial_homehero`)
 const [_, ...restLinks] = heroSection?.data.links || []
 const links = restLinks.map((link: Link) => ({
   url: link.url,

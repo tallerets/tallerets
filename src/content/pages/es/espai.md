@@ -1,5 +1,6 @@
 ---
 title: Espacio Tallerets
+desc: 'Tallerets es un espacio para conectar con tu creatividad y disfrutar del proceso de crear con las manos. ¡Ven a crear con nosotros!'
 image:
   url: '/img/noor.png'
   alt: ''

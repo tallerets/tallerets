@@ -1,0 +1,11 @@
+---
+import { getEntry } from 'astro:content'
+import CursosLayout from '../../layouts/CursosLayout.astro'
+
+const page = await getEntry('pages', 'ca/cursos')
+if (!page) {
+  throw new Error('pages/ca/cursos not found')
+}
+---
+
+<CursosLayout frontmatter={page.data} />

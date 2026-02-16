@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import ArticleLayout from '../layouts/ArticleLayout.astro'
 
 export async function getStaticPaths() {
-  const allSections = await getCollection('sections')
+  const allSections = await getCollection('pages')
 
   return allSections.map((section) => {
     const slug = section.slug.replace('ca', '')

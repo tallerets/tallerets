@@ -7,7 +7,7 @@ import { getLangFromUrl } from '../utils'
 
 const lang = getLangFromUrl(Astro.url)
 
-const contactEntry = await getEntry('sections', `${lang}/partial_contacte`)
+const contactEntry = await getEntry('components', `${lang}/partial_contacte`)
 const { adreça, links } = contactEntry?.data.other
 ---
 

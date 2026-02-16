@@ -6,7 +6,7 @@ import LangSelector from './LangSelector.astro'
 const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
 
-const footerSection = await getEntry('sections', `${lang}/partial_footer`)
+const footerSection = await getEntry('components', `${lang}/partial_footer`)
 const footerLinks = footerSection?.data.links || []
 
 const legalDocs = await getCollection('legal', ({ id }) => {
@@ -26,17 +26,17 @@ const legalDocs = await getCollection('legal', ({ id }) => {
       />
       <p class="mt-2">{footerSection?.data.title}</p>
       <p class="mt-2 opacity-70">
-        {footerSection?.data.other.copyright}
+        {footerSection?.data.other?.copyright}
       </p>
     </div>
     <div>
       <p class="font-bold opacity-70">
-        {footerSection?.data.other.labels[0]}
+        {footerSection?.data.other?.labels[0]}
       </p>
       <ul>
         {
           footerLinks &&
-            footerLinks.map((link) => (
+            footerLinks.map((link: any) => (
               <li>
                 <a
                   class="hover:underline hover:decoration-soft hover:text-soft"
@@ -51,13 +51,14 @@ const legalDocs = await getCollection('legal', ({ id }) => {
     </div>
     <div>
       <p class="font-bold opacity-70">
-        {footerSection?.data.other.labels[1]}
+        {footerSection?.data.other?.labels[1]}
       </p>
       <ul>
         {
-          legalDocs.map(({ slug, data: { title } }) => {
+          legalDocs.map(({ id, data: { title } }) => {
             const correctedSlug =
-              translatePath('/legal') + removeLangFromSlug(slug)
+              translatePath('/legal') +
+              removeLangFromSlug(id.replace('.md', ''))
             return (
               <li>
                 <a
@@ -74,7 +75,7 @@ const legalDocs = await getCollection('legal', ({ id }) => {
     </div>
     <div>
       <p class="font-bold opacity-70">
-        {footerSection?.data.other.labels[2]}
+        {footerSection?.data.other?.labels[2]}
       </p>
       <LangSelector />
     </div>
@@ -83,13 +84,13 @@ const legalDocs = await getCollection('legal', ({ id }) => {
 <p
   class="page-padding bg-dark text-soft text-xs pb-4 pt-4 text-center text-opacity-70"
 >
-  {footerSection?.data.other.authorTitle}
+  {footerSection?.data.other?.authorTitle}
   <a
     target="_blank"
     class="underline"
-    href={footerSection?.data.other.authorUrl}
+    href={footerSection?.data.other?.authorUrl}
   >
-    {footerSection?.data.other.authorName}
+    {footerSection?.data.other?.authorName}
   </a>
   ~ Barcelona, 2024
 </p>

@@ -9,7 +9,7 @@ links:
     text: 'ver los talleres'
   - url: '/es/tallers'
     text: 'talleres'
-  - url: '/es/curs'
+  - url: '/es/cursos'
     text: 'cursillos'
   - url: '/es/newsletter'
     text: 'novedades'

@@ -1,0 +1,20 @@
+---
+import { getEntry } from 'astro:content'
+import HighlightCard from './HighlightCard.astro'
+import { getLangFromUrl } from '../utils'
+const lang = getLangFromUrl(Astro.url)
+const highlights = await getEntry('highlights', lang)
+const filteredHighlights = highlights.data.filter((hl) => {
+  return hl.link !== Astro.url.pathname
+})
+---
+
+<ul
+  class="pb-12 md:pb-32 flex gap-4 md:gap-8 justify-center flex-wrap px-4 max-w-[80ch]"
+>
+  {
+    filteredHighlights.map((hl) => {
+      return <HighlightCard title={hl.id} image={hl.image} href={hl.link} />
+    })
+  }
+</ul>

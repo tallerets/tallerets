@@ -5,22 +5,15 @@ import Header from '../components/Header/Header.astro'
 import TallerPostcard from '../components/TallerCard.astro'
 import { getLangFromUrl } from '../utils'
 import { getCollection } from 'astro:content'
-import { NextEvents } from '../components/NextEvents'
 import Highlights from '../components/Highlights.astro'
-import { contacts } from '../data/contact'
 
 const { frontmatter } = Astro.props
+
 const lang = getLangFromUrl(Astro.url)
-const allTallers = await getCollection('tallers', ({ id }: { id: string }) => {
+
+const allTallers = await getCollection('cursos', ({ id }: { id: string }) => {
   return id.startsWith(lang)
 })
-const events = await getCollection('events').then((events) =>
-  events.sort((event) => {
-    const date = new Date(event.data.date)
-    return Date.now() - date.getTime()
-  }),
-)
-const { email } = contacts
 ---
 
 <Layout
@@ -30,7 +23,7 @@ const { email } = contacts
   <Header className="bg-soft text-dark relative" />
   <main>
     <h1
-      class="pt-4 text-4xl md:text-6xl md:text-center md:leading-tight font-[500] px-2"
+      class="pt-4 text-4xl md:text-6xl text-center md:leading-tight font-[500]"
     >
       {frontmatter.title}
       <span>
@@ -43,33 +36,6 @@ const { email } = contacts
         />
       </span>
     </h1>
-
-    <p
-      class="md:text-center md:text-lg mt-4 mb-6 md:mt-8 md:mb-10 max-w-[70ch] mx-auto px-2"
-    >
-      {frontmatter.desc}
-    </p>
-
-    <NextEvents
-      events={events}
-      showMoreText="Reserva"
-      noShowsText={`Ara mateix no hi ha tallers monogràfics programats, contacta a ${email} si vols que en programem un!`}
-      lang={lang}
-      limit={6}
-    />
-
-    {
-      frontmatter.links && frontmatter.links.length && (
-        <div class="flex items-center justify-center mt-8 sm:mt-16 px-2 text-center">
-          <a
-            href={frontmatter.links[0].url}
-            class="block border-2 px-4 py-3 rounded-lg text-xl sm:text-2xl font-bold hover:-rotate-3 transition-transform"
-          >
-            {frontmatter.links[0].text}
-          </a>
-        </div>
-      )
-    }
     <section
       class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
     >
@@ -105,8 +71,8 @@ const { email } = contacts
       </h2>
       <Highlights />
     </section>
-
-    <hr />
-    <Footer />
   </main>
+
+  <hr />
+  <Footer />
 </Layout>

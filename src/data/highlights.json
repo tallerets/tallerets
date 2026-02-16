@@ -1,0 +1,74 @@
+{
+  "ca": [
+    {
+      "id": "Taller a mida: aniversaris, esdeveniments...",
+      "image": { "url": "/icons/regal.svg", "alt": "" },
+      "link": "/a-mida"
+    },
+    {
+      "id": "Tallers per a equips i empreses",
+      "image": { "url": "/icons/equips.png", "alt": "" },
+      "link": "/empreses"
+    },
+    {
+      "id": "Tallers monogràfics autoconclusius",
+      "image": { "url": "/icons/potet.svg", "alt": "" },
+      "link": "/tallers"
+    },
+    {
+      "id": "Retir creatiu: espai de descans i inspiració",
+      "link": "/retir-creatiu"
+    },
+    {
+      "id": "Tallers setmanals",
+      "image": { "url": "/icons/brodat.png", "alt": "" },
+      "link": "/cursos"
+    },
+    {
+      "id": "Targeta regal",
+      "image": { "url": "/icons/regal.svg", "alt": "" },
+      "link": "/targeta-regal"
+    },
+    {
+      "id": "Club tallerets: el teu espai creatiu habitual",
+      "image": { "url": "/icons/club.png", "alt": "" },
+      "link": "/cursos/club"
+    }
+  ],
+  "es": [
+    {
+      "id": "Taller a medida: cumpleaños, eventos...",
+      "image": { "url": "/icons/regal.svg", "alt": "" },
+      "link": "/es/a-mida"
+    },
+    {
+      "id": "Talleres para equipos y empreses",
+      "image": { "url": "/icons/equips.png", "alt": "" },
+      "link": "/es/empreses"
+    },
+    {
+      "id": "Talleres monográficos autoconclusivos",
+      "image": { "url": "/icons/potet.svg", "alt": "" },
+      "link": "/es/tallers"
+    },
+    {
+      "id": "Retiro creativo: espacio de descanso e inspiración",
+      "link": "/es/retir-creatiu"
+    },
+    {
+      "id": "Talleres setmanals",
+      "image": { "url": "/icons/brodat.png", "alt": "" },
+      "link": "/es/cursos"
+    },
+    {
+      "id": "Tarjeta regalo",
+      "image": { "url": "/icons/regal.svg", "alt": "" },
+      "link": "/es/targeta-regal"
+    },
+    {
+      "id": "Club tallerets: tu espacio creativo habitual",
+      "image": { "url": "/icons/club.png", "alt": "" },
+      "link": "/es/cursos/club"
+    }
+  ]
+}

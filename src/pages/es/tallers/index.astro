@@ -1,8 +1,11 @@
 ---
-import TallersPage from '../../../layouts/TallerListLayout.astro'
+import { getEntry } from 'astro:content'
+import TallerListLayout from '../../../layouts/TallerListLayout.astro'
+
+const page = await getEntry('pages', 'es/tallers')
+if (!page) {
+  throw new Error('pages/es/tallers not found')
+}
 ---
 
-<TallersPage
-  colection="tallers"
-  sections={['a-mida', 'club', 'empreses', 'curs', 'clubmini', 'targeta-regal']}
-/>
+<TallerListLayout frontmatter={page.data} />
