@@ -84,7 +84,7 @@ const components = defineCollection({
     desc: z.string().optional(),
     image: imgSchema.optional(),
     links: linkSchema.optional(),
-    other: z.record(z.any()).optional(),
+    other: z.any().optional(),
   }),
 })
 

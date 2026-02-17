@@ -26,9 +26,9 @@ const renderedBio = await render(bioSection)
 
     <section id="bio" class="page-padding mx-auto pt-16 md:pt-20">
       <h2 class="text-4xl md:text-5xl text-center md:leading-tight font-[500]">
-        {bioSection?.data.other.title1}
+        {bioSection.data.other?.title1}
         <br />
-        {bioSection?.data.other.title2}
+        {bioSection.data.other?.title2}
         <span>
           <img
             width="48"
@@ -47,8 +47,8 @@ const renderedBio = await render(bioSection)
           width="320"
           height="328"
           class="min-w-[320px] border-4 border-dark bg-dark rounded"
-          src={bioSection?.data.image.url}
-          alt={bioSection?.data.image.alt}
+          src={bioSection.data.image?.url}
+          alt={bioSection.data.image?.alt}
         />
         <div class="text-2xl md:text-3xl max-w-[20ch]">
           <renderedBio.Content />
@@ -59,7 +59,7 @@ const renderedBio = await render(bioSection)
         id="tallers"
         class="py-16 text-4xl md:text-5xl text-center md:leading-tight font-[500]"
       >
-        {bioSection?.data.other.subtitle}
+        {bioSection.data.other?.subtitle}
       </h3>
       <div class="flex items-center justify-center">
         <Highlights />

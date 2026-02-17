@@ -4,6 +4,9 @@ import HighlightCard from './HighlightCard.astro'
 import { getLangFromUrl } from '../utils'
 const lang = getLangFromUrl(Astro.url)
 const highlights = await getEntry('highlights', lang)
+if (!highlights) {
+  throw new Error(`highlights/${lang} not found`)
+}
 const filteredHighlights = highlights.data.filter((hl) => {
   return hl.link !== Astro.url.pathname
 })

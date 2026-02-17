@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/TallerListLayout.astro'
 title: 'Tallers monogràfics'
 desc: 'Vine a Tallerets a desconnectar, dedicar-te un moment creatiu i a fer coses amb les mans. No cal experiència! Aquí pots veure els següents tallers programats, i més avall tens més informació de cadascun.'
 image:

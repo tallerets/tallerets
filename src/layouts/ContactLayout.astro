@@ -8,19 +8,22 @@ import { getLangFromUrl } from '../utils'
 const lang = getLangFromUrl(Astro.url)
 
 const contactEntry = await getEntry('components', `${lang}/partial_contacte`)
-const { adreça, links } = contactEntry?.data.other
+if (!contactEntry) {
+  throw new Error(`components/${lang}/partial_contacte not found`)
+}
+const { adreça, links } = contactEntry.data.other
 ---
 
 <BaseLayout
-  title={contactEntry?.data.title || 'Contacte'}
-  description={contactEntry?.data.desc || ''}
+  title={contactEntry.data.title}
+  description={contactEntry.data.desc || ''}
 >
   <Header className="bg-soft text-dark relative" />
   <main class="flex flex-col items-center mx-auto pt-4 pb-40 px-4">
     <h1
       class="text-4xl md:text-6xl text-center md:leading-tight mb-10 md:mb-14 font-[500]"
     >
-      {contactEntry?.data.title}
+      {contactEntry.data.title}
       <span>
         <img
           width="48"
@@ -60,7 +63,7 @@ const { adreça, links } = contactEntry?.data.other
         <iframe
           width="600"
           height="400"
-          src={contactEntry?.data.image.url}
+          src={contactEntry.data.image?.url}
           class="border-4 rounded-lg w-[90vw] md:w-[600px]"></iframe>
       </div>
     </section>
