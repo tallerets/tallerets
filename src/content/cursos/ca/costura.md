@@ -15,9 +15,8 @@ links:
 
 Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin:
 
-Projectes per gener, febrer i març: Coletero, clauer, funda de llibreta o llibre, totebag, necesser amb cremallera.
-
-Projectes per abril, maig i juny: Top, Faldilla, Bolso i inici projecte personal.
+Projectes que podràs fer en un trimestre: Clauer, funda portàtil, neceser amb botó, amb cremallera, estoig, funda de llibreta i més!
+A partir del primer trimestre, fem projectes a la teva elecció amb acompanyament
 
 **Dates i horaris:** 
 
