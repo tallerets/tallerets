@@ -5,7 +5,7 @@ image:
   url: '/img/F9A3F14F-9643-4545-8A51-1391EF800CD0.jpeg'
   alt: 'Fotografia de les participants fent costura'
 links:
-  - url: 'https://tally.so/r/mV2bGM'
+  - url: 'https://buy.stripe.com/4gMfZj793giz7nE3Cd7N60u'
     text: "M'apunto!"
   - url: '/contacte'
     text: "Contacta'm"
@@ -15,7 +15,7 @@ links:
 
 Un cursillo semanal para aprender a hacer cerámica con las manos, ideal si tienes ganas de empezar y no sabes cómo!
 
-Haremos varios proyectos de cerámica pinzada, pintaremos y esmaltaremos :) La cocción la hacemos en el barrio, y 2 semanas después tendrás las piezas listas!
+A lo largo del trimestre trabajaremos propuestas guiadas como bols a pellizco, tazas hechas con plancha, porta incienso con texturas, platitos con estampación floral o piezas útiles para la cocina, mientras descubrimos los procesos del material y nuestro propio ritmo creativo.
 
 **Fechas y horarios:** Jueves de 16:30 a 18:30 - Viernes de 11:00 a 13:00
 
