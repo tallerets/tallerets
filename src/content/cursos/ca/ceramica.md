@@ -17,7 +17,7 @@ Un curset setmanal per aprendre a fer ceràmica amb les mans, ideal si tens gane
 
 Al llarg del trimestre treballarem propostes guiades com bols a pessic, tasses amb planxa, porta encens amb textures, platets amb estampació floral o peces útils per la cuina, mentre descobrim els processos del material i el nostre propi ritme creatiu.
 
-**Dates i horaris:** Dijous de 16:30 a 18:30 
+**Dates i horaris:** Dijous de 16:30 a 18:30 - Divendres de 11:00 a 13:00 
 
 Places molt limitades. Materials i eines inclossos (cocció apart, segons volum)
 
