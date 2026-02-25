@@ -11,7 +11,7 @@ links:
     text: "Contacta'm"
 ---
 
-**Inici del següent curs: gener 2026**
+**Inici del següent curs: març 2026**
 
 Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin:
 
@@ -19,7 +19,10 @@ Projectes per gener, febrer i març: Coletero, clauer, funda de llibreta o llibr
 
 Projectes per abril, maig i juny: Top, Faldilla, Bolso i inici projecte personal.
 
-**Dates i horaris:** Dilluns de 11:00 a 13:00 - 16:30 a 18:30 - 18:30 a 20:30h
+**Dates i horaris:** 
+
+Dilluns de 16:30 a 18:30 o de 18:30 a 20:30h 
+Dimarts de 18:30 a 20:30 
 
 Places molt limitades. Porta la teva màquina i teles. (si no tens màquina, te la podem deixar)
 
