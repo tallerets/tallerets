@@ -5,7 +5,7 @@ image:
   url: '/img/c-punt.jpg'
   alt: 'Fotografia de les participants fent punt'
 links:
-  - url: 'https://tally.so/r/mV2bGM'
+  - url: 'https://buy.stripe.com/dRmaEZ793earfUa3Cd7N60p'
     text: 'Me apunto!'
   - url: '/contacte'
     text: 'Contacto'
