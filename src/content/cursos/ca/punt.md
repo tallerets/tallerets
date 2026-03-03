@@ -15,10 +15,6 @@ links:
 
 Un curs pensat per a qui vol començar amb el punt des de zero o reprendre’l amb ganes. Aprendrem les puntades bàsiques, com llegir patrons i com crear els nostres projectes. T’acompanyarem pas a pas perquè et sentis còmoda amb les agulles i el fil, i puguis avançar al teu ritme. Tot el que facis t'ho endús a casa!
 
-Projecte gener, febrer i març: jersei a mida
-
-Projectes per abril, maig i juny: projecte personal
-
 Dates i horaris: Dimecres de 18:30 a 20:30h
 
 **No cal experiència prèvia**, només ganes de passar-ho bé, aprendre i teixir en comunitat :)
