@@ -11,7 +11,7 @@ links:
     text: "Contacta'm"
 ---
 
-**Inici del curs: Enero 2026**
+**Inici del trimestre per noves inscriptions: Abril 2026**
 
 Un curs pensat per a qui vol començar amb el punt des de zero o reprendre’l amb ganes. Aprendrem les puntades bàsiques, com llegir patrons i com crear els nostres projectes. T’acompanyarem pas a pas perquè et sentis còmoda amb les agulles i el fil, i puguis avançar al teu ritme. Tot el que facis t'ho endús a casa!
 
