@@ -1,51 +1,51 @@
 ---
-title: 'Crea les teves arracades de resina'
-desc: 'Descobreix el món de la joieria en resina mentre dissenyes i crees les teves pròpies arracades amb colors, pigments i formes úniques. Un taller per experimentar i crear complements fets per tu.'
+title: 'Crea tus pendientes de resina'
+desc: 'Descubre el mundo de la joyería en resina mientras diseñas y creas tus propios pendientes con colores, pigmentos y formas únicas. Un taller para experimentar y crear complementos hechos por ti.'
 image:
   url: '/img/t-resina.png'
-  alt: 'Arracades de resina fetes a mà'
+  alt: 'Pendientes de resina hechos a mano'
 links:
   - url: 'https://app.zenamu.com/espai-tallerets/workshops'
-    text: "M'apunto!"
+    text: '¡Me apunto!'
 
   - url: '/contacte'
-    text: "Contacta'm"
+    text: "Contáctame"
 ---
 
-En aquest taller descobrirem el món de la joieria en resina mentre creem les nostres pròpies arracades des de zero ✨
+En este taller descubriremos el mundo de la joyería en resina mientras creamos nuestros propios pendientes desde cero ✨
 
-Experimentarem amb pigments, colors, formes i petites composicions per dissenyar unes arracades úniques fetes completament per tu.
+Experimentaremos con pigmentos, colores, formas y pequeñas composiciones para diseñar unos pendientes únicos hechos completamente por ti.
 
-Aprendrem el procés bàsic de treball amb resina i jugarem amb diferents acabats i combinacions per crear peces especials i personals.
+Aprenderemos el proceso básico de trabajo con resina y jugaremos con diferentes acabados y combinaciones para crear piezas especiales y personales.
 
-No cal experiència prèvia, només ganes de provar, experimentar i passar una bona estona creant amb les mans.
+No hace falta experiencia previa, solo ganas de probar, experimentar y pasar un buen rato creando con las manos.
 
-Tindràs acompanyament durant tot el taller perquè puguis crear al teu ritme i descobrir noves idees i combinacions.
+Tendrás acompañamiento durante todo el taller para que puedas crear a tu ritmo y descubrir nuevas ideas y combinaciones.
 
-Marxaràs amb les teves arracades acabades i llestes per portar 💛
+Te irás con tus pendientes terminados y listos para llevar 💛
 
-Tots els materials estan inclosos.
+Todos los materiales están incluidos.
 
 ---
 
-## Preguntes freqüents
+## Preguntas frecuentes
 
-### Necessito experiència?
+### ¿Necesito experiencia?
 
-No! El taller està pensat perquè qualsevol persona pugui venir a experimentar i crear des de zero.
+¡No! El taller está pensado para que cualquier persona pueda venir a experimentar y crear desde cero.
 
-### És per a totes les edats?
+### ¿Es para todas las edades?
 
-Sí! És un taller obert a totes les edats.
+¡Sí! Es un taller abierto a todas las edades.
 
-### He de portar alguna cosa?
+### ¿Tengo que traer algo?
 
-No, tots els materials estan inclosos.
+No, todos los materiales están incluidos.
 
-### M’emportaré les arracades acabades?
+### ¿Me llevaré los pendientes terminados?
 
-Sí! Marxaràs amb les teves arracades fetes per tu i llestes per portar.
+¡Sí! Te irás con tus pendientes hechos por ti y listos para llevar.
 
-### Què farem exactament?
+### ¿Qué haremos exactamente?
 
-Experimentarem amb resina, pigments, colors i formes mentre creem arracades úniques i personalitzades.
+Experimentaremos con resina, pigmentos, colores y formas mientras creamos pendientes únicos y personalizados.
