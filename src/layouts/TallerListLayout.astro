@@ -52,14 +52,6 @@ const { email } = contacts
 
     <div id="zenamu-calendar" calendar-id="54e2a89a153ba46e3a14c5e3e4e3e034" class="max-w-[70ch] mx-auto px-2"></div>
 
-    <NextEvents
-      events={events}
-      showMoreText="Reserva"
-      noShowsText={`Ara mateix no hi ha tallers monogràfics programats, contacta a ${email} si vols que en programem un!`}
-      lang={lang}
-      limit={6}
-    />
-
     {
       frontmatter.links && frontmatter.links.length && (
         <div class="flex items-center justify-center mt-8 sm:mt-16 px-2 text-center">
