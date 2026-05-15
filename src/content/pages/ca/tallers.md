@@ -9,9 +9,5 @@ links:
     text: 'Tot el calendari de tallers'
 other: { subtitle: 'Més de tallerets', infoBtn: 'Més informació' }
 ---
----
-title: Tallers
----
-
 <div id="zenamu-workshops" calendar-id="54e2a89a153ba46e3a14c5e3e4e3e034"></div>
-
+---
