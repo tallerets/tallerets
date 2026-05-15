@@ -5,9 +5,11 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Fotografia de las participantes haciendo costura'
 links:
-  - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
-    text: 'Me apunto!'
-  - url: '/contacte'
+- url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
+    text: 'Me apunto al curso regular!'
+- url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
+    text: 'Me apunto al intensivo de verano'
+- url: '/contacte'
     text: 'Contacto'
 ---
 
