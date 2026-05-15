@@ -9,7 +9,3 @@ links:
     text: 'Tot el calendari de tallers'
 other: { subtitle: 'Més de tallerets', infoBtn: 'Més informació' }
 ---
-{Astro.url.pathname.includes('/tallers') && (
-  <div id="zenamu-workshops" calendar-id="54e2a89a153ba46e3a14c5e3e4e3e034"></div>
-  <script is:inline src="https://zenamu.com/calendar/workshops.js" crossorigin="anonymous"></script>)}
----
