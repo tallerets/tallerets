@@ -1,6 +1,7 @@
+```md
 ---
-title: 'Club de costura'
-desc: 'Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin'
+title: 'Curs de costura a Barcelona'
+desc: 'Aprèn a cosir des de zero en un espai creatiu i acollidor a Sants. Cursos regulars i intensius de costura creativa amb màquina de cosir, grups reduïts i acompanyament personalitzat.'
 image:
   url: '/img/c-costura.jpeg'
   alt: 'Fotografia de les participants fent costura'
@@ -10,49 +11,143 @@ links:
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
     text: "M'apunto a l'intensiu d'estiu"
   - url: /contacte
-    text: contacte
+    text: 'Tinc dubtes'
 ---
 
-**CURSET COSTURA INTENSIU D'ESTIU**
+# CURS DE COSTURA A BARCELONA 🧵
 
-Durant el curs aprendrem les tècniques bàsiques de costura, el funcionament de la màquina i diferents tipus d’acabats aplicats a un projecte real: crear un bolso únic fet completament per tu. Reciclarem teles, combinarem colors i donarem forma a una peça funcional i personal mentre aprens les bases de la confecció en un grup reduït i amb acompanyament personalitzat.
+Aprèn a cosir des de zero mentre crees peces útils i personals ✨
 
-No cal experiència prèvia. El taller inclou tots els materials, només has de portar la teva màquina! (si no en tens, escriu-me!)
+Un espai setmanal per desconnectar, crear amb les mans i aprendre costura en grup reduït a Sants.
 
-Sessió 1 · Primer contacte amb la costura
+✔ No cal experiència  
+✔ Grup reduït  
+✔ Acompanyament personalitzat  
+✔ Porta la teva màquina (o te’n deixem una)
+
+---
+
+# ☀️ CURSET COSTURA INTENSIU D'ESTIU
+
+Aprèn les bases de costura creant el teu propi bolso personalitzat.
+
+Durant el curs aprendrem les tècniques bàsiques de costura, el funcionament de la màquina i diferents tipus d’acabats aplicats a un projecte real: crear un bolso únic fet completament per tu.
+
+Reciclarem teles, combinarem colors i donarem forma a una peça funcional i personal mentre aprens les bases de la confecció en un grup reduït i amb acompanyament personalitzat.
+
+## Què aprendràs?
+
+- Utilitzar la màquina de cosir
+- Tallar i preparar teles
+- Entendre patrons senzills
+- Fer acabats i unions
+- Crear un bolso únic des de zero
+
+## Inclou
+
+✔ Tots els materials  
+✔ Acompanyament personalitzat  
+✔ Grup reduït  
+✔ Un bolso fet per tu
+
+**No cal experiència prèvia.**  
+Només has de portar la teva màquina! (si no en tens, escriu-me ✨)
+
+---
+
+## Programa del curs
+
+### Sessió 1 · Primer contacte amb la costura
 
 Coneixerem les eines bàsiques i aprendrem a preparar i utilitzar la màquina de cosir. Practicarem diferents tipus de puntades i començarem a pensar el disseny del nostre bolso.
 
-Sessió 2 · Tall i preparació de peces
+### Sessió 2 · Tall i preparació de peces
 
 Aprendrem a tallar la tela, preparar patrons senzills i muntar les diferents parts del bolso, entenent com es construeix una peça tèxtil des de zero.
 
-Sessió 3 · Construcció i confecció
+### Sessió 3 · Construcció i confecció
 
 Cosirem l’estructura principal del bolso i aprendrem diferents tècniques d’acabats, nanses i unions.
 
-Sessió 4 · Personalització i acabats finals
+### Sessió 4 · Personalització i acabats finals
 
-Acabarem i personalitzarem el nostre bolso amb detalls, butxaques, textures o aplicacions perquè cada peça sigui única i feta completament per tu!
+Acabarem i personalitzarem el nostre bolso amb detalls, butxaques, textures o aplicacions perquè cada peça sigui única i feta completament per tu.
 
+---
 
+# 🧵 CURS REGULAR ANUAL · SETEMBRE — JUNY
 
-**CURSET REGULAR ANUAL** SETEMBRE - JUNY
+**Poques places · Incorporació cada mes si queden espais lliures**
 
-**Poques places, inici cada mes si queden espais lliures**
+Un espai setmanal per aprendre costura al teu ritme, compartir i reservar-te una estona creativa durant la setmana ✨
 
-Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin:
+Ideal si:
+- vols començar des de zero
+- tens una màquina i no la fas servir
+- vols aprendre a fer els teus propis projectes
+- busques una activitat creativa després de la feina
+- t’agrada crear en comunitat
 
-Projectes que podràs fer en un trimestre: Clauer, funda portàtil, neceser amb botó, amb cremallera, estoig, funda de llibreta i més!
-A partir del primer trimestre, fem projectes a la teva elecció amb acompanyament
+## Aprendràs a:
 
-**Dates i horaris:** 
+- utilitzar la màquina de cosir
+- entendre teles i materials
+- fer acabats bàsics
+- cosir projectes útils
+- crear peces al teu ritme
 
-Dilluns de 18:30 a 20:30h 
-Dimarts de 18:30 a 20:30h 
+## Projectes que podràs fer
 
-Places molt limitades. Porta la teva màquina i teles. (si no tens màquina, te la podem deixar)
+Durant el primer trimestre podràs crear:
 
-**No cal experiència!** Només ganes de passar una bona estona :)
+- Clauer
+- Funda de portàtil
+- Neceser amb botó
+- Neceser amb cremallera
+- Estoig
+- Funda de llibreta
+- I molt més ✨
 
-Vols apuntar-t’hi? T’esperem!
+A partir del primer trimestre, podràs desenvolupar projectes propis amb acompanyament personalitzat.
+
+---
+
+## Dates i horaris
+
+**Dilluns** · 18:30 a 20:30h  
+**Dimarts** · 18:30 a 20:30h
+
+Places molt limitades.
+
+Porta la teva màquina i teles.  
+(Si no tens màquina, te la podem deixar)
+
+---
+
+# Preguntes freqüents
+
+### Necessito experiència?
+
+No! El curs està pensat per començar des de zero.
+
+### Necessito màquina?
+
+Pots portar la teva o escriure’ns si en necessites una.
+
+### Què he de portar?
+
+Pel curs regular, teles i ganes de crear :)  
+L’intensiu inclou materials.
+
+### Puc incorporar-me més tard?
+
+Sí, si queden places disponibles.
+
+---
+
+# Reserva la teva plaça ✨
+
+Les places són molt limitades perquè treballem en grups petits i amb acompanyament personalitzat.
+
+Un espai per tornar a crear amb les mans, sense pressa i en comunitat 💛
+```
