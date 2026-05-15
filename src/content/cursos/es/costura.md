@@ -13,7 +13,7 @@ links:
     text: 'Contacto'
 ---
 
-**CURSO INTENSIVO DE COSTURA DE VERANO**
+***CURSO INTENSIVO DE COSTURA DE VERANO***
 
 Durante el curso aprenderemos las técnicas básicas de costura, el funcionamiento de la máquina y diferentes tipos de acabados aplicados a un proyecto real: crear un bolso único hecho completamente por ti. Reciclaremos telas, combinaremos colores y daremos forma a una pieza funcional y personal mientras aprendes las bases de la confección en un grupo reducido y con acompañamiento personalizado.
 
@@ -35,7 +35,7 @@ Sesión 4 · Personalización y acabados finales
 
 Terminaremos y personalizaremos nuestro bolso con detalles, bolsillos, texturas o aplicaciones para que cada pieza sea única y hecha completamente por ti.
 
-**CURSO REGULAR ANUAL**  SEPTIEMBRE - JUNIO
+***CURSO REGULAR ANUAL***  SEPTIEMBRE - JUNIO
 
 **Pocas plazas · Inicio cada mes si quedan espacios libres**
 
