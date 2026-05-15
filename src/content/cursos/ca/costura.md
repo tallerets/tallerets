@@ -10,7 +10,7 @@ links:
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
     text: 'M'apunto a l'intensiu d'estiu'
   - url: /contacte
-    text: contacta'm
+    text: "contacta'm"
 ---
 
 **CURSET COSTURA INTENSIU D'ESTIU**
