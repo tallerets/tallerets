@@ -1,5 +1,5 @@
 ---
-title: 'Curs Iniciació a la costura Barcelona'
+title: 'Curs Iniciació a la costura'
 desc: 'Aprèn a cosir des de zero a Sants. Cursos regulars i intensius de costura creativa amb màquina de cosir, grups reduïts i acompanyament personalitzat.'
 image:
   url: '/img/c-costura.jpeg'
@@ -14,8 +14,6 @@ links:
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
-
-# CURS DE COSTURA A BARCELONA 🧵
 
 Aprèn a cosir des de zero mentre crees peces útils i personals ✨
 
@@ -36,13 +34,13 @@ Durant el curs aprendrem les tècniques bàsiques de costura, el funcionament de
 
 ### Què aprendràs?
 
-- Utilitzar la màquina de cosir
-- Tallar i preparar teles
-- Entendre patrons senzills
-- Fer acabats i unions
-- Crear un bolso únic des de zero
+-- a utilitzar la màquina de cosir
+-- a tallar i preparar teles
+-- a crear patrons senzills
+-- a fer acabats i afegits personals
+-- a crear un bolso únic des de zero!
 
-### Inclou
+### Inclou:
 
 ✔ Materials  
 ✔ Grup reduït  
