@@ -1,81 +1,118 @@
 ---
-title: 'Retiro Creativo'
-desc: 'Un retiro para crear y desconectar en la naturaleza'
+title: 'Casal Creativo de Verano para adultas'
+desc: 'Un espacio creativo para adultas este verano en Sants. Cada semana descubriremos una técnica diferente para crear con las manos, desconectar y reservarnos un momento solo para nosotras.'
 image:
-  url: '/icons/club.png'
-  alt: ''
+  url: '/img/casal-creatiu-adultes.jpeg'
+  alt: 'Personas haciendo manualidades y creando en un espacio creativo'
 links:
-  - url: 'https://tally.so/r/VLzVjy'
-    text: 'Reserva tu plaza'
+  - url: 'https://app.zenamu.com/'
+    text: 'Me apunto al grupo de miércoles'
+
+  - url: 'https://app.zenamu.com/'
+    text: 'Me apunto al grupo de jueves'
+
+  - url: '/contacte'
+    text: 'Tengo dudas'
 ---
 
-<br />
+No solo los peques merecen casal de verano ☀️✨
 
-**Sobre el retiro**
+Este verano, resérvate un espacio solo para ti y vuelve a conectar con la creatividad.
 
-El retiro creativo de tallerets es un fin de semana en la naturaleza centrado en crear, desconectar de pantallas y hacer actividades manuales.
+En el Casal Creativo de Verano para adultas, cada semana exploraremos una técnica o manualidad diferente mientras compartimos un rato tranquilo, inspirador y fuera de pantallas.
 
-Haremos talleres creativos, pasearemos por el bosque y crearemos por el placer de crear. Este retiro es para experimentar, pasar tiempo contigo en contacto con la naturaleza y conocer compañeras con las mismas inquietudes que tú (y a lo mejor, de paso, descubrir una nueva afición!)
+Un espacio para bajar el ritmo, crear con las manos y regalarte dos horas a la semana solo para ti 💛
 
-**Agenda**
+Y sí, con aire acondicionado ❄️
 
-**15-05 Viernes**
+✔ No hace falta experiencia  
+✔ Una técnica diferente cada semana  
+✔ Grupo reducido  
+✔ Todos los materiales incluidos  
+✔ Buen ambiente y ritmo tranquilo
 
-18:00h Llegada, check in, juegos para conocernos creando. Romper el hielo creativo
+---
 
-21:00h Cenar
-22:00h Meditación guiada y mini taller de journaling
+## ✨ ¿Qué haremos?
 
-**16-05 Sábado**
+Cada semana descubriremos una técnica creativa diferente.
 
-8:30h Meditación guiada y movimiento para despertar
+Algunas de las actividades que podemos hacer:
 
-9:00h Desayunar
+- Ilustración en la calle
+- Cestería
+- Bordado creativo
+- Fanzines
+- Collage
+- Pintura
+- Lettering
+- Macramé
+- ¡Y muchas sorpresas más ✨
 
-9:45h Paseo por la montaña, ilustración botánica y recogida de flores y hojas secas
+No se trata de “hacerlo perfecto”, sino de probar, experimentar y volver a conectar con la parte más creativa.
 
-12:00h Taller de Cianotipia con elementos de la naturaleza
+---
 
-14:00h Comer y tiempo libre
-Opcional: Piscina, paseo, lectura compartida
+## 🌿 Un espacio para...
 
-17:00h Taller para hacer tu propio champú natural
+- desconectar del trabajo y las pantallas
+- probar cosas nuevas
+- crear con las manos
+- compartir un rato creativo en comunidad
+- inspirarte
+- reservarte un momento solo para ti
 
-19:00h Taller de cómico colectivo + Fanzine autorretrato
+---
 
-21:00h Cenar
+## 📅 Fechas y horarios
 
-22:00 Meditación y journaling
+### Grupo tarde
 
-**17-05 Domingo**
+**Todos los miércoles de julio**  
+De 16:30 a 18:30h
 
-8:30h Meditación guiada y movimiento para despertar
+### Grupo tarde/noche
 
-9:00h Desayuno y recogida de habitaciones
+**Todos los jueves de julio**  
+De 18:30 a 20:30h
 
-10:00 Taller de ex-libris
+Duración: 5 sesiones
 
-14:00h Comer
+Plazas muy limitadas ✨
 
-15:00h Escritura creativa y visionar con collage
+---
 
-16:00h Cierre y puesta en común
+## Incluye
 
-**Qué incluye? Cómo reservo?**
+✔ Todos los materiales  
+✔ Acompañamiento durante todas las sesiones  
+✔ Picoteo y buen ambiente  
+✔ Aire acondicionado :)
 
-El precio de 310€ (290€ para socias tallerets) incluye:
+---
 
-Dos noches en habitación compartida de 4 o 5 personas en la casa rural Cal Faro
-Desayunos, comidas, meriendas y cenas desde el viernes por la noche hasta la salida el domingo a las 17h. Todas las comidas son vegetarianas y saludables, del huerto propio y caseros
-Todas las actividades y materiales necesarios para realizarlas
+## Preguntas frecuentes
 
-**Condiciones de la reserva**
+### ¿Necesito experiencia?
 
-Para poder reservar tu plaza, tendrás que hacer la primera parte del pago (150€).
-Si cancelas con mes de un mes de antelación, te volveremos el 100%, si no, perderás el importe de la reserva. Plazas muy limitadas.
+¡No! El casal está pensado para que cualquier persona pueda venir a experimentar y disfrutar.
 
-Somos un proyecto pequeño hecho por personas, y para personas. Esperamos que te sumes y que vengas a disfrutar con nosotras!
+### ¿Tengo que traer algo?
 
-<br />
+No, todos los materiales están incluidos.
 
-Cualquier duda puedes contactarme por aquí o por email a latallerets@gmail.com
+### ¿Puedo venir solo a una sesión?
+
+Priorizaremos a las personas apuntadas al casal completo, pero si quedan plazas abriremos sesiones individuales.
+
+### ¿Qué manualidades haremos exactamente?
+
+Iremos variando las técnicas y actividades para que cada semana sea diferente ✨
+
+---
+
+## Reserva tu plaza 💛
+
+Este verano, resérvate un rato para crear, inspirarte y volver a conectar con las manos.
+
+Sin prisas, sin pantallas y en buena compañía ✨
