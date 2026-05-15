@@ -50,6 +50,8 @@ const { email } = contacts
       {frontmatter.desc}
     </p>
 
+    <div id="zenamu-workshops" calendar-id="54e2a89a153ba46e3a14c5e3e4e3e034" class="max-w-[70ch] mx-auto px-2"></div>
+
     <NextEvents
       events={events}
       showMoreText="Reserva"
@@ -109,4 +111,5 @@ const { email } = contacts
     <hr />
     <Footer />
   </main>
+  <script is:inline src="https://zenamu.com/calendar/workshops.js" crossorigin="anonymous"></script>
 </Layout>
