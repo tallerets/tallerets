@@ -26,9 +26,7 @@ Un espai setmanal per desconnectar, crear amb les mans i aprendre costura en gru
 ✔ Acompanyament personalitzat  
 ✔ Porta la teva màquina (o te’n deixem una)
 
----
-
-# ☀️ CURSET COSTURA INTENSIU D'ESTIU
+(☀️ CURSET COSTURA INTENSIU D'ESTIU)
 
 Aprèn les bases de costura creant el teu propi bolso personalitzat.
 
