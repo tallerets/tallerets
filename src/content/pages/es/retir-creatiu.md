@@ -5,10 +5,10 @@ image:
   url: '/img/casal-creatiu-adultes.jpeg'
   alt: 'Personas haciendo manualidades y creando en un espacio creativo'
 links:
-  - url: 'https://app.zenamu.com/'
+  - url: 'https://book.stripe.com/eVq6oJ1OJaYf0ZggoZ7N60F'
     text: 'Me apunto al grupo de miércoles'
 
-  - url: 'https://app.zenamu.com/'
+  - url: 'https://book.stripe.com/eVq6oJ1OJaYf0ZggoZ7N60F'
     text: 'Me apunto al grupo de jueves'
 
   - url: '/contacte'
