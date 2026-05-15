@@ -1,82 +1,118 @@
 ---
-title: 'Retir Creatiu'
-desc: 'Un retir per crear i desconnectar a la natura'
+title: 'Casal Creatiu d’Estiu per adultes'
+desc: 'Un espai creatiu per adultes aquest estiu a Sants. Cada setmana descobrirem una tècnica diferent per crear amb les mans, desconnectar i reservar-nos una estona només per nosaltres.'
 image:
-  url: '/icons/club.png'
-  alt: ''
+  url: '/img/casal-creatiu-adultes.jpeg'
+  alt: 'Persones fent manualitats i creant en un espai creatiu'
 links:
-  - url: 'https://tally.so/r/VLzVjy'
-    text: 'Reserva la teva plaça'
+  - url: 'https://app.zenamu.com/'
+    text: "M'apunto al grup de dimecres"
+
+  - url: 'https://app.zenamu.com/'
+    text: "M'apunto al grup de dijous"
+
+  - url: '/contacte'
+    text: 'Tinc dubtes'
 ---
 
-<br />
+No només els infants mereixen casal d’estiu ☀️✨
 
-**Sobre el retir**
+Aquest estiu, reserva’t un espai només per a tu i reconnecta amb la creativitat.
 
-El retir creatiu de tallerets és un cap de setmana a la natura, molt centrat en crear, desconnectar de pantalles i fer coses amb les mans.
+Al Casal Creatiu d’Estiu per adultes, cada setmana explorarem una tècnica o manualitat diferent mentre compartim una estona tranquil·la, inspiradora i fora de pantalles.
 
-Farem tallers creatius, passejarem pel bosc, crearem pel plaer de crear, i fins hi tot potser trobaràs noves aficions. Aquest retir és per experimentar, passar temps amb tu en contacte amb la natura i conèixer companyes amb les mateixes inquietuds que tu!
+Un espai per baixar el ritme, crear amb les mans i regalar-te dues hores a la setmana només per tu 💛
 
-**Agenda**
+I sí, amb aire condicionat ❄️
 
-**15-05 Divendres**
+✔ No cal experiència  
+✔ Una tècnica diferent cada setmana  
+✔ Grup reduït  
+✔ Tots els materials inclosos  
+✔ Bon ambient i ritme tranquil
 
-18:00h Arribada, check in, jocs per conèixen’s creant. Trencar el gel creatiu
+---
 
-21:00h Sopar
-22:00h Meditació guiada i mini taller de journaling
+## ✨ Què farem?
 
-**16-05 Dissabte**
+Cada setmana descobrirem una tècnica creativa diferent.
 
-8:30h Meditació guiada i moviment per despertar
+Algunes de les activitats que podem fer:
 
-9:00h Esmorzar
+- Il·lustració pel carrer
+- Cistelleria
+- Brodat creatiu
+- Fanzines
+- Collage
+- Pintura
+- Lettering
+- Macramé
+- I moltes sorpreses més ✨
 
-9:45h Passeig per la muntanya, il·lustració botànica i recollida de flors i fulles seques
+No es tracta de “fer-ho perfecte”, sinó de provar, experimentar i tornar a connectar amb la part més creativa.
 
-12:00h Taller de Cianotipia amb elements de la natura
+---
 
-14:00h Dinar i temps lliure
-Opcional: Piscina, passeig, lectura compartida
+## 🌿 Un espai per...
 
-17:00h Taller fes el teu propi xampú natural
+- desconnectar de la feina i les pantalles
+- provar coses noves
+- crear amb les mans
+- compartir una estona creativa en comunitat
+- inspirar-te
+- reservar-te un moment només per tu
 
-19:00h Taller de còmic col·lectiu + Fent un fanzine autoretrat
+---
 
-21:00h Sopar
+## 📅 Dates i horaris
 
-22:00 Meditació i journaling
+### Grup tarda
 
-**17-05 Diumenge**
+**Tots els dimecres de juliol**  
+De 16:30 a 18:30h
 
-8:30h Meditació guiada i moviment per despertar
+### Grup vespre
 
-9:00h Esmorzar i recollida d’habitacions
+**Tots els dijous de juliol**  
+De 18:30 a 20:30h
 
-10:00 Taller d’ex-libris
+Duració: 5 sessions
 
-14:00h Dinar
+Places molt limitades ✨
 
-15:00h Escriptura creativa i visionar amb collage
+---
 
-16:00h Tancament i posada en comú
+## Inclou
 
-**Què inclou? Com reservo?**
+✔ Tots els materials  
+✔ Acompanyament durant totes les sessions  
+✔ Pica-pica i bon ambient  
+✔ Aire condicionat :)
 
-El preu de 310€ (290€ per sòcies tallerets) inclou:
+---
 
-Dues nits en habitació compartida de 4 o 5 persones a la casa rural Cal Faro
-Esmorzars, dinars, berenars i sopars des de el divendres a la nit fins la sortida el diumenge a les 17h
-Tots els àpats son vegetarians i saludables, de l’hort propi i casolans
-Totes les activitats i materials necessaris per a realitzar-les
+## Preguntes freqüents
 
-**Condicions de la reserva**
+### Necessito experiència?
 
-Per poder reservar la teva plaça, hauràs de fer la primera part del pagament (150€).
-Si cancel·les amb mes d’un mes d'antelació, et tornarem el 100%, si no, perdràs l’import de la reserva. Places molt limitades.
+No! El casal està pensat perquè qualsevol persona pugui venir a experimentar i gaudir.
 
-Som un projecte petit fet per persones, i per a persones. Esperem que et sumis i que vinguis a gaudir amb nosaltres!
+### He de portar alguna cosa?
 
-<br />
+No, tots els materials estan inclosos.
 
-Qualsevol dubte pots contactar-me per aquí o per email a latallerets@gmail.com
+### Puc venir només a una sessió?
+
+Prioritzarem les persones apuntades al casal complet, però si queden places obrirem sessions individuals.
+
+### Quines manualitats farem exactament?
+
+Anirem variant les tècniques i activitats perquè cada setmana sigui diferent, però hi haurà: il·lustració, cistelleria, brodat i més!
+
+---
+
+## Reserva la teva plaça 💛
+
+Aquest estiu, reserva’t una estona per crear, inspirar-te i reconnectar amb les mans.
+
+Sense pressa, sense pantalles i en bona companyia ✨
