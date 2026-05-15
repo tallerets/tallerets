@@ -6,9 +6,11 @@ image:
   alt: 'Fotografia de les participants fent costura'
 links:
   - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
-    text: "M'apunto!"
+    text: 'M'apunto al curs regular'
+  - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
+    text: 'M'apunto a l'intensiu d'estiu'
   - url: '/contacte'
-    text: "Contacta'm"
+    text: contacta'm
 ---
 
 **CURSET COSTURA INTENSIU D'ESTIU**
