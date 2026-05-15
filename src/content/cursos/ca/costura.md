@@ -1,4 +1,3 @@
-```md
 ---
 title: 'Curs de costura a Barcelona'
 desc: 'Aprèn a cosir des de zero en un espai creatiu i acollidor a Sants. Cursos regulars i intensius de costura creativa amb màquina de cosir, grups reduïts i acompanyament personalitzat.'
@@ -27,7 +26,7 @@ Un espai setmanal per desconnectar, crear amb les mans i aprendre costura en gru
 
 ---
 
-# ☀️ CURSET COSTURA INTENSIU D'ESTIU
+## ☀️ CURSET COSTURA INTENSIU D'ESTIU
 
 Aprèn les bases de costura creant el teu propi bolso personalitzat.
 
@@ -48,28 +47,29 @@ Reciclarem teles, combinarem colors i donarem forma a una peça funcional i pers
 ✔ Tots els materials  
 ✔ Acompanyament personalitzat  
 ✔ Grup reduït  
-✔ Un bolso fet per tu
+✔ El teu projecte per lluïr a l'estiu fet per tu!
 
-**No cal experiència prèvia.**  
+**No cal experiència prèvia**  
+
 Només has de portar la teva màquina! (si no en tens, escriu-me ✨)
 
 ---
 
 ## Programa del curs
 
-### Sessió 1 · Primer contacte amb la costura
+### Sessió 1: Primer contacte amb la costura
 
 Coneixerem les eines bàsiques i aprendrem a preparar i utilitzar la màquina de cosir. Practicarem diferents tipus de puntades i començarem a pensar el disseny del nostre bolso.
 
-### Sessió 2 · Tall i preparació de peces
+### Sessió 2: Tall i preparació de peces
 
 Aprendrem a tallar la tela, preparar patrons senzills i muntar les diferents parts del bolso, entenent com es construeix una peça tèxtil des de zero.
 
-### Sessió 3 · Construcció i confecció
+### Sessió 3: Construcció i confecció
 
 Cosirem l’estructura principal del bolso i aprendrem diferents tècniques d’acabats, nanses i unions.
 
-### Sessió 4 · Personalització i acabats finals
+### Sessió 4: Personalització i acabats finals
 
 Acabarem i personalitzarem el nostre bolso amb detalls, butxaques, textures o aplicacions perquè cada peça sigui única i feta completament per tu.
 
@@ -150,4 +150,3 @@ Sí, si queden places disponibles.
 Les places són molt limitades perquè treballem en grups petits i amb acompanyament personalitzat.
 
 Un espai per tornar a crear amb les mans, sense pressa i en comunitat 💛
-```
