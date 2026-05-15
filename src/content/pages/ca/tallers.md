@@ -10,12 +10,8 @@ links:
 other: { subtitle: 'Més de tallerets', infoBtn: 'Més informació' }
 ---
 ---
-// src/pages/talleres.astro (or wherever you want it)
-import BaseLayout from '../layouts/BaseLayout.astro';
+title: Tallers
 ---
 
-<BaseLayout title="Talleres">
-  <div id="zenamu-workshops" calendar-id="54e2a89a153ba46e3a14c5e3e4e3e034"></div>
-  <script is:inline src="https://zenamu.com/calendar/workshops.js" crossorigin></script>
-</BaseLayout>
----
+<div id="zenamu-workshops" calendar-id="54e2a89a153ba46e3a14c5e3e4e3e034"></div>
+
