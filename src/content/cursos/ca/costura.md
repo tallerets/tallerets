@@ -11,7 +11,29 @@ links:
     text: "Contacta'm"
 ---
 
-**Inici del següent curs: març 2026**
+**CURSET COSTURA INTENSIU D'ESTIU**
+
+Durant el curs aprendrem les tècniques bàsiques de costura, el funcionament de la màquina i diferents tipus d’acabats aplicats a un projecte real: crear un bolso únic fet completament per tu. Reciclarem teles, combinarem colors i donarem forma a una peça funcional i personal mentre aprens les bases de la confecció en un grup reduït i amb acompanyament personalitzat.
+
+No cal experiència prèvia. El taller inclou tots els materials, només has de portar la teva màquina! (si no en tens, escriu-me!)
+
+Sessió 1 · Primer contacte amb la costura
+
+Coneixerem les eines bàsiques i aprendrem a preparar i utilitzar la màquina de cosir. Practicarem diferents tipus de puntades i començarem a pensar el disseny del nostre bolso.
+
+Sessió 2 · Tall i preparació de peces
+
+Aprendrem a tallar la tela, preparar patrons senzills i muntar les diferents parts del bolso, entenent com es construeix una peça tèxtil des de zero.
+
+Sessió 3 · Construcció i confecció
+
+Cosirem l’estructura principal del bolso i aprendrem diferents tècniques d’acabats, nanses i unions.
+
+Sessió 4 · Personalització i acabats finals
+
+Acabarem i personalitzarem el nostre bolso amb detalls, butxaques, textures o aplicacions perquè cada peça sigui única i feta completament per tu!
+
+**Poques places, inici cada mes si queden espais lliures**
 
 Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin:
 
@@ -20,8 +42,8 @@ A partir del primer trimestre, fem projectes a la teva elecció amb acompanyamen
 
 **Dates i horaris:** 
 
-Dilluns de 16:30 a 18:30 o de 18:30 a 20:30h 
-Dimarts de 18:30 a 20:30 
+Dilluns de 18:30 a 20:30h 
+Dimarts de 18:30 a 20:30h 
 
 Places molt limitades. Porta la teva màquina i teles. (si no tens màquina, te la podem deixar)
 
