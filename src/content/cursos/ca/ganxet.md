@@ -5,7 +5,7 @@ image:
   url: '/img/c-ganxet.jpeg'
   alt: 'Fotografia de les participants fent ganxet'
 links:
-  - url: 'https://buy.stripe.com/'
+  - url: 'https://buy.stripe.com/eVq6oJgJDc2jgYe1u57N60v'
     text: "M'apunto al curs regular"
 
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103196'
