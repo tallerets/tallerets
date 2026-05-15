@@ -11,12 +11,12 @@
       "link": "/empreses"
     },
     {
-      "id": "Tallers monogràfics",
+      "id": "Tallers monogràfics - d'un dia",
       "image": { "url": "/icons/potet.svg", "alt": "" },
       "link": "/tallers"
     },
     {
-      "id": "Retir creatiu: espai de descans i inspiració",
+      "id": "Casal Creatiu d'estiu per adultes",
       "link": "/retir-creatiu"
     },
     {
@@ -47,16 +47,16 @@
       "link": "/es/empreses"
     },
     {
-      "id": "Talleres monográficos",
+      "id": "Talleres monográficos - de un dia",
       "image": { "url": "/icons/potet.svg", "alt": "" },
       "link": "/es/tallers"
     },
     {
-      "id": "Retiro creativo: espacio de descanso e inspiración",
+      "id": "Casal Creativo de verano para adultas",
       "link": "/es/retir-creatiu"
     },
     {
-      "id": "Talleres setmanals",
+      "id": "Talleres semanales",
       "image": { "url": "/icons/brodat.png", "alt": "" },
       "link": "/es/cursos"
     },
