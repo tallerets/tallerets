@@ -15,7 +15,7 @@ links:
     text: 'Tinc dubtes'
 ---
 
-# CURS DE COSTURA A BARCELONA 🧵
+**CURS DE COSTURA A BARCELONA 🧵**
 
 Aprèn a cosir des de zero mentre crees peces útils i personals ✨
 
@@ -28,7 +28,7 @@ Un espai setmanal per desconnectar, crear amb les mans i aprendre costura en gru
 
 ---
 
-## ☀️ CURSET COSTURA INTENSIU D'ESTIU
+# ☀️ CURSET COSTURA INTENSIU D'ESTIU
 
 Aprèn les bases de costura creant el teu propi bolso personalitzat.
 
