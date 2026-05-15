@@ -77,7 +77,7 @@ Acabarem i personalitzarem el nostre bolso amb detalls, butxaques, textures o ap
 
 ---
 
-# 🧵 CURS REGULAR ANUAL · SETEMBRE 2026 — JUNY 2027
+**🧵 CURS REGULAR ANUAL · SETEMBRE 2026 — JUNY 2027**
 
 **Poques places · Incorporació cada mes si queden espais lliures**
 
@@ -126,7 +126,7 @@ Porta la teva màquina i teles.
 
 ---
 
-# Preguntes freqüents
+**Preguntes freqüents**
 
 ### Necessito experiència?
 
