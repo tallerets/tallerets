@@ -9,8 +9,8 @@ links:
     text: 'Me apunto al curso regular!'
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
     text: 'Me apunto al curso de verano'
-  - url:
-    text: '/contacte'
+  - url: '/contacte'
+    text: Contacto
 ---
 
 ***CURSO INTENSIVO DE COSTURA DE VERANO***
