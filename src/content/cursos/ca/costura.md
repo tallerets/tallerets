@@ -9,7 +9,7 @@ links:
     text: "M'apunto al curs regular"
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
     text: "M'apunto a l'intensiu d'estiu"
-  - url: /contacte
+  - url: '/contacte'
     text: 'Tinc dubtes'
 ---
 
