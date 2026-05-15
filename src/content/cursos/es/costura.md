@@ -1,56 +1,145 @@
 ---
-title: 'Club de costura'
-desc: 'Un curso semanal para aprender a coser a máquina. Ideal si tienes ganas de empezar o de sacar más partido a tu máquina de coser. Aprenderemos como funciona, como utilizarla de manera segura y eficiente, y pondremos en práctica lo que hemos aprendido cosiendo diferentes proyectos con las telas que más te gusten.'
+title: 'Curso de iniciación a la costura'
+desc: 'Aprende a coser desde cero en Sants. Cursos regulares e intensivos de costura creativa con máquina de coser, grupos reducidos y acompañamiento personalizado.'
 image:
   url: '/img/c-costura.jpeg'
-  alt: 'Fotografia de las participantes haciendo costura'
+  alt: 'Fotografía de las participantes haciendo costura'
 links:
   - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
-    text: 'Me apunto al curso regular!'
+    text: 'Me apunto al curso regular'
+
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
-    text: 'Me apunto al curso de verano'
+    text: 'Me apunto al intensivo de verano'
+
   - url: '/contacte'
-    text: Contacto
+    text: 'Tengo dudas'
 ---
 
-***CURSO INTENSIVO DE COSTURA DE VERANO***
+Aprende a coser desde cero mientras creas piezas útiles y personales ✨
 
-Durante el curso aprenderemos las técnicas básicas de costura, el funcionamiento de la máquina y diferentes tipos de acabados aplicados a un proyecto real: crear un bolso único hecho completamente por ti. Reciclaremos telas, combinaremos colores y daremos forma a una pieza funcional y personal mientras aprendes las bases de la confección en un grupo reducido y con acompañamiento personalizado.
+Un espacio semanal para desconectar, crear con las manos y aprender costura en grupo reducido en Sants.
 
-No hace falta experiencia previa. El taller incluye todos los materiales, ¡solo tienes que traer tu máquina! (si no tienes, ¡escríbeme!)
+✔ No hace falta experiencia  
+✔ Grupo reducido  
+✔ Acompañamiento personalizado  
+✔ Trae tu máquina (o te dejamos una)
 
-Sesión 1 · Primer contacto con la costura
+---
 
-Conoceremos las herramientas básicas y aprenderemos a preparar y utilizar la máquina de coser. Practicaremos diferentes tipos de puntadas y empezaremos a pensar el diseño de nuestro bolso.
+## ☀️ CURSO INTENSIVO DE COSTURA DE VERANO
 
-Sesión 2 · Corte y preparación de piezas
+Aprende las bases de costura creando tu propio bolso personalizado.
 
-Aprenderemos a cortar la tela, preparar patrones sencillos y montar las diferentes partes del bolso, entendiendo cómo se construye una pieza textil desde cero.
+Durante el curso aprenderemos las técnicas básicas de costura, el funcionamiento de la máquina y diferentes tipos de acabados aplicados a un proyecto real.
 
-Sesión 3 · Construcción y confección
+### ¿Qué aprenderás?
 
-Coseremos la estructura principal del bolso y aprenderemos diferentes técnicas de acabados, asas y uniones.
+- a utilizar la máquina de coser
+- a cortar y preparar telas
+- a crear patrones sencillos
+- a hacer acabados y detalles personales
+- ¡a crear un bolso único desde cero!
 
-Sesión 4 · Personalización y acabados finales
+### Incluye
 
-Terminaremos y personalizaremos nuestro bolso con detalles, bolsillos, texturas o aplicaciones para que cada pieza sea única y hecha completamente por ti.
+✔ Materiales  
+✔ Grupo reducido  
+✔ Acompañamiento personalizado  
+✔ Un bolso hecho por ti
 
-***CURSO REGULAR ANUAL***  SEPTIEMBRE - JUNIO
+No hace falta experiencia previa ✨
 
-**Pocas plazas · Inicio cada mes si quedan espacios libres**
+---
 
-Un cursillo semanal para aprender a coser a máquina. Ideal si tienes ganas de empezar o de sacar más partido a tu máquina de coser. Aprenderemos como funciona, como utilizarla de manera segura y eficiente, y pondremos en práctica lo que hemos aprendido cosiendo diferentes proyectos con las telas que más te gusten:
+### Programa del curso
 
-Proyectos que podràs hacer en un trimestre: Coletero, llavero, funda portátil, estuche, neceser con cremallera, funda de libreta y más!
-A partir del primer trimestre con nosotras, hacemos acompañamiento de proyectos sencillos propios.
+#### Sesión 1 · Primer contacto con la costura
 
-**Fechas y horarios:**  
+Conoceremos las herramientas básicas y aprenderemos a preparar y utilizar la máquina de coser.
 
-Lunes 16:30 - 18:30 
-Martes de 18:30 - 20:30 
+#### Sesión 2 · Corte y preparación de piezas
 
-Plazas muy limitadas, trae tu máquina! (si no tienes máquina, te la podemos dejar) 
+Aprenderemos a cortar la tela, preparar patrones sencillos y montar las diferentes partes del bolso.
 
-**No hace falta experiencia!** Solo ganas de pasar un buen rato :)
+#### Sesión 3 · Construcción y confección
 
-Te apuntas?
+Coseremos la estructura principal del bolso y aprenderemos diferentes técnicas de acabados.
+
+#### Sesión 4 · Personalización y acabados finales
+
+Terminaremos y personalizaremos nuestro bolso para que cada pieza sea única ✨
+
+---
+
+## 🧵 CURSO REGULAR · SEPTIEMBRE — JUNIO
+
+Pocas plazas · Incorporación cada mes si quedan plazas libres
+
+Un espacio semanal para aprender costura a tu ritmo y reservarte un momento creativo durante la semana.
+
+### Ideal si...
+
+- quieres empezar desde cero
+- tienes una máquina y no la usas
+- quieres aprender a hacer tus propios proyectos
+- buscas una actividad creativa después del trabajo
+
+### Aprenderás a...
+
+- utilizar la máquina de coser
+- entender telas y materiales
+- hacer acabados básicos
+- coser proyectos útiles
+- crear piezas a tu ritmo
+
+### Proyectos que podrás hacer
+
+- Llavero
+- Funda de portátil
+- Neceser
+- Estuche
+- Funda de libreta
+- ¡Y mucho más ✨
+
+A partir del primer trimestre podrás desarrollar proyectos propios con acompañamiento personalizado.
+
+---
+
+### Fechas y horarios
+
+**Lunes** · 18:30 a 20:30h  
+**Martes** · 18:30 a 20:30h
+
+Plazas muy limitadas.
+
+Trae tu máquina y telas.  
+(Si no tienes máquina, te la podemos dejar)
+
+---
+
+## Preguntas frecuentes
+
+### ¿Necesito experiencia?
+
+¡No! El curso está pensado para empezar desde cero.
+
+### ¿Necesito máquina?
+
+Puedes traer la tuya o escribirnos si necesitas una.
+
+### ¿Qué tengo que traer?
+
+Para el curso regular, telas y ganas de crear :)  
+El intensivo incluye materiales.
+
+### ¿Puedo incorporarme más tarde?
+
+Sí, si quedan plazas disponibles.
+
+---
+
+## Reserva tu plaza ✨
+
+Las plazas son muy limitadas porque trabajamos en grupos pequeños y con acompañamiento personalizado.
+
+Un espacio para volver a crear con las manos, sin prisa y en comunidad 💛
