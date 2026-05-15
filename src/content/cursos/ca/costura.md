@@ -33,6 +33,10 @@ Sessió 4 · Personalització i acabats finals
 
 Acabarem i personalitzarem el nostre bolso amb detalls, butxaques, textures o aplicacions perquè cada peça sigui única i feta completament per tu!
 
+
+
+**CURSET REGULAR ANUAL** SETEMBRE - JUNY
+
 **Poques places, inici cada mes si queden espais lliures**
 
 Un curset setmanal per aprendre a cosir a màquina, ideal si tens ganes de començar o de treure més partit a la teva màquina de cosir. Aprendrem com funciona, com utilitzar-la de manera segura i eficient, i posarem en pràctica el que hem après cosint diferents projectes amb les teles que més t’agradin:
