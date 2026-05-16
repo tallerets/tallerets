@@ -6,7 +6,7 @@ export async function getStaticPaths() {
   const allSections = await getCollection('pages')
 
   return allSections.map((section) => {
-    const slug = section.slug.replace('ca', '')
+    const slug = section.slug.replace(/^ca\//, '')
 
     return {
       params: { slug },
