@@ -2,7 +2,7 @@
 title: Espai Tallerets
 desc: 'Tallerets és un espai per connectar amb la teva creativitat i gaudir del procés de fer amb les mans. Vine a crear amb nosaltres!'
 image:
-  url: '/img/noor.png'
+  url: '/img/lanoor.jpg'
   alt: ''
 links:
   - url: '/contacte'
