@@ -40,22 +40,23 @@ const t =
         sociesLink: 'Descubre el Club',
         clubUrl: '/es/club',
         calendariTitol: 'El horario de la semana',
-        kidsNota: 'Tallerets Kids: 60€/mes',
+        kidsNota: 'Kids: 60€/mes',
         dies: {
           dimarts: 'Martes',
           dimecres: 'Miércoles',
           dijous: 'Jueves',
         },
         horari: {
-          kidsCostura: 'Tallerets Kids · Costura',
-          kidsCosturaDetall: 'Jóvenes de 9 a 14 años',
-          kidsManualitats: 'Tallerets Kids · Manualidades',
-          kidsManualitatsDetall: 'De 5 a 12 años',
+          kidsCostura: 'Iniciación costura kids y jóvenes',
+          kidsCosturaDetall: 'De 8 a 15 años',
+          kidsClub: 'Club Tallerets Kids',
+          kidsClubDetall: 'De 5 a 11 años · dibujo, pintura, manualidades, inventos',
           iniciCostura: 'Iniciación a la costura',
-          ganxet: 'Ganchillo',
+          ganxet: 'Iniciación al ganchillo',
           iniciGanxet: 'Iniciación al ganchillo',
           iniciGanxetDetall: 'Grupo de mañana',
           dibuix: 'Iniciación a dibujo y pintura',
+          dibuixDetall: 'Desde octubre · 10 sesiones',
         },
       }
     : {
@@ -87,15 +88,16 @@ const t =
           dijous: 'Dijous',
         },
         horari: {
-          kidsCostura: 'Tallerets Kids · Costura',
-          kidsCosturaDetall: 'Joves de 9 a 14 anys',
-          kidsManualitats: 'Tallerets Kids · Manualitats',
-          kidsManualitatsDetall: 'De 5 a 12 anys',
+          kidsCostura: 'Iniciació costura kids i joves',
+          kidsCosturaDetall: 'De 8 a 15 anys',
+          kidsClub: 'Club Tallerets Kids',
+          kidsClubDetall: 'De 5 a 11 anys · dibuix, pintura, manualitats, invents',
           iniciCostura: 'Iniciació a la costura',
-          ganxet: 'Ganxet',
+          ganxet: 'Iniciació al ganxet',
           iniciGanxet: 'Iniciació al ganxet',
           iniciGanxetDetall: 'Grup de matí',
           dibuix: 'Iniciació a dibuix i pintura',
+          dibuixDetall: 'Des de l\'octubre · 10 sessions',
         },
       }
 
@@ -104,14 +106,14 @@ const setmana = [
   {
     dia: t.dies.dimarts,
     sessions: [
-      { hora: '17:00–18:15', nom: t.horari.kidsCostura, detall: t.horari.kidsCosturaDetall, tipus: 'kids' },
       { hora: '18:30–20:30', nom: t.horari.iniciCostura, tipus: 'inici' },
     ],
   },
   {
     dia: t.dies.dimecres,
     sessions: [
-      { hora: '17:00–18:15', nom: t.horari.kidsManualitats, detall: t.horari.kidsManualitatsDetall, tipus: 'kids' },
+      { hora: '17:00–18:15', nom: t.horari.kidsCostura, detall: t.horari.kidsCosturaDetall, tipus: 'kids' },
+      { hora: '17:00–18:30', nom: t.horari.kidsClub, detall: t.horari.kidsClubDetall, tipus: 'kids' },
       { hora: '18:30–20:30', nom: t.horari.ganxet, tipus: 'inici' },
     ],
   },
@@ -119,7 +121,7 @@ const setmana = [
     dia: t.dies.dijous,
     sessions: [
       { hora: '11:00–13:00', nom: t.horari.iniciGanxet, detall: t.horari.iniciGanxetDetall, tipus: 'inici' },
-      { hora: '18:30–20:30', nom: t.horari.dibuix, tipus: 'inici' },
+      { hora: '18:30–20:30', nom: t.horari.dibuix, detall: t.horari.dibuixDetall, tipus: 'inici' },
     ],
   },
 ]
