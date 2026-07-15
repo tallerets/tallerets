@@ -6,10 +6,10 @@ image:
   alt: "Persona fent ganxet a Tallerets"
 
 links:
-  - url: "LINK_TRIMESTRE"
+  - url: "https://donate.stripe.com/6oUeVf64Z9UbeQ61u57N60H"
     text: "M'apunto al trimestre"
 
-  - url: "LINK_MES_A_MES"
+  - url: "https://buy.stripe.com/aFa9AV1OJfevcHYfkV7N60J"
     text: "M'apunto mes a mes"
 
   - url: "/contacte"
