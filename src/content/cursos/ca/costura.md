@@ -5,9 +5,10 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Persona cosint amb una màquina de cosir a Tallerets'
 links:
-  - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
-    text: "Reserva la teva plaça"
-
+  - url: 'https://donate.stripe.com/28EdRbdxr0jBfUafkV7N60G'
+    text: "M'apunto el trimestre"
+  - url: 'https://buy.stripe.com/9B6eVf7939UbdM24Gh7N60I'
+    text: 'M'apunto mes a mes'
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
