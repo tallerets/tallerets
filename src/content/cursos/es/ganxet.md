@@ -1,24 +1,26 @@
 ---
-title: 'Curso de iniciación al crochet'
-desc: 'Aprende crochet desde cero en nuestro curso de iniciación en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 10 personas, con acompañamiento personalizado.'
+title: "Curso de iniciación al crochet"
+desc: "Aprende crochet desde cero en nuestro curso de iniciación en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 10 personas, con acompañamiento personalizado."
 image:
-  url: '/img/c-ganxet.jpeg'
-  alt: 'Persona haciendo crochet en Tallerets'
+  url: "/img/c-ganxet.jpeg"
+  alt: "Persona haciendo crochet en Tallerets"
+
 links:
-  - url: 'https://buy.stripe.com/eVq6oJgJDc2jgYe1u57N60v'
-    text: "Reserva tu plaza"
+  - url: "https://donate.stripe.com/6oUeVf64Z9UbeQ61u57N60H"
+    text: "Me apunto al trimestre"
 
-  - url: '/contacte'
-    text: 'Tengo dudas'
+  - url: "https://buy.stripe.com/aFa9AV1OJfevcHYfkV7N60J"
+    text: "Me apunto mes a mes"
+
+  - url: "/contacte"
+    text: "Tengo dudas"
 ---
-
-# Curso de iniciación al crochet 🧶
 
 Aprende crochet desde cero en un grupo reducido y descubre una nueva forma de crear con las manos.
 
 Durante **15 sesiones** aprenderás los puntos básicos del crochet mientras realizas proyectos útiles y desarrollas la confianza para seguir creando a tu ritmo.
 
-📍 Tallerets · Sants (Barcelona)
+📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No necesitas experiencia previa
 
@@ -28,8 +30,6 @@ Durante **15 sesiones** aprenderás los puntos básicos del crochet mientras rea
 
 ✔ Aprende a tu ritmo
 
----
-
 ## Un curso para empezar desde cero
 
 Este curso está pensado para personas que siempre han querido aprender crochet pero no saben por dónde empezar.
@@ -37,8 +37,6 @@ Este curso está pensado para personas que siempre han querido aprender crochet 
 Iremos paso a paso, aprendiendo las técnicas básicas mientras desarrollamos pequeños proyectos que te permitirán practicar cada punto y entender cómo construir tus propias piezas.
 
 Más que un curso, es un espacio para reservarte dos horas a la semana, desconectar del día a día y disfrutar creando con otras personas.
-
----
 
 ## ¿Qué aprenderás?
 
@@ -51,8 +49,6 @@ A lo largo del curso aprenderás a:
 - Dar forma a diferentes piezas.
 - Elegir hilos y agujas según cada proyecto.
 - Crear tus propios proyectos con autonomía.
-
----
 
 ## Proyectos que podrás realizar
 
@@ -69,8 +65,6 @@ Entre otros, podrás crear:
 
 Cuando domines las bases también podrás traer tus propios proyectos y desarrollarlos con nuestro acompañamiento.
 
----
-
 ## ¿Qué incluye?
 
 ✔ 15 sesiones de 2 horas
@@ -83,31 +77,25 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 ✔ Un espacio tranquilo para crear en comunidad
 
----
-
 ## Fechas y horarios
 
 ### Grupo de tarde
 
-**Miércoles**
-
+**Miércoles**  
 **18:30 – 20:30 h**
 
-**Del 9 de septiembre al 16 de diciembre**
+**Del 9 de septiembre al 17 de diciembre**
 
 ### Grupo de mañana
 
-**Jueves**
-
+**Jueves**  
 **11:00 – 13:00 h**
 
-**Del 10 de septiembre al 17 de diciembre**
+**Del 10 de septiembre al 18 de diciembre**
 
 **15 sesiones**
 
 **Solo 10 plazas por grupo.**
-
----
 
 ## Material
 
@@ -117,21 +105,13 @@ Si no tienes, no pasa nada. Los primeros días te prestaremos el material para q
 
 Además, te ayudaremos a elegir los hilos y agujas más adecuados para los proyectos que quieras realizar.
 
----
-
 ## Este curso es para ti si...
 
-✔ Siempre has querido aprender crochet.
-
-✔ Buscas una actividad creativa y relajante.
-
-✔ Quieres crear piezas hechas por ti.
-
-✔ Necesitas reservarte un momento para desconectar de las pantallas.
-
-✔ Te apetece formar parte de un grupo pequeño donde aprender sin prisas.
-
----
+- Siempre has querido aprender crochet.
+- Buscas una actividad creativa y relajante.
+- Quieres crear piezas hechas por ti.
+- Necesitas reservarte un momento para desconectar de las pantallas.
+- Te apetece formar parte de un grupo pequeño donde aprender sin prisas.
 
 ## Preguntas frecuentes
 
@@ -147,9 +127,7 @@ Si ya tienes agujas o lanas puedes traerlas, pero no es obligatorio. Los primero
 
 Dependerá de las plazas disponibles y del nivel del grupo. Escríbenos y valoraremos cuál es la mejor opción.
 
----
-
-# Reserva tu plaza ✨
+## Reserva tu plaza
 
 Para garantizar un acompañamiento cercano, cada grupo es de **solo 10 personas**.
 
