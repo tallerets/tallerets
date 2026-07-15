@@ -1,119 +1,125 @@
 ---
-title: 'Curs Iniciació a la costura'
-desc: 'Aprèn a cosir des de zero a Sants. Cursos regulars i intensius de costura creativa amb màquina de cosir, grups reduïts i acompanyament personalitzat.'
+title: 'Curs d'iniciació a la costura a Barcelona | Tallerets'
+desc: 'Aprèn a cosir des de zero al nostre curs d'iniciació a la costura a Sants (Barcelona). 15 sessions en grup reduït, màxim 8 persones, amb acompanyament personalitzat.'
 image:
   url: '/img/c-costura.jpeg'
-  alt: 'Fotografia de les participants fent costura'
+  alt: 'Persona cosint amb una màquina de cosir a Tallerets'
 links:
   - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
-    text: "M'apunto al curs regular"
-
-  - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103199'
-    text: "M'apunto a l'intensiu d'estiu"
+    text: "Reserva la teva plaça"
 
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
 
-Aprèn a cosir des de zero mentre crees peces útils i personals ✨
+# Curs d'iniciació a la costura 🧵
 
-Un espai setmanal per desconnectar, crear amb les mans i aprendre costura en grup reduït a Sants.
+Aprèn a cosir des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
-✔ No cal experiència  
-✔ Grup reduït  
-✔ Acompanyament personalitzat  
-✔ Porta la teva màquina (o te’n deixem una)
+Durant **15 sessions** aprendràs a utilitzar la màquina de cosir mentre confecciones projectes útils i guanyes autonomia per continuar cosint al teu ritme.
 
----
+📍 Tallerets · Sants (Barcelona)
 
-## ☀️ CURSET COSTURA INTENSIU D'ESTIU
+✔ No cal experiència prèvia
 
-Aprèn les bases de costura creant el teu propi bolso personalitzat.
+✔ Només 8 places
 
-Durant el curs aprendrem les tècniques bàsiques de costura, el funcionament de la màquina i diferents tipus d’acabats aplicats a un projecte real.
+✔ Acompanyament personalitzat
 
-### Què aprendràs?
-
--- a utilitzar la màquina de cosir
--- a tallar i preparar teles
--- a crear patrons senzills
--- a fer acabats i afegits personals
--- a crear un bolso únic des de zero!
-
-### Inclou:
-
-✔ Materials  
-✔ Grup reduït  
-✔ Acompanyament personalitzat  
-✔ Un bolso fet per tu
-
-No cal experiència prèvia ✨
+✔ Porta la teva màquina (o te'n deixem una)
 
 ---
 
-### Programa del curs
+## Un curs per començar des de zero
 
-#### Sessió 1 · Primer contacte amb la costura
+Aquest curs està pensat per a persones que sempre han volgut aprendre a cosir però no saben per on començar.
 
-Coneixerem les eines bàsiques i aprendrem a preparar i utilitzar la màquina de cosir.
+Anirem pas a pas, sense presses, perquè entenguis el funcionament de la màquina i puguis aplicar cada tècnica en projectes reals.
 
-#### Sessió 2 · Tall i preparació de peces
-
-Aprendrem a tallar la tela, preparar patrons senzills i muntar les diferents parts del bolso.
-
-#### Sessió 3 · Construcció i confecció
-
-Cosirem l’estructura principal del bolso i aprendrem diferents tècniques d’acabats.
-
-#### Sessió 4 · Personalització i acabats finals
-
-Acabarem i personalitzarem el nostre bolso perquè cada peça sigui única ✨
+No es tracta només d'aprendre a cosir: és reservar-te dues hores a la setmana per crear, desconnectar i compartir amb altres persones.
 
 ---
 
-## 🧵 CURS REGULAR · SETEMBRE — JUNY
+## Què aprendràs?
 
-Poques places · Incorporació cada mes si queden espais lliures
+Al llarg del curs aprendràs a:
 
-Un espai setmanal per aprendre costura al teu ritme i reservar-te una estona creativa durant la setmana.
+- Utilitzar correctament la màquina de cosir.
+- Preparar i tallar teles.
+- Entendre patrons senzills.
+- Fer diferents tipus de costures.
+- Posar cremalleres i altres complements.
+- Fer acabats nets i professionals.
+- Planificar els teus propis projectes.
 
-### Ideal si...
+---
 
-- vols començar des de zero
-- tens una màquina i no la fas servir
-- vols aprendre a fer els teus propis projectes
-- busques una activitat creativa després de la feina
+## Projectes que podràs fer
 
-### Aprendràs a...
+Cada projecte està pensat perquè aprenguis una tècnica nova.
 
-- utilitzar la màquina de cosir
-- entendre teles i materials
-- fer acabats bàsics
-- cosir projectes útils
-- crear peces al teu ritme
-
-### Projectes que podràs fer
+Entre d'altres, podràs confeccionar:
 
 - Clauer
-- Funda de portàtil
-- Neceser
 - Estoig
+- Necesser
 - Funda de llibreta
-- I molt més ✨
+- Funda de portàtil
+- Bosses i complements
 
-A partir del primer trimestre podràs fer projectes propis amb acompanyament personalitzat.
+Quan dominis les bases també podràs portar els teus propis projectes i els desenvoluparem juntes.
 
 ---
 
-### Dates i horaris
+## Què inclou?
 
-**Dilluns** · 18:30 a 20:30h  
-**Dimarts** · 18:30 a 20:30h
+✔ 15 sessions de 2 hores
 
-Places molt limitades.
+✔ Grup reduït (màxim 8 persones)
 
-Porta la teva màquina i teles.  
-(Si no tens màquina, te la podem deixar)
+✔ Acompanyament personalitzat
+
+✔ Aprenentatge progressiu
+
+✔ Un espai tranquil on crear en comunitat
+
+---
+
+## Dates i horaris
+
+**Dimarts**
+
+**18:30 – 20:30 h**
+
+**Del 8 de setembre al 22 de desembre**
+
+**15 sessions**
+
+**Només 8 places disponibles.**
+
+---
+
+## Material
+
+Si tens màquina de cosir, porta-la.
+
+Si no en tens, te'n podem deixar una perquè puguis seguir el curs sense problema.
+
+Abans de començar t'enviarem una petita llista amb els materials recomanats.
+
+---
+
+## Aquest curs és per a tu si...
+
+✔ Sempre has volgut aprendre a cosir.
+
+✔ Tens una màquina guardada i no saps fer-la servir.
+
+✔ Vols aprendre a crear els teus propis projectes.
+
+✔ Busques una activitat creativa després de la feina.
+
+✔ T'agradaria formar part d'un grup petit on aprendre sense pressió.
 
 ---
 
@@ -121,25 +127,26 @@ Porta la teva màquina i teles.
 
 ### Necessito experiència?
 
-No! El curs està pensat per començar des de zero.
+No. El curs està pensat per començar completament des de zero.
 
 ### Necessito màquina?
 
-Pots portar la teva o escriure’ns si en necessites una.
+No. Pots portar la teva o utilitzar-ne una de Tallerets.
 
 ### Què he de portar?
 
-Pel curs regular, teles i ganes de crear :)  
-L’intensiu inclou materials.
+La teva màquina (si en tens), teles i moltes ganes d'aprendre. Uns dies abans del curs t'enviarem la llista de materials recomanats.
 
-### Puc incorporar-me més tard?
+### Puc incorporar-me quan el curs ja ha començat?
 
-Sí, si queden places disponibles.
+Depèn de les places disponibles i del punt en què es trobi el grup. Escriu-nos i mirarem quina és la millor opció.
 
 ---
 
-## Reserva la teva plaça ✨
+# Reserva la teva plaça ✨
 
-Les places són molt limitades perquè treballem en grups petits i amb acompanyament personalitzat.
+Per garantir un acompanyament real, cada grup és de **només 8 persones**.
 
-Un espai per tornar a crear amb les mans, sense pressa i en comunitat 💛
+Si fa temps que vols aprendre a cosir, aquest és un bon moment per començar.
+
+T'esperem a Tallerets 💛
