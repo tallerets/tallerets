@@ -5,10 +5,12 @@ image:
   url: '/img/c-ilustracio.jpeg'
   alt: 'Fotografia de les participants fent ilustració'
 links:
-  - url: 'https://buy.stripe.com/dRmaEZ0KFfevdM2b4F7N60o'
-    text: "M'apunto!"
+  - url: 'https://donate.stripe.com/4gM6oJgJD1nF6jAc8J7N60L'
+    text: "M'apunto al trimestre!"
   - url: '/contacte'
     text: 'Contacto'
+  - url: 'https://buy.stripe.com/7sY4gBdxr9Ub37o8Wx7N60K'
+    text: "M'apunto mes a mes!"
 ---
 
 **Aprendrem dibuix des de zero i diverses tècniques de pintura: aquarel·la, oli, gouache, tinta xinesa i més!**
