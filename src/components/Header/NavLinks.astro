@@ -1,27 +1,25 @@
 ---
 import { getEntry } from 'astro:content'
-import { getLangFromUrl } from '../../utils'
-
+import { getLangFromUrl, useTranslatedPath } from '../../utils'
 interface Props {
   className: string
 }
-
 interface Link {
   url: string
   text: string
 }
-
 const { className } = Astro.props
-
 const lang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(lang)
 const heroSection = await getEntry('components', `${lang}/partial_homehero`)
 const [_, ...restLinks] = heroSection?.data.links || []
 const links = restLinks.map((link: Link) => ({
   url: link.url,
   text: link.text,
 }))
+const clubUrl = translatePath('/club')
+const clubText = lang === 'es' ? 'Hazte socia' : 'Fes-te sòcia'
 ---
-
 <ul class={className}>
   {
     links &&
@@ -31,10 +29,15 @@ const links = restLinks.map((link: Link) => ({
         </li>
       ))
   }
+  <li>
+    <a href={clubUrl} class="destacat">{clubText}</a>
+  </li>
 </ul>
-
 <style>
   a {
     @apply block border-2 bg-soft rounded-lg text-center px-5 pb-[0.4rem] pt-[0.4rem] hover:-rotate-3 hover:border-red hover:text-red transition-transform;
+  }
+  a.destacat {
+    @apply bg-red text-soft border-red hover:bg-soft;
   }
 </style>
