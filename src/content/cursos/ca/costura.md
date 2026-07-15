@@ -13,8 +13,6 @@ links:
     text: 'Tinc dubtes'
 ---
 
-# Curs d'iniciació a la costura 🧵
-
 Aprèn a cosir des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
 Durant **15 sessions** aprendràs a utilitzar la màquina de cosir mentre confecciones projectes útils i guanyes autonomia per continuar cosint al teu ritme.
