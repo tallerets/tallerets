@@ -1,5 +1,5 @@
 ---
-title: "Curs d'iniciació al ganxet a Barcelona | Tallerets"
+title: "Curs d'iniciació al ganxet"
 desc: "Aprèn ganxet des de zero al nostre curs d'iniciació al ganxet a Sants (Barcelona). 15 sessions en grup reduït, màxim 10 persones, amb acompanyament personalitzat."
 image:
   url: "/img/c-ganxet.jpeg"
