@@ -1,5 +1,5 @@
 ---
-title: "Curset d'il·lustració"
+title: "Curs d'iniciació al dibuix i la pintura"
 desc: 'Un curset setmanal per experimentar i jugar amb diferents tècniques de dibuix i color.'
 image:
   url: '/img/c-ilustracio.jpeg'
