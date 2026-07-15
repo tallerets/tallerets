@@ -1,24 +1,26 @@
 ---
-title: 'Curso de iniciación a la costura en Barcelona | Tallerets'
-desc: 'Aprende a coser desde cero en nuestro curso de iniciación a la costura en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 8 personas, con acompañamiento personalizado.'
+title: "Curso de iniciación a la costura"
+desc: "Aprende a coser desde cero en nuestro curso de iniciación a la costura en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 8 personas, con acompañamiento personalizado."
 image:
-  url: '/img/c-costura.jpeg'
-  alt: 'Persona cosiendo con una máquina de coser en Tallerets'
+  url: "/img/c-costura.jpeg"
+  alt: "Persona cosiendo con una máquina de coser en Tallerets"
+
 links:
-  - url: 'https://buy.stripe.com/9B614palfgiz37odcN7N60t'
-    text: "Reserva tu plaza"
+  - url: "https://donate.stripe.com/28EdRbdxr0jBfUafkV7N60G"
+    text: "Me apunto al trimestre"
 
-  - url: '/contacte'
-    text: 'Tengo dudas'
+  - url: "https://buy.stripe.com/9B6eVf7939UbdM24Gh7N60I"
+    text: "Me apunto mes a mes"
+
+  - url: "/contacte"
+    text: "Tengo dudas"
 ---
-
-# Curso de iniciación a la costura 🧵
 
 Aprende a coser desde cero en un grupo reducido y descubre una nueva forma de crear con las manos.
 
-Durante **15 sesiones** aprenderás a utilizar la máquina de coser mientras realizas proyectos útiles y ganas autonomía para seguir cosiendo a tu ritmo.
+Durante **15 sesiones** aprenderás a utilizar la máquina de coser mientras confeccionas proyectos útiles y adquieres la autonomía necesaria para seguir cosiendo a tu ritmo.
 
-📍 Tallerets · Sants (Barcelona)
+📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No necesitas experiencia previa
 
@@ -28,8 +30,6 @@ Durante **15 sesiones** aprenderás a utilizar la máquina de coser mientras rea
 
 ✔ Trae tu máquina (o te prestamos una)
 
----
-
 ## Un curso para empezar desde cero
 
 Este curso está pensado para personas que siempre han querido aprender a coser pero no saben por dónde empezar.
@@ -37,8 +37,6 @@ Este curso está pensado para personas que siempre han querido aprender a coser 
 Iremos paso a paso, sin prisas, para que entiendas el funcionamiento de la máquina y puedas aplicar cada técnica en proyectos reales.
 
 No se trata solo de aprender a coser: también es reservarte dos horas a la semana para crear, desconectar y compartir con otras personas.
-
----
 
 ## ¿Qué aprenderás?
 
@@ -51,8 +49,6 @@ A lo largo del curso aprenderás a:
 - Colocar cremalleras y otros complementos.
 - Conseguir acabados limpios y profesionales.
 - Planificar tus propios proyectos.
-
----
 
 ## Proyectos que podrás realizar
 
@@ -69,8 +65,6 @@ Entre otros, podrás confeccionar:
 
 Cuando domines las bases también podrás traer tus propios proyectos y desarrollarlos con nuestro acompañamiento.
 
----
-
 ## ¿Qué incluye?
 
 ✔ 15 sesiones de 2 horas
@@ -81,9 +75,7 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 ✔ Aprendizaje progresivo
 
-✔ Un espacio tranquilo donde crear en comunidad
-
----
+✔ Un espacio tranquilo para crear en comunidad
 
 ## Fechas y horarios
 
@@ -97,8 +89,6 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 **Solo 8 plazas disponibles.**
 
----
-
 ## Material
 
 Si tienes máquina de coser, tráela.
@@ -107,21 +97,13 @@ Si no tienes, podemos prestarte una para que puedas seguir el curso sin problema
 
 Antes de empezar te enviaremos una pequeña lista con los materiales recomendados.
 
----
-
 ## Este curso es para ti si...
 
-✔ Siempre has querido aprender a coser.
-
-✔ Tienes una máquina guardada y no sabes utilizarla.
-
-✔ Quieres crear tus propios proyectos.
-
-✔ Buscas una actividad creativa después del trabajo.
-
-✔ Te apetece formar parte de un grupo pequeño donde aprender sin presión.
-
----
+- Siempre has querido aprender a coser.
+- Tienes una máquina guardada y no sabes utilizarla.
+- Quieres crear tus propios proyectos.
+- Buscas una actividad creativa después del trabajo.
+- Te apetece formar parte de un grupo pequeño donde aprender sin presión.
 
 ## Preguntas frecuentes
 
@@ -141,9 +123,7 @@ Tu máquina (si tienes), telas y muchas ganas de aprender. Unos días antes del 
 
 Dependerá de las plazas disponibles y del punto en el que se encuentre el grupo. Escríbenos y buscaremos la mejor opción.
 
----
-
-# Reserva tu plaza ✨
+## Reserva tu plaza
 
 Para garantizar un acompañamiento cercano, cada grupo es de **solo 8 personas**.
 
