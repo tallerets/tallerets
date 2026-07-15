@@ -1,0 +1,292 @@
+---
+// src/pages/es/club.astro
+// Versión en castellano de la página del Club.
+// OJO: las rutas de import llevan ../../ porque este archivo está un nivel
+// más adentro (dentro de /es).
+import Layout from '../../layouts/BaseLayout.astro'
+import Header from '../../components/Header/Header.astro'
+import Footer from '../../components/Footer.astro'
+
+// ── Cuotas de socia ────────────────────────────────────────────────
+// TODO Stripe: pon aquí los MISMOS Payment Links que en la versión catalana
+const quotes = [
+  {
+    nom: 'Socia anual',
+    etiqueta: 'Ven a probar',
+    preu: '30€',
+    periode: 'al año',
+    inclou: [
+      '1 día de club para conocernos',
+      '5% dto. en cursos, monográficos y tienda',
+      'Fiesta anual de socias',
+    ],
+    href: '#', // TODO: Payment Link cuota anual 30€
+    destacada: false,
+  },
+  {
+    nom: 'Socia Club Amiga',
+    etiqueta: null,
+    preu: '24€',
+    periode: 'al mes',
+    inclou: [
+      '1 día de club cada mes',
+      '5% dto. en cursos, monográficos y tienda',
+      'Fiesta anual de socias',
+    ],
+    href: '#', // TODO: Payment Link suscripción 24€/mes
+    destacada: false,
+  },
+  {
+    nom: 'Socia Club Fem Barri',
+    etiqueta: null,
+    preu: '45€',
+    periode: 'al mes · 22,5€/sesión',
+    inclou: [
+      '2 días de club cada mes',
+      '5% dto. en cursos, monográficos y tienda',
+      'Fiesta anual de socias',
+    ],
+    href: '#', // TODO: Payment Link suscripción 45€/mes
+    destacada: false,
+  },
+  {
+    nom: 'Socia Visc(a) Tallerets',
+    etiqueta: 'La más completa',
+    preu: '65€',
+    periode: 'al mes · 16,25€/sesión',
+    inclou: [
+      'Club cada semana',
+      '10% dto. en cursos, monográficos y tienda',
+      'Fiesta anual de socias',
+      'El mejor precio por sesión',
+    ],
+    href: '#', // TODO: Payment Link suscripción 65€/mes
+    destacada: true,
+  },
+]
+
+// ── Calendario de los clubs ────────────────────────────────────────
+const setmana = [
+  {
+    dia: 'Lunes',
+    clubs: [
+      { hora: '19:00–21:00', nom: 'Club de manualidades', tipus: 'manualitats' },
+      { hora: '19:00–21:00', nom: 'Club de costura', tipus: 'costura' },
+    ],
+  },
+  {
+    dia: 'Martes',
+    clubs: [
+      { hora: '18:30–20:30', nom: 'Club de manualidades', tipus: 'manualitats' },
+    ],
+  },
+  {
+    dia: 'Miércoles',
+    clubs: [
+      { hora: '11:00–13:00', nom: 'Club de manualidades', tipus: 'manualitats', nou: 'Nuevo · mañana' },
+      { hora: '18:30–20:30', nom: 'Club de ganchillo, bordado y punto', tipus: 'fils' },
+    ],
+  },
+  {
+    dia: 'Jueves',
+    clubs: [
+      { hora: '18:30–20:30', nom: 'Club de manualidades', tipus: 'manualitats' },
+    ],
+  },
+]
+
+const estilTipus: Record<string, string> = {
+  manualitats: 'border-dark',
+  costura: 'border-red',
+  fils: 'border-[#6F2118] bg-[#F2E9B1] text-[#6F2118]',
+}
+---
+
+<Layout
+  title="Club Tallerets: hazte socia de tu espacio creativo"
+  description="El Club es tu espacio semanal de creación y de barrio en Sants. Hazte socia desde 30€ al año y ven a crear en comunidad."
+>
+  <Header className="bg-soft text-dark relative" />
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section class="page-padding pt-4 text-center">
+      <h1 class="text-4xl md:text-6xl md:leading-tight font-[500]">
+        Club Tallerets
+        <span>
+          <img
+            width="48"
+            height="48"
+            class="w-12 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg md:text-xl">
+        El Club es tu espacio semanal de creación y de barrio. Ven a hacer tu
+        hobby, a probar los nuevos que proponemos o simplemente a crear por
+        crear. ¡Las extraescolares para adultxs que estabas esperando!
+      </p>
+    </section>
+
+    <!-- ── Cuotas de socia ──────────────────────────────────── -->
+    <section id="quotes" class="page-padding my-8 lg:my-16">
+      <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-10">
+        Elige tu cuota
+        <span>
+          <img
+            width="40"
+            height="40"
+            class="w-10 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+
+      <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
+        {
+          quotes.map((q) => (
+            <li
+              class={`relative flex flex-col rounded-xl border-2 bg-white p-6 transition-all hover:-translate-y-1 ${
+                q.destacada ? 'border-red shadow-lg' : 'border-dark'
+              }`}
+            >
+              {q.etiqueta && (
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-2 whitespace-nowrap bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-wider text-[#6F2118]">
+                  {q.etiqueta}
+                </span>
+              )}
+              <h3 class="text-xl font-[500]">{q.nom}</h3>
+              <p class={`mt-2 text-5xl font-[300] ${q.destacada ? 'text-red' : ''}`}>
+                {q.preu}
+              </p>
+              <p class="mt-1 font-mono text-xs uppercase tracking-wider opacity-70">
+                {q.periode}
+              </p>
+              <ul class="mt-4 flex-1 space-y-2 border-t-2 border-dashed border-soft pt-4 text-sm">
+                {q.inclou.map((item) => (
+                  <li class="flex gap-2">
+                    <span class="text-red" aria-hidden="true">✿</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={q.href}
+                class={`c-button mt-6 block ${
+                  q.destacada
+                    ? 'border-red bg-red text-soft hover:bg-transparent'
+                    : 'border-dark'
+                }`}
+              >
+                Hazte socia
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="mx-auto mt-8 max-w-2xl text-center text-sm opacity-80">
+        Las cuotas mensuales se renuevan solas y, como un gimnasio, puedes
+        decidir no renovar hasta el día 20 de cada mes. Pago seguro con tarjeta
+        o domiciliación bancaria.
+      </p>
+    </section>
+
+    <!-- ── Calendario de los clubs ──────────────────────────── -->
+    <section id="calendari" class="page-padding my-8 lg:my-16">
+      <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-10">
+        Los clubs de la semana
+        <span>
+          <img
+            width="40"
+            height="40"
+            class="w-10 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+
+      <div class="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          setmana.map((d) => (
+            <div>
+              <h3 class="border-b-2 border-dark pb-2 text-center font-mono text-sm uppercase tracking-widest">
+                {d.dia}
+              </h3>
+              <ul class="mt-3 space-y-3">
+                {d.clubs.map((c) => (
+                  <li
+                    class={`relative rounded-xl border-2 bg-white p-4 ${estilTipus[c.tipus]}`}
+                  >
+                    {c.nou && (
+                      <span class="absolute -top-2.5 right-3 rotate-2 bg-[#F2E9B1] px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-[#6F2118]">
+                        {c.nou}
+                      </span>
+                    )}
+                    <p class="font-mono text-xs tracking-wide">{c.hora}</p>
+                    <p class="mt-1 font-[500] leading-snug">{c.nom}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+
+      <p class="mx-auto mt-8 max-w-2xl text-center text-sm opacity-80">
+        Ven el día que mejor te vaya, según tu cuota. Grupos de máximo 10–12
+        personas.
+      </p>
+    </section>
+
+    <!-- ── Qué es el Club ───────────────────────────────────── -->
+    <section class="page-padding my-8 lg:my-16 mx-auto max-w-3xl space-y-8">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-[500]">¿Qué haremos?</h2>
+        <p class="mt-3">
+          Puedes traer ese kit de estampación que te regalaron y aún no has
+          estrenado. Puedes venir a dibujar, ilustrar, pintar, hacer ganchillo
+          o tu hobby favorito. Puedes desconectar y disfrutar de hacer cosas
+          con las manos y del momento presente. Puedes probar alguna de las mil
+          manualidades que tienes guardadas en TikTok. ¡Todo el arte es
+          bienvenido y no hace falta experiencia: solo ganas!
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl md:text-3xl font-[500]">¿Cómo funciona?</h2>
+        <p class="mt-3">
+          Tendrás materiales básicos y herramientas para hacer todo tipo de
+          manualidades; si quieres hacer un proyecto concreto, solo hace falta
+          traer el material específico. Puedes sumarte a una actividad
+          conjunta, venir con tu proyecto, o pedirme que te enseñe eso que no
+          sabes muy bien cómo hacer. Es un espacio fuera de pantallas, para
+          hacer amigas, tener tu lugar para crear, aprender nuevos hobbies e
+          inspirarte de otras mujeres creativas.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl md:text-3xl font-[500]">Y como socia, eres Tallerets</h2>
+        <p class="mt-3">
+          Tallerets es una asociación sin ánimo de lucro: hacerte socia
+          significa formar parte de un proyecto de barrio y de economía social.
+          Además del club, tienes descuento en cursos, monográficos y tienda,
+          la fiesta anual de socias, y voz en el proyecto.
+        </p>
+      </div>
+      <div class="text-center">
+        <p class="mb-4">
+          Cualquier duda, escríbeme por aquí o a latallerets@gmail.com. ¡Te
+          espero en el club!
+        </p>
+        <a href="/es/contacte" class="c-button inline-block border-dark">
+          Contáctame
+        </a>
+      </div>
+    </section>
+  </main>
+  <hr />
+  <Footer />
+</Layout>
