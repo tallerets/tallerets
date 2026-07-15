@@ -1,6 +1,6 @@
 ---
 title: 'Curs d’iniciació al punt'
-desc: 'El curs d'iniciació al punt començarà al gener del 2027. Vols que t'avisem quan obrim inscripcions? Escriu-nos!'
+desc: "El curs d'iniciació al punt començarà al gener del 2027. Vols que t'avisem quan obrim inscripcions? Escriu-nos!"
 image:
   url: '/img/c-punt.jpeg'
   alt: 'Fotografia de les participants fent punt'
