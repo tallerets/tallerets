@@ -1,6 +1,6 @@
 ---
 title: "Curs d'iniciació al dibuix i la pintura"
-desc: 'Un curset setmanal per experimentar i jugar amb diferents tècniques de dibuix i color.'
+desc: "Aprèn dibuix des de zero i tècniques de pintura: aquarel·la, oli, gouache, tinta xinesa i més. Dijous tarda, 10 sessions des de l'octubre. Només 6 places!"
 image:
   url: '/img/c-ilustracio.jpeg'
   alt: 'Fotografia de les participants fent ilustració'
@@ -11,10 +11,17 @@ links:
     text: 'Contacto'
 ---
 
-**Inici del curs: Gener 2026**
+**Aprendrem dibuix des de zero i diverses tècniques de pintura: aquarel·la, oli, gouache, tinta xinesa i més!**
 
-Un curset setmanal per experimentar i jugar amb diferents tècniques de dibuix i color. Provarem materials diversos —llapis, retoladors, aquarel·la, tinta, collage…— i descobrirem maneres creatives de donar forma a les idees. Cada sessió és una invitació a explorar sense pressió, crear projectes personals i gaudir del procés. Tot el que facis te l’endús a casa!
+**Dates i horaris**
+Dijous de 18:30 a 20:30
+10 sessions — del 8 d'octubre al 10 de desembre
+Només 6 places!
 
-Dates i horaris: Dimarts de 19:00 a 21:00h
+**Què hi farem?**
+Explorarem el dibuix des de la base i anirem provant tècniques de pintura diferents per descobrir la que més t'agrada. Grup petit per poder acompanyar-te de prop. No cal experiència prèvia — només ganes de crear.
+
+**Preu**
+180€ el curs sencer (10 sessions). Ets sòcia del Club? Tens un preu especial: avisa'ns i t'ho tramitem en persona.
 
 **No cal experiència prèvia** — només ganes de passar-ho bé i passar una tarda creativa!
