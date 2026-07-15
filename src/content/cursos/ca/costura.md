@@ -1,5 +1,5 @@
 ---
-title: 'Curs d'iniciació a la costura a Barcelona | Tallerets'
+title: "Curs d'iniciació a la costura a Barcelona"
 desc: 'Aprèn a cosir des de zero al nostre curs d'iniciació a la costura a Sants (Barcelona). 15 sessions en grup reduït, màxim 8 persones, amb acompanyament personalitzat.'
 image:
   url: '/img/c-costura.jpeg'
