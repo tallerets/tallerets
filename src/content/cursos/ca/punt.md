@@ -1,16 +1,14 @@
 ---
-title: 'Curs d’iniciació al punt'
+title: 'Iniciació al punt'
 desc: "El curs d'iniciació al punt començarà al gener del 2027. Vols que t'avisem quan obrim inscripcions? Escriu-nos!"
 image:
   url: '/img/c-punt.jpeg'
   alt: 'Fotografia de les participants fent punt'
 links:
-  - url: 'https://buy.stripe.com/'
-    text: "M'apunto al curs regular"
-
+  - url: '/contacte'
+    text: "Avisa'm quan obri"
   - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103207'
     text: "M'apunto a l'intensiu d'estiu"
-
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
