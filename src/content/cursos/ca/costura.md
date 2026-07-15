@@ -8,7 +8,7 @@ links:
   - url: 'https://donate.stripe.com/28EdRbdxr0jBfUafkV7N60G'
     text: "M'apunto el trimestre"
   - url: 'https://buy.stripe.com/9B6eVf7939UbdM24Gh7N60I'
-    text: 'M'apunto mes a mes'
+    text: "M'apunto mes a mes"
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
