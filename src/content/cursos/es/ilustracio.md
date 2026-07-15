@@ -1,5 +1,5 @@
 ---
-title: 'Cursillo de ilustración'
+title: 'Curso de iniciación al dibujo y la pintura'
 desc: 'Un cursillo semanal para experimentar y jugar con distintas técnicas de dibujo y color.'
 image:
   url: '/img/c-ilustracio.jpeg'
