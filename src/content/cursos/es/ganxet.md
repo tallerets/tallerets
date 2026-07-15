@@ -1,119 +1,135 @@
 ---
-title: 'Curso de iniciación al ganchillo'
-desc: 'Aprende ganchillo desde cero en Sants. Cursos regulares e intensivos para aprender crochet en un espacio creativo, relajado y en grupos reducidos.'
+title: 'Curso de iniciación al crochet en Barcelona | Tallerets'
+desc: 'Aprende crochet desde cero en nuestro curso de iniciación en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 10 personas, con acompañamiento personalizado.'
 image:
   url: '/img/c-ganxet.jpeg'
-  alt: 'Fotografía de las participantes haciendo ganchillo'
+  alt: 'Persona haciendo crochet en Tallerets'
 links:
   - url: 'https://buy.stripe.com/eVq6oJgJDc2jgYe1u57N60v'
-    text: 'Me apunto al curso regular'
-
-  - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103196'
-    text: 'Me apunto al intensivo de verano'
+    text: "Reserva tu plaza"
 
   - url: '/contacte'
     text: 'Tengo dudas'
 ---
 
-Aprende ganchillo desde cero mientras creas piezas únicas con tus manos ✨
+# Curso de iniciación al crochet 🧶
 
-Un espacio semanal para bajar el ritmo, desconectar de pantallas y aprender crochet en grupo reducido en Sants.
+Aprende crochet desde cero en un grupo reducido y descubre una nueva forma de crear con las manos.
 
-✔ No hace falta experiencia  
-✔ Grupo reducido  
-✔ Acompañamiento personalizado  
-✔ Materiales incluidos en el intensivo
+Durante **15 sesiones** aprenderás los puntos básicos del crochet mientras realizas proyectos útiles y desarrollas la confianza para seguir creando a tu ritmo.
 
----
+📍 Tallerets · Sants (Barcelona)
 
-## ☀️ CURSO INTENSIVO DE GANCHILLO DE VERANO
+✔ No necesitas experiencia previa
 
-Descubre el mundo del ganchillo con este curso intensivo de tres mañanas pensado para aprender desde cero y empezar a crear tus propias piezas con las manos.
+✔ Solo 10 plazas
 
-Durante el curso aprenderemos los puntos básicos, cómo leer patrones sencillos y cómo dar forma a diferentes proyectos textiles mientras practicamos con calma y en grupo reducido.
+✔ Acompañamiento personalizado
 
-### ¿Qué aprenderás?
-
-- los puntos básicos de ganchillo
-- cómo empezar y construir una pieza
-- a leer patrones sencillos
-- a dar forma a diferentes proyectos
-- pequeños trucos y acabados para seguir creando desde casa
-
-### Incluye
-
-✔ Todos los materiales  
-✔ Grupo reducido  
-✔ Acompañamiento personalizado  
-✔ Tu propio proyecto hecho por ti
-
-No hace falta experiencia previa ✨
+✔ Aprende a tu ritmo
 
 ---
 
-### Programa del curso
+## Un curso para empezar desde cero
 
-#### Día 1 · Primeras puntadas
+Este curso está pensado para personas que siempre han querido aprender crochet pero no saben por dónde empezar.
 
-Conoceremos los materiales y herramientas básicas y aprenderemos a empezar una pieza de ganchillo.
+Iremos paso a paso, aprendiendo las técnicas básicas mientras desarrollamos pequeños proyectos que te permitirán practicar cada punto y entender cómo construir tus propias piezas.
 
-Practicaremos la cadeneta, el punto bajo y el punto alto mientras experimentamos con diferentes hilos y texturas.
-
-#### Día 2 · Construcción y formas
-
-Aprenderemos a aumentar, disminuir y dar forma a las piezas.
-
-Practicaremos cómo seguir patrones sencillos mientras empezamos un pequeño proyecto personal.
-
-#### Día 3 · Proyecto final
-
-Dedicaremos la última mañana a terminar y personalizar nuestro proyecto, resolviendo dudas y aprendiendo pequeños trucos y acabados para que puedas seguir creando ganchillo desde casa.
+Más que un curso, es un espacio para reservarte dos horas a la semana, desconectar del día a día y disfrutar creando con otras personas.
 
 ---
 
-## 🧶 CURSO REGULAR · SEPTIEMBRE — JUNIO
+## ¿Qué aprenderás?
 
-Pocas plazas · Incorporación cada mes si quedan plazas libres
+A lo largo del curso aprenderás a:
 
-Un espacio semanal para aprender ganchillo a tu ritmo, compartir y reservarte un momento creativo durante la semana.
+- Realizar los puntos básicos de crochet.
+- Leer patrones sencillos.
+- Aumentar y disminuir puntos.
+- Cambiar de color.
+- Dar forma a diferentes piezas.
+- Elegir hilos y agujas según cada proyecto.
+- Crear tus propios proyectos con autonomía.
 
-### Ideal si...
+---
 
-- quieres empezar desde cero
-- siempre has querido aprender crochet
-- buscas una actividad tranquila y creativa
-- quieres crear piezas útiles con tus manos
-- te apetece compartir un rato creativo en comunidad
+## Proyectos que podrás realizar
 
-### Aprenderás a...
+Cada proyecto está pensado para aprender una técnica nueva.
 
-- hacer los puntos básicos de ganchillo
-- entender patrones sencillos
-- combinar colores y texturas
-- crear piezas a tu ritmo
-- desarrollar proyectos propios poco a poco
-
-### Proyectos que podrás hacer
+Entre otros, podrás crear:
 
 - Posavasos
 - Bolsitas
 - Accesorios
 - Fundas
 - Pequeños complementos
-- ¡Y mucho más ✨
+- Mantas de granny squares
 
-Cada persona podrá avanzar a su ritmo y desarrollar proyectos propios con acompañamiento personalizado.
+Cuando domines las bases también podrás traer tus propios proyectos y desarrollarlos con nuestro acompañamiento.
 
 ---
 
-### Fechas y horarios
+## ¿Qué incluye?
 
-**Lunes** · 18:30 a 20:30h  
-**Miércoles** · 18:30 a 20:30h
+✔ 15 sesiones de 2 horas
 
-Plazas muy limitadas.
+✔ Grupo reducido (máximo 10 personas)
 
-Si tienes agujas o lanas puedes traerlas, pero no es obligatorio :)
+✔ Acompañamiento personalizado
+
+✔ Aprendizaje progresivo
+
+✔ Un espacio tranquilo para crear en comunidad
+
+---
+
+## Fechas y horarios
+
+### Grupo de tarde
+
+**Miércoles**
+
+**18:30 – 20:30 h**
+
+**Del 9 de septiembre al 16 de diciembre**
+
+### Grupo de mañana
+
+**Jueves**
+
+**11:00 – 13:00 h**
+
+**Del 10 de septiembre al 17 de diciembre**
+
+**15 sesiones**
+
+**Solo 10 plazas por grupo.**
+
+---
+
+## Material
+
+Si ya tienes agujas de crochet o lanas, puedes traerlas.
+
+Si no tienes, no pasa nada. Los primeros días te prestaremos el material para que puedas probar antes de comprar el tuyo.
+
+Además, te ayudaremos a elegir los hilos y agujas más adecuados para los proyectos que quieras realizar.
+
+---
+
+## Este curso es para ti si...
+
+✔ Siempre has querido aprender crochet.
+
+✔ Buscas una actividad creativa y relajante.
+
+✔ Quieres crear piezas hechas por ti.
+
+✔ Necesitas reservarte un momento para desconectar de las pantallas.
+
+✔ Te apetece formar parte de un grupo pequeño donde aprender sin prisas.
 
 ---
 
@@ -121,21 +137,22 @@ Si tienes agujas o lanas puedes traerlas, pero no es obligatorio :)
 
 ### ¿Necesito experiencia?
 
-¡No! El curso está pensado para empezar desde cero.
+No. El curso está pensado para empezar completamente desde cero.
 
-### ¿Tengo que traer materiales?
+### ¿Tengo que traer material?
 
-En el intensivo están incluidos.  
-En el curso regular puedes traer los tuyos o usar materiales del espacio.
+Si ya tienes agujas o lanas puedes traerlas, pero no es obligatorio. Los primeros días te prestaremos el material necesario.
 
-### ¿Puedo incorporarme más tarde?
+### ¿Puedo incorporarme cuando el curso ya ha empezado?
 
-Sí, si quedan plazas disponibles.
+Dependerá de las plazas disponibles y del nivel del grupo. Escríbenos y valoraremos cuál es la mejor opción.
 
 ---
 
-## Reserva tu plaza ✨
+# Reserva tu plaza ✨
 
-Las plazas son muy limitadas porque trabajamos en grupos pequeños y con acompañamiento personalizado.
+Para garantizar un acompañamiento cercano, cada grupo es de **solo 10 personas**.
 
-Un espacio para volver a crear con las manos, sin prisa y en comunidad 💛
+Si hace tiempo que quieres aprender crochet, este es un buen momento para empezar.
+
+¡Te esperamos en Tallerets! 💛
