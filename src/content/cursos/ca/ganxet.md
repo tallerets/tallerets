@@ -1,24 +1,26 @@
 ---
-title: "Curs d'iniciació al ganxet"
+title: "Curs d'iniciació al ganxet a Barcelona | Tallerets"
 desc: "Aprèn ganxet des de zero al nostre curs d'iniciació al ganxet a Sants (Barcelona). 15 sessions en grup reduït, màxim 10 persones, amb acompanyament personalitzat."
 image:
-  url: '/img/c-ganxet.jpeg'
-  alt: 'Persona fent ganxet a Tallerets'
+  url: "/img/c-ganxet.jpeg"
+  alt: "Persona fent ganxet a Tallerets"
+
 links:
-  - url: 'https://buy.stripe.com/eVq6oJgJDc2jgYe1u57N60v'
-    text: "Reserva la teva plaça"
+  - url: "LINK_TRIMESTRE"
+    text: "M'apunto al trimestre"
 
-  - url: '/contacte'
-    text: 'Tinc dubtes'
+  - url: "LINK_MES_A_MES"
+    text: "M'apunto mes a mes"
+
+  - url: "/contacte"
+    text: "Tinc dubtes"
 ---
-
-# Curs d'iniciació al ganxet 🧶
 
 Aprèn ganxet des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
 Durant **15 sessions** aprendràs els punts bàsics del ganxet mentre crees projectes útils i desenvolupes la confiança per continuar creant al teu ritme.
 
-📍 Tallerets · Sants (Barcelona)
+📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No cal experiència prèvia
 
@@ -89,19 +91,17 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ### Grup de tarda
 
-**Dimecres**
-
+**Dimecres**  
 **18:30 – 20:30 h**
 
-**Del 9 de setembre al 16 de desembre**
+**Del 9 de setembre al 17 de desembre**
 
 ### Grup de matí
 
-**Dijous**
-
+**Dijous**  
 **11:00 – 13:00 h**
 
-**Del 10 de setembre al 17 de desembre**
+**Del 10 de setembre al 18 de desembre**
 
 **15 sessions**
 
@@ -115,21 +115,17 @@ Si tens agulles de ganxet o llanes, les pots portar.
 
 Si no en tens, no passa res. Els primers dies et deixarem el material perquè puguis provar-ho abans de comprar-ne.
 
-T'ajudarem també a escollir els fils i les agulles més adequats per als teus projectes.
+També t'ajudarem a escollir els fils i les agulles més adequats per als teus projectes.
 
 ---
 
 ## Aquest curs és per a tu si...
 
-✔ Sempre has volgut aprendre ganxet.
-
-✔ Busques una activitat creativa i relaxant.
-
-✔ Vols crear peces útils amb les teves mans.
-
-✔ Necessites reservar-te una estona per desconnectar de les pantalles.
-
-✔ Et ve de gust formar part d'un grup petit on aprendre sense pressa.
+- Sempre has volgut aprendre ganxet.
+- Busques una activitat creativa i relaxant.
+- Vols crear peces fetes per tu.
+- Necessites reservar-te una estona per desconnectar de les pantalles.
+- Et ve de gust formar part d'un grup petit on aprendre sense pressa.
 
 ---
 
@@ -149,7 +145,7 @@ Dependrà de les places disponibles i del nivell del grup. Escriu-nos i valorare
 
 ---
 
-# Reserva la teva plaça ✨
+## Reserva la teva plaça
 
 Per garantir un acompanyament proper, cada grup és de **només 10 persones**.
 
