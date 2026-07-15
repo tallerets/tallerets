@@ -18,6 +18,8 @@ Per a tallers de reserva individual: Si has de cancel·lar la teva plaça, avisa
 
 Per a tallers a mida: 50% de la reserva no reemborsable.
 
+Per a suscrpcions mensuals o quotes de sòcia: si no vens el dia, no es pot recuperar. No es permet cancel·lar la mensualitat passat el dia 20 del mes.
+
 **Dret d'admissió**
 
 Tallerets es reserva el dret d'admissió a qualsevol de les activitats.
