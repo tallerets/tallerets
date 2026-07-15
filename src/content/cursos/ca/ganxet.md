@@ -1,118 +1,135 @@
 ---
-title: 'Curs d’iniciació al ganxet'
-desc: 'Aprèn ganxet des de zero a Sants. Cursos regulars i intensius per aprendre crochet en un espai creatiu, tranquil i en grups reduïts.'
+title: "Curs d'iniciació al ganxet a Barcelona | Tallerets"
+desc: "Aprèn ganxet des de zero al nostre curs d'iniciació al ganxet a Sants (Barcelona). 15 sessions en grup reduït, màxim 10 persones, amb acompanyament personalitzat."
 image:
   url: '/img/c-ganxet.jpeg'
-  alt: 'Fotografia de les participants fent ganxet'
+  alt: 'Persona fent ganxet a Tallerets'
 links:
   - url: 'https://buy.stripe.com/eVq6oJgJDc2jgYe1u57N60v'
-    text: "M'apunto al curs regular"
-
-  - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103196'
-    text: "M'apunto a l'intensiu d'estiu"
+    text: "Reserva la teva plaça"
 
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
 
-Aprèn ganxet des de zero mentre crees peces úniques amb les mans ✨
+# Curs d'iniciació al ganxet 🧶
 
-Un espai setmanal per baixar el ritme, desconnectar de pantalles i aprendre crochet en grup reduït a Sants.
+Aprèn ganxet des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
-✔ No cal experiència  
-✔ Grup reduït  
-✔ Acompanyament personalitzat  
-✔ Materials inclosos a l’intensiu
+Durant **15 sessions** aprendràs els punts bàsics del ganxet mentre crees projectes útils i desenvolupes la confiança per continuar creant al teu ritme.
 
----
+📍 Tallerets · Sants (Barcelona)
 
-## ☀️ CURSET INTENSIU DE GANXET D’ESTIU
+✔ No cal experiència prèvia
 
-Descobreix el món del ganxet amb aquest curs intensiu de tres matins pensat per aprendre des de zero i començar a crear les teves pròpies peces amb les mans.
+✔ Només 10 places
 
-Durant el curs aprendrem els punts bàsics, com llegir patrons senzills i com donar forma a diferents projectes tèxtils mentre practiquem amb calma i en grup reduït.
+✔ Acompanyament personalitzat
 
-### Què aprendràs?
-
-- els punts bàsics de ganxet
-- com començar i construir una peça
-- a llegir patrons senzills
-- a donar forma a diferents projectes
-- petits trucs i acabats per continuar creant des de casa
-
-### Inclou
-
-✔ Tots els materials  
-✔ Grup reduït  
-✔ Acompanyament personalitzat  
-✔ El teu propi projecte fet per tu
-
-No cal experiència prèvia ✨
+✔ Aprenentatge al teu ritme
 
 ---
 
-### Programa del curs
+## Un curs per començar des de zero
 
-#### Dia 1 · Primeres puntades
+Aquest curs està pensat per a persones que sempre han volgut aprendre ganxet però no saben per on començar.
 
-Coneixerem els materials i eines bàsiques i aprendrem a començar una peça de ganxet.
+Anirem pas a pas, aprenent les tècniques bàsiques mentre desenvolupem petits projectes que et permetran practicar cada punt i entendre com construir les teves pròpies peces.
 
-Practicarem la cadeneta, el punt baix i el punt alt mentre experimentem amb diferents fils i textures.
-
-#### Dia 2 · Construcció i formes
-
-Aprendrem a augmentar, disminuir i donar forma a les peces.
-
-Practicarem com seguir patrons senzills mentre comencem un petit projecte personal.
-
-#### Dia 3 · Projecte final
-
-Dedicarem l’últim matí a acabar i personalitzar el nostre projecte, resolent dubtes i aprenent petits trucs i acabats perquè puguis continuar creant ganxet des de casa.
+Més que un curs, és un espai per reservar-te dues hores a la setmana per crear, relaxar-te i compartir amb altres persones.
 
 ---
 
-## 🧶 CURS REGULAR · SETEMBRE — JUNY
+## Què aprendràs?
 
-Poques places · Incorporació cada mes si queden places lliures
+Al llarg del curs aprendràs a:
 
-Un espai setmanal per aprendre ganxet al teu ritme, compartir i reservar-te una estona creativa durant la setmana.
+- Fer els punts bàsics del ganxet.
+- Llegir patrons senzills.
+- Augmentar i disminuir punts.
+- Canviar de color.
+- Donar forma a diferents peces.
+- Escollir fils i agulles segons cada projecte.
+- Crear els teus propis projectes amb autonomia.
 
-### Ideal si...
+---
 
-- vols començar des de zero
-- sempre has volgut aprendre crochet
-- busques una activitat tranquil·la i creativa
-- vols crear peces útils amb les mans
-- et ve de gust compartir una estona creativa en comunitat
+## Projectes que podràs fer
 
-### Aprendràs a...
+Cada projecte està pensat perquè aprenguis una tècnica nova.
 
-- fer els punts bàsics de ganxet
-- entendre patrons senzills
-- combinar colors i textures
-- crear peces al teu ritme
-- desenvolupar projectes propis a poc a poc
-
-### Projectes que podràs fer
+Entre d'altres, podràs crear:
 
 - Posagots
 - Bossetes
 - Accessoris
 - Fundes
 - Petits complements
-- I molt més ✨
+- Mantes de granny squares
 
-Cada persona podrà avançar al seu ritme i desenvolupar projectes propis amb acompanyament personalitzat.
+Quan dominis les bases també podràs portar els teus propis projectes i els desenvoluparem juntes.
 
 ---
 
-### Dates i horaris
+## Què inclou?
 
-**Dimecres** 18:30 a 20:30h
+✔ 15 sessions de 2 hores
 
-Places molt limitades.
+✔ Grup reduït (màxim 10 persones)
 
-Si tens agulles o llanes les pots portar, però no és obligatori :)
+✔ Acompanyament personalitzat
+
+✔ Aprenentatge progressiu
+
+✔ Un espai tranquil per crear en comunitat
+
+---
+
+## Dates i horaris
+
+### Grup de tarda
+
+**Dimecres**
+
+**18:30 – 20:30 h**
+
+**Del 9 de setembre al 16 de desembre**
+
+### Grup de matí
+
+**Dijous**
+
+**11:00 – 13:00 h**
+
+**Del 10 de setembre al 17 de desembre**
+
+**15 sessions**
+
+**Només 10 places per grup.**
+
+---
+
+## Material
+
+Si tens agulles de ganxet o llanes, les pots portar.
+
+Si no en tens, no passa res. Els primers dies et deixarem el material perquè puguis provar-ho abans de comprar-ne.
+
+T'ajudarem també a escollir els fils i les agulles més adequats per als teus projectes.
+
+---
+
+## Aquest curs és per a tu si...
+
+✔ Sempre has volgut aprendre ganxet.
+
+✔ Busques una activitat creativa i relaxant.
+
+✔ Vols crear peces útils amb les teves mans.
+
+✔ Necessites reservar-te una estona per desconnectar de les pantalles.
+
+✔ Et ve de gust formar part d'un grup petit on aprendre sense pressa.
 
 ---
 
@@ -120,21 +137,22 @@ Si tens agulles o llanes les pots portar, però no és obligatori :)
 
 ### Necessito experiència?
 
-No! El curs està pensat per començar des de zero.
+No. El curs està pensat per començar completament des de zero.
 
-### He de portar materials?
+### He de portar material?
 
-A l’intensiu estan inclosos.  
-Al curs regular pots usar les nostres agulles, hauràs de portar les llanes.
+Si ja tens agulles o llanes les pots portar, però no és obligatori. Els primers dies et deixarem el material necessari.
 
-### Puc incorporar-me més tard?
+### Puc incorporar-me quan el curs ja ha començat?
 
-Sí, si queden places disponibles.
+Dependrà de les places disponibles i del nivell del grup. Escriu-nos i valorarem quina és la millor opció.
 
 ---
 
-## Reserva la teva plaça ✨
+# Reserva la teva plaça ✨
 
-Les places són molt limitades perquè treballem en grups petits i amb acompanyament personalitzat.
+Per garantir un acompanyament proper, cada grup és de **només 10 persones**.
 
-Un espai per tornar a crear amb les mans, sense pressa i en comunitat 💛
+Si fa temps que vols aprendre ganxet, aquest és un bon moment per començar.
+
+T'esperem a Tallerets 💛
