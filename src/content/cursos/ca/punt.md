@@ -7,8 +7,6 @@ image:
 links:
   - url: '/contacte'
     text: "Avisa'm quan obri"
-  - url: 'https://app.zenamu.com/app/office/espai-tallerets/courses/103207'
-    text: "M'apunto a l'intensiu d'estiu"
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
