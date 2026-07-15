@@ -1,5 +1,5 @@
 ---
-title: 'Curso de iniciación al crochet en Barcelona | Tallerets'
+title: 'Curso de iniciación al crochet'
 desc: 'Aprende crochet desde cero en nuestro curso de iniciación en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 10 personas, con acompañamiento personalizado.'
 image:
   url: '/img/c-ganxet.jpeg'
