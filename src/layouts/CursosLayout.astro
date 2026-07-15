@@ -1,4 +1,7 @@
 ---
+// src/layouts/CursosLayout.astro
+// v3: afegeix les tarifes i el calendari setmanal abans de les targetes
+// de cursos. Bilingüe: els textos nous es trien segons l'idioma de la URL.
 import Layout from './BaseLayout.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header/Header.astro'
@@ -6,16 +9,126 @@ import TallerPostcard from '../components/TallerCard.astro'
 import { getLangFromUrl } from '../utils'
 import { getCollection } from 'astro:content'
 import Highlights from '../components/Highlights.astro'
-
 const { frontmatter } = Astro.props
-
 const lang = getLangFromUrl(Astro.url)
-
 const allTallers = await getCollection('cursos', ({ id }: { id: string }) => {
   return id.startsWith(lang)
 })
----
 
+// ── Textos de les seccions noves (ca/es) ───────────────────────────
+const t =
+  lang === 'es'
+    ? {
+        tarifesTitol: 'Precios',
+        trimestre: 'El trimestre',
+        trimestreTag: 'Curso entero',
+        trimestreDetall: '15 sesiones · 16,7€/sesión',
+        trimestreInclou: [
+          'Todas las sesiones del trimestre',
+          'Plaza garantizada todo el curso',
+          'Socias: 220€ (avísanos y lo tramitamos en persona)',
+        ],
+        mensual: 'Mes a mes',
+        mensualTag: 'Sin compromiso',
+        mensualDetall: '4 sesiones · 20€/sesión',
+        mensualInclou: [
+          'Renovación mes a mes',
+          'Prueba sin atarte todo el trimestre',
+        ],
+        botiga: 'Elige tu curso',
+        sociesNota: '¿Eres socia del Club? El trimestre te sale a 220€: escríbenos antes de apuntarte y lo tramitamos en persona.',
+        sociesLink: 'Descubre el Club',
+        clubUrl: '/es/club',
+        calendariTitol: 'El horario de la semana',
+        kidsNota: 'Tallerets Kids: 60€/mes',
+        dies: {
+          dimarts: 'Martes',
+          dimecres: 'Miércoles',
+          dijous: 'Jueves',
+        },
+        horari: {
+          kidsCostura: 'Tallerets Kids · Costura',
+          kidsCosturaDetall: 'Jóvenes de 9 a 14 años',
+          kidsManualitats: 'Tallerets Kids · Manualidades',
+          kidsManualitatsDetall: 'De 5 a 12 años',
+          iniciCostura: 'Iniciación a la costura',
+          ganxet: 'Ganchillo',
+          iniciGanxet: 'Iniciación al ganchillo',
+          iniciGanxetDetall: 'Grupo de mañana',
+          dibuix: 'Iniciación a dibujo y pintura',
+        },
+      }
+    : {
+        tarifesTitol: 'Preus',
+        trimestre: 'El trimestre',
+        trimestreTag: 'Curs sencer',
+        trimestreDetall: '15 sessions · 16,7€/sessió',
+        trimestreInclou: [
+          'Totes les sessions del trimestre',
+          'Plaça garantida tot el curs',
+          'Sòcies: 220€ (avisa\'ns i t\'ho tramitem en persona)',
+        ],
+        mensual: 'Mes a mes',
+        mensualTag: 'Sense compromís',
+        mensualDetall: '4 sessions · 20€/sessió',
+        mensualInclou: [
+          'Renovació mes a mes',
+          'Prova sense lligar-te tot el trimestre',
+        ],
+        botiga: 'Tria el teu curs',
+        sociesNota: 'Ets sòcia del Club? El trimestre et surt a 220€: escriu-nos abans d\'apuntar-te i t\'ho tramitem en persona.',
+        sociesLink: 'Descobreix el Club',
+        clubUrl: '/club',
+        calendariTitol: "L'horari de la setmana",
+        kidsNota: 'Tallerets Kids: 60€/mes',
+        dies: {
+          dimarts: 'Dimarts',
+          dimecres: 'Dimecres',
+          dijous: 'Dijous',
+        },
+        horari: {
+          kidsCostura: 'Tallerets Kids · Costura',
+          kidsCosturaDetall: 'Joves de 9 a 14 anys',
+          kidsManualitats: 'Tallerets Kids · Manualitats',
+          kidsManualitatsDetall: 'De 5 a 12 anys',
+          iniciCostura: 'Iniciació a la costura',
+          ganxet: 'Ganxet',
+          iniciGanxet: 'Iniciació al ganxet',
+          iniciGanxetDetall: 'Grup de matí',
+          dibuix: 'Iniciació a dibuix i pintura',
+        },
+      }
+
+// ── Calendari setmanal dels cursos ─────────────────────────────────
+const setmana = [
+  {
+    dia: t.dies.dimarts,
+    sessions: [
+      { hora: '17:00–18:15', nom: t.horari.kidsCostura, detall: t.horari.kidsCosturaDetall, tipus: 'kids' },
+      { hora: '18:30–20:30', nom: t.horari.iniciCostura, tipus: 'inici' },
+    ],
+  },
+  {
+    dia: t.dies.dimecres,
+    sessions: [
+      { hora: '17:00–18:15', nom: t.horari.kidsManualitats, detall: t.horari.kidsManualitatsDetall, tipus: 'kids' },
+      { hora: '18:30–20:30', nom: t.horari.ganxet, tipus: 'inici' },
+    ],
+  },
+  {
+    dia: t.dies.dijous,
+    sessions: [
+      { hora: '11:00–13:00', nom: t.horari.iniciGanxet, detall: t.horari.iniciGanxetDetall, tipus: 'inici' },
+      { hora: '18:30–20:30', nom: t.horari.dibuix, tipus: 'inici' },
+    ],
+  },
+]
+
+const estilTipus: Record<string, string> = {
+  kids: 'border-[#6F2118] bg-[#F2E9B1] text-[#6F2118]',
+  inici: 'border-red',
+}
+---
 <Layout
   title={frontmatter.title || 'Tallers'}
   description={frontmatter.desc || ''}
@@ -36,7 +149,100 @@ const allTallers = await getCollection('cursos', ({ id }: { id: string }) => {
         />
       </span>
     </h1>
+
+    <!-- ── Tarifes ─────────────────────────────────────────── -->
+    <section class="page-padding my-8 lg:my-12">
+      <div class="mx-auto grid max-w-2xl gap-6 sm:grid-cols-2 items-stretch">
+        <div class="relative flex flex-col rounded-xl border-2 border-red bg-white p-6 shadow-lg">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-2 whitespace-nowrap bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-wider text-[#6F2118]">
+            {t.trimestreTag}
+          </span>
+          <h3 class="text-xl font-[500]">{t.trimestre}</h3>
+          <p class="mt-2 text-5xl font-[300] text-red">250€</p>
+          <p class="mt-1 font-mono text-xs uppercase tracking-wider opacity-70">
+            {t.trimestreDetall}
+          </p>
+          <ul class="mt-4 flex-1 space-y-2 border-t-2 border-dashed border-soft pt-4 text-sm">
+            {t.trimestreInclou.map((item) => (
+              <li class="flex gap-2">
+                <span class="text-red" aria-hidden="true">✿</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="relative flex flex-col rounded-xl border-2 border-dark bg-white p-6">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-2 whitespace-nowrap bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-wider text-[#6F2118]">
+            {t.mensualTag}
+          </span>
+          <h3 class="text-xl font-[500]">{t.mensual}</h3>
+          <p class="mt-2 text-5xl font-[300]">80€</p>
+          <p class="mt-1 font-mono text-xs uppercase tracking-wider opacity-70">
+            {t.mensualDetall}
+          </p>
+          <ul class="mt-4 flex-1 space-y-2 border-t-2 border-dashed border-soft pt-4 text-sm">
+            {t.mensualInclou.map((item) => (
+              <li class="flex gap-2">
+                <span class="text-red" aria-hidden="true">✿</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <p class="mx-auto mt-8 max-w-2xl text-center text-sm">
+        {t.sociesNota}
+        <a href={t.clubUrl} class="underline hover:text-red">{t.sociesLink}</a>
+      </p>
+      <div class="mt-6 text-center">
+        <a href="#cursos" class="c-button inline-block border-dark">{t.botiga}</a>
+      </div>
+    </section>
+
+    <!-- ── Calendari setmanal ──────────────────────────────── -->
+    <section class="page-padding my-8 lg:my-12">
+      <h2 class="text-3xl mb-10 md:text-4xl text-center md:leading-tight font-[500]">
+        {t.calendariTitol}
+        <span>
+          <img
+            width="40"
+            height="40"
+            class="w-10 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+      <div class="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
+        {
+          setmana.map((d) => (
+            <div>
+              <h3 class="border-b-2 border-dark pb-2 text-center font-mono text-sm uppercase tracking-widest">
+                {d.dia}
+              </h3>
+              <ul class="mt-3 space-y-3">
+                {d.sessions.map((s) => (
+                  <li class={`rounded-xl border-2 bg-white p-4 ${estilTipus[s.tipus]}`}>
+                    <p class="font-mono text-xs tracking-wide">{s.hora}</p>
+                    <p class="mt-1 font-[500] leading-snug">{s.nom}</p>
+                    {s.detall && <p class="mt-1 text-xs opacity-80">{s.detall}</p>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+      <p class="mx-auto mt-6 max-w-2xl text-center text-sm opacity-80">
+        {t.kidsNota}
+      </p>
+    </section>
+
+    <!-- ── Targetes de cursos (com abans) ──────────────────── -->
     <section
+      id="cursos"
       class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
     >
       <ul
@@ -72,7 +278,6 @@ const allTallers = await getCollection('cursos', ({ id }: { id: string }) => {
       <Highlights />
     </section>
   </main>
-
   <hr />
   <Footer />
 </Layout>
