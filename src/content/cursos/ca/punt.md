@@ -14,6 +14,7 @@ links:
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
+
 **Aprendrem el punt de mitja des de zero amb un projecte concret!**
 
 **Quan comença?**
