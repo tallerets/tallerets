@@ -14,7 +14,9 @@ links:
 
 **Reserva i cancel·lacions**
 
-Si has de cancel·lar la teva plaça, avisa’m amb un mínim de 72h d’antelació i et tornaré el 100% del pagament. Si cancel·les amb menys de 72h d’antelació, no es retornarà l’import.
+Per a tallers de reserva individual: Si has de cancel·lar la teva plaça, avisa’m amb un mínim de 72h d’antelació i et tornaré el 100% del pagament. Si cancel·les amb menys de 72h d’antelació, no es retornarà l’import.
+
+Per a tallers a mida: 50% de la reserva no reemborsable.
 
 **Dret d'admissió**
 
