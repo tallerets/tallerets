@@ -14,8 +14,8 @@ other:
   }
 ---
 
-Soc la Noor i organitzo tallers creatius! Fer coses amb les mans ens fa conectar amb nosaltres mateixes.
+Soc la Noor, fundadora de Tallerets, un projecte d'economia social i solidària. Fer coses amb les mans ens fa conectar amb nosaltres mateixes i amb el moment present.
 
 <br/>
 
-A tallerets trobaràs un espai on potenciar l’expressió, la creativitat i la desconnexió del món digital. Alhora, un espai on conèixer a gent i formar comunitat.
+A Tallerets trobaràs un espai on potenciar l'expressió, la creativitat i la desconnexió del món digital. Alhora, un espai on conèixer gent i formar comunitat, dins d'un projecte de barri sense ànim de lucre.
