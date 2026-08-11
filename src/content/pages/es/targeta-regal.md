@@ -9,12 +9,12 @@ links:
     text: 'Quiero regalar tallerets!'
 ---
 
-Llega la Navidad y toca darle vueltas a como encontrar las mejores ideas para regalos. ¡Además, muchas buscamos regalar experiencias en lugar de cosas materiales: para eso hemos hecho las tarjetas de regalo de tallerets!
+¿Te has quedado sin ideas de regalo? ¡Regala una experiencia en Tallerets!
 
-Es un regalo conectado con la comunidad y el barrio, un regalo que promueve la creatividad :)
+Cada vez más gente prefiere regalar experiencias en lugar de cosas materiales — por eso existen las tarjetas de regalo de Tallerets. Un regalo original y creativo, conectado con la comunidad y el barrio de Sants, perfecto para cumpleaños, Navidad, Sant Jordi o simplemente para hacer un detalle especial a alguien.
 
-Puede ser una tarjeta para un taller específico o un importe para usar en cualquier taller de los que ofrecemos.
+Puede ser una tarjeta de regalo para un taller concreto, o bien un importe para usar en cualquiera de nuestros talleres de manualidades, ganchillo, costura o serigrafía. El importe es totalmente libre (aunque recomendamos un mínimo de 40€, la media de un taller).
 
 <br/>
 
-Pasate por tallerets a buscar tu tarjeta física o escríbeme a latallerets@gmail.com para pedir una virtual!
+¡Pasa por Tallerets a buscar tu tarjeta física, o escríbenos a latallerets@gmail.com para pedir una virtual!
