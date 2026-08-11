@@ -9,12 +9,10 @@ links:
     text: 'Vull regalar tallerets!'
 ---
 
-Arriba el Nadal i ens trenquem el cap per trobar les millors idees de regal. A més, moltes busquem regalar experiències en comptes de comprar coses materials: per això estan les targetes de regal de tallerets!
+Cada cop més gent prefereix regalar experiències en comptes de coses materials — i per això existeixen les targetes de regal de Tallerets. Un regal original i creatiu, connectat amb la comunitat i el barri de Sants, perfecte per a aniversaris, Nadal, Sant Jordi o simplement per fer un detall especial a algú.
 
-Un regal connectat amb la comunitat i el barri, un regal que promou la creativitat!
-
-Pot ser una targeta per a un taller concret, o bé, un import per poder usar en qualsevol taller. Pot ser desde qualsevol import (tot i que recomanem mínim 40€ que és la mitjana dels tallers)
+Pot ser una targeta de regal per a un taller concret, o bé un import per fer servir en qualsevol dels nostres tallers de manualitats, ganxet, costura o serigrafia. L'import és totalment lliure (tot i que recomanem un mínim de 40€, la mitjana d'un taller).
 
 <br/>
 
-Passa per tallerets a buscar la teva targeta física o bé escriu-me a latallerets@gmail.com per demanar una targeta virtual!
+Passa per Tallerets a buscar la teva targeta física, o escriu-nos a latallerets@gmail.com per demanar-ne una de virtual!
