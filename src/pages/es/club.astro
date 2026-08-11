@@ -37,6 +37,20 @@ const quotes = [
     destacada: false,
   },
   {
+    nom: 'Socia Club Postal',
+    etiqueta: 'Nuevo',
+    preu: '24€',
+    periode: 'al mes',
+    inclou: [
+      'Cada mes recibirás en casa una carta con una manualidad',
+      'Instrucciones y materiales incluidos',
+      '5% dto. en cursos, monográficos y tienda',
+      'Fiesta anual de socias',
+    ],
+    href: 'https://buy.stripe.com/PLACEHOLDER', // TODO: Payment Link suscripción Club Postal 24€/mes
+    destacada: false,
+  },
+  {
     nom: 'Socia Club Fem Barri',
     etiqueta: null,
     preu: '45€',
@@ -68,28 +82,22 @@ const quotes = [
 // ── Calendario de los clubs ────────────────────────────────────────
 const setmana = [
   {
-    dia: 'Lunes',
-    clubs: [
-      { hora: '19:00–21:00', nom: 'Club de manualidades', tipus: 'manualitats' },
-      { hora: '19:00–21:00', nom: 'Club de costura', tipus: 'costura' },
-    ],
-  },
-  {
     dia: 'Martes',
     clubs: [
       { hora: '18:30–20:30', nom: 'Club de manualidades', tipus: 'manualitats' },
+      { hora: '18:30–20:30', nom: 'Club de costura', tipus: 'costura' },
     ],
   },
   {
     dia: 'Miércoles',
     clubs: [
-      { hora: '11:00–13:00', nom: 'Club de manualidades', tipus: 'manualitats', nou: 'Nuevo · mañana' },
       { hora: '18:30–20:30', nom: 'Club de ganchillo, bordado y punto', tipus: 'fils' },
     ],
   },
   {
     dia: 'Jueves',
     clubs: [
+      { hora: '11:00–13:00', nom: 'Club de manualidades', tipus: 'manualitats', nou: 'Nuevo · mañana' },
       { hora: '18:30–20:30', nom: 'Club de manualidades', tipus: 'manualitats' },
     ],
   },
@@ -209,7 +217,7 @@ const estilTipus: Record<string, string> = {
         </span>
       </h2>
 
-      <div class="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mx-auto grid max-w-3xl gap-4 sm:grid-cols-3">
         {
           setmana.map((d) => (
             <div>
