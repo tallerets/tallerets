@@ -14,8 +14,8 @@ other:
   }
 ---
 
-Soy Noor organizo talleres creativos! Hacer cosas con las manos nos hace conectar con nosotras mismas.
+Soy Noor, fundadora de Tallerets, un proyecto de economía social y solidaria. Hacer cosas con las manos nos hace conectar con nosotras mismas.
 
 <br/>
 
-En Tallerets encontrarás un espacio donde potenciar la expresión, la creatividad y la desconexión del mundo digital. Al mismo tiempo, un lugar para conocer gente y formar comunidad.
+En Tallerets encontrarás un espacio donde potenciar la expresión, la creatividad y la desconexión del mundo digital. A la vez, un espacio donde conocer gente y formar comunidad, dentro de un proyecto de barrio sin ánimo de lucro.
