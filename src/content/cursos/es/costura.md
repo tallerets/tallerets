@@ -6,10 +6,10 @@ image:
   alt: "Persona cosiendo con una máquina de coser en Tallerets"
 
 links:
-  - url: "https://donate.stripe.com/28EdRbdxr0jBfUafkV7N60G"
+  - url: "https://tally.so/r/mV2bGM"
     text: "Me apunto al trimestre"
 
-  - url: "https://buy.stripe.com/9B6eVf7939UbdM24Gh7N60I"
+  - url: "https://tally.so/r/mV2bGM"
     text: "Me apunto mes a mes"
 
   - url: "/contacte"
