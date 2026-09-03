@@ -5,10 +5,10 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Persona cosint amb una màquina de cosir a Tallerets'
 links:
+  - url: '(https://buy.stripe.com/14A8wR8d72rJ8rI8Wx7N60P))'
+    text: "M'apunto el trimestre de 16:30 a 18:30"
   - url: '(https://tally.so/r/mV2bGM)'
-    text: "M'apunto el trimestre"
-  - url: '(https://tally.so/r/mV2bGM)'
-    text: "M'apunto mes a mes"
+    text: "Vull venir en un altre horari"
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
@@ -88,13 +88,15 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 **Dimarts**
 
+**16:30 - 18:30** NOU HORARI!
+
 **18:30 – 20:30 h**
 
 **Del 8 de setembre al 22 de desembre**
 
 **15 sessions**
 
-**Només 8 places disponibles.**
+**Només 6 places disponibles.**
 
 ---
 
@@ -144,7 +146,7 @@ Depèn de les places disponibles i del punt en què es trobi el grup. Escriu-nos
 
 # Reserva la teva plaça ✨
 
-Per garantir un acompanyament real, cada grup és de **només 8 persones**.
+Per garantir un acompanyament real, cada grup és de **només 6 persones**.
 
 Si fa temps que vols aprendre a cosir, aquest és un bon moment per començar.
 
