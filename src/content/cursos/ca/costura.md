@@ -5,9 +5,9 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Persona cosint amb una màquina de cosir a Tallerets'
 links:
-  - url: '(https://buy.stripe.com/14A8wR8d72rJ8rI8Wx7N60P))'
+  - url: 'https://buy.stripe.com/14A8wR8d72rJ8rI8Wx7N60P'
     text: "M'apunto el trimestre de 16:30 a 18:30"
-  - url: '(https://tally.so/r/mV2bGM)'
+  - url: 'https://tally.so/r/mV2bGM'
     text: "Vull venir en un altre horari"
   - url: '/contacte'
     text: 'Tinc dubtes'
