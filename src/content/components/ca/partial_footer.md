@@ -22,8 +22,8 @@ other:
   {
     copyright: '© 2024 Tallerets. Tots els drets reservats.',
     labels: ['ENLLAÇOS', 'LEGAL', 'IDIOMA'],
-    authorTitle: 'Disseny web i desenvolupament per',
-    authorName: '@aymyo',
-    authorUrl: 'https://github.com/aymyo',
+    authorTitle: 'Disseny i desenvolupament web per',
+    authorName: 'trau',
+    authorUrl: 'https://trau.octau.org/',
   }
 ---

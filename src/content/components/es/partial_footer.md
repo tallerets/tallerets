@@ -23,7 +23,7 @@ other:
     copyright: '© 2024 Tallerets. Todos los derechos reservados.',
     labels: ['ENLACES', 'LEGAL', 'IDIOMA'],
     authorTitle: 'Diseño y desarrollo web de',
-    authorName: '@aymyo',
-    authorUrl: 'https://github.com/aymyo',
+    authorName: 'trau',
+    authorUrl: 'https://trau.octau.org/',
   }
 ---

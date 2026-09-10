@@ -3,5 +3,5 @@ export const contacts = {
   mobile: '623 951 815',
   instagramUrl: 'https://www.instagram.com/tallerets',
   instagramId: 'tallerets',
-  webAuthorUrl: 'https://github.com/aymyo',
+  webAuthorUrl: 'https://trau.octau.org/',
 }

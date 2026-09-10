@@ -1,6 +1,6 @@
 {
   "name": "tallerets.com",
-  "author": "@aymyo",
+  "author": "trau",
   "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
