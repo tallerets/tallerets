@@ -1,8 +1,8 @@
 ---
-title: "Curso de iniciación a la aguja de gancho"
+title: "Curso de iniciación al ganchillo"
 desc: "Aprende ganchillo desde cero en nuestro curso de iniciación al ganchillo en Sants (Barcelona). 11 sesiones en grupo reducido, máximo 8 personas, con acompañamiento personalizado."
 image:
-  url: "/img/c-aguja de gancho.jpeg"
+  url: "/img/c-ganchillo.jpeg"
   alt: "Persona haciendo ganchillo a Tallerets"
 
 links:
@@ -44,7 +44,7 @@ A lo largo del curso aprenderás a:
 - Aumentar y disminuir puntos.
 - Cambiar de color.
 - Dar forma a diferentes piezas.
-- Escoger hilos y agujas según cada proyecto.
+- Escoger hilos y ganchos según cada proyecto.
 - Crear tus propios proyectos con autonomía.
 
 ## Proyectos que podrás hacer
@@ -85,11 +85,11 @@ Del 1 de octubre al 18 de diciembre
 
 ## Material
 
-Si tienes agujas de ganchillo o lanas, las puedes llevar.
+Si tienes ganchos o lanas, las puedes llevar.
 
 Si no tienes, no pasa nada. Los primeros días te dejaremos el material para que puedas probarlo antes de comprar.
 
-También te ayudaremos a escoger los hilos y las agujas más adecuados para tus proyectos.
+También te ayudaremos a escoger los hilos y los ganchos más adecuados para tus proyectos.
 
 ## Este curso es para ti si...
 
@@ -107,7 +107,7 @@ No. El curso está pensado para empezar completamente desde cero.
 
 **¿Tengo que llevar material?**
 
-Si ya tienes agujas o lanas las puedes llevar, pero no es obligatorio. Los primeros días te dejaremos el material necesario.
+Si ya tienes ganchos o lanas los puedes llevar, pero no es obligatorio. Los primeros días te dejaremos el material necesario.
 
 **¿Puedo incorporarme cuando el curso ya ha empezado?**
 
