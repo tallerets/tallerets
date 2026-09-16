@@ -18,13 +18,13 @@ links:
 
 Aprèn ganxet des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
-Durant **15 sessions** aprendràs els punts bàsics del ganxet mentre crees projectes útils i desenvolupes la confiança per continuar creant al teu ritme.
+Durant **11 sessions** aprendràs els punts bàsics del ganxet mentre crees projectes útils i desenvolupes la confiança per continuar creant al teu ritme.
 
 📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No cal experiència prèvia
 
-✔ Només 10 places
+✔ Només 6 places
 
 ✔ Acompanyament personalitzat
 
@@ -75,9 +75,9 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ## Què inclou?
 
-✔ 15 sessions de 2 hores
+✔ 11 sessions de 2 hores
 
-✔ Grup reduït (màxim 10 persones)
+✔ Grup reduït (màxim 8 persones)
 
 ✔ Acompanyament personalitzat
 
@@ -92,20 +92,20 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 ### Grup de tarda
 
 **Dimecres**  
-**18:30 – 20:30 h**
+**18:30 – 20:30 h** Només queden 2 places!
 
-**Del 9 de setembre al 17 de desembre**
+**Del 30 de setembre al 17 de desembre**
 
 ### Grup de matí
 
 **Dijous**  
 **11:00 – 13:00 h**
 
-**Del 10 de setembre al 18 de desembre**
+**De l'1 d'octubre al 18 de desembre**
 
-**15 sessions**
+**12 sessions**
 
-**Només 10 places per grup.**
+**Només 8 places per grup**
 
 ---
 
@@ -122,10 +122,10 @@ També t'ajudarem a escollir els fils i les agulles més adequats per als teus p
 ## Aquest curs és per a tu si...
 
 - Sempre has volgut aprendre ganxet.
-- Busques una activitat creativa i relaxant.
+- Busques una activitat creativa per tenir un moment a la setmana per a tu.
 - Vols crear peces fetes per tu.
 - Necessites reservar-te una estona per desconnectar de les pantalles.
-- Et ve de gust formar part d'un grup petit on aprendre sense pressa.
+- Et ve de gust formar part d'un grup al barri.
 
 ---
 
@@ -147,7 +147,7 @@ Dependrà de les places disponibles i del nivell del grup. Escriu-nos i valorare
 
 ## Reserva la teva plaça
 
-Per garantir un acompanyament proper, cada grup és de **només 10 persones**.
+Per garantir un acompanyament proper, cada grup és de **només 8 persones**.
 
 Si fa temps que vols aprendre ganxet, aquest és un bon moment per començar.
 
