@@ -20,17 +20,12 @@ Aprende ganchillo desde cero en un grupo reducido y descubre una nueva manera de
 
 Durante *11 sesiones* aprenderás los puntos básicos de ganchillo mientras creas proyectos útiles y desarrollas la confianza para continuar creando a tu ritmo.
 
-📍 **Tallerets · Sants (Barcelona)*
+📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No hace falta experiencia previa
-
 ✔ Solo 6 plazas
-
 ✔ Acompañamiento personalizado
-
 ✔ Aprendizaje a tu ritmo
-
----
 
 ## Un curso para empezar desde cero
 
@@ -39,8 +34,6 @@ Este curso está pensado para personas que siempre han querido aprender ganchill
 Iremos paso a paso, aprendiendo las técnicas básicas mientras desarrollamos pequeños proyectos que te permitirán practicar cada punto y entender como construir tus propias piezas.
 
 Más que un curso, es un espacio para reservarte dos horas en la semana para crear, relajarte y compartir con otras personas.
-
----
 
 ## Qué aprenderás?
 
@@ -53,8 +46,6 @@ A lo largo del curso aprenderás a:
 - Dar forma a diferentes piezas.
 - Escoger hilos y agujas según cada proyecto.
 - Crear tus propios proyectos con autonomía.
-
----
 
 ## Proyectos que podrás hacer
 
@@ -71,83 +62,60 @@ Entre otros, podrás crear:
 
 Cuando domines las bases también podrás llevar tus propios proyectos y los desarrollaremos juntas.
 
----
-
 ## Qué incluye?
 
 ✔ 11 sesiones de 2 horas
-
 ✔ Grupo reducido (máximo 8 personas)
-
 ✔ Acompañamiento personalizado
-
 ✔ Aprendizaje progresivo
-
 ✔ Un espacio tranquilo para crear en comunidad
-
----
 
 ## Fechas y horarios
 
-### Grupo por la tarde
+**Grupo por la tarde**
 
-*Miércoles**
-*18:30 – 20:30 h* Solo quedan 2 plazas!
+Miércoles · 18:30 – 20:30 h · Solo quedan 2 plazas!
+Del 30 de septiembre al 17 de diciembre
 
-*Del 30 de septiembre al 17 de diciembre*
+**Grupo por la mañana**
 
-### Grupo por la mañana
-
-*Jueves**
-*11:00 – 13:00 h*
-
-*Del 1 de octubre al 18 de diciembre*
-
-*12 sesiones*
-
-*Solo 8 plazas por grupo*
-
----
+Jueves · 11:00 – 13:00 h
+Del 1 de octubre al 18 de diciembre
+12 sesiones · Solo 8 plazas por grupo
 
 ## Material
 
 Si tienes agujas de aguja de gancho o lanas, las puedes llevar.
 
-Si no en tenso, no pasa nada. Los primeros días te dejaremos el material para que puedas probarlo antes de comprar.
+Si no tienes, no pasa nada. Los primeros días te dejaremos el material para que puedas probarlo antes de comprar.
 
 También te ayudaremos a escoger los hilos y las agujas más adecuados para tus proyectos.
 
----
-
-## Este curso es para tú si...
+## Este curso es para ti si...
 
 - Siempre has querido aprender aguja de gancho.
-- Buscas una actividad creativa para tener un momento en la semana para tú.
-- Quieres crear piezas hechas por tú.
+- Buscas una actividad creativa para tener un momento en la semana para ti.
+- Quieres crear piezas hechas por ti.
 - Necesitas reservarte un rato para desconectar de las pantallas.
 - Te apetece formar parte de un grupo al barrio.
 
----
-
 ## Preguntas frecuentes
 
-### Necesito experiencia?
+**Necesito experiencia?**
 
 No. El curso está pensado para empezar completamente desde cero.
 
-### Tengo que llevar material?
+**Tengo que llevar material?**
 
 Si ya tienes agujas o lanas las puedes llevar, pero no es obligatorio. Los primeros días te dejaremos el material necesario.
 
-### Puedo incorporarme cuando el curso ya ha empezado?
+**Puedo incorporarme cuando el curso ya ha empezado?**
 
 Dependerá de las plazas disponibles y del nivel del grupo. Escríbenos y valoraremos cuál es la mejor opción.
 
----
-
 ## Reserva tu plaza
 
-Para garantizar un acompañamiento próximo, cada grupo es de *solo 8 personas*.
+Para garantizar un acompañamiento próximo, cada grupo es de solo 8 personas.
 
 Si hace tiempo que quieres aprender ganchillo, este es un buen momento para empezar.
 
