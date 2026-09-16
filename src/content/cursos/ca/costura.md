@@ -5,8 +5,8 @@ image:
   url: '/img/c-costura.jpeg'
   alt: 'Persona cosint amb una màquina de cosir a Tallerets'
 links:
-  - url: 'https://buy.stripe.com/14A8wR8d72rJ8rI8Wx7N60P'
-    text: "M'apunto el trimestre de 16:30 a 18:30"
+  - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
+    text: "M'apunto"
   - url: 'https://tally.so/r/mV2bGM'
     text: "Vull venir en un altre horari"
   - url: '/contacte'
@@ -15,7 +15,7 @@ links:
 
 Aprèn a cosir des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
-Durant **15 sessions** aprendràs a utilitzar la màquina de cosir mentre confecciones projectes útils i guanyes autonomia per continuar cosint al teu ritme.
+Durant **12 sessions** aprendràs a utilitzar la màquina de cosir mentre confecciones projectes útils i guanyes autonomia per continuar cosint al teu ritme.
 
 📍 Tallerets · Sants (Barcelona)
 
@@ -72,7 +72,7 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ## Què inclou?
 
-✔ 15 sessions de 2 hores
+✔ 12 sessions de 2 hores
 
 ✔ Grup reduït (màxim 8 persones)
 
@@ -90,11 +90,11 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 **16:30 - 18:30** NOU HORARI!
 
-**18:30 – 20:30 h**
+**18:30 – 20:30 h** PLACES COMPLERTES
 
-**Del 8 de setembre al 22 de desembre**
+**Del 6 d'octubre 22 de desembre**
 
-**15 sessions**
+**12 sessions**
 
 **Només 6 places disponibles.**
 
@@ -102,9 +102,7 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ## Material
 
-Si tens màquina de cosir, porta-la.
-
-Si no en tens, te'n podem deixar una perquè puguis seguir el curs sense problema.
+Porta la teva màquina!
 
 Abans de començar t'enviarem una petita llista amb els materials recomanats.
 
@@ -132,11 +130,11 @@ No. El curs està pensat per començar completament des de zero.
 
 ### Necessito màquina?
 
-No. Pots portar la teva o utilitzar-ne una de Tallerets.
+En el grup que queda si, però si no en tens escriu-me!
 
 ### Què he de portar?
 
-La teva màquina (si en tens), teles i moltes ganes d'aprendre. Uns dies abans del curs t'enviarem la llista de materials recomanats.
+La teva màquina, teles i moltes ganes d'aprendre. Uns dies abans del curs t'enviarem la llista de materials recomanats.
 
 ### Puc incorporar-me quan el curs ja ha començat?
 
