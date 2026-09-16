@@ -1,12 +1,12 @@
 ---
 title: 'Iniciació al punt'
-desc: "El curs d'iniciació al punt començarà al gener del 2027. Vols que t'avisem quan obrim inscripcions? Escriu-nos!"
+desc: "Apren a fer punt de mitja amb agulla circular!"
 image:
   url: '/img/c-punt.jpeg'
   alt: 'Fotografia de les participants fent punt'
 links:
   - url: '/contacte'
-    text: "Avisa'm quan obri"
+    text: "M'apunto!"
   - url: '/contacte'
     text: 'Tinc dubtes'
 ---
@@ -14,7 +14,7 @@ links:
 **Aprendrem el punt de mitja des de zero amb un projecte concret!**
 
 **Quan comença?**
-El curs d'iniciació al punt començarà al **gener del 2027**. Mentrestant, si ja fas punt o en vols aprendre pel teu compte, al Club de ganxet, brodat i punt dels dimecres t'hi esperem.
+El curs d'iniciació al punt començarà l'octubre. Serà del dia 1 d'Octubre al 17 de desembre. 
+En aquest curset aprendrem a fer punt en mitja amb agulla circular desde zero. Podràs fer-te una sophie scarf, o una bufanda de tota la vida, o començar un jersei!
 
-**Vols que t'avisem?**
-Escriu-nos i et guardem el lloc a la llista quan obrim inscripcions!
+T'hi esperem!
