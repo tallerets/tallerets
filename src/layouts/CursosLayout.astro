@@ -22,7 +22,7 @@ const t =
         tarifesTitol: 'Precios',
         trimestre: 'El trimestre',
         trimestreTag: 'Curso entero',
-        trimestreDetall: '12 sesiones · 16,7€/sesión',
+        trimestreDetall: '12 sesiones · 18,3€/sesión',
         trimestreInclou: [
           'Todas las sesiones del trimestre',
           'Plaza garantizada todo el curso',
@@ -57,13 +57,15 @@ const t =
           iniciGanxetDetall: 'Grupo de mañana',
           dibuix: 'Iniciación a dibujo y pintura',
           dibuixDetall: 'Desde octubre · 10 sesiones',
-        },
+          iniciPunt: 'Iniciación al punto',
+          iniciPuntDetall: 'Grupo de tarde',
+        }
       }
     : {
         tarifesTitol: 'Preus',
         trimestre: 'El trimestre',
         trimestreTag: 'Curs sencer',
-        trimestreDetall: '12 sessions · 16,7€/sessió',
+        trimestreDetall: '12 sessions · 18,3€/sessió',
         trimestreInclou: [
           'Totes les sessions del trimestre',
           'Plaça garantida tot el curs',
@@ -98,7 +100,9 @@ const t =
           iniciGanxetDetall: 'Grup de matí',
           dibuix: 'Iniciació a dibuix i pintura',
           dibuixDetall: 'Des de l\'octubre · 10 sessions',
-        },
+          iniciPunt: 'Iniciació a la punció',
+          iniciPuntDetall: 'Grup de tarda',
+        }
       }
 
 // ── Calendari setmanal dels cursos ─────────────────────────────────
@@ -130,7 +134,7 @@ const setmana = [
 
 const estilTipus: Record<string, string> = {
   kids: 'border-[#6F2118] bg-[#F2E9B1] text-[#6F2118]',
-  inici: 'border-red',
+  inici: 'border-red-500',
 }
 ---
 <Layout
@@ -162,7 +166,7 @@ const estilTipus: Record<string, string> = {
             {t.trimestreTag}
           </span>
           <h3 class="text-xl font-[500]">{t.trimestre}</h3>
-          <p class="mt-2 text-5xl font-[300] text-red">250€</p>
+          <p class="mt-2 text-5xl font-[300] text-red">220€</p>
           <p class="mt-1 font-mono text-xs uppercase tracking-wider opacity-70">
             {t.trimestreDetall}
           </p>
