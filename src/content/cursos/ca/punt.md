@@ -7,7 +7,7 @@ image:
 links:
   - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
     text: "M'apunto!"
-  - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
+  - url: '/contacte'
     text: 'Tinc dubtes'
 ---
 
