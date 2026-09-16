@@ -44,7 +44,7 @@ Al llarg del curs aprendràs a:
 - Augmentar i disminuir punts.
 - Canviar de color.
 - Donar forma a diferents peces.
-- Escollir fils i agulles segons cada projecte.
+- Escollir fils i ganchos segons cada projecte.
 - Crear els teus propis projectes amb autonomia.
 
 ## Projectes que podràs fer
@@ -85,11 +85,11 @@ De l'1 d'octubre al 18 de desembre
 
 ## Material
 
-Si tens agulles de ganxet o llanes, les pots portar.
+Si tens ganchos o llanes, les pots portar.
 
 Si no en tens, no passa res. Els primers dies et deixarem el material perquè puguis provar-ho abans de comprar-ne.
 
-També t'ajudarem a escollir els fils i les agulles més adequats per als teus projectes.
+També t'ajudarem a escollir els fils i els ganchos més adequats per als teus projectes.
 
 ## Aquest curs és per a tu si...
 
@@ -107,7 +107,7 @@ No. El curs està pensat per començar completament des de zero.
 
 **He de portar material?**
 
-Si ja tens agulles o llanes les pots portar, però no és obligatori. Els primers dies et deixarem el material necessari.
+Si ja tens ganchos o llanes los pots portar, però no és obligatori. Els primers dies et deixarem el material necessari.
 
 **Puc incorporar-me quan el curs ja ha començat?**
 
