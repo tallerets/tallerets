@@ -6,7 +6,7 @@ image:
   alt: "Persona cosiendo con una máquina de coser en Tallerets"
 
 links:
-  - url: "https://tally.so/r/mV2bGM"
+  - url: "https://book.stripe.com/8x24gB793ear6jAa0B7N60R"
     text: "Me apunto al trimestre"
 
   - url: "https://tally.so/r/mV2bGM"
@@ -18,7 +18,7 @@ links:
 
 Aprende a coser desde cero en un grupo reducido y descubre una nueva forma de crear con las manos.
 
-Durante **15 sesiones** aprenderás a utilizar la máquina de coser mientras confeccionas proyectos útiles y adquieres la autonomía necesaria para seguir cosiendo a tu ritmo.
+Durante **12 sesiones** aprenderás a utilizar la máquina de coser mientras confeccionas proyectos útiles y adquieres la autonomía necesaria para seguir cosiendo a tu ritmo.
 
 📍 **Tallerets · Sants (Barcelona)**
 
@@ -67,7 +67,7 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 ## ¿Qué incluye?
 
-✔ 15 sesiones de 2 horas
+✔ 12 sesiones de 2 horas
 
 ✔ Grupo reducido (máximo 8 personas)
 
@@ -81,11 +81,12 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 **Martes**
 
-**18:30 – 20:30 h**
+**18:30 – 20:30 h** COMPLETO
+**16:30 - 18:30h** 2 PLAZAS!
 
-**Del 8 de septiembre al 22 de diciembre**
+**Del 5 de octubre al 22 de diciembre**
 
-**15 sesiones**
+**12 sesiones**
 
 **Solo 8 plazas disponibles.**
 
@@ -113,11 +114,11 @@ No. El curso está pensado para empezar completamente desde cero.
 
 ### ¿Necesito máquina?
 
-No. Puedes traer la tuya o utilizar una de Tallerets.
+En este curso si, pero si no tienes, puedes contactar conmigo.
 
 ### ¿Qué tengo que traer?
 
-Tu máquina (si tienes), telas y muchas ganas de aprender. Unos días antes del curso te enviaremos la lista de materiales recomendados.
+Tu máquina, telas y muchas ganas de aprender. Unos días antes del curso te enviaremos la lista de materiales recomendados.
 
 ### ¿Puedo incorporarme cuando el curso ya ha empezado?
 
