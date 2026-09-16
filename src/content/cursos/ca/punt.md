@@ -5,9 +5,9 @@ image:
   url: '/img/c-punt.jpeg'
   alt: 'Fotografia de les participants fent punt'
 links:
-  - url: '/contacte'
+  - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
     text: "M'apunto!"
-  - url: '/contacte'
+  - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
     text: 'Tinc dubtes'
 ---
 
