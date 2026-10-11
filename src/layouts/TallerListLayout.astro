@@ -2,7 +2,7 @@
 import Layout from './BaseLayout.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header/Header.astro'
-import TallerPostcard from '../components/TallerCard.astro'
+import TallerMiniCard from '../components/TallerMiniCard.astro'
 import { getLangFromUrl } from '../utils'
 import { getCollection } from 'astro:content'
 import { NextEvents } from '../components/NextEvents'
@@ -64,20 +64,29 @@ const { email } = contacts
         </div>
       )
     }
-    <section
-      class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
-    >
-      <ul
-        class="page-padding flex flex-wrap gap-4 md:gap-10 pt-6 pb-12 overflow-hidden items-center justify-center"
-      >
+    <section class="page-padding my-12 lg:my-20 max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-4">
+        {lang === 'es' ? 'Los talleres que hacemos' : 'Els tallers que fem'}
+        <span>
+          <img
+            width="48"
+            height="48"
+            class="w-10 inline text-sm"
+            src="/icons/flor.svg"
+            alt=""
+          />
+        </span>
+      </h2>
+      <p class="md:text-center md:text-lg max-w-[60ch] mx-auto mb-8">
         {
-          allTallers.map((taller: any) => (
-            <TallerPostcard
-              taller={taller}
-              infoBtn={frontmatter.other.infoBtn}
-            />
-          ))
+          lang === 'es'
+            ? 'Estos son los talleres que ofrecemos. Si quieres alguno para tu grupo, cumpleaños o empresa, te lo hacemos a medida.'
+            : "Aquests són els tallers que oferim. Si en vols algun per al teu grup, aniversari o empresa, te'l fem a mida."
         }
+      </p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        {allTallers.map((taller: any) => <TallerMiniCard taller={taller} />)}
+        <TallerMiniCard />
       </ul>
     </section>
     <section
