@@ -14,66 +14,23 @@ links:
 
 ## 🧶 CURSO REGULAR · OCTUBRE - DICIEMBRE
 
-Un espacio semanal para aprender punto a tu ritmo, compartir y reservarte un momento creativo durante la semana.
+Aprendremos punto (media) con aguja circular desde cero y nos haremos una bufanda (sophie scarf!)
 
-### Ideal si...
+**¿Cuando empieza?**
 
-- quieres empezar desde cero
-- siempre has querido aprender punto
-- buscas una actividad tranquila y creativa
-- quieres crear piezas útiles con tus manos
-- te apetece compartir un rato creativo en comunidad
+El curso de iniciación al punto empezará el 28 de octubre y acabará el 17 de diciembre. 
 
-### Aprenderás a...
+**¿En qué horario?**
 
-- hacer los puntos básicos
-- entender patrones sencillos
-- combinar texturas y colores
-- crear piezas a tu ritmo
-- desarrollar proyectos propios poco a poco
+El curso será los miércoles de 18:30 a 20:30
 
-### Proyectos que podrás hacer
+**¿Qué haremos y qué incluye?**
 
-- Bufandas
-- Complementos
-- Fundas
-- Accesorios textiles
-- Pequeñas prendas
-- ¡Y mucho más ✨
+Empezaremos desde cero a tejer. No hace falta experiéncia pero si la tienes, también puedes venir.
+Aprenderemos a montar puntos, leer el patrón, hacer los puntos básicos, aumentos, disminuciones y cierres. 
 
-Cada persona podrá avanzar a su ritmo y desarrollar proyectos propios con acompañamiento personalizado.
+**¿Qué incluye?**
 
----
+Incluye el patrón de la bufanda, te dejaremos aguja y lanas para aprender. Cuando empieces tu bufanda tendrás que traer tus agujas y lanas.
 
-### Fechas y horarios
-
-**Jueves** · 17:00 a 18:30h  
-
-Plazas muy limitadas.
-
-Si tienes agujas o lanas puedes traerlas, pero no es obligatorio :)
-
----
-
-## Preguntas frecuentes
-
-### ¿Necesito experiencia?
-
-¡No! El curso está pensado para empezar desde cero.
-
-### ¿Tengo que traer materiales?
-
-En el intensivo están incluidos.  
-En el curso regular puedes traer los tuyos o utilizar materiales del espacio.
-
-### ¿Puedo incorporarme más tarde?
-
-Sí, si quedan plazas disponibles.
-
----
-
-## Reserva tu plaza ✨
-
-Las plazas son muy limitadas porque trabajamos en grupos pequeños y con acompañamiento personalizado.
-
-Un espacio para volver a crear con las manos, sin prisa y en comunidad 💛
+T'hi esperem!
