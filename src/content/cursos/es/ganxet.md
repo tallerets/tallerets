@@ -2,7 +2,7 @@
 title: "Curso de iniciación al ganchillo"
 desc: "Aprende ganchillo desde cero en nuestro curso de iniciación al ganchillo en Sants (Barcelona). 11 sesiones en grupo reducido, máximo 8 personas, con acompañamiento personalizado."
 image:
-  url: "/img/c-ganchillo.jpeg"
+  url: "/img/c-ganxet.jpeg"
   alt: "Persona haciendo ganchillo a Tallerets"
 
 links:
