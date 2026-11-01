@@ -62,7 +62,7 @@ const perEmportar = [
     hrefRecollida: 'https://buy.stripe.com/bJe5kF9hbc2jbDU8Wx7N61b', // amb adreça d'enviament
     hrefEnviament: null as string | null,
     preventa: false,
-    textBoto: 'Compra-la',
+    textBoto: 'Vull rebre-la',
   },
 ]
 
@@ -102,7 +102,7 @@ const samarretes = [
 ]
 
 // Preventa: posa-ho a false (o esborra la línia de la data) quan ja hi hagi estoc.
-const dataPreventa = 'Preventa · recollida a partir del 10 de desembre o enviament a casa de l’1 al 15 de desembre'
+const dataPreventa = 'Preventa fins al 10 de novembre · recollida a partir del 10 de desembre o enviament a casa de l’1 al 15 de desembre'
 
 const etiquetaPreventa =
   'absolute top-3 left-3 z-[1] -rotate-3 bg-red px-3 py-1 font-mono text-xs uppercase tracking-wider text-soft'
@@ -179,7 +179,7 @@ const etiqueta =
       <p class="mx-auto mb-10 max-w-2xl text-center">
         La caixa la pots recollir a Tallerets (Sants) o te la fem arribar a casa per 8,90€ més: ho tries en pagar. La carta del Club Postal te l'enviem per correu.
       </p>
-      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caixa en preventa · recollida a partir del 10 de desembre o enviament a casa de l’1 al 15 de desembre</p>
+      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caixa en preventa fins al 10 de novembre · recollida a partir del 10 de desembre o enviament a casa de l’1 al 15 de desembre</p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {perEmportar.map((p) => (
           <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
@@ -241,7 +241,7 @@ const etiqueta =
           <div class="flex flex-1 flex-col p-5">
             <h3 class="flex-1 text-lg font-[500] leading-snug">{calendari.nom}</h3>
             <p class="mt-1 text-3xl font-[300]">{calendari.preu}</p>
-            <a href={calendari.href} class="c-button mt-4 block border-dark">La vull</a>
+            <a href={calendari.href} class="c-button mt-4 block border-dark">El vull</a>
           </div>
         </li>
         {samarretes.map((s) => (
