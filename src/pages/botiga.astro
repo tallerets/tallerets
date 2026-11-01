@@ -42,6 +42,7 @@ const perEmportar = [
     imatge: null as string | null,
     hrefRecollida: '#', // TODO: Payment Link caixa 19€ (recollida)
     hrefEnviament: '#' as string | null, // TODO: Payment Link caixa 19€ + 10€ enviament
+    preventa: true,
   },
   {
     nom: 'Carta Club Postal',
@@ -51,6 +52,7 @@ const perEmportar = [
     imatge: null as string | null,
     hrefRecollida: '#', // TODO: Payment Link carta Club Postal 15€ (amb adreça d'enviament)
     hrefEnviament: null as string | null,
+    preventa: false,
     textBoto: 'Compra-la',
   },
 ]
@@ -62,16 +64,24 @@ const calendari = {
   imatge: null as string | null,
   hrefRecollida: '#', // TODO: Payment Link calendari 15€ (recollida)
   hrefEnviament: '#', // TODO: Payment Link calendari 15€ + 10€ enviament
+  preventa: true,
 }
 
 // ── Samarretes ─────────────────────────────────────────────────────
 const preuSamarreta = '25€'
+const samarretesPreventa = true
 const samarretes = [
   { nom: 'El barri és del barri', imatge: null as string | null, href: '#' }, // TODO: Payment Link
   { nom: 'Vermut', imatge: null as string | null, href: '#' }, // TODO: Payment Link
   { nom: 'Manualitats', imatge: null as string | null, href: '#' }, // TODO: Payment Link
   { nom: 'Una casa per persona', imatge: null as string | null, href: '#' }, // TODO: Payment Link
 ]
+
+// Preventa: posa-ho a false (o esborra la línia de la data) quan ja hi hagi estoc.
+const dataPreventa = 'Preventa · enviaments i recollides a partir de l’1 de desembre'
+
+const etiquetaPreventa =
+  'absolute top-3 left-3 z-[1] -rotate-3 bg-red px-3 py-1 font-mono text-xs uppercase tracking-wider text-soft'
 
 const etiqueta =
   'absolute -top-3 left-1/2 -translate-x-1/2 -rotate-2 whitespace-nowrap bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-wider text-[#6F2118]'
@@ -144,9 +154,11 @@ const etiqueta =
       <p class="mx-auto mb-10 max-w-2xl text-center">
         La caixa la pots recollir a Tallerets (Sants) o te la fem arribar per 10€ més. La carta del Club Postal te l'enviem per correu.
       </p>
+      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caixa en preventa · enviaments i recollides a partir de l’1 de desembre</p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {perEmportar.map((p) => (
-          <li class="flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
+          <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
+            {p.preventa && <span class={etiquetaPreventa}>Preventa</span>}
             {p.imatge ? (
               <img src={p.imatge} alt={p.nom} class="aspect-[4/3] w-full object-cover" loading="lazy" />
             ) : (
@@ -184,8 +196,10 @@ const etiqueta =
       <p class="mx-auto mb-10 max-w-2xl text-center">
         Porta Tallerets i el barri posats, i tingues tot l'any una mica de taller a casa.
       </p>
+      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">{dataPreventa}</p>
       <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 items-stretch">
-        <li class="flex flex-col overflow-hidden rounded-xl border-2 border-red bg-white transition-all hover:-translate-y-1">
+        <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-red bg-white transition-all hover:-translate-y-1">
+          {calendari.preventa && <span class={etiquetaPreventa}>Preventa</span>}
           {calendari.imatge ? (
             <img src={calendari.imatge} alt={calendari.nom} class="aspect-square w-full object-cover" loading="lazy" />
           ) : (
@@ -203,7 +217,8 @@ const etiqueta =
           </div>
         </li>
         {samarretes.map((s) => (
-          <li class="flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
+          <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
+            {samarretesPreventa && <span class={etiquetaPreventa}>Preventa</span>}
             {s.imatge ? (
               <img src={s.imatge} alt={`Samarreta ${s.nom}`} class="aspect-square w-full object-cover" loading="lazy" />
             ) : (
