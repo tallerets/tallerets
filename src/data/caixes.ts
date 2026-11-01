@@ -9,8 +9,8 @@
 export const caixaComu = {
   preu: '19€',
   enviament: '10€',
-  hrefRecollida: '#', // TODO: Payment Link caixa 19€ (recollida)
-  hrefEnviament: '#', // TODO: Payment Link caixa 19€ + 10€ enviament
+  hrefRecollida: 'https://buy.stripe.com/dRmcN77937M3cHY5Kl7N60Z', // recollida
+  hrefEnviament: 'https://buy.stripe.com/14AcN7fFz6HZdM2c8J7N610', // +10€ enviament
   preventa: true, // posa-ho a false quan ja hi hagi estoc
   imatgesGenerals: ['/img/caixa-producte.webp?v=2', '/img/caixa-0.webp'],
 }
