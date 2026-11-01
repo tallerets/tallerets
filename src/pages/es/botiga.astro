@@ -31,8 +31,8 @@ const targetes = [
 ]
 
 // ── Per emportar ───────────────────────────────────────────────────
-// hrefRecollida: Payment Link sense enviament (recollida a Tallerets)
-// hrefEnviament: Payment Link amb +10€ d'enviament i adreça (o null si no s'envia)
+// hrefRecollida: Payment Link (a la caixa, recollida o enviament es tria a Stripe)
+// hrefEnviament: segon botó opcional (null = un sol botó)
 const perEmportar = [
   {
     // Preu, fotos generals, enllaços i opcions: es canvien a src/data/caixes.ts
@@ -41,10 +41,10 @@ const perEmportar = [
     descripcio:
       'Todo lo que necesitas para hacer una manualidad en casa: materiales, instrucciones y ganas de pasarlo bien.',
     imatges: caixaComu.imatgesGenerals,
-    opcions: caixes.map((c) => ({ id: c.id, nom: c.nom.es, imatges: c.imatges, hrefRecollida: c.hrefRecollida, hrefEnviament: c.hrefEnviament })),
+    opcions: caixes.map((c) => ({ id: c.id, nom: c.nom.es, imatges: c.imatges, href: c.href })),
     // Per defecte, la primera caixa; el desplegable canvia l'enllaç segons la caixa triada.
-    hrefRecollida: caixes[0].hrefRecollida,
-    hrefEnviament: caixes[0].hrefEnviament as string | null,
+    hrefRecollida: caixes[0].href, // a Stripe es tria recollida o enviament
+    hrefEnviament: null as string | null,
     preventa: caixaComu.preventa,
   },
   {
@@ -65,8 +65,7 @@ const calendari = {
   nom: 'Calendario Tallerets 2027',
   preu: '15€',
   imatges: ['/img/calendari-1.webp', '/img/calendari-2.webp'],
-  hrefRecollida: 'https://buy.stripe.com/5kQ7sNdxr4zR4bs2y97N611',
-  hrefEnviament: 'https://buy.stripe.com/bJe7sNctngiz7nE4Gh7N612',
+  href: 'https://buy.stripe.com/28E14pdxrd6n6jA2y97N61o', // a Stripe es tria recollida o enviament
   preventa: true,
 }
 
@@ -77,31 +76,27 @@ const samarretes = [
   {
     nom: 'El barri, per al barri',
     imatges: ['/img/samarreta-barri-1.webp'],
-    hrefRecollida: 'https://buy.stripe.com/cNiaEZ8d71nFfUab4F7N613',
-    hrefEnviament: 'https://buy.stripe.com/28E00lctn7M36jAa0B7N614',
+    href: 'https://buy.stripe.com/9B68wR50V3vN23kegR7N61p',
   },
   {
     nom: 'Vermut',
     imatges: ['/img/samarreta-vermut-1.webp', '/img/samarreta-vermut-2.webp', '/img/samarreta-vermut-3.webp'],
-    hrefRecollida: 'https://buy.stripe.com/5kQ7sNbpjearbDU3Cd7N615',
-    hrefEnviament: 'https://buy.stripe.com/bJe3cxctnd6n6jAegR7N616',
+    href: 'https://buy.stripe.com/4gM3cxgJD9UbeQ67St7N61q',
   },
   {
     nom: 'Manualitats',
     imatges: ['/img/samarreta-manualitats-1.webp'],
-    hrefRecollida: 'https://buy.stripe.com/aFa6oJ0KF3vNazQ1u57N617',
-    hrefEnviament: 'https://buy.stripe.com/8x27sNfFz3vN23k3Cd7N618',
+    href: 'https://buy.stripe.com/eVqfZj0KFd6n8rI7St7N61r',
   },
   {
     nom: 'Una casa per persona',
     imatges: ['/img/samarreta-casa-1.webp', '/img/samarreta-casa-2.webp'],
-    hrefRecollida: 'https://buy.stripe.com/eVqfZjeBv2rJbDU0q17N619',
-    hrefEnviament: 'https://buy.stripe.com/7sY4gB0KF2rJ8rI0q17N61a',
+    href: 'https://buy.stripe.com/cNi6oJ50V6HZ9vM1u57N61s',
   },
 ]
 
 // Preventa: posa-ho a false (o esborra la línia de la data) quan ja hi hagi estoc.
-const dataPreventa = 'Preventa · envíos y recogidas del 1 al 10 de diciembre'
+const dataPreventa = 'Preventa · recogida a partir del 10 de diciembre o envío a casa del 1 al 15 de diciembre'
 
 const etiquetaPreventa =
   'absolute top-3 left-3 z-[1] -rotate-3 bg-red px-3 py-1 font-mono text-xs uppercase tracking-wider text-soft'
@@ -176,9 +171,9 @@ const etiqueta =
         <span><img width="40" height="40" class="w-10 inline text-sm" src="/icons/flor.svg" alt="" /></span>
       </h2>
       <p class="mx-auto mb-10 max-w-2xl text-center">
-        La caja la puedes recoger en Tallerets (Sants) o te la hacemos llegar por 10€ más. La carta del Club Postal te la enviamos por correo.
+        La caja la puedes recoger en Tallerets (Sants) o te la hacemos llegar a casa por 8,90€ más: lo eliges al pagar. La carta del Club Postal te la enviamos por correo.
       </p>
-      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caja en preventa · envíos y recogidas del 1 al 10 de diciembre</p>
+      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caja en preventa · recogida a partir del 10 de diciembre o envío a casa del 1 al 15 de diciembre</p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {perEmportar.map((p) => (
           <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
@@ -200,14 +195,14 @@ const etiqueta =
                 <label class="mt-4 block">
                   <span class="font-mono text-xs uppercase tracking-wider opacity-70">Elige la caja</span>
                   <select data-opcions-caixa class="mt-1 block w-full rounded-lg border-2 border-dark bg-soft px-3 py-2 text-base">
-                    {p.opcions.map((o) => <option value={o.id} data-recollida={o.hrefRecollida} data-enviament={o.hrefEnviament}>{o.nom}</option>)}
+                    {p.opcions.map((o) => <option value={o.id} data-recollida={o.href}>{o.nom}</option>)}
                   </select>
                   <span class="mt-1 block text-xs opacity-70">Al pagar, la caja que hayas elegido aquí quedará apuntada en el pedido.</span>
                   <span class="mt-1 block text-xs"><a href="/es/per-emportar" class="underline">Ver todas las cajas y qué trae cada una</a></span>
                 </label>
               )}
               <div data-botons-caixa={p.opcions ? '' : undefined} class={`mt-6 grid gap-2 ${p.hrefEnviament ? 'grid-cols-2' : ''}`}>
-                <a href={p.hrefRecollida} data-tipus="recollida" class="c-button block border-dark">{p.textBoto ?? 'Recogida'}</a>
+                <a href={p.hrefRecollida} data-tipus="recollida" class="c-button block border-dark">{p.textBoto ?? 'La quiero'}</a>
                 {p.hrefEnviament && (
                   <a href={p.hrefEnviament} data-tipus="enviament" class="c-button block border-dark">Envío +10€</a>
                 )}
@@ -240,10 +235,7 @@ const etiqueta =
           <div class="flex flex-1 flex-col p-5">
             <h3 class="flex-1 text-lg font-[500] leading-snug">{calendari.nom}</h3>
             <p class="mt-1 text-3xl font-[300]">{calendari.preu}</p>
-            <div class="mt-4 grid gap-2">
-              <a href={calendari.hrefRecollida} class="c-button block border-dark">Recogida</a>
-              <a href={calendari.hrefEnviament} class="c-button block border-dark">Envío +10€</a>
-            </div>
+            <a href={calendari.href} class="c-button mt-4 block border-dark">La quiero</a>
           </div>
         </li>
         {samarretes.map((s) => (
@@ -253,10 +245,7 @@ const etiqueta =
             <div class="flex flex-1 flex-col p-5">
               <h3 class="flex-1 text-lg font-[500] leading-snug">{s.nom}</h3>
               <p class="mt-1 text-3xl font-[300]">{preuSamarreta}</p>
-              <div class="mt-4 grid gap-2">
-                <a href={s.hrefRecollida} class="c-button block border-dark">Recogida</a>
-                <a href={s.hrefEnviament} class="c-button block border-dark">Envío +10€</a>
-              </div>
+              <a href={s.href} class="c-button mt-4 block border-dark">La quiero</a>
             </div>
           </li>
         ))}
