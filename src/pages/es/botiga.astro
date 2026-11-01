@@ -39,14 +39,25 @@ const perEmportar = [
     hrefEnviament: '#' as string | null, // TODO: Payment Link caixa 19€ + 10€ enviament
   },
   {
-    nom: 'Calendario Tallerets',
+    nom: 'Carta Club Postal',
     preu: '15€',
-    descripcio: 'El calendario de Tallerets, para tener todo el año un poco de taller en casa.',
+    descripcio:
+      'Una carta del Club Postal, sin suscripción: la manualidad del mes con materiales e instrucciones, y una ilustración para pintar. Te la enviamos por correo.',
     imatge: null as string | null,
-    hrefRecollida: '#', // TODO: Payment Link calendari 15€
-    hrefEnviament: '#' as string | null, // TODO: Payment Link calendari 15€ + 10€ enviament
+    hrefRecollida: '#', // TODO: Payment Link carta Club Postal 15€ (con dirección de envío)
+    hrefEnviament: null as string | null,
+    textBoto: 'Cómprala',
   },
 ]
+
+// ── Calendario (va en la sección de camisetas) ─────────────────────
+const calendari = {
+  nom: 'Calendario Tallerets',
+  preu: '15€',
+  imatge: null as string | null,
+  hrefRecollida: '#', // TODO: Payment Link calendari 15€ (recogida)
+  hrefEnviament: '#', // TODO: Payment Link calendari 15€ + 10€ envío
+}
 
 // ── Samarretes ─────────────────────────────────────────────────────
 const preuSamarreta = '25€'
@@ -126,7 +137,7 @@ const etiqueta =
         <span><img width="40" height="40" class="w-10 inline text-sm" src="/icons/flor.svg" alt="" /></span>
       </h2>
       <p class="mx-auto mb-10 max-w-2xl text-center">
-        Recógelo en Tallerets (Sants) o te lo hacemos llegar a casa por 10€ más.
+        La caja la puedes recoger en Tallerets (Sants) o te la hacemos llegar por 10€ más. La carta del Club Postal te la enviamos por correo.
       </p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {perEmportar.map((p) => (
@@ -143,11 +154,16 @@ const etiqueta =
               <p class="mt-2 text-4xl font-[300]">{p.preu}</p>
               <p class="mt-3 flex-1 border-t-2 border-dashed border-soft pt-3 text-sm">{p.descripcio}</p>
               <div class={`mt-6 grid gap-2 ${p.hrefEnviament ? 'grid-cols-2' : ''}`}>
-                <a href={p.hrefRecollida} class="c-button block border-dark">Recogida</a>
+                <a href={p.hrefRecollida} class="c-button block border-dark">{p.textBoto ?? 'Recogida'}</a>
                 {p.hrefEnviament && (
                   <a href={p.hrefEnviament} class="c-button block border-dark">Envío +10€</a>
                 )}
               </div>
+              {p.textBoto && (
+                <p class="mt-3 text-center text-xs opacity-70">
+                  ¿Quieres recibirla cada mes? <a href="/es/club#quotes" class="underline">Hazte socia del Club Postal</a>
+                </p>
+              )}
             </div>
           </li>
         ))}
@@ -157,13 +173,30 @@ const etiqueta =
     <!-- ── Samarretes ───────────────────────────────────────── -->
     <section id="samarretes" class="page-padding my-8 lg:my-16">
       <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-4">
-        Camisetas
+        Calendario y camisetas
         <span><img width="40" height="40" class="w-10 inline text-sm" src="/icons/flor.svg" alt="" /></span>
       </h2>
       <p class="mx-auto mb-10 max-w-2xl text-center">
-        Lleva Tallerets y el barrio puestos. {preuSamarreta} cada una.
+        Lleva Tallerets y el barrio puestos, y ten todo el año un poco de taller en casa.
       </p>
-      <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
+      <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 items-stretch">
+        <li class="flex flex-col overflow-hidden rounded-xl border-2 border-red bg-white transition-all hover:-translate-y-1">
+          {calendari.imatge ? (
+            <img src={calendari.imatge} alt={calendari.nom} class="aspect-square w-full object-cover" loading="lazy" />
+          ) : (
+            <div class="flex aspect-square w-full items-center justify-center border-b-2 border-dashed border-red bg-[#F2E9B1] p-4 text-center">
+              <span class="font-[500] text-xl text-[#6F2118]">Calendario</span>
+            </div>
+          )}
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="flex-1 text-lg font-[500] leading-snug">{calendari.nom}</h3>
+            <p class="mt-1 text-3xl font-[300]">{calendari.preu}</p>
+            <div class="mt-4 grid gap-2">
+              <a href={calendari.hrefRecollida} class="c-button block border-dark">Recogida</a>
+              <a href={calendari.hrefEnviament} class="c-button block border-dark">Envío +10€</a>
+            </div>
+          </div>
+        </li>
         {samarretes.map((s) => (
           <li class="flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
             {s.imatge ? (
