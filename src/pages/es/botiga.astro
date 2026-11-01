@@ -16,14 +16,16 @@ const targetes = [
     nom: 'Tarjeta regalo · Talleret',
     preu: '35€',
     descripcio: 'El importe de un talleret sencillo. Válida para cualquier taller de Tallerets.',
-    href: '#', // TODO: Payment Link targeta regal 35€
+    href: 'https://buy.stripe.com/8x29AV2SN7M323k8Wx7N60V', // virtual o recollida
+    hrefEnviament: 'https://buy.stripe.com/9B614pfFzfev0ZgfkV7N60W', // física per correu +10€
     destacada: false,
   },
   {
     nom: 'Tarjeta regalo · Taller premium',
     preu: '60€',
     descripcio: 'El importe de un taller premium. Válida para cualquier taller de Tallerets.',
-    href: '#', // TODO: Payment Link targeta regal 60€
+    href: 'https://buy.stripe.com/fZu3cxfFzgiz8rI8Wx7N60X', // virtual o recollida
+    hrefEnviament: 'https://buy.stripe.com/8x23cx1OJear37o7St7N60Y', // física per correu +10€
     destacada: true,
   },
 ]
@@ -50,7 +52,7 @@ const perEmportar = [
     descripcio:
       'Una carta del Club Postal, sin suscripción: la manualidad del mes con materiales e instrucciones, y una ilustración para pintar. Te la enviamos por correo.',
     imatges: ['/img/carta-postal-1.webp'],
-    hrefRecollida: '#', // TODO: Payment Link carta Club Postal 15€ (con dirección de envío)
+    hrefRecollida: 'https://buy.stripe.com/bJe5kF9hbc2jbDU8Wx7N61b', // amb adreça d'enviament
     hrefEnviament: null as string | null,
     preventa: false,
     textBoto: 'Cómprala',
@@ -59,11 +61,11 @@ const perEmportar = [
 
 // ── Calendario (va en la sección de camisetas) ─────────────────────
 const calendari = {
-  nom: 'Calendario Tallerets',
+  nom: 'Calendario Tallerets 2027',
   preu: '15€',
   imatges: ['/img/calendari-1.webp', '/img/calendari-2.webp'],
-  hrefRecollida: '#', // TODO: Payment Link calendari 15€ (recogida)
-  hrefEnviament: '#', // TODO: Payment Link calendari 15€ + 10€ envío
+  hrefRecollida: 'https://buy.stripe.com/5kQ7sNdxr4zR4bs2y97N611',
+  hrefEnviament: 'https://buy.stripe.com/bJe7sNctngiz7nE4Gh7N612',
   preventa: true,
 }
 
@@ -74,27 +76,31 @@ const samarretes = [
   {
     nom: 'El barri, per al barri',
     imatges: ['/img/samarreta-barri-1.webp'],
-    href: '#', // TODO: Payment Link
+    hrefRecollida: 'https://buy.stripe.com/cNiaEZ8d71nFfUab4F7N613',
+    hrefEnviament: 'https://buy.stripe.com/28E00lctn7M36jAa0B7N614',
   },
   {
     nom: 'Vermut',
     imatges: ['/img/samarreta-vermut-1.webp', '/img/samarreta-vermut-2.webp', '/img/samarreta-vermut-3.webp'],
-    href: '#', // TODO: Payment Link
+    hrefRecollida: 'https://buy.stripe.com/5kQ7sNbpjearbDU3Cd7N615',
+    hrefEnviament: 'https://buy.stripe.com/bJe3cxctnd6n6jAegR7N616',
   },
   {
     nom: 'Manualitats',
     imatges: ['/img/samarreta-manualitats-1.webp'],
-    href: '#', // TODO: Payment Link
+    hrefRecollida: 'https://buy.stripe.com/aFa6oJ0KF3vNazQ1u57N617',
+    hrefEnviament: 'https://buy.stripe.com/8x27sNfFz3vN23k3Cd7N618',
   },
   {
     nom: 'Una casa per persona',
     imatges: ['/img/samarreta-casa-1.webp', '/img/samarreta-casa-2.webp'],
-    href: '#', // TODO: Payment Link
+    hrefRecollida: 'https://buy.stripe.com/eVqfZjeBv2rJbDU0q17N619',
+    hrefEnviament: 'https://buy.stripe.com/7sY4gB0KF2rJ8rI0q17N61a',
   },
 ]
 
 // Preventa: posa-ho a false (o esborra la línia de la data) quan ja hi hagi estoc.
-const dataPreventa = 'Preventa · envíos y recogidas a partir del 1 de diciembre'
+const dataPreventa = 'Preventa · envíos y recogidas del 1 al 10 de diciembre'
 
 const etiquetaPreventa =
   'absolute top-3 left-3 z-[1] -rotate-3 bg-red px-3 py-1 font-mono text-xs uppercase tracking-wider text-soft'
@@ -156,6 +162,7 @@ const etiqueta =
             >
               Regálala
             </a>
+            <a href={t.hrefEnviament} class="mt-3 block text-center text-xs underline opacity-80">¿La quieres física y enviada por correo? +10€</a>
           </li>
         ))}
       </ul>
@@ -170,7 +177,7 @@ const etiqueta =
       <p class="mx-auto mb-10 max-w-2xl text-center">
         La caja la puedes recoger en Tallerets (Sants) o te la hacemos llegar por 10€ más. La carta del Club Postal te la enviamos por correo.
       </p>
-      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caja en preventa · envíos y recogidas a partir del 1 de diciembre</p>
+      <p class="mx-auto -mt-6 mb-10 max-w-2xl text-center font-mono text-xs uppercase tracking-widest text-red">Caja en preventa · envíos y recogidas del 1 al 10 de diciembre</p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {perEmportar.map((p) => (
           <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
@@ -245,7 +252,10 @@ const etiqueta =
             <div class="flex flex-1 flex-col p-5">
               <h3 class="flex-1 text-lg font-[500] leading-snug">{s.nom}</h3>
               <p class="mt-1 text-3xl font-[300]">{preuSamarreta}</p>
-              <a href={s.href} class="c-button mt-4 block border-dark">La quiero</a>
+              <div class="mt-4 grid gap-2">
+                <a href={s.hrefRecollida} class="c-button block border-dark">Recogida</a>
+                <a href={s.hrefEnviament} class="c-button block border-dark">Envío +10€</a>
+              </div>
             </div>
           </li>
         ))}
@@ -254,6 +264,7 @@ const etiqueta =
 
     <!-- ── Info pràctica ────────────────────────────────────── -->
     <section class="page-padding my-8 lg:my-16 mx-auto max-w-2xl text-center">
+      <p class="mb-4 font-mono text-xs uppercase tracking-wider opacity-70">Las fotos son de referencia: el producto final puede variar ligeramente.</p>
       <p class="text-sm opacity-80">
         Pago seguro con tarjeta. Cualquier duda sobre envíos, recogidas
         o regalos, escríbeme a latallerets@gmail.com.
