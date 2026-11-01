@@ -7,10 +7,12 @@
 //
 // PER EDITAR: només cal tocar les dades d'aquí sota. Els href '#' s'han de
 // substituir pels Payment Links de Stripe (https://buy.stripe.com/...).
-// Imatges opcionals: posa-les a public/img/botiga/ i escriu la ruta a `imatge`.
+// Imatges: van a public/img/botiga/. A `imatges` hi pots posar-ne una o més
+// (amb més d'una, es poden passar). La ruta comença per /img/botiga/...
 import Layout from '../layouts/BaseLayout.astro'
 import Header from '../components/Header/Header.astro'
 import Footer from '../components/Footer.astro'
+import Galeria from '../components/Galeria.astro'
 
 // ── Targeta regal ──────────────────────────────────────────────────
 const targetes = [
@@ -39,7 +41,7 @@ const perEmportar = [
     preu: '19€',
     descripcio:
       'Tot el que necessites per fer una manualitat a casa: materials, instruccions i ganes de passar-ho bé.',
-    imatge: null as string | null,
+    imatges: ['/img/botiga/caixa-producte.webp', '/img/botiga/caixa-0.webp', '/img/botiga/caixa-1.webp', '/img/botiga/caixa-2.webp', '/img/botiga/caixa-3.webp', '/img/botiga/caixa-4.webp', '/img/botiga/caixa-5.webp', '/img/botiga/caixa-6.webp', '/img/botiga/caixa-7.webp'],
     hrefRecollida: '#', // TODO: Payment Link caixa 19€ (recollida)
     hrefEnviament: '#' as string | null, // TODO: Payment Link caixa 19€ + 10€ enviament
     preventa: true,
@@ -49,7 +51,7 @@ const perEmportar = [
     preu: '15€',
     descripcio:
       "Una carta del Club Postal, sense subscripció: la manualitat del mes amb materials i instruccions, i una il·lustració per pintar. Te l'enviem per correu.",
-    imatge: null as string | null,
+    imatges: ['/img/botiga/carta-postal-1.webp'],
     hrefRecollida: '#', // TODO: Payment Link carta Club Postal 15€ (amb adreça d'enviament)
     hrefEnviament: null as string | null,
     preventa: false,
@@ -61,7 +63,7 @@ const perEmportar = [
 const calendari = {
   nom: 'Calendari Tallerets',
   preu: '15€',
-  imatge: null as string | null,
+  imatges: ['/img/botiga/calendari-1.webp', '/img/botiga/calendari-2.webp'],
   hrefRecollida: '#', // TODO: Payment Link calendari 15€ (recollida)
   hrefEnviament: '#', // TODO: Payment Link calendari 15€ + 10€ enviament
   preventa: true,
@@ -71,10 +73,26 @@ const calendari = {
 const preuSamarreta = '25€'
 const samarretesPreventa = true
 const samarretes = [
-  { nom: 'El barri és del barri', imatge: null as string | null, href: '#' }, // TODO: Payment Link
-  { nom: 'Vermut', imatge: null as string | null, href: '#' }, // TODO: Payment Link
-  { nom: 'Manualitats', imatge: null as string | null, href: '#' }, // TODO: Payment Link
-  { nom: 'Una casa per persona', imatge: null as string | null, href: '#' }, // TODO: Payment Link
+  {
+    nom: 'El barri, per al barri',
+    imatges: ['/img/botiga/samarreta-barri-1.webp'],
+    href: '#', // TODO: Payment Link
+  },
+  {
+    nom: 'Vermut',
+    imatges: ['/img/botiga/samarreta-vermut-1.webp', '/img/botiga/samarreta-vermut-2.webp', '/img/botiga/samarreta-vermut-3.webp'],
+    href: '#', // TODO: Payment Link
+  },
+  {
+    nom: 'Manualitats',
+    imatges: [] as string[], // TODO: falta la foto
+    href: '#', // TODO: Payment Link
+  },
+  {
+    nom: 'Una casa per persona',
+    imatges: ['/img/botiga/samarreta-casa-1.webp', '/img/botiga/samarreta-casa-2.webp'],
+    href: '#', // TODO: Payment Link
+  },
 ]
 
 // Preventa: posa-ho a false (o esborra la línia de la data) quan ja hi hagi estoc.
@@ -159,13 +177,7 @@ const etiqueta =
         {perEmportar.map((p) => (
           <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
             {p.preventa && <span class={etiquetaPreventa}>Preventa</span>}
-            {p.imatge ? (
-              <img src={p.imatge} alt={p.nom} class="aspect-[4/3] w-full object-cover" loading="lazy" />
-            ) : (
-              <div class="flex aspect-[4/3] w-full items-center justify-center border-b-2 border-dashed border-dark bg-[#F2E9B1]">
-                <img src="/icons/flor.svg" alt="" class="w-16 opacity-60" />
-              </div>
-            )}
+            <Galeria imatges={p.imatges} alt={p.nom} aspect="aspect-[4/3]" placeholderClass="bg-[#F2E9B1]" />
             <div class="flex flex-1 flex-col p-6">
               <h3 class="text-xl font-[500]">{p.nom}</h3>
               <p class="mt-2 text-4xl font-[300]">{p.preu}</p>
@@ -200,13 +212,7 @@ const etiqueta =
       <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 items-stretch">
         <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-red bg-white transition-all hover:-translate-y-1">
           {calendari.preventa && <span class={etiquetaPreventa}>Preventa</span>}
-          {calendari.imatge ? (
-            <img src={calendari.imatge} alt={calendari.nom} class="aspect-square w-full object-cover" loading="lazy" />
-          ) : (
-            <div class="flex aspect-square w-full items-center justify-center border-b-2 border-dashed border-red bg-[#F2E9B1] p-4 text-center">
-              <span class="font-[500] text-xl text-[#6F2118]">Calendari</span>
-            </div>
-          )}
+          <Galeria imatges={calendari.imatges} alt={calendari.nom} placeholder={calendari.nom} placeholderClass="bg-[#F2E9B1] text-[#6F2118]" />
           <div class="flex flex-1 flex-col p-5">
             <h3 class="flex-1 text-lg font-[500] leading-snug">{calendari.nom}</h3>
             <p class="mt-1 text-3xl font-[300]">{calendari.preu}</p>
@@ -219,13 +225,7 @@ const etiqueta =
         {samarretes.map((s) => (
           <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
             {samarretesPreventa && <span class={etiquetaPreventa}>Preventa</span>}
-            {s.imatge ? (
-              <img src={s.imatge} alt={`Samarreta ${s.nom}`} class="aspect-square w-full object-cover" loading="lazy" />
-            ) : (
-              <div class="flex aspect-square w-full items-center justify-center border-b-2 border-dashed border-dark bg-soft p-4 text-center">
-                <span class="font-[500] text-xl text-red">«{s.nom}»</span>
-              </div>
-            )}
+            <Galeria imatges={s.imatges} alt={`Samarreta ${s.nom}`} placeholder={`«${s.nom}»`} />
             <div class="flex flex-1 flex-col p-5">
               <h3 class="flex-1 text-lg font-[500] leading-snug">{s.nom}</h3>
               <p class="mt-1 text-3xl font-[300]">{preuSamarreta}</p>
