@@ -13,6 +13,7 @@ import Layout from '../layouts/BaseLayout.astro'
 import Header from '../components/Header/Header.astro'
 import Footer from '../components/Footer.astro'
 import Galeria from '../components/Galeria.astro'
+import { caixes, caixaComu } from '../data/caixes'
 
 // ── Targeta regal ──────────────────────────────────────────────────
 const imatgesTargeta = ['/img/targeta-regal-1.webp', '/img/targeta-regal-2.webp']
@@ -38,14 +39,16 @@ const targetes = [
 // hrefEnviament: Payment Link amb +10€ d'enviament i adreça (o null si no s'envia)
 const perEmportar = [
   {
+    // Preu, fotos generals, enllaços i opcions: es canvien a src/data/caixes.ts
     nom: 'Caixa de manualitats',
-    preu: '19€',
+    preu: caixaComu.preu,
     descripcio:
       'Tot el que necessites per fer una manualitat a casa: materials, instruccions i ganes de passar-ho bé.',
-    imatges: ['/img/caixa-producte.webp', '/img/caixa-0.webp', '/img/caixa-1.webp', '/img/caixa-2.webp', '/img/caixa-3.webp', '/img/caixa-4.webp', '/img/caixa-5.webp', '/img/caixa-6.webp', '/img/caixa-7.webp'],
-    hrefRecollida: '#', // TODO: Payment Link caixa 19€ (recollida)
-    hrefEnviament: '#' as string | null, // TODO: Payment Link caixa 19€ + 10€ enviament
-    preventa: true,
+    imatges: caixaComu.imatgesGenerals,
+    opcions: caixes.map((c) => ({ id: c.id, nom: c.nom.ca, imatges: c.imatges })),
+    hrefRecollida: caixaComu.hrefRecollida,
+    hrefEnviament: caixaComu.hrefEnviament as string | null,
+    preventa: caixaComu.preventa,
   },
   {
     nom: 'Carta Club Postal',
@@ -124,9 +127,6 @@ const etiqueta =
         Per regalar o per regalar-te: una estona de crear amb les mans, a
         Tallerets o a casa teva.
       </p>
-      <p class="mx-auto mt-4 max-w-2xl font-mono text-xs uppercase tracking-widest opacity-60">
-        Les sòcies tenen descompte a la botiga
-      </p>
     </section>
 
     <!-- ── Targeta regal ────────────────────────────────────── -->
@@ -181,12 +181,30 @@ const etiqueta =
         {perEmportar.map((p) => (
           <li class="relative flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
             {p.preventa && <span class={etiquetaPreventa}>Preventa</span>}
-            <Galeria imatges={p.imatges} alt={p.nom} aspect="aspect-[4/3]" placeholderClass="bg-[#F2E9B1]" />
+            {p.opcions ? (
+              p.opcions.map((o, i) => (
+                <div data-opcio-galeria={o.id} class={i === 0 ? '' : 'hidden'}>
+                  <Galeria imatges={[...o.imatges, ...p.imatges]} alt={`${p.nom}: ${o.nom}`} aspect="aspect-[4/3]" placeholderClass="bg-[#F2E9B1]" />
+                </div>
+              ))
+            ) : (
+              <Galeria imatges={p.imatges} alt={p.nom} aspect="aspect-[4/3]" placeholderClass="bg-[#F2E9B1]" />
+            )}
             <div class="flex flex-1 flex-col p-6">
               <h3 class="text-xl font-[500]">{p.nom}</h3>
               <p class="mt-2 text-4xl font-[300]">{p.preu}</p>
               <p class="mt-3 flex-1 border-t-2 border-dashed border-soft pt-3 text-sm">{p.descripcio}</p>
-              <div class={`mt-6 grid gap-2 ${p.hrefEnviament ? 'grid-cols-2' : ''}`}>
+              {p.opcions && (
+                <label class="mt-4 block">
+                  <span class="font-mono text-xs uppercase tracking-wider opacity-70">Tria la caixa</span>
+                  <select data-opcions-caixa class="mt-1 block w-full rounded-lg border-2 border-dark bg-soft px-3 py-2 text-base">
+                    {p.opcions.map((o) => <option value={o.id}>{o.nom}</option>)}
+                  </select>
+                  <span class="mt-1 block text-xs opacity-70">Quan paguis, la caixa que hagis triat aquí quedarà apuntada a la comanda.</span>
+                  <span class="mt-1 block text-xs"><a href="/per-emportar" class="underline">Veure totes les caixes i què porta cadascuna</a></span>
+                </label>
+              )}
+              <div data-botons-caixa={p.opcions ? '' : undefined} class={`mt-6 grid gap-2 ${p.hrefEnviament ? 'grid-cols-2' : ''}`}>
                 <a href={p.hrefRecollida} class="c-button block border-dark">{p.textBoto ?? 'Recollida'}</a>
                 {p.hrefEnviament && (
                   <a href={p.hrefEnviament} class="c-button block border-dark">Enviament +10€</a>
@@ -252,3 +270,30 @@ const etiqueta =
   <hr />
   <Footer />
 </Layout>
+
+<script>
+  // Desplegable de caixes: canvia les fotos i apunta la caixa triada a
+  // l'enllaç de Stripe (client_reference_id, visible a cada pagament).
+  document.querySelectorAll<HTMLSelectElement>('[data-opcions-caixa]').forEach((select) => {
+    const targeta = select.closest('li')
+    if (!targeta) return
+    const botons = targeta.querySelectorAll<HTMLAnchorElement>('[data-botons-caixa] a')
+    botons.forEach((a) => (a.dataset.base = a.getAttribute('href') ?? '#'))
+    const aplica = () => {
+      const id = select.value
+      targeta.querySelectorAll<HTMLElement>('[data-opcio-galeria]').forEach((g) => {
+        g.classList.toggle('hidden', g.dataset.opcioGaleria !== id)
+      })
+      botons.forEach((a) => {
+        const base = a.dataset.base ?? '#'
+        if (base.startsWith('http')) {
+          const url = new URL(base)
+          url.searchParams.set('client_reference_id', id)
+          a.href = url.toString()
+        }
+      })
+    }
+    select.addEventListener('change', aplica)
+    aplica()
+  })
+</script>
