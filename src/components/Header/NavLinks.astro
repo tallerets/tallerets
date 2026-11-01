@@ -20,6 +20,8 @@ const links = restLinks.map((link: Link) => ({
 const clubUrl = translatePath('/club')
 const clubText = lang === 'es' ? 'Hazte socia' : 'Fes-te sòcia'
 const clubInfoText = 'club'
+const botigaUrl = translatePath('/botiga')
+const botigaText = lang === 'es' ? 'tienda' : 'botiga'
 ---
 <ul class={className}>
   {
@@ -30,6 +32,9 @@ const clubInfoText = 'club'
         </li>
       ))
   }
+  <li>
+    <a href={botigaUrl}>{botigaText}</a>
+  </li>
   <li>
     <a href={clubUrl}>{clubInfoText}</a>
   </li>
