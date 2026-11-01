@@ -8,8 +8,8 @@
 // ── Preu, enllaços de pagament i preventa (comuns a totes les caixes) ──
 export const caixaComu = {
   preu: '19€',
-  enviament: '10€',
-  // Els enllaços de pagament són a cada caixa (hrefRecollida / hrefEnviament),
+  enviament: '8,90€',
+  // Els enllaços de pagament són a cada caixa (href): a Stripe es tria recollida o enviament,
   // així a Stripe es veu quantes se'n venen de cada una.
   preventa: true, // posa-ho a false quan ja hi hagi estoc
   imatgesGenerals: ['/img/caixa-producte.webp?v=2', '/img/caixa-0.webp'],
@@ -25,15 +25,13 @@ export interface Caixa {
   descripcio: Text
   inclou: Llista
   detalls: Text
-  hrefRecollida: string // Payment Link recollida a Tallerets
-  hrefEnviament: string // Payment Link +10€ enviament (demana l'adreça)
+  href: string // Payment Link: a Stripe es tria recollida (0€) o enviament a casa (8,90€)
 }
 
 export const caixes: Caixa[] = [
   {
     id: 'fotobrodat',
-    hrefRecollida: 'https://buy.stripe.com/9B6aEZ0KF7M30Zg7St7N61c',
-    hrefEnviament: 'https://buy.stripe.com/aFa3cx50V1nF5fw6Op7N61d',
+    href: 'https://buy.stripe.com/bJe14peBv7M323kdcN7N61k',
     nom: { ca: 'Fotobrodat', es: 'Fotobordado' },
     imatges: ['/img/caixa-5.webp'],
     descripcio: {
@@ -48,8 +46,7 @@ export const caixes: Caixa[] = [
   },
   {
     id: 'casa-de-llum',
-    hrefRecollida: 'https://buy.stripe.com/aFa14peBv6HZgYec8J7N61e',
-    hrefEnviament: 'https://buy.stripe.com/8x27sNdxr8Q7bDU7St7N61f',
+    href: 'https://buy.stripe.com/bJefZj50Vear5fwc8J7N61l',
     nom: { ca: 'Casa de llum', es: 'Casa de luz' },
     imatges: ['/img/caixa-1.webp', '/img/caixa-2.webp', '/img/caixa-3.webp', '/img/caixa-4.webp'],
     descripcio: {
@@ -64,8 +61,7 @@ export const caixes: Caixa[] = [
   },
   {
     id: 'serigrafia',
-    hrefRecollida: 'https://buy.stripe.com/00w00lfFz7M337o6Op7N61g',
-    hrefEnviament: 'https://buy.stripe.com/3cIfZj8d7aYfcHY6Op7N61h',
+    href: 'https://buy.stripe.com/7sY3cx3WR9Ub5fwb4F7N61m',
     nom: { ca: 'Estampa en serigrafia', es: 'Estampa en serigrafía' },
     imatges: ['/img/caixa-7.webp'],
     descripcio: {
@@ -80,8 +76,7 @@ export const caixes: Caixa[] = [
   },
   {
     id: 'tapis-creatiu',
-    hrefRecollida: 'https://buy.stripe.com/7sY5kF2SNd6n0Zg2y97N61i',
-    hrefEnviament: 'https://buy.stripe.com/cNidRbbpj4zRgYe7St7N61j',
+    href: 'https://buy.stripe.com/5kQ14p50Vfev5fwc8J7N61n',
     nom: { ca: 'Tapís creatiu', es: 'Tapiz creativo' },
     imatges: ['/img/caixa-6.webp'],
     descripcio: {
