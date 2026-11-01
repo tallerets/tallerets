@@ -47,9 +47,10 @@ const perEmportar = [
     descripcio:
       'Tot el que necessites per fer una manualitat a casa: materials, instruccions i ganes de passar-ho bé.',
     imatges: caixaComu.imatgesGenerals,
-    opcions: caixes.map((c) => ({ id: c.id, nom: c.nom.ca, imatges: c.imatges })),
-    hrefRecollida: caixaComu.hrefRecollida,
-    hrefEnviament: caixaComu.hrefEnviament as string | null,
+    opcions: caixes.map((c) => ({ id: c.id, nom: c.nom.ca, imatges: c.imatges, hrefRecollida: c.hrefRecollida, hrefEnviament: c.hrefEnviament })),
+    // Per defecte, la primera caixa; el desplegable canvia l'enllaç segons la caixa triada.
+    hrefRecollida: caixes[0].hrefRecollida,
+    hrefEnviament: caixes[0].hrefEnviament as string | null,
     preventa: caixaComu.preventa,
   },
   {
@@ -205,16 +206,16 @@ const etiqueta =
                 <label class="mt-4 block">
                   <span class="font-mono text-xs uppercase tracking-wider opacity-70">Tria la caixa</span>
                   <select data-opcions-caixa class="mt-1 block w-full rounded-lg border-2 border-dark bg-soft px-3 py-2 text-base">
-                    {p.opcions.map((o) => <option value={o.id}>{o.nom}</option>)}
+                    {p.opcions.map((o) => <option value={o.id} data-recollida={o.hrefRecollida} data-enviament={o.hrefEnviament}>{o.nom}</option>)}
                   </select>
                   <span class="mt-1 block text-xs opacity-70">Quan paguis, la caixa que hagis triat aquí quedarà apuntada a la comanda.</span>
                   <span class="mt-1 block text-xs"><a href="/per-emportar" class="underline">Veure totes les caixes i què porta cadascuna</a></span>
                 </label>
               )}
               <div data-botons-caixa={p.opcions ? '' : undefined} class={`mt-6 grid gap-2 ${p.hrefEnviament ? 'grid-cols-2' : ''}`}>
-                <a href={p.hrefRecollida} class="c-button block border-dark">{p.textBoto ?? 'Recollida'}</a>
+                <a href={p.hrefRecollida} data-tipus="recollida" class="c-button block border-dark">{p.textBoto ?? 'Recollida'}</a>
                 {p.hrefEnviament && (
-                  <a href={p.hrefEnviament} class="c-button block border-dark">Enviament +10€</a>
+                  <a href={p.hrefEnviament} data-tipus="enviament" class="c-button block border-dark">Enviament +10€</a>
                 )}
               </div>
               {p.textBoto && (
@@ -288,16 +289,17 @@ const etiqueta =
   document.querySelectorAll<HTMLSelectElement>('[data-opcions-caixa]').forEach((select) => {
     const targeta = select.closest('li')
     if (!targeta) return
-    const botons = targeta.querySelectorAll<HTMLAnchorElement>('[data-botons-caixa] a')
-    botons.forEach((a) => (a.dataset.base = a.getAttribute('href') ?? '#'))
+    const botons = targeta.querySelectorAll<HTMLAnchorElement>('[data-botons-caixa] a[data-tipus]')
     const aplica = () => {
       const id = select.value
+      const opcio = select.selectedOptions[0]
       targeta.querySelectorAll<HTMLElement>('[data-opcio-galeria]').forEach((g) => {
         g.classList.toggle('hidden', g.dataset.opcioGaleria !== id)
       })
+      // Cada caixa té el seu enllaç de Stripe (recollida o enviament).
       botons.forEach((a) => {
-        const base = a.dataset.base ?? '#'
-        if (base.startsWith('http')) {
+        const base = a.dataset.tipus === 'enviament' ? opcio?.dataset.enviament : opcio?.dataset.recollida
+        if (base && base.startsWith('http')) {
           const url = new URL(base)
           url.searchParams.set('client_reference_id', id)
           a.href = url.toString()
