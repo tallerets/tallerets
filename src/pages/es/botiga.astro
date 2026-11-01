@@ -1,25 +1,30 @@
 ---
-// src/pages/es/botiga.astro
-// Versión en castellano de la tienda. OJO: los imports llevan ../../
-// PARA EDITAR: usa los MISMOS Payment Links, precios e imágenes que en la
-// versión catalana (src/pages/botiga.astro).
-import Layout from '../../layouts/BaseLayout.astro'
-import Header from '../../components/Header/Header.astro'
-import Footer from '../../components/Footer.astro'
+// src/pages/botiga.astro
+// La botiga de Tallerets: targeta regal, caixes de manualitats per emportar,
+// calendari i samarretes. Mateix patró que club.astro: BaseLayout + Header +
+// Footer, colors de tema (soft/dark/red) i Crema/Argila com a classes
+// arbitràries.
+//
+// PER EDITAR: només cal tocar les dades d'aquí sota. Els href '#' s'han de
+// substituir pels Payment Links de Stripe (https://buy.stripe.com/...).
+// Imatges opcionals: posa-les a public/img/botiga/ i escriu la ruta a `imatge`.
+import Layout from '../layouts/BaseLayout.astro'
+import Header from '../components/Header/Header.astro'
+import Footer from '../components/Footer.astro'
 
 // ── Targeta regal ──────────────────────────────────────────────────
 const targetes = [
   {
-    nom: 'Tarjeta regalo · Talleret',
+    nom: 'Targeta regal · Talleret',
     preu: '35€',
-    descripcio: 'El importe de un talleret sencillo. Válida para cualquier taller de Tallerets.',
+    descripcio: "L'import d'un talleret senzill. Vàlida per a qualsevol taller de Tallerets.",
     href: '#', // TODO: Payment Link targeta regal 35€
     destacada: false,
   },
   {
-    nom: 'Tarjeta regalo · Taller premium',
+    nom: 'Targeta regal · Taller premium',
     preu: '60€',
-    descripcio: 'El importe de un taller premium. Válida para cualquier taller de Tallerets.',
+    descripcio: "L'import d'un taller premium. Vàlida per a qualsevol taller de Tallerets.",
     href: '#', // TODO: Payment Link targeta regal 60€
     destacada: true,
   },
@@ -30,21 +35,21 @@ const targetes = [
 // hrefEnviament: Payment Link amb +10€ d'enviament i adreça (o null si no s'envia)
 const perEmportar = [
   {
-    nom: 'Caja de manualidades',
+    nom: 'Caixa de manualitats',
     preu: '19€',
     descripcio:
-      'Todo lo que necesitas para hacer una manualidad en casa: materiales, instrucciones y ganas de pasarlo bien.',
+      'Tot el que necessites per fer una manualitat a casa: materials, instruccions i ganes de passar-ho bé.',
     imatge: null as string | null,
     hrefRecollida: '#', // TODO: Payment Link caixa 19€ (recollida)
     hrefEnviament: '#' as string | null, // TODO: Payment Link caixa 19€ + 10€ enviament
   },
   {
-    nom: 'Calendario Tallerets',
+    nom: 'Calendari Tallerets',
     preu: '15€',
-    descripcio: 'El calendario de Tallerets, para tener todo el año un poco de taller en casa.',
+    descripcio: 'El calendari de Tallerets, per tenir tot l’any una mica de taller a casa.',
     imatge: null as string | null,
     hrefRecollida: '#', // TODO: Payment Link calendari 15€
-    hrefEnviament: null as string | null, // TODO: posa un Payment Link si també l'envies
+    hrefEnviament: '#' as string | null, // TODO: Payment Link calendari 15€ + 10€ enviament
   },
 ]
 
@@ -62,38 +67,38 @@ const etiqueta =
 ---
 
 <Layout
-  title="Tienda Tallerets: tarjetas regalo, cajas de manualidades, calendario y camisetas"
-  description="Regala creatividad: tarjetas regalo, cajas de manualidades para llevar, el calendario y las camisetas de Tallerets, tu espacio creativo en Sants."
+  title="Botiga Tallerets: targetes regal, caixes de manualitats, calendari i samarretes"
+  description="Regala creativitat: targetes regal, caixes de manualitats per emportar, el calendari i les samarretes de Tallerets, el teu espai creatiu a Sants."
 >
   <Header className="bg-soft text-dark relative" />
   <main>
     <!-- ── Hero ─────────────────────────────────────────────── -->
     <section class="page-padding pt-4 text-center">
       <h1 class="text-4xl md:text-6xl md:leading-tight font-[500]">
-        Tienda
+        Botiga
         <span>
           <img width="48" height="48" class="w-12 inline text-sm" src="/icons/flor.svg" alt="" />
         </span>
       </h1>
       <p class="mx-auto mt-4 max-w-2xl text-lg md:text-xl">
-        Para regalar o regalarte: un rato de crear con las manos, en
-        Tallerets o en tu casa.
+        Per regalar o per regalar-te: una estona de crear amb les mans, a
+        Tallerets o a casa teva.
       </p>
       <p class="mx-auto mt-4 max-w-2xl font-mono text-xs uppercase tracking-widest opacity-60">
-        Las socias tienen descuento en la tienda
+        Les sòcies tenen descompte a la botiga
       </p>
     </section>
 
     <!-- ── Targeta regal ────────────────────────────────────── -->
     <section id="targeta-regal" class="page-padding my-8 lg:my-16">
       <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-4">
-        Tarjeta regalo
+        Targeta regal
         <span><img width="40" height="40" class="w-10 inline text-sm" src="/icons/flor.svg" alt="" /></span>
       </h2>
       <p class="mx-auto mb-10 max-w-2xl text-center">
-        Regala tiempo para crear. La tarjeta se puede usar para cualquier
-        taller: si cuesta más, se paga la diferencia; si cuesta menos, el resto
-        se guarda para otro taller.
+        Regala temps per crear. La targeta es pot fer servir per a qualsevol
+        taller: si costa més, es paga la diferència; si costa menys, la resta es
+        guarda per a un altre taller.
       </p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {targetes.map((t) => (
@@ -112,7 +117,7 @@ const etiqueta =
                 t.destacada ? 'border-red bg-red text-soft hover:bg-transparent' : 'border-dark'
               }`}
             >
-              Regálala
+              Regala-la
             </a>
           </li>
         ))}
@@ -122,11 +127,11 @@ const etiqueta =
     <!-- ── Per emportar ─────────────────────────────────────── -->
     <section id="per-emportar" class="page-padding my-8 lg:my-16">
       <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-4">
-        Para llevar
+        Per emportar
         <span><img width="40" height="40" class="w-10 inline text-sm" src="/icons/flor.svg" alt="" /></span>
       </h2>
       <p class="mx-auto mb-10 max-w-2xl text-center">
-        Recógelo en Tallerets (Sants) o te lo hacemos llegar a casa por 10€ más.
+        Recull-ho a Tallerets (Sants) o te'l fem arribar a casa per 10€ més.
       </p>
       <ul class="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 items-stretch">
         {perEmportar.map((p) => (
@@ -143,9 +148,9 @@ const etiqueta =
               <p class="mt-2 text-4xl font-[300]">{p.preu}</p>
               <p class="mt-3 flex-1 border-t-2 border-dashed border-soft pt-3 text-sm">{p.descripcio}</p>
               <div class={`mt-6 grid gap-2 ${p.hrefEnviament ? 'grid-cols-2' : ''}`}>
-                <a href={p.hrefRecollida} class="c-button block border-dark">Recogida</a>
+                <a href={p.hrefRecollida} class="c-button block border-dark">Recollida</a>
                 {p.hrefEnviament && (
-                  <a href={p.hrefEnviament} class="c-button block border-dark">Envío +10€</a>
+                  <a href={p.hrefEnviament} class="c-button block border-dark">Enviament +10€</a>
                 )}
               </div>
             </div>
@@ -157,17 +162,17 @@ const etiqueta =
     <!-- ── Samarretes ───────────────────────────────────────── -->
     <section id="samarretes" class="page-padding my-8 lg:my-16">
       <h2 class="text-3xl md:text-4xl text-center md:leading-tight font-[500] mb-4">
-        Camisetas
+        Samarretes
         <span><img width="40" height="40" class="w-10 inline text-sm" src="/icons/flor.svg" alt="" /></span>
       </h2>
       <p class="mx-auto mb-10 max-w-2xl text-center">
-        Lleva Tallerets y el barrio puestos. {preuSamarreta} cada una.
+        Porta Tallerets i el barri posats. {preuSamarreta} cadascuna.
       </p>
       <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
         {samarretes.map((s) => (
           <li class="flex flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1">
             {s.imatge ? (
-              <img src={s.imatge} alt={`Camiseta ${s.nom}`} class="aspect-square w-full object-cover" loading="lazy" />
+              <img src={s.imatge} alt={`Samarreta ${s.nom}`} class="aspect-square w-full object-cover" loading="lazy" />
             ) : (
               <div class="flex aspect-square w-full items-center justify-center border-b-2 border-dashed border-dark bg-soft p-4 text-center">
                 <span class="font-[500] text-xl text-red">«{s.nom}»</span>
@@ -176,7 +181,7 @@ const etiqueta =
             <div class="flex flex-1 flex-col p-5">
               <h3 class="flex-1 text-lg font-[500] leading-snug">{s.nom}</h3>
               <p class="mt-1 text-3xl font-[300]">{preuSamarreta}</p>
-              <a href={s.href} class="c-button mt-4 block border-dark">La quiero</a>
+              <a href={s.href} class="c-button mt-4 block border-dark">La vull</a>
             </div>
           </li>
         ))}
@@ -186,10 +191,10 @@ const etiqueta =
     <!-- ── Info pràctica ────────────────────────────────────── -->
     <section class="page-padding my-8 lg:my-16 mx-auto max-w-2xl text-center">
       <p class="text-sm opacity-80">
-        Pago seguro con tarjeta. Cualquier duda sobre envíos, recogidas
-        o regalos, escríbeme a latallerets@gmail.com.
+        Pagament segur amb targeta. Qualsevol dubte sobre enviaments, recollides
+        o regals, escriu-me a latallerets@gmail.com.
       </p>
-      <a href="/es/contacte" class="c-button mt-6 inline-block border-dark">Contáctame</a>
+      <a href="/contacte" class="c-button mt-6 inline-block border-dark">Contacta'm</a>
     </section>
   </main>
   <hr />
