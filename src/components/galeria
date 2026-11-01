@@ -1,0 +1,135 @@
+---
+// Galeria d'imatges per a les targetes de la botiga.
+// - Amb 1 imatge: la mostra i prou.
+// - Amb 2 o més: es poden passar lliscant (mòbil) o amb les fletxes, i
+//   els puntets indiquen quina es veu.
+// - Sense imatges: mostra un requadre amb el text `placeholder`.
+interface Props {
+  imatges: string[]
+  alt: string
+  aspect?: string // classe Tailwind, p. ex. 'aspect-square' o 'aspect-[4/3]'
+  placeholder?: string
+  placeholderClass?: string
+}
+const {
+  imatges,
+  alt,
+  aspect = 'aspect-square',
+  placeholder = '',
+  placeholderClass = 'bg-soft text-red',
+} = Astro.props
+const multiples = imatges.length > 1
+---
+
+{
+  imatges.length === 0 ? (
+    <div
+      class={`flex ${aspect} w-full items-center justify-center border-b-2 border-dashed border-dark p-4 text-center ${placeholderClass}`}
+    >
+      {placeholder ? (
+        <span class="text-xl font-[500]">{placeholder}</span>
+      ) : (
+        <img src="/icons/flor.svg" alt="" class="w-16 opacity-60" />
+      )}
+    </div>
+  ) : (
+    <div class={`galeria relative ${aspect} w-full overflow-hidden bg-soft`} data-galeria>
+      <ul
+        class="galeria-pista flex h-full w-full snap-x snap-mandatory overflow-x-auto"
+        data-pista
+      >
+        {imatges.map((src, i) => (
+          <li class="h-full w-full shrink-0 snap-center">
+            <img
+              src={src}
+              alt={multiples ? `${alt} (${i + 1} de ${imatges.length})` : alt}
+              class="h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </li>
+        ))}
+      </ul>
+      {multiples && (
+        <>
+          <button
+            type="button"
+            class="galeria-fletxa left-2"
+            data-anterior
+            aria-label="Imatge anterior"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            class="galeria-fletxa right-2"
+            data-seguent
+            aria-label="Imatge següent"
+          >
+            ›
+          </button>
+          <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
+            {imatges.map((_, i) => (
+              <span
+                class={`galeria-punt ${i === 0 ? 'actiu' : ''}`}
+                data-punt
+                aria-hidden="true"
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+<style>
+  .galeria-pista {
+    scrollbar-width: none;
+  }
+  .galeria-pista::-webkit-scrollbar {
+    display: none;
+  }
+  .galeria-fletxa {
+    @apply absolute top-1/2 z-[1] flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border-2 border-dark bg-soft pb-1 text-2xl leading-none text-dark opacity-90 transition-transform hover:scale-110 hover:border-red hover:text-red;
+  }
+  .galeria-punt {
+    @apply h-2 w-2 rounded-full border border-dark bg-soft transition-colors;
+  }
+  .galeria-punt.actiu {
+    @apply border-red bg-red;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-galeria]').forEach((galeria) => {
+    const pista = galeria.querySelector<HTMLElement>('[data-pista]')
+    const punts = galeria.querySelectorAll<HTMLElement>('[data-punt]')
+    if (!pista || punts.length === 0) return
+
+    const actual = () => Math.round(pista.scrollLeft / pista.clientWidth)
+    const anar = (i: number) => {
+      const total = punts.length
+      const desti = (i + total) % total
+      pista.scrollTo({ left: desti * pista.clientWidth, behavior: 'smooth' })
+    }
+
+    galeria.querySelector('[data-anterior]')?.addEventListener('click', (e) => {
+      e.preventDefault()
+      anar(actual() - 1)
+    })
+    galeria.querySelector('[data-seguent]')?.addEventListener('click', (e) => {
+      e.preventDefault()
+      anar(actual() + 1)
+    })
+
+    pista.addEventListener(
+      'scroll',
+      () => {
+        const i = actual()
+        punts.forEach((p, j) => p.classList.toggle('actiu', i === j))
+      },
+      { passive: true },
+    )
+  })
+</script>
