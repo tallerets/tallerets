@@ -7,8 +7,8 @@
 //
 // PER EDITAR: només cal tocar les dades d'aquí sota. Els href '#' s'han de
 // substituir pels Payment Links de Stripe (https://buy.stripe.com/...).
-// Imatges: van a public/img/botiga/. A `imatges` hi pots posar-ne una o més
-// (amb més d'una, es poden passar). La ruta comença per /img/botiga/...
+// Imatges: van a public/img/. A `imatges` hi pots posar-ne una o més
+// (amb més d'una, es poden passar). La ruta comença per /img/...
 import Layout from '../layouts/BaseLayout.astro'
 import Header from '../components/Header/Header.astro'
 import Footer from '../components/Footer.astro'
@@ -41,7 +41,7 @@ const perEmportar = [
     preu: '19€',
     descripcio:
       'Tot el que necessites per fer una manualitat a casa: materials, instruccions i ganes de passar-ho bé.',
-    imatges: ['/img/botiga/caixa-producte.webp', '/img/botiga/caixa-0.webp', '/img/botiga/caixa-1.webp', '/img/botiga/caixa-2.webp', '/img/botiga/caixa-3.webp', '/img/botiga/caixa-4.webp', '/img/botiga/caixa-5.webp', '/img/botiga/caixa-6.webp', '/img/botiga/caixa-7.webp'],
+    imatges: ['/img/caixa-producte.webp', '/img/caixa-0.webp', '/img/caixa-1.webp', '/img/caixa-2.webp', '/img/caixa-3.webp', '/img/caixa-4.webp', '/img/caixa-5.webp', '/img/caixa-6.webp', '/img/caixa-7.webp'],
     hrefRecollida: '#', // TODO: Payment Link caixa 19€ (recollida)
     hrefEnviament: '#' as string | null, // TODO: Payment Link caixa 19€ + 10€ enviament
     preventa: true,
@@ -51,7 +51,7 @@ const perEmportar = [
     preu: '15€',
     descripcio:
       "Una carta del Club Postal, sense subscripció: la manualitat del mes amb materials i instruccions, i una il·lustració per pintar. Te l'enviem per correu.",
-    imatges: ['/img/botiga/carta-postal-1.webp'],
+    imatges: ['/img/carta-postal-1.webp'],
     hrefRecollida: '#', // TODO: Payment Link carta Club Postal 15€ (amb adreça d'enviament)
     hrefEnviament: null as string | null,
     preventa: false,
@@ -63,7 +63,7 @@ const perEmportar = [
 const calendari = {
   nom: 'Calendari Tallerets',
   preu: '15€',
-  imatges: ['/img/botiga/calendari-1.webp', '/img/botiga/calendari-2.webp'],
+  imatges: ['/img/calendari-1.webp', '/img/calendari-2.webp'],
   hrefRecollida: '#', // TODO: Payment Link calendari 15€ (recollida)
   hrefEnviament: '#', // TODO: Payment Link calendari 15€ + 10€ enviament
   preventa: true,
@@ -75,12 +75,12 @@ const samarretesPreventa = true
 const samarretes = [
   {
     nom: 'El barri, per al barri',
-    imatges: ['/img/botiga/samarreta-barri-1.webp'],
+    imatges: ['/img/samarreta-barri-1.webp'],
     href: '#', // TODO: Payment Link
   },
   {
     nom: 'Vermut',
-    imatges: ['/img/botiga/samarreta-vermut-1.webp', '/img/botiga/samarreta-vermut-2.webp', '/img/botiga/samarreta-vermut-3.webp'],
+    imatges: ['/img/samarreta-vermut-1.webp', '/img/samarreta-vermut-2.webp', '/img/samarreta-vermut-3.webp'],
     href: '#', // TODO: Payment Link
   },
   {
@@ -90,7 +90,7 @@ const samarretes = [
   },
   {
     nom: 'Una casa per persona',
-    imatges: ['/img/botiga/samarreta-casa-1.webp', '/img/botiga/samarreta-casa-2.webp'],
+    imatges: ['/img/samarreta-casa-1.webp', '/img/samarreta-casa-2.webp'],
     href: '#', // TODO: Payment Link
   },
 ]
