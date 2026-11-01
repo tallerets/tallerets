@@ -1,0 +1,103 @@
+---
+// src/pages/es/per-emportar.astro
+// Versión en castellano. Los textos, fotos, precio y enlaces se cambian en
+// src/data/caixes.ts (no aquí).
+import Layout from '../../layouts/BaseLayout.astro'
+import Header from '../../components/Header/Header.astro'
+import Footer from '../../components/Footer.astro'
+import Galeria from '../../components/Galeria.astro'
+import { caixes, caixaComu, ambCaixa } from '../../data/caixes'
+
+const lang = 'es'
+const etiquetaPreventa =
+  'absolute top-3 left-3 z-[1] -rotate-3 bg-red px-3 py-1 font-mono text-xs uppercase tracking-wider text-soft'
+---
+
+<Layout
+  title="Tallerets para llevar: manualidades en caja para todas las edades"
+  description="Cajas de manualidades de Tallerets para hacer en casa: fotobordado, casa de luz, serigrafía y tapiz creativo. Recogida en Sants o envío a domicilio."
+>
+  <Header className="bg-soft text-dark relative" />
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section class="page-padding pt-4 text-center">
+      <h1 class="text-4xl md:text-6xl md:leading-tight font-[500]">
+        Tallerets para llevar
+        <span><img width="48" height="48" class="w-12 inline text-sm" src="/icons/flor.svg" alt="" /></span>
+      </h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg md:text-xl">
+        Manualidades en caja para todas las edades. Cada caja trae todo lo que
+        necesitas para crear en casa, a tu ritmo.
+      </p>
+      <img
+        src="/img/caixa-producte.webp?v=2"
+        alt="Caja de Tallerets para llevar"
+        class="mx-auto mt-6 w-full max-w-sm"
+      />
+      <div class="mx-auto mt-4 flex max-w-xl flex-wrap justify-center gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-widest">
+        <span>{caixaComu.preu} la caja</span>
+        <span>Recogida en Sants</span>
+        <span>Envío +{caixaComu.enviament}</span>
+      </div>
+      {caixaComu.preventa && (
+        <p class="mx-auto mt-3 max-w-2xl font-mono text-xs uppercase tracking-widest text-red">
+          Preventa · envíos y recogidas a partir del 1 de diciembre
+        </p>
+      )}
+    </section>
+
+    <!-- ── Caixes ───────────────────────────────────────────── -->
+    <section class="page-padding my-8 lg:my-16">
+      <ul class="mx-auto max-w-5xl space-y-10 md:space-y-16">
+        {caixes.map((c, i) => (
+          <li
+            id={c.id}
+            class={`grid scroll-mt-8 items-center gap-6 md:grid-cols-2 md:gap-10 ${
+              i % 2 === 1 ? 'md:[&>*:first-child]:order-2' : ''
+            }`}
+          >
+            <div class="relative overflow-hidden rounded-xl border-2 border-dark">
+              {caixaComu.preventa && <span class={etiquetaPreventa}>Preventa</span>}
+              <Galeria imatges={c.imatges} alt={c.nom[lang]} aspect="aspect-[4/3]" placeholderClass="bg-[#F2E9B1]" />
+            </div>
+            <div>
+              <h2 class="text-3xl md:text-4xl font-[500]">{c.nom[lang]}</h2>
+              <p class="mt-1 font-mono text-xs uppercase tracking-wider opacity-70">{c.detalls[lang]}</p>
+              <p class="mt-4 text-lg">{c.descripcio[lang]}</p>
+              <p class="mt-4 font-mono text-xs uppercase tracking-wider opacity-70">Qué trae la caja</p>
+              <ul class="mt-2 space-y-1 border-t-2 border-dashed border-soft pt-2 text-sm">
+                {c.inclou[lang].map((item) => (
+                  <li class="flex gap-2">
+                    <span class="text-red" aria-hidden="true">✿</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p class="mt-6 text-4xl font-[300]">{caixaComu.preu}</p>
+              <div class="mt-3 grid max-w-sm grid-cols-2 gap-2">
+                <a href={ambCaixa(caixaComu.hrefRecollida, c.id)} class="c-button block border-dark">Recogida</a>
+                <a href={ambCaixa(caixaComu.hrefEnviament, c.id)} class="c-button block border-dark">
+                  Envío +{caixaComu.enviament}
+                </a>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- ── Info pràctica ────────────────────────────────────── -->
+    <section class="page-padding my-8 lg:my-16 mx-auto max-w-2xl text-center">
+      <p class="text-sm opacity-80">
+        Pago seguro con tarjeta. Cualquier duda sobre las cajas, los
+        envíos o las recogidas, escríbeme a latallerets@gmail.com.
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="/es/botiga" class="c-button inline-block border-dark">Volver a la tienda</a>
+        <a href="/es/contacte" class="c-button inline-block border-dark">Contáctame</a>
+      </div>
+    </section>
+  </main>
+  <hr />
+  <Footer />
+</Layout>
