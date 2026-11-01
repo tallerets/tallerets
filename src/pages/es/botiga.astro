@@ -9,6 +9,7 @@ import Footer from '../../components/Footer.astro'
 import Galeria from '../../components/Galeria.astro'
 
 // ── Targeta regal ──────────────────────────────────────────────────
+const imatgesTargeta = ['/img/targeta-regal-1.webp', '/img/targeta-regal-2.webp']
 const targetes = [
   {
     nom: 'Tarjeta regalo · Talleret',
@@ -79,7 +80,7 @@ const samarretes = [
   },
   {
     nom: 'Manualitats',
-    imatges: [] as string[], // TODO: falta la foto
+    imatges: ['/img/samarreta-manualitats-1.webp'],
     href: '#', // TODO: Payment Link
   },
   {
@@ -141,6 +142,9 @@ const etiqueta =
             }`}
           >
             {t.destacada && <span class={etiqueta}>Premium</span>}
+            <div class="mb-4 overflow-hidden rounded-lg border-2 border-dark">
+              <Galeria imatges={imatgesTargeta} alt="Tarjeta regalo Tallerets" aspect="aspect-[1200/852]" />
+            </div>
             <h3 class="text-xl font-[500]">{t.nom}</h3>
             <p class={`mt-2 text-5xl font-[300] ${t.destacada ? 'text-red' : ''}`}>{t.preu}</p>
             <p class="mt-4 flex-1 border-t-2 border-dashed border-soft pt-4 text-sm">{t.descripcio}</p>
