@@ -20,6 +20,15 @@ jobs:
           npm install
           npm run build
 
+      # cdmon (Apache) reserva l'adreça /icons/ per a les seves pròpies icones,
+      # així que /icons/flor.svg dona "Not Found". Només per a cdmon, movem la
+      # carpeta a /icones/ i canviem les rutes a la web construïda.
+      # (Al repositori i a Cloudflare tot continua igual.)
+      - name: Adaptar /icons/ per a cdmon
+        run: |
+          mv dist/icons dist/icones
+          grep -rlIF '/icons/' dist | xargs -r sed -i 's#/icons/#/icones/#g'
+
       - name: Pujar per FTP a cdmon
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
