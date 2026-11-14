@@ -4,6 +4,12 @@ desc: 'Tallerets es un espacio para conectar con tu creatividad y disfrutar del 
 image:
   url: '/img/noor.png'
   alt: ''
+fotoAmple: '/img/fotos/facana.jpg'
+fotos:
+  - '/img/fotos/cartell.jpg'
+  - '/img/fotos/punt.jpg'
+  - '/img/fotos/davantal.jpg'
+  - '/img/fotos/retrats.jpg'
 links:
   - url: '/es/contacte'
     text: 'Contáctame'

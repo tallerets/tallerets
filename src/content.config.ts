@@ -51,6 +51,8 @@ const pages = defineCollection({
     image: imgSchema.optional(),
     links: linkSchema,
     other: z.record(z.string()).optional(),
+    fotoAmple: z.string().optional(),
+    fotos: z.array(z.string()).optional(),
   }),
 })
 
