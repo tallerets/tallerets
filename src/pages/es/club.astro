@@ -11,16 +11,15 @@ import Footer from '../../components/Footer.astro'
 // TODO Stripe: pon aquí los MISMOS Payment Links que en la versión catalana
 const quotesPresencials = [
   {
-    nom: 'Socia anual',
-    etiqueta: 'Ven a probar',
-    preu: '30€',
+    nom: 'Socia Apoyo',
+    etiqueta: 'Da apoyo',
+    preu: '10€',
     periode: 'al año',
     inclou: [
-      '1 día de club para conocernos',
-      '5% dto. en cursos, talleres puntuales y tienda',
+      'Das apoyo a Tallerets y al barrio',
       'Fiesta anual de socias',
     ],
-    href: '#', // TODO: Payment Link cuota anual 30€
+    href: 'https://donate.stripe.com/28E14palf4zRcHY4Gh7N60M', // Payment Link cuota Socia Apoyo 10€/año
     destacada: false,
   },
   {
@@ -33,7 +32,7 @@ const quotesPresencials = [
       '5% dto. en cursos, talleres puntuales y tienda',
       'Fiesta anual de socias',
     ],
-    href: 'https://donate.stripe.com/28E14palf4zRcHY4Gh7N60M', // TODO: Payment Link suscripción 24€/mes
+    href: 'https://buy.stripe.com/aFa4gB64Z5DV4bs4Gh7N60D', // Payment Link suscripción 24€/mes
     destacada: false,
   },
   {
@@ -115,7 +114,7 @@ const estilTipus: Record<string, string> = {
 
 <Layout
   title="Club Tallerets: hazte socia de tu espacio creativo"
-  description="El Club es tu espacio semanal de creación y de barrio en Sants. Hazte socia desde 30€ al año y ven a crear en comunidad."
+  description="El Club es tu espacio semanal de creación y de barrio en Sants. Hazte socia desde 10€ al año y ven a crear en comunidad."
 >
   <Header className="bg-soft text-dark relative" />
   <main>
@@ -158,6 +157,24 @@ const estilTipus: Record<string, string> = {
       <p class="mx-auto -mt-6 mb-8 max-w-2xl text-center font-mono text-xs uppercase tracking-widest opacity-60">
         En Tallerets · Sants, Barcelona
       </p>
+
+      <div class="mx-auto mb-12 flex max-w-4xl flex-col items-center gap-4 rounded-xl border-2 border-dashed border-red bg-[#F2E9B1] p-6 text-center text-[#6F2118] md:flex-row md:p-8 md:text-left">
+        <div class="flex-1">
+          <p class="font-mono text-xs uppercase tracking-widest">¿No lo tienes claro?</p>
+          <h3 class="mt-1 text-2xl md:text-3xl font-[500]">Ven a probar un día de club</h3>
+          <p class="mt-2 text-sm md:text-base">
+            Elige el club y el día que quieras y crea con nosotras. Son 25€ y
+            se pagan en efectivo el mismo día. Si después te haces socia, te
+            descontamos el día de prueba.
+          </p>
+        </div>
+        <a
+          href="https://wa.me/34623951815?text=¡Hola!%20Me%20gustaría%20venir%20a%20probar%20un%20día%20de%20club"
+          class="c-button block shrink-0 border-red bg-red text-soft hover:bg-transparent hover:text-red"
+        >
+          Quiero probarlo
+        </a>
+      </div>
 
       <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
         {

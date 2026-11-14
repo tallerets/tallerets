@@ -14,16 +14,15 @@ import Footer from '../components/Footer.astro'
 // (com el que ja tens: https://buy.stripe.com/...)
 const quotesPresencials = [
   {
-    nom: 'Sòcia anual',
-    etiqueta: 'Vine a provar',
-    preu: '30€',
+    nom: 'Sòcia Suport',
+    etiqueta: 'Dona suport',
+    preu: '10€',
     periode: "l'any",
     inclou: [
-      '1 dia de club per conèixer-nos',
-      '5% dte. en cursos, tallers puntuals i botiga',
+      'Dones suport a Tallerets i al barri',
       'Festa anual de sòcies',
     ],
-    href: 'https://donate.stripe.com/28E14palf4zRcHY4Gh7N60M', // TODO: Payment Link quota anual 30€
+    href: 'https://donate.stripe.com/28E14palf4zRcHY4Gh7N60M', // Payment Link quota Sòcia Suport 10€/any
     destacada: false,
   },
   {
@@ -118,7 +117,7 @@ const estilTipus: Record<string, string> = {
 
 <Layout
   title="Club Tallerets: fes-te sòcia del teu espai creatiu"
-  description="El Club és el teu espai setmanal de creació i de barri a Sants. Fes-te sòcia des de 30€ l'any i vine a crear en comunitat."
+  description="El Club és el teu espai setmanal de creació i de barri a Sants. Fes-te sòcia des de 10€ l'any i vine a crear en comunitat."
 >
   <Header className="bg-soft text-dark relative" />
   <main>
@@ -161,6 +160,24 @@ const estilTipus: Record<string, string> = {
       <p class="mx-auto -mt-6 mb-8 max-w-2xl text-center font-mono text-xs uppercase tracking-widest opacity-60">
         A Tallerets · Sants, Barcelona
       </p>
+
+      <div class="mx-auto mb-12 flex max-w-4xl flex-col items-center gap-4 rounded-xl border-2 border-dashed border-red bg-[#F2E9B1] p-6 text-center text-[#6F2118] md:flex-row md:p-8 md:text-left">
+        <div class="flex-1">
+          <p class="font-mono text-xs uppercase tracking-widest">No ho tens clar?</p>
+          <h3 class="mt-1 text-2xl md:text-3xl font-[500]">Vine a provar un dia de club</h3>
+          <p class="mt-2 text-sm md:text-base">
+            Tria el club i el dia que vulguis i crea amb nosaltres. Són 25€ i
+            es paguen en efectiu el mateix dia. Si després et fas sòcia, et
+            descomptem el dia de prova.
+          </p>
+        </div>
+        <a
+          href="https://wa.me/34623951815?text=Hola!%20M'agradaria%20venir%20a%20provar%20un%20dia%20de%20club"
+          class="c-button block shrink-0 border-red bg-red text-soft hover:bg-transparent hover:text-red"
+        >
+          Vull provar-ho
+        </a>
+      </div>
 
       <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
         {
