@@ -9,8 +9,10 @@ fotos:
   - '/img/fotos/agulles.jpg'
   - '/img/fotos/bobines.jpg'
 links:
-  - url: '/contacte'
+  - url: 'https://buy.stripe.com/fZu28tdxr2rJazQc8J7N61v'
     text: "M'apunto!"
+  - url: '/contacte'
+    text: 'Tinc dubtes'
 ---
 **Ens iniciarem en la costura i aprendrem a cosir a mà i a màquina!**
 
