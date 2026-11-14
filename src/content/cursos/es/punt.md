@@ -2,7 +2,7 @@
 title: 'Curso de iniciación al punto'
 desc: 'Aprende punto desde cero en Sants. Cursos regulares e intensivos para descubrir el mundo del tejido en un espacio creativo, tranquilo y en grupos reducidos.'
 image:
-  url: '/img/c-punt.jpg'
+  url: '/img/fotos/punt-mans.jpg'
   alt: 'Fotografía de las participantes haciendo punto'
 fotos:
   - '/img/fotos/punt.jpg'

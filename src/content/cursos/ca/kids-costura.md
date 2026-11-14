@@ -2,10 +2,9 @@
 title: 'Iniciació costura kids i joves'
 desc: "Ens iniciarem en la costura i aprendrem a cosir a mà i a màquina. Per a infants i joves de 8 a 15 anys. Dimecres de 17:00 a 18:15. Només 5 places!"
 image:
-  url: '/img/c-costura.jpeg'
+  url: '/img/fotos/maquina.jpg'
   alt: 'Infant cosint a màquina'
 fotos:
-  - '/img/fotos/maquina.jpg'
   - '/img/fotos/agulles.jpg'
   - '/img/fotos/bobines.jpg'
 links:

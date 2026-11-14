@@ -2,7 +2,7 @@
 title: 'Iniciació al punt'
 desc: "Apren a fer punt de mitja amb agulla circular!"
 image:
-  url: '/img/c-punt.jpg'
+  url: '/img/fotos/punt-mans.jpg'
   alt: 'Fotografia de les participants fent punt'
 fotos:
   - '/img/fotos/punt.jpg'
