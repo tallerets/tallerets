@@ -8,7 +8,7 @@ import { getLangFromUrl } from '../utils'
 
 const { section } = Astro.props
 const { Content } = await section.render()
-const { title, desc, links, fotoAmple, fotos, fotosComunitat } = section.data
+const { title, desc, links, fotoAmple, fotos, fotosComunitat, entitats } = section.data
 const lang = getLangFromUrl(Astro.url)
 const credit = 'Foto: Montserrat Coloma'
 const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
@@ -40,6 +40,27 @@ const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
       </div>
 
       {links && <LinkList links={links} />}
+
+      {
+        entitats && entitats.length > 0 && (
+          <section class="mt-20 w-full max-w-4xl text-center">
+            <h2 class="text-3xl font-[500] md:text-4xl">
+              {lang === 'es' ? 'Han confiado en nosotras' : 'Han confiat en nosaltres'}
+            </h2>
+            <ul class="mt-8 flex flex-wrap items-center justify-center gap-4">
+              {entitats.map((e: { nom: string; logo?: string }) => (
+                <li class="flex h-24 min-w-[10rem] items-center justify-center rounded-xl border-2 border-dashed border-dark bg-white px-5 py-3">
+                  {e.logo ? (
+                    <img src={e.logo} alt={e.nom} class="max-h-16 max-w-[10rem] object-contain" loading="lazy" />
+                  ) : (
+                    <span class="text-lg font-[500] leading-tight">{e.nom}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
 
       {
         (fotos || fotosComunitat) && (
