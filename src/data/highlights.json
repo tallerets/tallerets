@@ -17,10 +17,11 @@
     },
     {
       "id": "Casal Creatiu d'estiu per adultes",
-      "link": "/casal-estiu"
+      "link": "/casal-estiu",
+      "amagat": true
     },
     {
-      "id": "Tallers setmanals",
+      "id": "Tallers setmanals: aprèn des de zero",
       "image": { "url": "/icons/brodat.png", "alt": "" },
       "link": "/cursos"
     },
@@ -53,10 +54,11 @@
     },
     {
       "id": "Casal Creativo de verano para adultas",
-      "link": "/es/casal-estiu"
+      "link": "/es/casal-estiu",
+      "amagat": true
     },
     {
-      "id": "Talleres semanales",
+      "id": "Talleres semanales: aprende desde cero",
       "image": { "url": "/icons/brodat.png", "alt": "" },
       "link": "/es/cursos"
     },
