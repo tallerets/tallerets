@@ -5,6 +5,10 @@ image:
   url: "/img/c-costura.jpeg"
   alt: "Persona cosiendo con una máquina de coser en Tallerets"
 
+fotos:
+  - '/img/fotos/cosir-singer.jpg'
+  - '/img/fotos/maquina.jpg'
+  - '/img/fotos/agulles.jpg'
 links:
   - url: "https://book.stripe.com/8x24gB793ear6jAa0B7N60R"
     text: "Me apunto al trimestre"

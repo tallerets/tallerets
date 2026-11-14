@@ -4,6 +4,9 @@ desc: "Aprende dibujo desde cero y técnicas de pintura: acuarela, óleo, gouach
 image:
   url: '/img/c-ilustracio.jpeg'
   alt: 'Fotografia de les participants fent ilustració'
+fotos:
+  - '/img/fotos/pintura.jpg'
+  - '/img/fotos/retrats.jpg'
 links:
   - url: 'https://buy.stripe.com/dRmaEZ0KFfevdM2b4F7N60o'
     text: 'Me apunto!'

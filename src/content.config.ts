@@ -70,6 +70,7 @@ const tallers = defineCollection({
     desc: z.string(),
     image: imgSchema,
     links: linkSchema.optional(),
+    fotos: z.array(z.string()).optional(),
   }),
 })
 

@@ -1,50 +1,154 @@
 ---
+// Fitxa d'un curset o d'un taller puntual.
+// Capçalera amb etiqueta, títol i foto; text en columna llegible amb
+// estils propis (.fitxa); fotos opcionals (camp `fotos` del frontmatter)
+// i un requadre final per reservar.
 import Footer from '../components/Footer.astro'
 import BaseLayout from './BaseLayout.astro'
 import Header from '../components/Header/Header.astro'
-import LinkList from '../components/LinkList.astro'
-import Prose from '../components/Prose.astro'
+import { getLangFromUrl } from '../utils'
 
 const { taller, tipus } = Astro.props
 const { Content } = await taller.render()
-const { title, desc, image, links } = taller.data
+const { title, desc, image, links, fotos } = taller.data
+const lang = getLangFromUrl(Astro.url)
+const [principal, ...altres] = links || []
+const reservaTitol = lang === 'es' ? 'Reserva tu plaza' : 'Reserva la teva plaça'
+const reservaText =
+  lang === 'es'
+    ? 'Grupos reducidos en Tallerets (Sants, Barcelona). Si tienes cualquier duda, escríbenos.'
+    : "Grups reduïts a Tallerets (Sants, Barcelona). Si tens qualsevol dubte, escriu-nos."
 ---
 
 <BaseLayout title={title} description={desc}>
   <Header />
-  <section class="page-padding md:max-w-[72ch] mx-auto pt-4 mb-16">
-    <p class="text-2xl font-bold underline text-center">{tipus}</p>
-    <h1
-      class="text-4xl md:text-5xl text-center md:leading-tight font-[500] max-w-[16ch] mt-4 mb-10 mx-auto"
-    >
-      {title}
-      <span>
-        <img
-          width="48"
-          height="48"
-          class="w-12 inline text-sm"
-          src="/icons/flor.svg"
-          alt=""
-        />
+  <main class="page-padding mx-auto max-w-5xl pt-4 pb-20">
+    <!-- ── Capçalera ─────────────────────────────────────── -->
+    <header class="text-center">
+      <span
+        class="inline-block -rotate-2 bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-widest text-[#6F2118]"
+      >
+        {tipus}
       </span>
-    </h1>
+      <h1
+        class="mx-auto mt-4 max-w-[20ch] text-4xl font-[500] leading-tight md:text-6xl"
+      >
+        {title}
+      </h1>
+      {
+        principal && (
+          <a
+            href={principal.url}
+            class="c-button mt-6 inline-block border-red bg-red text-soft hover:bg-transparent hover:text-red"
+          >
+            {principal.text}
+          </a>
+        )
+      }
+    </header>
 
     <img
-      width="1152"
-      height="288"
-      class="mb-8 h-[16rem] w-full object-cover rounded-2xl mx-auto border-8 border-dark bg-dark"
+      width="1200"
+      height="600"
+      class="mt-8 aspect-[2/1] w-full rounded-xl border-4 border-dark bg-dark object-cover"
       src={image.url}
       alt={image.alt}
     />
 
-    <div>
-      <Prose>
-        <Content />
-      </Prose>
-    </div>
+    <!-- ── Text ──────────────────────────────────────────── -->
+    <article class="fitxa mx-auto mt-10 max-w-[65ch]">
+      <Content />
+    </article>
 
-    {links && <LinkList links={links} />}
-  </section>
+    <!-- ── Fotos ─────────────────────────────────────────── -->
+    {
+      fotos && fotos.length > 0 && (
+        <div class="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-3 md:grid-cols-3">
+          {fotos.map((src: string) => (
+            <img
+              src={src}
+              alt=""
+              class="aspect-[3/4] w-full rounded-lg border-4 border-dark object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          ))}
+        </div>
+      )
+    }
+
+    <!-- ── Reserva ───────────────────────────────────────── -->
+    {
+      links && links.length > 0 && (
+        <section class="mx-auto mt-14 max-w-3xl rounded-xl border-2 border-dashed border-red bg-[#F2E9B1] p-6 text-center text-[#6F2118] md:p-10">
+          <h2 class="text-3xl font-[500] md:text-4xl">{reservaTitol}</h2>
+          <p class="mx-auto mt-2 max-w-md text-sm md:text-base">{reservaText}</p>
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+            {principal && (
+              <a
+                href={principal.url}
+                class="c-button block border-red bg-red text-soft hover:bg-transparent hover:text-red"
+              >
+                {principal.text}
+              </a>
+            )}
+            {altres.map((l: { url: string; text: string }) => (
+              <a href={l.url} class="c-button block border-[#6F2118] text-[#6F2118]">
+                {l.text}
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </main>
 
   <Footer />
 </BaseLayout>
+
+<style is:global>
+  .fitxa {
+    @apply text-lg leading-relaxed md:text-xl;
+  }
+  .fitxa > :first-child {
+    @apply mt-0;
+  }
+  .fitxa p {
+    @apply mb-4;
+  }
+  .fitxa strong {
+    @apply font-[500] text-red;
+  }
+  .fitxa h1,
+  .fitxa h2 {
+    @apply mt-12 mb-4 text-3xl font-[500] leading-tight md:text-4xl;
+  }
+  .fitxa h1::after,
+  .fitxa h2::after {
+    content: '';
+    @apply mt-3 block w-16 border-b-2 border-dashed border-red;
+  }
+  .fitxa h3 {
+    @apply mt-8 mb-2 text-xl font-[500] md:text-2xl;
+  }
+  .fitxa hr {
+    @apply hidden;
+  }
+  .fitxa ul,
+  .fitxa ol {
+    @apply mb-6 space-y-2;
+  }
+  .fitxa ul > li {
+    @apply relative list-none pl-7;
+  }
+  .fitxa ul > li::before {
+    content: '✿';
+    @apply absolute left-0 top-0 text-red;
+  }
+  .fitxa ol {
+    @apply list-decimal pl-6;
+  }
+  .fitxa a {
+    @apply underline decoration-red decoration-2 underline-offset-4;
+  }
+</style>
