@@ -4,6 +4,13 @@ desc: "Teambuilding creatiu a Barcelona: tallers de manualitats per a empreses, 
 image:
   url: '/icons/equips.png'
   alt: ''
+entitats:
+  - nom: 'La Sembra Coop'
+  - nom: 'Impuls Cooperatiu de Sants'
+  - nom: 'Ajuntament de Barcelona'
+  - nom: 'Ajuntament de Parets del Vallès'
+  - nom: "Ajuntament de l'Hospitalet"
+  - nom: 'Abacus'
 links:
   - url: '/contacte'
     text: 'Demana el teu taller per a equips'
