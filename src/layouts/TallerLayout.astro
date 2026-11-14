@@ -63,7 +63,7 @@ const reservaText =
     <!-- ── Fotos ─────────────────────────────────────────── -->
     {
       fotos && fotos.length > 0 && (
-        <div class="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-3 md:grid-cols-3">
+        <div class={`mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-3 ${fotos.length === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
           {fotos.map((src: string) => (
             <img
               src={src}

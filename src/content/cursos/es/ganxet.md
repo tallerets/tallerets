@@ -6,8 +6,10 @@ image:
   alt: "Persona haciendo ganchillo a Tallerets"
 
 fotos:
-  - '/img/fotos/club-punt.jpg'
-  - '/img/fotos/espai-interior.jpg'
+  - '/img/fotos/ganxet-estrella.jpg'
+  - '/img/fotos/ganxet-barret.jpg'
+  - '/img/fotos/ganxet-chal.jpg'
+  - '/img/fotos/ganxet-granny.jpg'
 links:
   - url: "https://donate.stripe.com/6ouevf64z9ubeq61u57n60h"
     text: "Me apunto en el trimestre"
