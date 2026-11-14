@@ -5,6 +5,7 @@ image:
   url: '/img/fotos/maquina.jpg'
   alt: 'Infant cosint a màquina'
 fotos:
+  - '/img/fotos/kids-carbasses.jpg'
   - '/img/fotos/agulles.jpg'
   - '/img/fotos/bobines.jpg'
 links:

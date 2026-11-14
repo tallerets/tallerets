@@ -2,8 +2,12 @@
 title: "Iniciación a la costura para niños y jóvenes"
 desc: "Aprenderemos a coser a mano y a máquina desde cero. Curso para niños y jóvenes de 8 a 15 años. Miércoles de 17:00 a 18:15. ¡Solo 5 plazas!"
 image:
-  url: "/img/c-costura.jpeg"
-  alt: "Niño cosiendo con una máquina de coser"
+  url: "/img/fotos/maquina.jpg"
+  alt: "Máquina de coser con un patrón dibujado a mano"
+fotos:
+  - '/img/fotos/kids-carbasses.jpg'
+  - '/img/fotos/agulles.jpg'
+  - '/img/fotos/bobines.jpg'
 links:
   - url: "/contacte"
     text: "¡Me apunto!"
