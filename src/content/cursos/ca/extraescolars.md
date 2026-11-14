@@ -5,7 +5,7 @@ image:
   url: '/img/fotos/kids-cianotipia.jpg'
   alt: 'Nens i nenes ensenyant les seves cianotípies'
 links:
-  - url: '/contacte'
+  - url: 'https://buy.stripe.com/eVqbJ32SNaYfdM22y97N61u'
     text: "M'apunto!"
   - url: '/contacte'
     text: 'Tinc dubtes'
@@ -27,4 +27,4 @@ Cada sessió és diferent. Pintem, retallem, cosim, estampem, construïm… i so
 
 ## Preu
 
-**60 € al mes**
+**55 € al mes**

@@ -5,7 +5,7 @@ image:
   url: '/img/fotos/kids-cianotipia.jpg'
   alt: 'Niños y niñas enseñando sus cianotipias'
 links:
-  - url: '/es/contacte'
+  - url: 'https://buy.stripe.com/eVqbJ32SNaYfdM22y97N61u'
     text: '¡Me apunto!'
   - url: '/es/contacte'
     text: 'Tengo dudas'
@@ -27,4 +27,4 @@ Cada sesión es diferente. Pintamos, recortamos, cosemos, estampamos, construimo
 
 ## Precio
 
-**60 € al mes**
+**55 € al mes**
