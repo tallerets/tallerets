@@ -5,7 +5,7 @@ image:
   url: '/icons/regal.svg'
   alt: 'Ilustración de un pastel con pinceles en lugar de velas de cumpleaños'
 links:
-  - url: 'https://buy.stripe.com/bJe5kF0KFc2jbDUgoZ7N60w'
+  - url: '/es/botiga#targeta-regal'
     text: 'Quiero regalar tallerets!'
 ---
 

@@ -5,7 +5,7 @@ image:
   url: '/icons/regal.svg'
   alt: "Il·lustració d'un pastís amb pinzells en lloc de veles d'aniversari"
 links:
-  - url: 'https://buy.stripe.com/bJe5kF0KFc2jbDUgoZ7N60w'
+  - url: '/botiga#targeta-regal'
     text: 'Vull regalar tallerets!'
 ---
 
