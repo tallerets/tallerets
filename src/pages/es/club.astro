@@ -11,18 +11,6 @@ import Footer from '../../components/Footer.astro'
 // TODO Stripe: pon aquí los MISMOS Payment Links que en la versión catalana
 const quotesPresencials = [
   {
-    nom: 'Socia Apoyo',
-    etiqueta: 'Da apoyo',
-    preu: '10€',
-    periode: 'al año',
-    inclou: [
-      'Das apoyo a Tallerets y al barrio',
-      'Fiesta anual de socias',
-    ],
-    href: 'https://donate.stripe.com/7sYaEZgJD5DVcHY0q17N61t', // Payment Link cuota Socia Apoyo 10€/año
-    destacada: false,
-  },
-  {
     nom: 'Socia Club Amiga',
     etiqueta: null,
     preu: '24€',
@@ -66,6 +54,18 @@ const quotesPresencials = [
 
 // ── Cuota a distancia (Club Postal) ────────────────────────────────
 const quotesDistancia = [
+  {
+    nom: 'Socia Apoyo',
+    etiqueta: 'Da apoyo',
+    preu: '10€',
+    periode: 'al año',
+    inclou: [
+      'Das apoyo a Tallerets y al barrio',
+      'Fiesta anual de socias',
+    ],
+    href: 'https://donate.stripe.com/7sYaEZgJD5DVcHY0q17N61t', // Payment Link cuota Socia Apoyo 10€/año
+    destacada: false,
+  },
   {
     nom: 'Socia Club Postal',
     etiqueta: 'Nuevo',
@@ -158,7 +158,7 @@ const estilTipus: Record<string, string> = {
         En Tallerets · Sants, Barcelona
       </p>
 
-      <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
+      <ul class="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
         {
           quotesPresencials.map((q) => (
             <li
@@ -224,12 +224,12 @@ const estilTipus: Record<string, string> = {
           Desde cualquier lugar
         </p>
         <p class="mx-auto mt-2 max-w-md text-sm opacity-80">
-          ¿No vives en Barcelona? Con el Club Postal recibes el club en tu
-          casa, estés donde estés.
+          ¿No vives en Barcelona o no puedes venir al club? Apoya a Tallerets
+          o recibe el club en tu casa con el Club Postal, estés donde estés.
         </p>
       </div>
 
-      <ul class="mx-auto mt-6 grid max-w-xs gap-6">
+      <ul class="mx-auto mt-6 grid max-w-2xl gap-6 sm:grid-cols-2 items-stretch">
         {
           quotesDistancia.map((q) => (
             <li

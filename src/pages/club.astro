@@ -14,18 +14,6 @@ import Footer from '../components/Footer.astro'
 // (com el que ja tens: https://buy.stripe.com/...)
 const quotesPresencials = [
   {
-    nom: 'Sòcia Suport',
-    etiqueta: 'Dona suport',
-    preu: '10€',
-    periode: "l'any",
-    inclou: [
-      'Dones suport a Tallerets i al barri',
-      'Festa anual de sòcies',
-    ],
-    href: 'https://donate.stripe.com/7sYaEZgJD5DVcHY0q17N61t', // Payment Link quota Sòcia Suport 10€/any
-    destacada: false,
-  },
-  {
     nom: 'Sòcia Club Amiga',
     etiqueta: null,
     preu: '24€',
@@ -69,6 +57,18 @@ const quotesPresencials = [
 
 // ── Quota a distància (Club Postal) ────────────────────────────────
 const quotesDistancia = [
+  {
+    nom: 'Sòcia Suport',
+    etiqueta: 'Dona suport',
+    preu: '10€',
+    periode: "l'any",
+    inclou: [
+      'Dones suport a Tallerets i al barri',
+      'Festa anual de sòcies',
+    ],
+    href: 'https://donate.stripe.com/7sYaEZgJD5DVcHY0q17N61t', // Payment Link quota Sòcia Suport 10€/any
+    destacada: false,
+  },
   {
     nom: 'Sòcia Club Postal',
     etiqueta: 'Nou',
@@ -161,7 +161,7 @@ const estilTipus: Record<string, string> = {
         A Tallerets · Sants, Barcelona
       </p>
 
-      <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
+      <ul class="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
         {
           quotesPresencials.map((q) => (
             <li
@@ -227,12 +227,12 @@ const estilTipus: Record<string, string> = {
           Des de qualsevol lloc
         </p>
         <p class="mx-auto mt-2 max-w-md text-sm opacity-80">
-          No vius a Barcelona? Amb el Club Postal reps el club a casa teva,
-          allà on siguis.
+          No vius a Barcelona o no pots venir al club? Dona suport a Tallerets
+          o rep el club a casa teva amb el Club Postal, allà on siguis.
         </p>
       </div>
 
-      <ul class="mx-auto mt-6 grid max-w-xs gap-6">
+      <ul class="mx-auto mt-6 grid max-w-2xl gap-6 sm:grid-cols-2 items-stretch">
         {
           quotesDistancia.map((q) => (
             <li
