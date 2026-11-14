@@ -8,7 +8,7 @@ if (!highlights) {
   throw new Error(`highlights/${lang} not found`)
 }
 const filteredHighlights = highlights.data.filter((hl) => {
-  return hl.link !== Astro.url.pathname
+  return !hl.amagat && hl.link !== Astro.url.pathname
 })
 ---
 

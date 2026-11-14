@@ -25,6 +25,7 @@ const highlights = defineCollection({
       id: z.string(),
       image: imgSchema.optional(),
       link: z.string(),
+      amagat: z.boolean().optional(),
     }),
   ),
 })
