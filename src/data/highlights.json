@@ -11,7 +11,7 @@
       "link": "/empreses"
     },
     {
-      "id": "Tallers monogràfics - d'un dia",
+      "id": "Tallers puntuals - d'un dia",
       "image": { "url": "/icons/potet.svg", "alt": "" },
       "link": "/tallers"
     },
@@ -47,7 +47,7 @@
       "link": "/es/empreses"
     },
     {
-      "id": "Talleres monográficos - de un dia",
+      "id": "Talleres puntuales - de un dia",
       "image": { "url": "/icons/potet.svg", "alt": "" },
       "link": "/es/tallers"
     },

@@ -11,8 +11,6 @@ links:
     text: 'tallers'
   - url: '/cursos'
     text: 'cursets'
-  - url: '/newsletter'
-    text: 'novetats'
   - url: '/espai'
     text: 'espai'
   - url: '/contacte'

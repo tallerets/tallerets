@@ -5,7 +5,7 @@ image:
   alt: "Fotografía de la Noor a l'espai tallerets"
 links:
   - url: '/tallers'
-    text: 'Tallers monogràfics a Barcelona'
+    text: 'Tallers puntuals a Barcelona'
   - url: '/a-mida'
     text: 'Tallers creatius a mida'
   - url: '/empreses'

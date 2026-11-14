@@ -21,7 +21,7 @@ const { className } = Astro.props
   </label>
   <nav id="overlay" class="c-menu bg-dark">
     <NavLinks
-      className="text-4xl flex flex-col gap-12 text-nowrap font-[500]"
+      className="text-2xl flex flex-col gap-4 text-nowrap font-[500] w-full max-w-xs"
     />
   </nav>
 
@@ -46,9 +46,10 @@ const { className } = Astro.props
       height: 100%;
       gap: 3rem;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       text-align: center;
+      overflow-y: auto;
+      padding: 6rem 1.5rem 3rem;
     }
   </style>
 </div>
