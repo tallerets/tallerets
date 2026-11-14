@@ -12,7 +12,7 @@ links:
   - url: '/es/cursos'
     text: 'cursillos'
   - url: '/es/espai'
-    text: 'sobre mí'
+    text: 'quiénes somos'
   - url: '/es/contacte'
     text: 'contacto'
 ---

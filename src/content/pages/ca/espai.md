@@ -13,13 +13,16 @@ Soc la Noor, la persona darrera de tallerets! M'encanta crear i acompanyar a les
 
 Després de portar tota la vida en el món empresarial, vaig veure com a poc a poc perdia aquesta part creativa. Quan estàs atrapat al dia a dia, i estàs animat a produir, acabes deixant de banda aquests espais amb tu. És per això que vaig iniciar el projecte tallerets, per poder donar un espai i generar una comunitat en la qual puguem crear de forma segura, i traiem aquesta part creativa que totes tenim!
 
-<img
-  width="300"
-  height="300"
-  class="object-cover border-4 border-dark bg-dark rounded float-left me-6"
-  src='/img/noor.png'
-  alt=""
-/>
+<figure class="float-left me-6 mb-4 w-[300px] max-w-full">
+  <img
+    width="300"
+    height="400"
+    class="object-cover border-4 border-dark bg-dark rounded"
+    src='/img/noor-tallerets.jpg'
+    alt="La Noor somrient a la porta de Tallerets"
+  />
+  <figcaption class="mt-2 text-sm italic opacity-70 text-left">Foto: Montserrat Coloma</figcaption>
+</figure>
 
 Quan va ser l'últim cop que feies alguna cosa pel simple plaer de fer-la?
 A tallerets fem les coses per fer. Pel plaer de gaudir el procés. Quan fem coses amb les mans connectem amb nosaltres mateixes. Ens ajuda a viure el moment present. Ens ajuda a explorar nous tactes, colors, habilitats. Ens ajuda també a desconnectar del món digital i de les pantalles que tant ens acompanyen en el nostre dia a dia. Ens ajuda a veure que estem fets per crear, i que totes i cadascuna de nosaltres tenim creativitat i habilitat!
