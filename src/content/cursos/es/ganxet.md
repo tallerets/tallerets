@@ -5,6 +5,10 @@ image:
   url: "/img/c-ganxet.jpeg"
   alt: "Persona haciendo ganchillo a Tallerets"
 
+fotos:
+  - '/img/fotos/ganxet.jpg'
+  - '/img/fotos/club-punt.jpg'
+  - '/img/fotos/espai-interior.jpg'
 links:
   - url: "https://donate.stripe.com/6ouevf64z9ubeq61u57n60h"
     text: "Me apunto en el trimestre"

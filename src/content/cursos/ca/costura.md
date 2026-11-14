@@ -4,6 +4,10 @@ desc: "Aprèn a cosir des de zero al nostre curs d'iniciació a la costura a San
 image:
   url: '/img/c-costura.jpeg'
   alt: 'Persona cosint amb una màquina de cosir a Tallerets'
+fotos:
+  - '/img/fotos/cosir-singer.jpg'
+  - '/img/fotos/maquina.jpg'
+  - '/img/fotos/agulles.jpg'
 links:
   - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
     text: "M'apunto"

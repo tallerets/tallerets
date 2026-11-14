@@ -4,6 +4,10 @@ desc: "Ens iniciarem en la costura i aprendrem a cosir a mà i a màquina. Per a
 image:
   url: '/img/c-costura.jpeg'
   alt: 'Infant cosint a màquina'
+fotos:
+  - '/img/fotos/maquina.jpg'
+  - '/img/fotos/agulles.jpg'
+  - '/img/fotos/bobines.jpg'
 links:
   - url: '/contacte'
     text: "M'apunto!"

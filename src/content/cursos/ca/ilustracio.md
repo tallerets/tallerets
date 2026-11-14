@@ -4,6 +4,9 @@ desc: "Aprèn dibuix des de zero i tècniques de pintura: aquarel·la, oli, goua
 image:
   url: '/img/c-ilustracio.jpeg'
   alt: 'Fotografia de les participants fent ilustració'
+fotos:
+  - '/img/fotos/pintura.jpg'
+  - '/img/fotos/retrats.jpg'
 links:
   - url: 'https://donate.stripe.com/4gM6oJgJD1nF6jAc8J7N60L'
     text: "M'apunto al trimestre!"

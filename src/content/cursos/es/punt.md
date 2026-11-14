@@ -4,6 +4,9 @@ desc: 'Aprende punto desde cero en Sants. Cursos regulares e intensivos para des
 image:
   url: '/img/c-punt.jpg'
   alt: 'Fotografía de las participantes haciendo punto'
+fotos:
+  - '/img/fotos/punt.jpg'
+  - '/img/fotos/club-punt.jpg'
 links:
   - url: 'https://book.stripe.com/4gM9AV0KF5DV23kgoZ7N60U'
     text: 'Me apunto'
