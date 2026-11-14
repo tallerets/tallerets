@@ -53,6 +53,7 @@ const pages = defineCollection({
     other: z.record(z.string()).optional(),
     fotoAmple: z.string().optional(),
     fotos: z.array(z.string()).optional(),
+    fotosComunitat: z.array(z.string()).optional(),
   }),
 })
 
