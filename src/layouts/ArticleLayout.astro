@@ -42,20 +42,8 @@ const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
       {links && <LinkList links={links} />}
 
       {
-        (fotoAmple || fotos || fotosComunitat) && (
+        (fotos || fotosComunitat) && (
           <div class="mt-16 w-full max-w-4xl space-y-10">
-            {fotoAmple && (
-              <figure>
-                <img
-                  src={fotoAmple}
-                  alt={altEspai}
-                  class="w-full rounded-lg border-4 border-dark object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <figcaption class="mt-2 text-sm italic opacity-70">{credit}</figcaption>
-              </figure>
-            )}
             {fotos && fotos.length > 0 && (
               <figure class="mx-auto w-full max-w-md">
                 <div class="overflow-hidden rounded-lg border-4 border-dark">
@@ -73,6 +61,20 @@ const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
         )
       }
     </section>
+    {
+      fotoAmple && (
+        <figure class="w-full pb-20">
+          <img
+            src={fotoAmple}
+            alt={altEspai}
+            class="w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="page-padding mt-2 text-sm italic opacity-70">{credit}</figcaption>
+        </figure>
+      )
+    }
   </main>
   <Footer />
 </BaseLayout>

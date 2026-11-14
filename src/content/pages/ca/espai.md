@@ -5,14 +5,6 @@ image:
   url: '/img/lanoor.jpg'
   alt: ''
 fotoAmple: '/img/fotos/facana.jpg'
-fotos:
-  - '/img/fotos/cartell.jpg'
-  - '/img/fotos/punt.jpg'
-  - '/img/fotos/davantal.jpg'
-  - '/img/fotos/retrats.jpg'
-fotosComunitat:
-  - '/img/fotos/presentacio.jpg'
-  - '/img/fotos/espai-interior.jpg'
 links:
   - url: '/contacte'
     text: 'Contacta amb mi'
