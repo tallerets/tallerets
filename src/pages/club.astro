@@ -31,7 +31,7 @@ const quotesPresencials = [
     preu: '24€',
     periode: 'al mes',
     inclou: [
-      '1 dia de club cada mes',
+      'Vine al club de manualitats un cop al mes',
       '5% dte. en cursos, tallers puntuals i botiga',
       'Festa anual de sòcies',
     ],
@@ -44,7 +44,7 @@ const quotesPresencials = [
     preu: '45€',
     periode: 'al mes · 22,5€/sessió',
     inclou: [
-      '2 dies de club cada mes',
+      'Vine al club de manualitats dos cops al mes',
       '5% dte. en cursos, tallers puntuals i botiga',
       'Festa anual de sòcies',
     ],
@@ -57,7 +57,7 @@ const quotesPresencials = [
     preu: '65€',
     periode: 'al mes · 16,25€/sessió',
     inclou: [
-      'Club cada setmana',
+      'Vine al club de manualitats cada setmana',
       '10% dte. en cursos, tallers puntuals i botiga',
       'Festa anual de sòcies',
       'El millor preu per sessió',
@@ -161,24 +161,6 @@ const estilTipus: Record<string, string> = {
         A Tallerets · Sants, Barcelona
       </p>
 
-      <div class="mx-auto mb-12 flex max-w-4xl flex-col items-center gap-4 rounded-xl border-2 border-dashed border-red bg-[#F2E9B1] p-6 text-center text-[#6F2118] md:flex-row md:p-8 md:text-left">
-        <div class="flex-1">
-          <p class="font-mono text-xs uppercase tracking-widest">No ho tens clar?</p>
-          <h3 class="mt-1 text-2xl md:text-3xl font-[500]">Vine a provar un dia de club</h3>
-          <p class="mt-2 text-sm md:text-base">
-            Tria el club i el dia que vulguis i crea amb nosaltres. Són 25€ i
-            es paguen en efectiu el mateix dia. Si després et fas sòcia, et
-            descomptem el dia de prova.
-          </p>
-        </div>
-        <a
-          href="https://wa.me/34623951815?text=Hola!%20M'agradaria%20venir%20a%20provar%20un%20dia%20de%20club"
-          class="c-button block shrink-0 border-red bg-red text-soft hover:bg-transparent hover:text-red"
-        >
-          Vull provar-ho
-        </a>
-      </div>
-
       <ul class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
         {
           quotesPresencials.map((q) => (
@@ -221,6 +203,24 @@ const estilTipus: Record<string, string> = {
           ))
         }
       </ul>
+
+      <div class="mx-auto mt-12 flex max-w-4xl flex-col items-center gap-4 rounded-xl border-2 border-dashed border-red bg-[#F2E9B1] p-6 text-center text-[#6F2118] md:flex-row md:p-8 md:text-left">
+        <div class="flex-1">
+          <p class="font-mono text-xs uppercase tracking-widest">No ho tens clar?</p>
+          <h3 class="mt-1 text-2xl md:text-3xl font-[500]">Vine a provar un dia de club</h3>
+          <p class="mt-2 text-sm md:text-base">
+            Tria el club i el dia que vulguis i crea amb nosaltres. Són 25€ i
+            es paguen en efectiu el mateix dia. Si després et fas sòcia, et
+            descomptem el dia de prova.
+          </p>
+        </div>
+        <a
+          href="https://wa.me/34623951815?text=Hola!%20M'agradaria%20venir%20a%20provar%20un%20dia%20de%20club"
+          class="c-button block shrink-0 border-red bg-red text-soft hover:bg-transparent hover:text-red"
+        >
+          Vull provar-ho
+        </a>
+      </div>
 
       <div class="mx-auto mt-12 max-w-2xl border-t-2 border-dashed border-soft pt-10 text-center">
         <p class="font-mono text-xs uppercase tracking-widest opacity-60">
