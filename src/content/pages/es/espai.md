@@ -10,6 +10,9 @@ fotos:
   - '/img/fotos/punt.jpg'
   - '/img/fotos/davantal.jpg'
   - '/img/fotos/retrats.jpg'
+fotosComunitat:
+  - '/img/fotos/presentacio.jpg'
+  - '/img/fotos/espai-interior.jpg'
 links:
   - url: '/es/contacte'
     text: 'Contáctame'

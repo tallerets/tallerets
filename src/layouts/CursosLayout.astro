@@ -160,8 +160,8 @@ const estilTipus: Record<string, string> = {
 
     <!-- ── Fotos de detall ─────────────────────────────────── -->
     <figure class="page-padding mx-auto mt-8 max-w-5xl">
-      <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
-        {['agulles', 'bobines', 'maquina', 'estrelles'].map((f) => (
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {['cosir-singer', 'agulles', 'ganxet', 'bobines', 'maquina', 'estrelles'].map((f) => (
           <img
             src={`/img/fotos/${f}.jpg`}
             alt=""
@@ -171,7 +171,9 @@ const estilTipus: Record<string, string> = {
           />
         ))}
       </div>
-      <figcaption class="mt-2 text-sm italic opacity-70">Foto: Montserrat Coloma</figcaption>
+      <figcaption class="mt-2 text-sm italic opacity-70">
+        {lang === 'es' ? 'Fotos: Montserrat Coloma y Tallerets' : 'Fotos: Montserrat Coloma i Tallerets'}
+      </figcaption>
     </figure>
 
     <!-- ── Tarifes ─────────────────────────────────────────── -->

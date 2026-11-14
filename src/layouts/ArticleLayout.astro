@@ -8,7 +8,7 @@ import { getLangFromUrl } from '../utils'
 
 const { section } = Astro.props
 const { Content } = await section.render()
-const { title, desc, links, fotoAmple, fotos } = section.data
+const { title, desc, links, fotoAmple, fotos, fotosComunitat } = section.data
 const lang = getLangFromUrl(Astro.url)
 const credit = 'Foto: Montserrat Coloma'
 const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
@@ -42,7 +42,7 @@ const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
       {links && <LinkList links={links} />}
 
       {
-        (fotoAmple || fotos) && (
+        (fotoAmple || fotos || fotosComunitat) && (
           <div class="mt-16 w-full max-w-4xl space-y-10">
             {fotoAmple && (
               <figure>
@@ -63,6 +63,11 @@ const altEspai = lang === 'es' ? 'El espacio Tallerets' : "L'espai Tallerets"
                 </div>
                 <figcaption class="mt-2 text-sm italic opacity-70">{credit}</figcaption>
               </figure>
+            )}
+            {fotosComunitat && fotosComunitat.length > 0 && (
+              <div class="mx-auto w-full max-w-2xl overflow-hidden rounded-lg border-4 border-dark">
+                <Galeria imatges={fotosComunitat} alt={altEspai} aspect="aspect-[4/3]" />
+              </div>
             )}
           </div>
         )
