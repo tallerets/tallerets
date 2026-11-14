@@ -5,12 +5,13 @@
 import Layout from './BaseLayout.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header/Header.astro'
-import TallerPostcard from '../components/TallerCard.astro'
-import { getLangFromUrl } from '../utils'
+import { getLangFromUrl, removeLangFromSlug, useTranslatedPath } from '../utils'
 import { getCollection } from 'astro:content'
 import Highlights from '../components/Highlights.astro'
 const { frontmatter } = Astro.props
 const lang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(lang)
+const mesInfo = lang === 'es' ? 'Más información' : 'Més informació'
 const allTallers = await getCollection('cursos', ({ id }: { id: string }) => {
   return id.startsWith(lang)
 })
@@ -158,23 +159,40 @@ const estilTipus: Record<string, string> = {
       </span>
     </h1>
 
-    <!-- ── Fotos de detall ─────────────────────────────────── -->
-    <figure class="page-padding mx-auto mt-8 max-w-5xl">
-      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        {['cosir-singer', 'agulles', 'ganxet', 'bobines', 'maquina', 'estrelles'].map((f) => (
-          <img
-            src={`/img/fotos/${f}.jpg`}
-            alt=""
-            class="aspect-[3/4] w-full rounded-lg border-4 border-dark object-cover"
-            loading="lazy"
-            decoding="async"
-          />
-        ))}
-      </div>
-      <figcaption class="mt-2 text-sm italic opacity-70">
-        {lang === 'es' ? 'Fotos: Montserrat Coloma y Tallerets' : 'Fotos: Montserrat Coloma i Tallerets'}
-      </figcaption>
-    </figure>
+    <!-- ── Targetes de cursos ──────────────────────────────── -->
+    <section id="cursos" class="page-padding mx-auto mt-8 max-w-6xl">
+      <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          allTallers.map((curs: any) => {
+            const url =
+              translatePath(`/${curs.collection}`) + removeLangFromSlug(curs.slug)
+            return (
+              <li>
+                <a
+                  href={url}
+                  class="group flex h-full flex-col overflow-hidden rounded-xl border-2 border-dark bg-white transition-all hover:-translate-y-1 hover:border-red hover:text-dark"
+                >
+                  <img
+                    src={curs.data.image.url}
+                    alt={curs.data.image.alt}
+                    class="aspect-[4/3] w-full border-b-2 border-dark object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="flex flex-1 flex-col p-5">
+                    <h2 class="text-2xl font-[500] leading-tight">{curs.data.title}</h2>
+                    <p class="mt-2 line-clamp-3 flex-1 text-sm opacity-80">{curs.data.desc}</p>
+                    <span class="mt-4 font-mono text-xs uppercase tracking-widest text-red">
+                      {mesInfo} →
+                    </span>
+                  </div>
+                </a>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </section>
 
     <!-- ── Tarifes ─────────────────────────────────────────── -->
     <section class="page-padding my-8 lg:my-12">
@@ -266,24 +284,6 @@ const estilTipus: Record<string, string> = {
       </p>
     </section>
 
-    <!-- ── Targetes de cursos (com abans) ──────────────────── -->
-    <section
-      id="cursos"
-      class="my-4 lg:my-12 flex md:justify-center flex-wrap gap-x-16 gap-y-4"
-    >
-      <ul
-        class="page-padding flex flex-wrap gap-4 md:gap-10 pt-6 pb-12 overflow-hidden items-center justify-center"
-      >
-        {
-          allTallers.map((taller: any) => (
-            <TallerPostcard
-              taller={taller}
-              infoBtn={frontmatter.other.infoBtn}
-            />
-          ))
-        }
-      </ul>
-    </section>
     <section
       class="my-4 lg:my-12 flex flex-col items-center justify-center flex-wrap gap-x-16 gap-y-4"
     >
