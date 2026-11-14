@@ -20,4 +20,7 @@ other:
     - label: 'Instagram'
       url: 'https://www.instagram.com/tallerets/'
       text: '@tallerets'
+    - label: 'Novetats (butlleta)'
+      url: '/newsletter'
+      text: "Apunta't a la butlleta"
 ---

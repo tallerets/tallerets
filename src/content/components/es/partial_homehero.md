@@ -11,8 +11,6 @@ links:
     text: 'talleres'
   - url: '/es/cursos'
     text: 'cursillos'
-  - url: '/es/newsletter'
-    text: 'novedades'
   - url: '/es/espai'
     text: 'sobre mí'
   - url: '/es/contacte'
