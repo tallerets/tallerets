@@ -1,5 +1,5 @@
 ---
-title: Espai Tallerets
+title: 'Tallerets: comunitat i creació'
 desc: 'Tallerets és un espai per connectar amb la teva creativitat i gaudir del procés de fer amb les mans. Vine a crear amb nosaltres!'
 image:
   url: '/img/lanoor.jpg'

@@ -1,5 +1,5 @@
 ---
-title: 'Tallerets semanales'
+title: '¡Cursillos para aprender desde cero!'
 desc: 'En Tallerets, creemos en el poder de la creatividad como herramienta para fomentar la comunicación, la colaboración y el espíritu de equipo.'
 links:
   - url: '/es/contacte'
