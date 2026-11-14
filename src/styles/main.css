@@ -64,3 +64,49 @@ img {
 .markdown h3 {
   @apply font-bold text-2xl md:text-3xl my-6;
 }
+
+/* Text de fitxes i pàgines (cursos, tallers, a mida...) */
+  .fitxa {
+    @apply text-lg leading-relaxed md:text-xl;
+  }
+  .fitxa > :first-child {
+    @apply mt-0;
+  }
+  .fitxa p {
+    @apply mb-4;
+  }
+  .fitxa strong {
+    @apply font-[500] text-red;
+  }
+  .fitxa h1,
+  .fitxa h2 {
+    @apply mt-12 mb-4 text-3xl font-[500] leading-tight md:text-4xl;
+  }
+  .fitxa h1::after,
+  .fitxa h2::after {
+    content: '';
+    @apply mt-3 block w-16 border-b-2 border-dashed border-red;
+  }
+  .fitxa h3 {
+    @apply mt-8 mb-2 text-xl font-[500] md:text-2xl;
+  }
+  .fitxa hr {
+    @apply hidden;
+  }
+  .fitxa ul,
+  .fitxa ol {
+    @apply mb-6 space-y-2;
+  }
+  .fitxa ul > li {
+    @apply relative list-none pl-7;
+  }
+  .fitxa ul > li::before {
+    content: '✿';
+    @apply absolute left-0 top-0 text-red;
+  }
+  .fitxa ol {
+    @apply list-decimal pl-6;
+  }
+  .fitxa a {
+    @apply underline decoration-red decoration-2 underline-offset-4;
+  }
