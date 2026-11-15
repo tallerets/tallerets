@@ -15,4 +15,4 @@ Pot ser una targeta de regal per a un taller concret, o bé un import per fer se
 
 <br/>
 
-Passa per Tallerets a buscar la teva targeta física, o escriu-nos a latallerets@gmail.com per demanar-ne una de virtual!
+Passa per Tallerets a buscar la teva targeta física, o escriu-nos a hola@tallerets.com per demanar-ne una de virtual!

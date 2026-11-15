@@ -17,4 +17,4 @@ Puede ser una tarjeta de regalo para un taller concreto, o bien un importe para 
 
 <br/>
 
-¡Pasa por Tallerets a buscar tu tarjeta física, o escríbenos a latallerets@gmail.com para pedir una virtual!
+¡Pasa por Tallerets a buscar tu tarjeta física, o escríbenos a hola@tallerets.com para pedir una virtual!

@@ -80,4 +80,4 @@ Som un projecte petit fet per persones, i per a persones. Esperem que et sumis i
 
 <br />
 
-Qualsevol dubte pots contactar-me per aquí o per email a latallerets@gmail.com
+Qualsevol dubte pots contactar-me per aquí o per email a hola@tallerets.com
