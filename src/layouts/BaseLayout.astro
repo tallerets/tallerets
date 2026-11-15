@@ -11,6 +11,7 @@ const { title, description } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const scrollClass =
   import.meta.env.MODE !== 'development' ? 'scroll-smooth' : ''
+import FlorButlleta from '../components/FlorButlleta.astro'
 ---
 
 <!doctype html>
@@ -45,6 +46,7 @@ const scrollClass =
   </head>
   <body class="font-serif bg-soft text-dark relative w-100 overflow-x-hidden">
     <slot />
+    <FlorButlleta />
     <style is:global>
       .page-padding {
         @apply px-4 sm:px-6 md:px-8;
