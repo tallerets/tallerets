@@ -1,5 +1,5 @@
 export const contacts = {
-  email: 'latallerets@gmail.com',
+  email: 'hola@tallerets.com',
   mobile: '623 951 815',
   instagramUrl: 'https://www.instagram.com/tallerets',
   instagramId: 'tallerets',

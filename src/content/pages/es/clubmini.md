@@ -45,5 +45,5 @@ Funciona como un gimnasio: puedes decidir no renovar el mes o el trimestre el ú
 
 <br />
 
-Cualquier duda puedes contactarme por aquí o por email a latallerets@gmail.com
+Cualquier duda puedes contactarme por aquí o por email a hola@tallerets.com
 ¡¡¡Te espero en el club!!!
