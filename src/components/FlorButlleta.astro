@@ -1,136 +1,101 @@
 ---
-// Flor que apareix al costat de la pantalla quan la persona porta una estona
-// al web, i convida a apuntar-se a la butlleta. Es pot tancar; si es tanca o
-// es clica, no torna a sortir durant uns dies (localStorage, amb try/catch).
+// Etiqueta petita i fixa al lateral dret amb la flor de Tallerets, que
+// convida a apuntar-se a la butlleta. Apareix discretament després d'una
+// estona al web i et segueix mentre navegues. Es pot amagar amb la creueta.
 import { getLangFromUrl } from '../utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t =
   lang === 'es'
     ? {
-        titol: '¡No te pierdas los talleres!',
-        text: 'Apúntate al boletín y te avisamos de las novedades.',
-        boto: 'Me apunto',
+        curt: 'Boletín',
+        llarg: '¡No te pierdas los talleres! Apúntate al boletín',
         url: '/es/newsletter',
-        tancar: 'Cerrar',
+        tancar: 'Ocultar',
       }
     : {
-        titol: 'No et perdis els tallers!',
-        text: "Apunta't a la butlleta i t'avisem de les novetats.",
-        boto: "M'apunto",
+        curt: 'Butlleta',
+        llarg: "No et perdis els tallers! Apunta't a la butlleta",
         url: '/newsletter',
-        tancar: 'Tancar',
+        tancar: 'Amagar',
       }
 ---
 
-<aside
-  id="flor-butlleta"
-  class="flor-butlleta fixed bottom-4 right-0 z-50 flex max-w-[20rem] items-center gap-3 rounded-l-2xl border-2 border-r-0 border-dark bg-[#F2E9B1] py-3 pl-3 pr-4 text-[#0D33AB] shadow-lg"
-  aria-live="polite"
-  hidden
->
-  <img src="/icons/flor.svg" alt="" class="flor-gira h-14 w-14 shrink-0" width="56" height="50" />
-  <div class="text-left">
-    <p class="text-lg font-[500] leading-tight">{t.titol}</p>
-    <p class="mt-1 text-sm leading-snug">{t.text}</p>
-    <a
-      href={t.url}
-      data-flor-apunta
-      class="mt-2 inline-block rounded-lg border-2 border-red bg-red px-3 pb-1 pt-[0.2rem] text-base font-[500] text-soft transition-all hover:-rotate-3 hover:bg-transparent hover:text-red"
-    >
-      {t.boto}
-    </a>
-  </div>
+<div id="flor-butlleta" class="flor-etiqueta fixed right-0 top-1/2 z-40" hidden>
+  <a
+    href={t.url}
+    class="group flex items-center gap-2 rounded-l-xl border-2 border-r-0 border-dark bg-[#F2E9B1] py-2 pl-2 pr-2 text-[#0D33AB] shadow-sm transition-all hover:bg-soft"
+    title={t.llarg}
+    aria-label={t.llarg}
+  >
+    <img src="/icons/flor.svg" alt="" class="h-7 w-7 shrink-0 transition-transform duration-500 group-hover:rotate-90" width="28" height="25" />
+    <span class="text-sm font-[500] leading-tight">
+      <span class="group-hover:hidden">{t.curt}</span>
+      <span class="hidden max-w-[11rem] group-hover:inline">{t.llarg}</span>
+    </span>
+  </a>
   <button
     type="button"
     data-flor-tanca
-    class="absolute -top-3 -left-3 flex h-7 w-7 items-center justify-center rounded-full border-2 border-dark bg-soft text-sm leading-none hover:border-red hover:text-red"
+    class="absolute -top-2 -left-2 hidden h-5 w-5 items-center justify-center rounded-full border border-dark bg-soft text-[10px] leading-none hover:border-red hover:text-red md:flex"
     aria-label={t.tancar}
   >
     ✕
   </button>
-</aside>
+</div>
 
 <style>
-  .flor-butlleta {
-    transform: translateX(110%);
+  .flor-etiqueta {
+    transform: translate(110%, -50%);
     transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .flor-butlleta.visible {
-    transform: translateX(0);
-  }
-  .flor-butlleta.visible .flor-gira {
-    animation: flor-gira 1.2s ease-out;
-  }
-  @keyframes flor-gira {
-    from {
-      transform: rotate(-120deg) scale(0.6);
-    }
-    to {
-      transform: rotate(0) scale(1);
-    }
+  .flor-etiqueta.visible {
+    transform: translate(0, -50%);
   }
   @media (prefers-reduced-motion: reduce) {
-    .flor-butlleta,
-    .flor-butlleta.visible .flor-gira {
+    .flor-etiqueta {
       transition: none;
-      animation: none;
     }
   }
 </style>
 
 <script>
-  const ESPERA_MS = 25000 // temps al web abans de sortir
+  const ESPERA_MS = 15000
   const CLAU = 'tallerets-flor-butlleta'
-  const DIES_TANCADA = 7
-  const DIES_APUNTADA = 60
-
+  const DIES_AMAGADA = 7
   const el = document.getElementById('flor-butlleta')
 
-  function amagadaFins(): number {
+  function llegeix(magatzem: Storage, clau: string): number {
     try {
-      return Number(localStorage.getItem(CLAU)) || 0
+      return Number(magatzem.getItem(clau)) || 0
     } catch {
       return 0
     }
   }
-  function amaga(dies: number) {
+  function escriu(magatzem: Storage, clau: string, valor: number) {
     try {
-      localStorage.setItem(CLAU, String(Date.now() + dies * 86400000))
-    } catch {}
-    el?.classList.remove('visible')
-    setTimeout(() => el?.setAttribute('hidden', ''), 600)
-  }
-
-  // Temps acumulat entre pàgines durant la visita
-  function tempsAcumulat(): number {
-    try {
-      return Number(sessionStorage.getItem(CLAU + '-temps')) || 0
-    } catch {
-      return 0
-    }
-  }
-  function guardaTemps(ms: number) {
-    try {
-      sessionStorage.setItem(CLAU + '-temps', String(ms))
+      magatzem.setItem(clau, String(valor))
     } catch {}
   }
 
-  const esButlleta = /\/newsletter\/?$/.test(location.pathname)
+  const esButlleta = location.pathname.indexOf('newsletter') !== -1
 
-  if (el && !esButlleta && amagadaFins() < Date.now()) {
+  if (el && !esButlleta && llegeix(localStorage, CLAU) < Date.now()) {
     const inici = Date.now()
-    const previ = tempsAcumulat()
-    const falta = Math.max(0, ESPERA_MS - previ)
-
-    window.addEventListener('pagehide', () => guardaTemps(previ + Date.now() - inici))
-
-    setTimeout(() => {
-      el.removeAttribute('hidden')
-      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('visible')))
-    }, falta)
-
-    el.querySelector('[data-flor-tanca]')?.addEventListener('click', () => amaga(DIES_TANCADA))
-    el.querySelector('[data-flor-apunta]')?.addEventListener('click', () => amaga(DIES_APUNTADA))
+    const previ = llegeix(sessionStorage, CLAU + '-temps')
+    window.addEventListener('pagehide', () =>
+      escriu(sessionStorage, CLAU + '-temps', previ + Date.now() - inici),
+    )
+    setTimeout(
+      () => {
+        el.removeAttribute('hidden')
+        requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('visible')))
+      },
+      Math.max(0, ESPERA_MS - previ),
+    )
+    el.querySelector('[data-flor-tanca]')?.addEventListener('click', () => {
+      escriu(localStorage, CLAU, Date.now() + DIES_AMAGADA * 86400000)
+      el.classList.remove('visible')
+    })
   }
 </script>
