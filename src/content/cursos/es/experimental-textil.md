@@ -8,9 +8,9 @@ fotos:
   - '/img/fotos/agulles.jpg'
   - '/img/fotos/cosir-singer.jpg'
 links:
-  - url: 'https://buy.stripe.com/fZu8wR3WRearcHY4Gh7N61E'
+  - url: 'https://buy.stripe.com/cNiaEZ2SNaYf6jA5Kl7N61G'
     text: "Me apunto · jueves mañana"
-  - url: 'https://buy.stripe.com/aFa5kFdxrgiz5fwb4F7N61F'
+  - url: 'https://buy.stripe.com/dRm3cxbpj5DVfUa7St7N61H'
     text: "Me apunto · jueves tarde"
   - url: 'https://tally.so/r/PRzXYQ'
     text: "Lista de espera"
@@ -40,7 +40,7 @@ Un curso para experimentar con el textil: probaremos el bordado a mano, la costu
 
 ## Precio
 
-**220€ el trimestre.** El primer cobro se hace el 20 de diciembre y después la suscripción se renueva cada 3 meses.
+**220€ el trimestre.** Pagas al apuntarte y la suscripción se renueva cada 3 meses a partir del 20 de marzo.
 
 Si las plazas se han agotado, apúntate a la [lista de espera](https://tally.so/r/PRzXYQ).
 
