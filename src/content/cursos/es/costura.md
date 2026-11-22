@@ -118,7 +118,7 @@ No. El curso está pensado para empezar completamente desde cero.
 
 ### ¿Necesito máquina?
 
-En este curso si, pero si no tienes, puedes contactar conmigo.
+Es mejor que traigas la tuya, pero si no tienes te prestamos una. Al apuntarte te preguntaremos si tienes.
 
 ### ¿Qué tengo que traer?
 

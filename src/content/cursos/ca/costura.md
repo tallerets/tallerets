@@ -135,7 +135,7 @@ No. El curs està pensat per començar completament des de zero.
 
 ### Necessito màquina?
 
-En el grup que queda si, però si no en tens escriu-me!
+És millor que portis la teva, però si no en tens te'n deixem una. Quan t'apuntis et preguntarem si en tens.
 
 ### Què he de portar?
 
