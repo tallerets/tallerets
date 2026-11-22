@@ -8,24 +8,23 @@ fotos:
   - '/img/fotos/punt.jpg'
   - '/img/fotos/club-punt.jpg'
 links:
-  - url: 'https://book.stripe.com/4gM9AV0KF5DV23kgoZ7N60U'
-    text: 'Me apunto'
-
-  - url: '/contacte'
-    text: 'Tengo dudas'
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Apúntate a la lista de espera"
+  - url: '/es/contacte'
+    text: "Tengo dudas"
 ---
 
-## 🧶 CURSO REGULAR · OCTUBRE - DICIEMBRE
+## 🧶 PRÓXIMO CURSO · A PARTIR DE ABRIL
 
 Aprendremos punto (media) con aguja circular desde cero y nos haremos una bufanda (sophie scarf!)
 
 **¿Cuando empieza?**
 
-El curso de iniciación al punto empezará el 28 de octubre y acabará el 17 de diciembre. 
+El próximo curso de iniciación al punto empezará en **abril**. Apúntate a la [lista de espera](https://tally.so/r/PRzXYQ) y te avisaremos cuando abramos inscripciones.
 
 **¿En qué horario?**
 
-El curso será los miércoles de 18:30 a 20:30
+Te avisaremos del horario cuando abramos inscripciones.
 
 **¿Qué haremos y qué incluye?**
 

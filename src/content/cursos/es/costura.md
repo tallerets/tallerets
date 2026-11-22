@@ -1,6 +1,6 @@
 ---
 title: "Curso de iniciación a la costura"
-desc: "Aprende a coser desde cero en nuestro curso de iniciación a la costura en Sants (Barcelona). 15 sesiones en grupos reducidos, máximo 8 personas, con acompañamiento personalizado."
+desc: "Aprende a coser desde cero en nuestro curso de iniciación a la costura en Sants (Barcelona). 10 sesiones de enero a marzo en grupos reducidos, máximo 6 personas, con acompañamiento personalizado."
 image:
   url: '/img/fotos/cosir-singer.jpg'
   alt: "Persona cosiendo con una máquina de coser en Tallerets"
@@ -9,25 +9,25 @@ fotos:
   - '/img/fotos/maquina.jpg'
   - '/img/fotos/agulles.jpg'
 links:
-  - url: "https://book.stripe.com/8x24gB793ear6jAa0B7N60R"
-    text: "Me apunto al trimestre"
-
-  - url: "https://tally.so/r/mV2bGM"
-    text: "Me apunto mes a mes"
-
-  - url: "/contacte"
+  - url: 'https://buy.stripe.com/8x29AVeBv5DV8rIgoZ7N61A'
+    text: "Me apunto · martes 16:30"
+  - url: 'https://buy.stripe.com/28EcN71OJ8Q7cHYb4F7N61B'
+    text: "Me apunto · martes 18:30"
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Lista de espera"
+  - url: '/es/contacte'
     text: "Tengo dudas"
 ---
 
 Aprende a coser desde cero en un grupo reducido y descubre una nueva forma de crear con las manos.
 
-Durante **12 sesiones** aprenderás a utilizar la máquina de coser mientras confeccionas proyectos útiles y adquieres la autonomía necesaria para seguir cosiendo a tu ritmo.
+Durante **10 sesiones** aprenderás a utilizar la máquina de coser mientras confeccionas proyectos útiles y adquieres la autonomía necesaria para seguir cosiendo a tu ritmo.
 
 📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No necesitas experiencia previa
 
-✔ Solo 8 plazas
+✔ Solo 6 plazas por grupo
 
 ✔ Acompañamiento personalizado
 
@@ -70,9 +70,9 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 ## ¿Qué incluye?
 
-✔ 12 sesiones de 2 horas
+✔ 10 sesiones de 2 horas
 
-✔ Grupo reducido (máximo 8 personas)
+✔ Grupo reducido (máximo 6 personas)
 
 ✔ Acompañamiento personalizado
 
@@ -82,16 +82,17 @@ Cuando domines las bases también podrás traer tus propios proyectos y desarrol
 
 ## Fechas y horarios
 
-**Martes**
+**Martes · dos grupos**
 
-**18:30 – 20:30 h** COMPLETO
-**16:30 - 18:30h** 2 PLAZAS!
+**16:30 – 18:30 h**
 
-**Del 5 de octubre al 22 de diciembre**
+**18:30 – 20:30 h**
 
-**12 sesiones**
+**Del 12 de enero al 16 de marzo · 10 sesiones**
 
-**Solo 8 plazas disponibles.**
+**Solo 6 plazas por grupo.**
+
+**220€ el trimestre.** Pagas al apuntarte y la suscripción se renueva cada 3 meses a partir del 20 de marzo. Si las plazas se han agotado, apúntate a la [lista de espera](https://tally.so/r/PRzXYQ).
 
 ## Material
 
@@ -129,7 +130,7 @@ Dependerá de las plazas disponibles y del punto en el que se encuentre el grupo
 
 ## Reserva tu plaza
 
-Para garantizar un acompañamiento cercano, cada grupo es de **solo 8 personas**.
+Para garantizar un acompañamiento cercano, cada grupo es de **solo 6 personas**.
 
 Si hace tiempo que quieres aprender a coser, este es un buen momento para empezar.
 

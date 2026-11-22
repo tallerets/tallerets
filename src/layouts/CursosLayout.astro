@@ -23,10 +23,11 @@ const t =
         tarifesTitol: 'Precios',
         trimestre: 'El trimestre',
         trimestreTag: 'Curso entero',
-        trimestreDetall: '12 sesiones · 18,3€/sesión',
+        trimestreDetall: 'Enero – marzo · 9 o 10 sesiones',
         trimestreInclou: [
           'Todas las sesiones del trimestre',
           'Plaza garantizada todo el curso',
+          'Se renueva cada 3 meses (a partir del 20 de marzo)',
           'Socias: precio especial',
         ],
         mensual: 'Mes a mes',
@@ -43,6 +44,7 @@ const t =
         calendariTitol: 'El horario de la semana',
         kidsNota: 'Costura niños y jóvenes: 60€/mes · Extraescolares creativas: 55€/mes',
         dies: {
+          dilluns: 'Lunes',
           dimarts: 'Martes',
           dimecres: 'Miércoles',
           dijous: 'Jueves',
@@ -57,19 +59,25 @@ const t =
           iniciGanxet: 'Iniciación al ganchillo',
           iniciGanxetDetall: 'Grupo de mañana',
           dibuix: 'Iniciación a dibujo y pintura',
-          dibuixDetall: 'Desde octubre · 10 sesiones',
+          dibuixDetall: 'Del 11/1 al 15/3 · 10 sesiones',
           iniciPunt: 'Iniciación al punto',
           iniciPuntDetall: 'De octubre a diciembre · aguja circular',
+          costuraDetall: 'Del 12/1 al 16/3 · 10 sesiones',
+          ganxetDetall: 'Del 13/1 al 17/3 · 10 sesiones',
+          experimental: 'Bordado, costura y estampación',
+          experimentalDetall: 'Del 21/1 al 18/3 · 9 sesiones',
+          puntNota: 'Iniciación al punto: el próximo curso empieza en abril. Apúntate a la lista de espera.',
         }
       }
     : {
         tarifesTitol: 'Preus',
         trimestre: 'El trimestre',
         trimestreTag: 'Curs sencer',
-        trimestreDetall: '12 sessions',
+        trimestreDetall: 'Gener – març · 9 o 10 sessions',
         trimestreInclou: [
           'Totes les sessions del trimestre',
           'Plaça garantida tot el curs',
+          'Es renova cada 3 mesos (a partir del 20 de març)',
           'Sòcies: preu especial',
         ],
         mensual: 'Mes a mes',
@@ -86,6 +94,7 @@ const t =
         calendariTitol: "L'horari de la setmana",
         kidsNota: 'Costura kids i joves: 60€/mes · Extraescolars creatives: 55€/mes',
         dies: {
+          dilluns: 'Dilluns',
           dimarts: 'Dimarts',
           dimecres: 'Dimecres',
           dijous: 'Dijous',
@@ -100,19 +109,30 @@ const t =
           iniciGanxet: 'Iniciació al ganxet',
           iniciGanxetDetall: 'Grup de matí',
           dibuix: 'Iniciació a dibuix i pintura',
-          dibuixDetall: 'Des de l\'octubre · 10 sessions',
+          dibuixDetall: 'De l\'11/1 al 15/3 · 10 sessions',
           iniciPunt: 'Iniciació al punt',
           iniciPuntDetall: "D'octubre a desembre · agulla circular",
+          costuraDetall: 'Del 12/1 al 16/3 · 10 sessions',
+          ganxetDetall: 'Del 13/1 al 17/3 · 10 sessions',
+          experimental: 'Brodat, costura i estampació',
+          experimentalDetall: 'Del 21/1 al 18/3 · 9 sessions',
+          puntNota: "Iniciació al punt: el proper curs comença a l'abril. Apunta't a la llista d'espera.",
         }
       }
 
 // ── Calendari setmanal dels cursos ─────────────────────────────────
 const setmana = [
   {
+    dia: t.dies.dilluns,
+    sessions: [
+      { hora: '18:30–20:30', nom: t.horari.dibuix, detall: t.horari.dibuixDetall, tipus: 'inici' },
+    ],
+  },
+  {
     dia: t.dies.dimarts,
     sessions: [
-      { hora: '16:30–18:30', nom: t.horari.iniciCostura, tipus: 'inici' },
-      { hora: '18:30–20:30', nom: t.horari.iniciCostura, tipus: 'inici' },
+      { hora: '16:30–18:30', nom: t.horari.iniciCostura, detall: t.horari.costuraDetall, tipus: 'inici' },
+      { hora: '18:30–20:30', nom: t.horari.iniciCostura, detall: t.horari.costuraDetall, tipus: 'inici' },
     ],
   },
   {
@@ -120,15 +140,14 @@ const setmana = [
     sessions: [
       { hora: '17:00–18:15', nom: t.horari.kidsCostura, detall: t.horari.kidsCosturaDetall, tipus: 'kids' },
       { hora: '17:00–18:30', nom: t.horari.kidsClub, detall: t.horari.kidsClubDetall, tipus: 'kids' },
-      { hora: '18:30–20:30', nom: t.horari.ganxet, tipus: 'inici' },
-      { hora: '18:30–20:30', nom: t.horari.iniciPunt, detall: t.horari.iniciPuntDetall, tipus: 'inici' },
+      { hora: '18:30–20:30', nom: t.horari.ganxet, detall: t.horari.ganxetDetall, tipus: 'inici' },
     ],
   },
   {
     dia: t.dies.dijous,
     sessions: [
-      { hora: '11:00–13:00', nom: t.horari.iniciGanxet, detall: t.horari.iniciGanxetDetall, tipus: 'inici' },
-      { hora: '17:00–18:30', nom: t.horari.iniciPunt, detall: t.horari.iniciPuntDetall, tipus: 'inici' },
+      { hora: '11:00–13:00', nom: t.horari.experimental, detall: t.horari.experimentalDetall, tipus: 'inici' },
+      { hora: '18:30–20:30', nom: t.horari.experimental, detall: t.horari.experimentalDetall, tipus: 'inici' },
     ],
   },
 ]
@@ -196,7 +215,7 @@ const estilTipus: Record<string, string> = {
 
     <!-- ── Tarifes ─────────────────────────────────────────── -->
     <section class="page-padding my-8 lg:my-12">
-      <div class="mx-auto grid max-w-2xl gap-6 sm:grid-cols-2 items-stretch">
+      <div class="mx-auto grid max-w-sm gap-6 items-stretch">
         <div class="relative flex flex-col rounded-xl border-2 border-red bg-white p-6 shadow-lg">
           <span class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-2 whitespace-nowrap bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-wider text-[#6F2118]">
             {t.trimestreTag}
@@ -208,25 +227,6 @@ const estilTipus: Record<string, string> = {
           </p>
           <ul class="mt-4 flex-1 space-y-2 border-t-2 border-dashed border-soft pt-4 text-sm">
             {t.trimestreInclou.map((item) => (
-              <li class="flex gap-2">
-                <span class="text-red" aria-hidden="true">✿</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div class="relative flex flex-col rounded-xl border-2 border-dark bg-white p-6">
-          <span class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-2 whitespace-nowrap bg-[#F2E9B1] px-3 py-1 font-mono text-xs uppercase tracking-wider text-[#6F2118]">
-            {t.mensualTag}
-          </span>
-          <h3 class="text-xl font-[500]">{t.mensual}</h3>
-          <p class="mt-2 text-5xl font-[300]">80€</p>
-          <p class="mt-1 font-mono text-xs uppercase tracking-wider opacity-70">
-            {t.mensualDetall}
-          </p>
-          <ul class="mt-4 flex-1 space-y-2 border-t-2 border-dashed border-soft pt-4 text-sm">
-            {t.mensualInclou.map((item) => (
               <li class="flex gap-2">
                 <span class="text-red" aria-hidden="true">✿</span>
                 <span>{item}</span>
@@ -259,7 +259,7 @@ const estilTipus: Record<string, string> = {
           />
         </span>
       </h2>
-      <div class="mx-auto grid max-w-4xl gap-4 sm:grid-cols-3">
+      <div class="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {
           setmana.map((d) => (
             <div>
@@ -281,6 +281,9 @@ const estilTipus: Record<string, string> = {
       </div>
       <p class="mx-auto mt-6 max-w-2xl text-center text-sm opacity-80">
         {t.kidsNota}
+      </p>
+      <p class="mx-auto mt-2 max-w-2xl text-center text-sm opacity-80">
+        <a href="https://tally.so/r/PRzXYQ" class="underline hover:text-red">{t.horari.puntNota}</a>
       </p>
     </section>
 

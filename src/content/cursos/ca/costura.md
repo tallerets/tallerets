@@ -1,6 +1,6 @@
 ---
 title: "Curs d'iniciació a la costura a Barcelona"
-desc: "Aprèn a cosir des de zero al nostre curs d'iniciació a la costura a Sants (Barcelona). 15 sessions en grup reduït, màxim 8 persones, amb acompanyament personalitzat."
+desc: "Aprèn a cosir des de zero al nostre curs d'iniciació a la costura a Sants (Barcelona). 10 sessions de gener a març en grup reduït, màxim 6 persones, amb acompanyament personalitzat."
 image:
   url: '/img/fotos/cosir-singer.jpg'
   alt: 'Persona cosint amb una màquina de cosir a Tallerets'
@@ -8,23 +8,25 @@ fotos:
   - '/img/fotos/maquina.jpg'
   - '/img/fotos/agulles.jpg'
 links:
-  - url: 'https://book.stripe.com/8x24gB793ear6jAa0B7N60R'
-    text: "M'apunto"
-  - url: 'https://tally.so/r/mV2bGM'
-    text: "Vull venir en un altre horari"
+  - url: 'https://buy.stripe.com/8x29AVeBv5DV8rIgoZ7N61A'
+    text: "M'apunto · dimarts 16:30"
+  - url: 'https://buy.stripe.com/28EcN71OJ8Q7cHYb4F7N61B'
+    text: "M'apunto · dimarts 18:30"
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Llista d'espera"
   - url: '/contacte'
-    text: 'Tinc dubtes'
+    text: "Tinc dubtes"
 ---
 
 Aprèn a cosir des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
-Durant **12 sessions** aprendràs a utilitzar la màquina de cosir mentre confecciones projectes útils i guanyes autonomia per continuar cosint al teu ritme.
+Durant **10 sessions** aprendràs a utilitzar la màquina de cosir mentre confecciones projectes útils i guanyes autonomia per continuar cosint al teu ritme.
 
 📍 Tallerets · Sants (Barcelona)
 
 ✔ No cal experiència prèvia
 
-✔ Només 8 places
+✔ Només 6 places per grup
 
 ✔ Acompanyament personalitzat
 
@@ -75,9 +77,9 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ## Què inclou?
 
-✔ 12 sessions de 2 hores
+✔ 10 sessions de 2 hores
 
-✔ Grup reduït (màxim 8 persones)
+✔ Grup reduït (màxim 6 persones)
 
 ✔ Acompanyament personalitzat
 
@@ -89,17 +91,17 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ## Dates i horaris
 
-**Dimarts**
+**Dimarts · dos grups**
 
-**16:30 - 18:30** NOU HORARI!
+**16:30 – 18:30 h**
 
-**18:30 – 20:30 h** PLACES COMPLERTES
+**18:30 – 20:30 h**
 
-**Del 6 d'octubre 22 de desembre**
+**Del 12 de gener al 16 de març · 10 sessions**
 
-**12 sessions**
+**Només 6 places per grup.**
 
-**Només 6 places disponibles.**
+**220€ el trimestre.** Pagues en apuntar-te i la subscripció es renova cada 3 mesos a partir del 20 de març. Si les places s'han esgotat, apunta't a la [llista d'espera](https://tally.so/r/PRzXYQ).
 
 ---
 

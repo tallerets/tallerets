@@ -1,6 +1,6 @@
 ---
 title: "Curso de iniciación al ganchillo"
-desc: "Aprende ganchillo desde cero en nuestro curso de iniciación al ganchillo en Sants (Barcelona). 11 sesiones en grupo reducido, máximo 8 personas, con acompañamiento personalizado."
+desc: "Aprende ganchillo desde cero en nuestro curso de iniciación al ganchillo en Sants (Barcelona). 10 sesiones de enero a marzo en grupo reducido, máximo 6 personas, con acompañamiento personalizado."
 image:
   url: '/img/fotos/ganxet.jpg'
   alt: "Persona haciendo ganchillo a Tallerets"
@@ -11,24 +11,22 @@ fotos:
   - '/img/fotos/ganxet-chal.jpg'
   - '/img/fotos/ganxet-granny.jpg'
 links:
-  - url: "https://donate.stripe.com/6ouevf64z9ubeq61u57n60h"
-    text: "Me apunto en el trimestre"
-
-  - url: "https://buy.stripe.com/afa9av1ojfevchyfkv7n60j"
-    text: "Me apunto mes a mes"
-
-  - url: "/contacte"
+  - url: 'https://buy.stripe.com/cNi6oJdxr1nF6jA0q17N61C'
+    text: "¡Me apunto!"
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Lista de espera"
+  - url: '/es/contacte'
     text: "Tengo dudas"
 ---
 
 Aprende ganchillo desde cero en un grupo reducido y descubre una nueva manera de crear con las manos.
 
-Durante **11 sesiones** aprenderás los puntos básicos de ganchillo mientras creas proyectos útiles y desarrollas la confianza para continuar creando a tu ritmo.
+Durante **10 sesiones** aprenderás los puntos básicos de ganchillo mientras creas proyectos útiles y desarrollas la confianza para continuar creando a tu ritmo.
 
 📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No hace falta experiencia previa
-✔ Solo 8 plazas
+✔ Solo 6 plazas
 ✔ Acompañamiento personalizado
 ✔ Aprendizaje a tu ritmo
 
@@ -69,24 +67,21 @@ Cuando domines las bases también podrás llevar tus propios proyectos y los des
 
 ## Qué incluye?
 
-✔ 11 sesiones de 2 horas
-✔ Grupo reducido (máximo 8 personas)
+✔ 10 sesiones de 2 horas
+✔ Grupo reducido (máximo 6 personas)
 ✔ Acompañamiento personalizado
 ✔ Aprendizaje progresivo
 ✔ Un espacio tranquilo para crear en comunidad
 
 ## Fechas y horarios
 
-**Grupo por la tarde**
+**Miércoles · 18:30 – 20:30 h**
 
-Miércoles · 18:30 – 20:30 h · Solo quedan 2 plazas!
-Del 30 de septiembre al 17 de diciembre
+Del 13 de enero al 17 de marzo · 10 sesiones · Solo 6 plazas
 
-**Grupo por la mañana**
+¡Si ya has hecho ganchillo antes, también te puedes apuntar!
 
-Jueves · 11:00 – 13:00 h
-Del 1 de octubre al 18 de diciembre
-12 sesiones · Solo 8 plazas por grupo
+**220€ el trimestre.** Pagas al apuntarte y la suscripción se renueva cada 3 meses a partir del 20 de marzo. Si las plazas se han agotado, apúntate a la [lista de espera](https://tally.so/r/PRzXYQ).
 
 ## Material
 
@@ -120,7 +115,7 @@ Dependerá de las plazas disponibles y del nivel del grupo. Escríbenos y valora
 
 ## Reserva tu plaza
 
-Para garantizar un acompañamiento próximo, cada grupo es de **solo 8 personas**.
+Para garantizar un acompañamiento próximo, el grupo es de **solo 6 personas**.
 
 Si hace tiempo que quieres aprender ganchillo, este es un buen momento para empezar.
 
