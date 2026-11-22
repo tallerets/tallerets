@@ -1,6 +1,6 @@
 ---
 title: "Curs d'iniciació al ganxet"
-desc: "Aprèn ganxet des de zero al nostre curs d'iniciació al ganxet a Sants (Barcelona). 11 sessions en grup reduït, màxim 8 persones, amb acompanyament personalitzat."
+desc: "Aprèn ganxet des de zero al nostre curs d'iniciació al ganxet a Sants (Barcelona). 10 sessions de gener a març en grup reduït, màxim 6 persones, amb acompanyament personalitzat."
 image:
   url: '/img/fotos/ganxet.jpg'
   alt: "Persona fent ganxet a Tallerets"
@@ -11,24 +11,22 @@ fotos:
   - '/img/fotos/ganxet-chal.jpg'
   - '/img/fotos/ganxet-granny.jpg'
 links:
-  - url: "https://donate.stripe.com/6oUeVf64Z9UbeQ61u57N60H"
-    text: "M'apunto al trimestre"
-
-  - url: "https://buy.stripe.com/aFa9AV1OJfevcHYfkV7N60J"
-    text: "M'apunto mes a mes"
-
-  - url: "/contacte"
+  - url: 'https://buy.stripe.com/cNi6oJdxr1nF6jA0q17N61C'
+    text: "M'apunto!"
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Llista d'espera"
+  - url: '/contacte'
     text: "Tinc dubtes"
 ---
 
 Aprèn ganxet des de zero en un grup reduït i descobreix una nova manera de crear amb les mans.
 
-Durant **11 sessions** aprendràs els punts bàsics del ganxet mentre crees projectes útils i desenvolupes la confiança per continuar creant al teu ritme.
+Durant **10 sessions** aprendràs els punts bàsics del ganxet mentre crees projectes útils i desenvolupes la confiança per continuar creant al teu ritme.
 
 📍 **Tallerets · Sants (Barcelona)**
 
 ✔ No cal experiència prèvia
-✔ Només 8 places
+✔ Només 6 places
 ✔ Acompanyament personalitzat
 ✔ Aprenentatge al teu ritme
 
@@ -69,24 +67,21 @@ Quan dominis les bases també podràs portar els teus propis projectes i els des
 
 ## Què inclou?
 
-✔ 11 sessions de 2 hores
-✔ Grup reduït (màxim 8 persones)
+✔ 10 sessions de 2 hores
+✔ Grup reduït (màxim 6 persones)
 ✔ Acompanyament personalitzat
 ✔ Aprenentatge progressiu
 ✔ Un espai tranquil per crear en comunitat
 
 ## Dates i horaris
 
-**Grup de tarda**
+**Dimecres · 18:30 – 20:30 h**
 
-Dimecres · 18:30 – 20:30 h · Només queden 2 places!
-Del 30 de setembre al 17 de desembre
+Del 13 de gener al 17 de març · 10 sessions · Només 6 places
 
-**Grup de matí**
+Si ja has fet ganxet abans, també et pots apuntar!
 
-Dijous · 11:00 – 13:00 h
-De l'1 d'octubre al 18 de desembre
-12 sessions · Només 8 places per grup
+**220€ el trimestre.** Pagues en apuntar-te i la subscripció es renova cada 3 mesos a partir del 20 de març. Si les places s'han esgotat, apunta't a la [llista d'espera](https://tally.so/r/PRzXYQ).
 
 ## Material
 
@@ -120,7 +115,7 @@ Dependrà de les places disponibles i del nivell del grup. Escriu-nos i valorare
 
 ## Reserva la teva plaça
 
-Per garantir un acompanyament proper, cada grup és de **només 8 persones**.
+Per garantir un acompanyament proper, el grup és de **només 6 persones**.
 
 Si fa temps que vols aprendre ganxet, aquest és un bon moment per començar.
 

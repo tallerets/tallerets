@@ -8,22 +8,22 @@ fotos:
   - '/img/fotos/punt.jpg'
   - '/img/fotos/club-punt.jpg'
 links:
-  - url: 'https://book.stripe.com/4gM9AV0KF5DV23kgoZ7N60U'
-    text: "M'apunto!"
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Apunta't a la llista d'espera"
   - url: '/contacte'
-    text: 'Tinc dubtes'
+    text: "Tinc dubtes"
 ---
 
 **Aprendrem el punt de mitja des de zero amb un projecte concret!**
 
 **Quan comença?**
 
-El curs d'iniciació al punt començarà l'octubre. Serà del dia 27 d'Octubre al 17 de desembre. 
+El proper curs d'iniciació al punt començarà a **l'abril**. Apunta't a la [llista d'espera](https://tally.so/r/PRzXYQ) i t'avisarem quan obrim inscripcions.
 En aquest curset aprendrem a fer punt en mitja amb agulla circular desde zero. Podràs fer-te una sophie scarf, o una bufanda de tota la vida!
 
 **En quin horari?**
 
-El curset serà els dimecres de 18:30 a 20:30. 
+T'avisarem de l'horari quan obrim inscripcions.
 
 **Què farem i què inclou?**
 
