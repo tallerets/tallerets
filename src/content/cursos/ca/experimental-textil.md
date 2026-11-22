@@ -8,9 +8,9 @@ fotos:
   - '/img/fotos/agulles.jpg'
   - '/img/fotos/cosir-singer.jpg'
 links:
-  - url: 'https://buy.stripe.com/fZu8wR3WRearcHY4Gh7N61E'
+  - url: 'https://buy.stripe.com/cNiaEZ2SNaYf6jA5Kl7N61G'
     text: "M'apunto · dijous matí"
-  - url: 'https://buy.stripe.com/aFa5kFdxrgiz5fwb4F7N61F'
+  - url: 'https://buy.stripe.com/dRm3cxbpj5DVfUa7St7N61H'
     text: "M'apunto · dijous tarda"
   - url: 'https://tally.so/r/PRzXYQ'
     text: "Llista d'espera"
@@ -40,7 +40,7 @@ Un curs per experimentar amb el tèxtil: provarem el brodat a mà, la costura i 
 
 ## Preu
 
-**220€ el trimestre.** El primer cobrament es fa el 20 de desembre i després la subscripció es renova cada 3 mesos.
+**220€ el trimestre.** Pagues en apuntar-te i la subscripció es renova cada 3 mesos a partir del 20 de març.
 
 Si les places s'han esgotat, apunta't a la [llista d'espera](https://tally.so/r/PRzXYQ).
 
