@@ -13,6 +13,11 @@ const { Content } = await taller.render()
 const { title, desc, image, links, fotos } = taller.data
 const lang = getLangFromUrl(Astro.url)
 const [principal, ...altres] = links || []
+// Botons de la capçalera: si hi ha més d'un enllaç de pagament (p. ex. dos
+// grups), es mostren tots; si no, només el principal.
+const esPagament = (u: string) => /^https:\/\/(buy|book|donate)\.stripe\.com\//.test(u)
+const reserves = (links || []).filter((l: { url: string }) => esPagament(l.url))
+const capcalera = reserves.length > 1 ? reserves : principal ? [principal] : []
 const reservaTitol = lang === 'es' ? 'Reserva tu plaza' : 'Reserva la teva plaça'
 const reservaText =
   lang === 'es'
@@ -36,13 +41,17 @@ const reservaText =
         {title}
       </h1>
       {
-        principal && (
-          <a
-            href={principal.url}
-            class="c-button mt-6 inline-block border-red bg-red text-soft hover:bg-transparent hover:text-red"
-          >
-            {principal.text}
-          </a>
+        capcalera.length > 0 && (
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+            {capcalera.map((l: { url: string; text: string }) => (
+              <a
+                href={l.url}
+                class="c-button inline-block border-red bg-red text-soft hover:bg-transparent hover:text-red"
+              >
+                {l.text}
+              </a>
+            ))}
+          </div>
         )
       }
     </header>

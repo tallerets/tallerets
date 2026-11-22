@@ -1,6 +1,6 @@
 ---
-title: 'Curso de iniciación al punto'
-desc: 'Aprende punto desde cero en Sants. Cursos regulares e intensivos para descubrir el mundo del tejido en un espacio creativo, tranquilo y en grupos reducidos.'
+title: "Curso de iniciación al punto"
+desc: "Aprende a tejer punto con aguja circular desde cero en Sants (Barcelona). El próximo curso empieza en abril: apúntate a la lista de espera y te avisaremos cuando abramos inscripciones."
 image:
   url: '/img/fotos/punt-mans.jpg'
   alt: 'Fotografía de las participantes haciendo punto'
@@ -14,25 +14,82 @@ links:
     text: "Tengo dudas"
 ---
 
-## 🧶 PRÓXIMO CURSO · A PARTIR DE ABRIL
+Aprende a tejer punto desde cero en un grupo reducido, con un proyecto concreto para empezar a tejer tus propias piezas.
 
-Aprendremos punto (media) con aguja circular desde cero y nos haremos una bufanda (sophie scarf!)
+**El próximo curso empieza en abril.** Apúntate a la [lista de espera](https://tally.so/r/PRzXYQ) y te avisaremos antes que a nadie cuando abramos inscripciones, con las fechas y el horario.
 
-**¿Cuando empieza?**
+📍 Tallerets · Sants (Barcelona)
 
-El próximo curso de iniciación al punto empezará en **abril**. Apúntate a la [lista de espera](https://tally.so/r/PRzXYQ) y te avisaremos cuando abramos inscripciones.
+✔ No hace falta experiencia previa
 
-**¿En qué horario?**
+✔ Aguja circular
 
-Te avisaremos del horario cuando abramos inscripciones.
+✔ Grupo reducido
 
-**¿Qué haremos y qué incluye?**
+✔ Un proyecto desde el primer día
 
-Empezaremos desde cero a tejer. No hace falta experiéncia pero si la tienes, también puedes venir.
-Aprenderemos a montar puntos, leer el patrón, hacer los puntos básicos, aumentos, disminuciones y cierres. 
+---
 
-**¿Qué incluye?**
+## Un curso para empezar desde cero
 
-Incluye el patrón de la bufanda, te dejaremos aguja y lanas para aprender. Cuando empieces tu bufanda tendrás que traer tus agujas y lanas.
+Este curso está pensado para personas que siempre han querido aprender a tejer punto pero no saben por dónde empezar. Si ya tienes experiencia, ¡también puedes venir!
 
-T'hi esperem!
+Iremos paso a paso, tejiendo un proyecto concreto, para que aprendas todas las bases que te servirán para hacer muchas piezas.
+
+---
+
+## ¿Qué aprenderás?
+
+- Montar puntos.
+- Hacer los puntos básicos.
+- Hacer aumentos y disminuciones.
+- Leer un patrón.
+- Tejer con aguja circular.
+
+---
+
+## El proyecto
+
+Podrás hacerte una **sophie scarf** o una bufanda de toda la vida.
+
+---
+
+## ¿Qué incluye?
+
+✔ El patrón de la bufanda
+
+✔ El préstamo de las agujas
+
+✔ Una lana para aprender
+
+Después tendrás que comprar las lanas que te gusten y la aguja circular del tamaño necesario para hacer la bufanda que hayas escogido.
+
+---
+
+## Fechas y horarios
+
+**A partir de abril.** Publicaremos las fechas y el horario cuando abramos inscripciones. Si te apuntas a la [lista de espera](https://tally.so/r/PRzXYQ), te avisaremos primero.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Necesito experiencia?
+
+No. El curso está pensado para empezar completamente desde cero.
+
+### ¿Tengo que traer material?
+
+No hace falta. Te prestamos las agujas y una lana para aprender. Cuando empieces tu bufanda, te ayudaremos a escoger la lana y la aguja.
+
+### ¿Apuntarme a la lista de espera me compromete a algo?
+
+No. Solo te avisaremos cuando abramos inscripciones para que puedas reservar tu plaza.
+
+---
+
+# ¿Quieres venir? ✨
+
+Apúntate a la [lista de espera](https://tally.so/r/PRzXYQ) y te escribiremos cuando abramos el curso de abril.
+
+¡Te esperamos en Tallerets! 💛
