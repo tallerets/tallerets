@@ -10,8 +10,8 @@ fotos:
 links:
   - url: 'https://buy.stripe.com/8x29AVeBv5DV8rIgoZ7N61A'
     text: "M'apunto · dimarts 16:30"
-  - url: 'https://buy.stripe.com/28EcN71OJ8Q7cHYb4F7N61B'
-    text: "M'apunto · dimarts 18:30"
+  - url: 'https://tally.so/r/PRzXYQ'
+    text: "Places esgotades · dimarts 18:30 · Llista d'espera"
   - url: 'https://tally.so/r/PRzXYQ'
     text: "Llista d'espera"
   - url: '/contacte'
